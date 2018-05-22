@@ -1,5 +1,5 @@
 {
-  "name": "regexer",
+  "name": "nsp-regexer",
   "version": "0.0.1",
   "description": "A simple and convenient library of functions that leverages regex and while hiding its complexity of implementation",
   "main": "src/index.js",
