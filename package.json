@@ -8,10 +8,14 @@
   },
   "devDependencies": {
     "chai": "4.1.2",
+    "istanbul": "0.4.5",
     "mocha": "5.2.0"
   },
   "scripts": {
-    "test": "mocha \"src/**/*.spec.js\""
+		"test": "mocha \"src/**/*.spec.js\"",
+		"test:watch": "mocha \"src/**/*.spec.js\" --watch",
+		"coverage": "istanbul cover _mocha src/**/*spec.js -x src/**/*.spec.js",
+		"show-coverage": "npm run coverage && open coverage/lcov-report/index.html"
   },
   "repository": {
     "type": "git",
