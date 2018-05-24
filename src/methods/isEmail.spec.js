@@ -1,6 +1,5 @@
-const chai = require('chai');
-const { assert } = chai;
-const isEmail = require('./isEmail');
+import { assert } from 'chai';
+import isEmail from './isEmail';
 
 describe('Regexer', () => {
   describe('isEmail()', () => {

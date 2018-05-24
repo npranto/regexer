@@ -1,5 +1,5 @@
-const isEmail = require('./methods/isEmail');
+import isEmail from './methods/isEmail';
 
-module.exports = {
-	isEmail: isEmail
-};
+export default {
+	isEmail
+}
