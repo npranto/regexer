@@ -34,4 +34,7 @@ jobs:
       # run tests!
       - run: npm test
 
+      # run coveralls
+      - run: npm run coveralls
+
 
