@@ -13,7 +13,7 @@ describe('Regexer', () => {
       assert.equal(isEmail('nprantogmail.com'), false);
     });
     it('should return true when passed \'npranto@123gmail.co\'', () => {
-      assert.equal(isEmail('npranto@123gmail.co'), true);
+      assert.equal(isEmail('npranto@123gmail.co'), false);
     });
   });
 });
