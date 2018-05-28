@@ -32,7 +32,8 @@
     "test:watch": "mocha \"src/**/*.spec.js\" --require babel-core/register --watch",
     "coverage": "nyc mocha src/**/*spec.js --require babel-core/register",
     "report-coverage": "npm run coverage && nyc report --reporter=html && open ./coverage/index.html",
-    "check-coverage": "npm run coverage && nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100"
+    "check-coverage": "npm run coverage && nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
+		"start": "npm install && npm run test"
   },
   "files": [
     "dist",
