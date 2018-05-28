@@ -1,6 +1,6 @@
-import isEmail from './methods/isEmail';
+import _isEmail from './common/isEmail/isEmail';
+import _isUsername from './common/isUsername/isUsername';
 
-export default {
-  isEmail,
-};
+export const isEmail = _isEmail;
+export const isUsername = _isUsername;
 

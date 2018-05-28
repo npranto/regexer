@@ -14,6 +14,9 @@ describe('Regexer', () => {
     });
     it('should return true when passed \'npranto@123gmail.co\'', () => {
       assert.equal(isEmail('npranto@123gmail.co'), true);
+		});
+		it('should return false when passed null', () => {
+      assert.equal(isEmail(null), false);
     });
   });
 });
