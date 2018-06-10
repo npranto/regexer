@@ -1,7 +1,7 @@
 // @flow
 import { isUndefined, isNull } from './../../utils';
 
-const isNumber = (number: number | string): boolean => {
+const isNumber = (number: string): boolean => {
 	return !isUndefined(number) && !isNull(number) && /^(-)?(\d+)(\.)?(\d+)?$/.test(number);
 };
 
