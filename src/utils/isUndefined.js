@@ -1,4 +1,5 @@
-const isUndefined = (value) => {
+// @flow
+const isUndefined = (value: any): boolean => {
 	return (typeof value === 'undefined');
 };
 

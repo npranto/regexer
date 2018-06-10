@@ -1,6 +1,7 @@
+// @flow
 import isUndefined from './isUndefined';
 
-const isNull = (value) => {
+const isNull = (value: any): boolean => {
 	return !isUndefined(value) && (value === null);
 };
 

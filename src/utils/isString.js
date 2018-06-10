@@ -1,4 +1,5 @@
-const isString = (value) => {
+// @flow
+const isString = (value: any): boolean => {
     return typeof value === 'string';
 }
 
