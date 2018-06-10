@@ -1,7 +1,8 @@
-import { isUndefined, isNull } from './../../utils';
+// @flow
+import { isUndefined, isNull, isString } from './../../utils';
 
-const isHTMLTag = (htmlTag) => {
-	return !isUndefined(htmlTag) && !isNull(htmlTag) && (typeof htmlTag === 'string') && /^<([a-z0-9]+)([^<]+)*(?:>(.*)<\/\1>|\s+\/>)$/.test(htmlTag)
+const isHTMLTag = (htmlTag: string): boolean => {
+	return !isUndefined(htmlTag) && !isNull(htmlTag) && isString(htmlTag) && /^<([a-z0-9]+)([^<]+)*(?:>(.*)<\/\1>|\s+\/>)$/.test(htmlTag)
 };
 
 export default isHTMLTag;

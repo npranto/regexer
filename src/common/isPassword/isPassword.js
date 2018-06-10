@@ -1,7 +1,8 @@
-import { isUndefined, isNull } from './../../utils';
+// @flow
+import { isUndefined, isNull, isString } from './../../utils';
 
-const isPassword = (password) => {
-	return !isUndefined(password) && !isNull(password) && (typeof password === 'string') && /^[\w-]{6,18}$/.test(password);
+const isPassword = (password: string): boolean => {
+	return !isUndefined(password) && !isNull(password) && isString(password) && /^[\w-]{6,18}$/.test(password);
 };
 
 export default isPassword;
