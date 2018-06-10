@@ -1,7 +1,7 @@
-import { isNull, isUndefined } from './../../utils';
+import { isNull, isUndefined, isString } from './../../utils';
 
 const isLetter = (str) => {
-	return !isUndefined(str) && !isNull(str) && (typeof str === 'string') && /^[A-Za-z]+$/.test(str);
+	return !isUndefined(str) && !isNull(str) && isString(str) && /^[A-Za-z]+$/.test(str);
 };
 
 export default isLetter;

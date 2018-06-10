@@ -1,7 +1,7 @@
-import { isNull, isUndefined } from './../../utils';
+import { isNull, isUndefined, isString } from './../../utils';
 
 const isUpperCase = (str) => {
-	return !isUndefined(str) && !isNull(str) && (typeof str === 'string') && /^[^a-z]+$/.test(str);
+	return !isUndefined(str) && !isNull(str) && isString(str) && /^[^a-z]+$/.test(str);
 };
 
 export default isUpperCase;
