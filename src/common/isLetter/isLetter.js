@@ -1,6 +1,7 @@
+// @flow
 import { isNull, isUndefined, isString } from './../../utils';
 
-const isLetter = (str) => {
+const isLetter = (str: string): boolean => {
 	return !isUndefined(str) && !isNull(str) && isString(str) && /^[A-Za-z]+$/.test(str);
 };
 

@@ -27,8 +27,8 @@ describe('Regexer', () => {
 		it('should return true when passes 19', () => {
 			assert.equal(isDayOfMonth(19), true);
 		})
-		it('should return true when passes 20', () => {
-			assert.equal(isDayOfMonth(20), true);
+		it('should return true when passes \"20\"', () => {
+			assert.equal(isDayOfMonth("20"), true);
 		})
 		it('should return true when passes 21', () => {
 			assert.equal(isDayOfMonth(21), true);
