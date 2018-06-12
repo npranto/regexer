@@ -4,7 +4,7 @@ import isEmail from './isEmail';
 describe('Regexer', () => {
   describe('isEmail()', () => {
     it('should return true when passed \'npranto@gmail.com\'', () => {
-      assert.equal(isEmail('npranto@gmail.com'), false);
+      assert.equal(isEmail('npranto@gmail.com'), true);
     });
     it('should return false when passed \'npranto@gmail\'', () => {
       assert.equal(isEmail('npranto@gmail'), false);
