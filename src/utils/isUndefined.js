@@ -1,6 +1,3 @@
-// @flow
-const isUndefined = (value: any): boolean => {
-	return (typeof value === 'undefined');
-};
+const isUndefined = value => typeof value === 'undefined';
 
 export default isUndefined;

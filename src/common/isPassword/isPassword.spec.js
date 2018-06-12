@@ -14,11 +14,11 @@ describe('Regexer', () => {
     });
     it('should return true when passed \'NS-pranto_236\'', () => {
       assert.equal(isPassword('NS-pranto_236'), true);
-		});
-		it('should return false when passed null', () => {
+    });
+    it('should return false when passed null', () => {
       assert.equal(isPassword(null), false);
-		});
-		it('should return false when passed nothing', () => {
+    });
+    it('should return false when passed nothing', () => {
       assert.equal(isPassword(), false);
     });
   });

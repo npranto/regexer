@@ -1,6 +1,3 @@
-// @flow
-const isString = (value: any): boolean => {
-    return typeof value === 'string';
-}
+const isString = value => typeof value === 'string';
 
 export default isString;

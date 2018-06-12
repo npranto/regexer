@@ -14,11 +14,11 @@ describe('Regexer', () => {
     });
     it('should return true when passed \'http://youtu.be/-wtIMTCHWuI\'', () => {
       assert.equal(isUrl('http://youtu.be/-wtIMTCHWuI'), true);
-		});
-		it('should return true when passed \'ttp://i2.ytimg.com/vi/-wtIMTCHWuI/hqdefault.jpg\'', () => {
+    });
+    it('should return true when passed \'ttp://i2.ytimg.com/vi/-wtIMTCHWuI/hqdefault.jpg\'', () => {
       assert.equal(isUrl('http://i2.ytimg.com/vi/-wtIMTCHWuI/hqdefault.jpg'), true);
-		});
-		it('should return false when passed null', () => {
+    });
+    it('should return false when passed null', () => {
       assert.equal(isUrl(null), false);
     });
   });

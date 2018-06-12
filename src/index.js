@@ -1,4 +1,3 @@
-// @flow
 import _isDayOfMonth from './common/isDayOfMonth/isDayOfMonth';
 import _isDayOfWeekString from './common/isDayOfWeekString/isDayOfWeekString';
 import _isEmail from './common/isEmail/isEmail';
