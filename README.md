@@ -6,16 +6,16 @@
   <br>
 </h1>
 
-<h4 align="center">
 [![CircleCI](https://img.shields.io/circleci/project/github/npranto/regexer.svg?style=for-the-badge)](https://circleci.com/gh/npranto/regexer)
-[![GitHub issues](https://img.shields.io/github/issues/npranto/regexer.svg?style=for-the-badge)](https://github.com/npranto/regexer/issues)
-[![GitHub license](https://img.shields.io/github/license/npranto/regexer.svg?style=for-the-badge)](https://github.com/npranto/regexer/blob/master/LICENSE)
 
+[![GitHub issues](https://img.shields.io/github/issues/npranto/regexer.svg?style=for-the-badge)](https://github.com/npranto/regexer/issues)
+
+[![GitHub license](https://img.shields.io/github/license/npranto/regexer.svg?style=for-the-badge)](https://github.com/npranto/regexer/blob/master/LICENSE)
+<h4 align="center">
 A simple and convenient library of functions that leverages regular expressions while hiding its complexity of implementation
 </h4>
 
 ## Table of Contents
-
 * [Why Regexer?](#why-regexer)
 * [Installation](#installation)
 * [Usage](#usage)
@@ -51,15 +51,11 @@ A simple and convenient library of functions that leverages regular expressions 
 * [License](#license)
 * [Authors](#authors)
 
-<div align="center">
-	<img src="https://media.giphy.com/media/3o6MbhbYBsqTrbP2qQ/giphy.gif" alt="Screenshot" />
-</div>
-
 ## Why Regexer?
 
 Regular expressions are awesome and absolutely super useful when it comes to looking for pattern matches in a string, but clearly it is not the easiliest topic to get your hand around. Don't believe me, [just take a look](https://www.quora.com/What-is-the-most-weird-regular-expression-line-you-have-ever-seen)! 
-<br />
-Regexer just attempts to make the process of using some of the most popular regular expressions easier for you. You no longer need to look all over the place for finding a regular expression for matching an email or a phone number, or a hex value or even a day of the week. Just install regexer and use the built in common functions to verify candidate values. Still confused...? Let's take a look at an [example](#usage)
+
+Regexer just attempts to make the process of using some of the most popular regular expressions easier for you. You no longer need to look all over the place for finding a regular expression for matching an email or a phone number, or a hex value or even a day of the week. Just install regexer and use the built in common functions to verify candidate values. Still confused...? Let's take a look at an <strong>[example](#usage)</strong>
 
 ## Installation
 Before we get going, make sure you have [Node.js](https://nodejs.org/en/) installed on your system, so we can use the NPM (Node Package Manager) to install regexer on your project. 
@@ -71,13 +67,13 @@ $ npm install --save nsp-regexer
 ## Usage
 
 ```js
-# ES5
+// ES5
 const regexer = require('nsp-regexer');
 console.log( regexer.isEmail('jsmith@gmail.com') )  // true
 console.log( regexer.isLowerCase('KEVIN') )     // false
 ```
 ```js
-# ES6+
+// ES6+
 import { isVowel, isNegativeNumber } from 'nsp-regexer';
 console.log( isVowel('b') )  // false
 console.log( isNegativeNumber(-50.67) )  // true
