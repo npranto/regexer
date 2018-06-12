@@ -14,17 +14,17 @@ describe('Regexer', () => {
     });
     it('should return true when passed \'#SHFF56\'', () => {
       assert.equal(isHexValue('#SHFF56'), true);
-		});
-		it('should return true when passed \'#FF56\'', () => {
+    });
+    it('should return true when passed \'#FF56\'', () => {
       assert.equal(isHexValue('#FF56'), true);
-		});
-		it('should return true when passed \'#FF563\'', () => {
+    });
+    it('should return true when passed \'#FF563\'', () => {
       assert.equal(isHexValue('#FF563'), false);
-		});
-		it('should return true when passed \'#FF563dsff\'', () => {
+    });
+    it('should return true when passed \'#FF563dsff\'', () => {
       assert.equal(isHexValue('#FF563dsff'), false);
-		});
-		it('should return false when passed null', () => {
+    });
+    it('should return false when passed null', () => {
       assert.equal(isHexValue(null), false);
     });
   });
