@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://github.com/npranto/regexer"><img src="./src/assets/images/R-logo.png" alt="Regexer" width="200"></a>
+  <a href="https://github.com/npranto/regexer"><img src="./src/assets/images/R-logo.png" alt="Regexer" width="300"></a>
   <br>
   Regexer
   <br>
@@ -9,7 +9,7 @@
 [![CircleCI](https://img.shields.io/circleci/project/github/npranto/regexer.svg?style=for-the-badge)](https://circleci.com/gh/npranto/regexer)
 [![GitHub issues](https://img.shields.io/github/issues/npranto/regexer.svg?style=for-the-badge)](https://github.com/npranto/regexer/issues)
 [![GitHub license](https://img.shields.io/github/license/npranto/regexer.svg?style=for-the-badge)](https://github.com/npranto/regexer/blob/master/LICENSE)
-<h4 align="center">
+<h4 align="left">
 A simple and convenient library of functions that leverages regular expressions while hiding its complexity of implementation
 </h4>
 
