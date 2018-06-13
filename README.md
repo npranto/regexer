@@ -8,12 +8,12 @@
 
 [![NPM](https://nodei.co/npm/nsp-regexer.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/nsp-regexer/)
 
-[![CircleCI](https://img.shields.io/circleci/project/github/npranto/regexer.svg?style=for-the-badge)](https://circleci.com/gh/npranto/regexer)
-![npm](https://img.shields.io/npm/v/nsp-regexer.svg?style=for-the-badge)
-![npm](https://img.shields.io/npm/dt/nsp-regexer.svg?style=for-the-badge)
-[![GitHub issues](https://img.shields.io/github/issues/npranto/regexer.svg?style=for-the-badge)](https://github.com/npranto/regexer/issues)
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=for-the-badge)](http://commitizen.github.io/cz-cli/)
-[![GitHub license](https://img.shields.io/github/license/npranto/regexer.svg?style=for-the-badge)](https://github.com/npranto/regexer/blob/master/LICENSE)
+[![CircleCI](https://img.shields.io/circleci/project/github/npranto/regexer.svg)](https://circleci.com/gh/npranto/regexer)
+![npm](https://img.shields.io/npm/v/nsp-regexer.svg)
+![npm](https://img.shields.io/npm/dt/nsp-regexer.svg)
+[![GitHub issues](https://img.shields.io/github/issues/npranto/regexer.svg)](https://github.com/npranto/regexer/issues)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![GitHub license](https://img.shields.io/github/license/npranto/regexer.svg)](https://github.com/npranto/regexer/blob/master/LICENSE)
 
 
 <h4 align="left">
