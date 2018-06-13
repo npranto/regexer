@@ -116,6 +116,12 @@ Source code makes use of several open source packages, a few keys ones include..
 
 <div>
 <a href="https://github.com/npranto">
-<img src="https://avatars2.githubusercontent.com/u/13524077?v=4" alt="Nazmuz Shakib pranto" width="50" style="border-radius:50%" />
+<img src="https://avatars2.githubusercontent.com/u/13524077?v=4" alt="Nazmuz Shakib pranto" class="round" width="50"/>
 </a>
 </div>
+
+<style>
+  .round {
+    border-radius: 50%;
+  }
+</style>
