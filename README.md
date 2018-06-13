@@ -17,7 +17,7 @@
 
 
 <h4 align="left">
-A simple and convenient library of functions that leverages regular expressions while hiding its complexity of implementation
+A simple and convenient library of functions that leverage regular expressions while hiding its complexity of implementation
 </h4>
 
 ## Table of Contents
