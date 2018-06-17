@@ -1,17 +1,16 @@
 {
   "name": "nsp-regexer",
   "version": "0.0.0-semantically-released",
-  "description": "A simple and convenient library of functions that leverages regex and while hiding its complexity of implementation",
+  "description": "A simple and convenient library of functions that leverage regular expressions while hiding its complexity of implementation",
   "main": "dist/index.js",
   "dependencies": {
-    "npm": "6.0.1"
+    "npm": "^6.1.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "6.26.3",
     "babel-loader": "7.1.4",
     "babel-preset-env": "1.7.0",
-    "babel-preset-flow": "^6.23.0",
     "chai": "4.1.2",
     "commitizen": "^2.10.1",
     "cz-conventional-changelog": "^2.1.0",
@@ -23,7 +22,7 @@
     "nyc": "11.8.0",
     "rimraf": "2.6.2",
     "semantic-release": "^15.5.2",
-    "semantic-release-cli": "^4.0.4",
+    "semantic-release-cli": "^4.0.5",
     "webpack": "4.8.3",
     "webpack-cli": "2.1.4"
   },
@@ -39,7 +38,9 @@
     "report-coverage": "npm run coverage && nyc report --reporter=html && open ./coverage/index.html",
     "check-coverage": "npm run coverage && nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
     "semantic-release": "semantic-release",
-    "commit": "git-cz"
+    "start": "npm install && npm test",
+    "commit": "git-cz",
+    "save": "npm run build && git status && git add . && git status && npm run commit"
   },
   "files": [
     "dist",
