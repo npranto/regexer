@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl">
+  <title data-ice="title">Home | nsp-regexer</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="A simple and convenient library of functions that leverage regular expressions while hiding its complexity of implementation"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="nsp-regexer"><meta property="twitter:description" content="A simple and convenient library of functions that leverage regular expressions while hiding its complexity of implementation"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/npranto/regexer.git"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#iscreditcard">isCreditCard</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isCreditCardNumber">isCreditCardNumber</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#isdayofmonth">isDayOfMonth</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isDayOfMonth">isDayOfMonth</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#isdayofweekstring">isDayOfWeekString</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isDayOfWeekString">isDayOfWeekString</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#isdecimal">isDecimal</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isDecimal">isDecimal</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#isemail">isEmail</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isEmail">isEmail</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#ishtmltag">isHTMLTag</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isHTMLTag">isHTMLTag</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#ishexvalue">isHexValue</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isHexValue">isHexValue</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#isipaddressv4">isIPAddressV4</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isIPAddressV4">isIPAddressV4</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#isinteger">isInteger</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isInteger">isInteger</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#isletter">isLetter</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isLetter">isLetter</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#islowercase">isLowerCase</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isLowerCase">isLowerCase</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#ismonthofyear">isMonthOfYear</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isMonthOfYear">isMonthOfYear</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#ismonthofyearstring">isMonthOfYearString</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isMonthOfYearString">isMonthOfYearString</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#isnegativeinteger">isNegativeInteger</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isNegativeInteger">isNegativeInteger</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#isnegativenumber">isNegativeNumber</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isNegativeNumber">isNegativeNumber</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#isnumber">isNumber</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isNumber">isNumber</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#ispassword">isPassword</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isPassword">isPassword</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#ispositiveinteger">isPositiveInteger</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isPositiveInteger">isPositiveInteger</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#ispositivenumber">isPositiveNumber</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isPositiveNumber">isPositiveNumber</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#isssn">isSSN</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isSSN">isSSN</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#isstandardzipcode">isStandardZipCode</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isStandardZipCode">isStandardZipCode</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#isusphonenumber">isUSPhoneNumber</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isUSPhoneNumber">isUSPhoneNumber</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#isusstate">isUSState</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isUSState">isUSState</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#isuppercase">isUpperCase</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isUpperCase">isUpperCase</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#isurl">isUrl</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isUrl">isUrl</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#isusername">isUsername</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isUsername">isUsername</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#isvowel">isVowel</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isVowel">isVowel</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#isyear">isYear</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isYear">isYear</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><p></p><h1>
+  <br>
+  <a href="https://github.com/npranto/regexer"><img src="./src/assets/images/R-logo.png" width="300"></a>
+  <br>
+  &lt;strong&gt;Regexer&lt;/strong&gt;
+  <br>
+</h1>
+
+<p></p>
+<p><a href="https://nodei.co/npm/nsp-regexer/"><img src="https://nodei.co/npm/nsp-regexer.png?downloads=true&amp;downloadRank=true&amp;stars=true" alt="NPM"></a></p>
+<p><a href="https://circleci.com/gh/npranto/regexer"><img src="https://img.shields.io/circleci/project/github/npranto/regexer.svg?style=for-the-badge" alt="CircleCI"></a>
+<img src="https://img.shields.io/npm/v/nsp-regexer.svg?style=for-the-badge" alt="npm">
+<img src="https://img.shields.io/npm/dt/nsp-regexer.svg?style=for-the-badge" alt="npm">
+<a href="https://github.com/npranto/regexer/issues"><img src="https://img.shields.io/github/issues/npranto/regexer.svg?style=for-the-badge" alt="GitHub issues"></a>
+<a href="http://commitizen.github.io/cz-cli/"><img src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=for-the-badge" alt="Commitizen friendly"></a>
+<a href="https://github.com/npranto/regexer/blob/master/LICENSE"><img src="https://img.shields.io/github/license/npranto/regexer.svg?style=for-the-badge" alt="GitHub license"></a></p>
+<p></p><h4>
+A simple and convenient library of functions that leverage regular expressions while hiding its complexity of implementation
+</h4>
+
+<p></p>
+<h2 id="table-of-contents">Table of Contents</h2><ul>
+<li><a href="#why-regexer">Why Regexer?</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#usage">Usage</a></li>
+<li><p><a href="#api">API</a></p>
+<ul>
+<li><a href="#"><code>.isCreditCard()</code></a></li>
+<li><a href="#"><code>.isDayOfMonth()</code></a></li>
+<li><a href="#"><code>.isDayOfWeekString()</code></a></li>
+<li><a href="#"><code>.isDecimal()</code></a></li>
+<li><a href="#"><code>.isEmail()</code></a></li>
+<li><a href="#"><code>.isHexValue()</code></a></li>
+<li><a href="#"><code>.isHTMLTag()</code></a></li>
+<li><a href="#"><code>.isInteger()</code></a></li>
+<li><a href="#"><code>.isIPAddressV4()</code></a></li>
+<li><a href="#"><code>.isLetter()</code></a></li>
+<li><a href="#"><code>.isLowerCase()</code></a></li>
+<li><a href="#"><code>.isMonthOfYear()</code></a></li>
+<li><a href="#"><code>.isMonthOfYearString()</code></a></li>
+<li><a href="#"><code>.isNegativeInteger()</code></a></li>
+<li><a href="#"><code>.isNegativeNumber()</code></a></li>
+<li><a href="#"><code>.isNumber()</code></a></li>
+<li><a href="#"><code>.isPassword()</code></a></li>
+<li><a href="#"><code>.isPositiveInteger()</code></a></li>
+<li><a href="#"><code>.isPositiveNumber()</code></a></li>
+<li><a href="#"><code>.isSSN()</code></a></li>
+<li><a href="#"><code>.isStandardZipCode()</code></a></li>
+<li><a href="#"><code>.isUpperCase()</code></a></li>
+<li><a href="#"><code>.isUrl()</code></a></li>
+<li><a href="#"><code>.isUsername()</code></a></li>
+<li><a href="#"><code>.isUSPhoneNumber()</code></a></li>
+<li><a href="#"><code>.isUSState()</code></a>    </li>
+<li><a href="#"><code>.isVowel()</code></a></li>
+<li><a href="#"><code>.isYear()</code></a></li>
+</ul>
+</li>
+<li><p><a href="#credits">Credits</a></p>
+</li>
+<li><a href="#support">Support</a></li>
+<li><a href="#you-may-also-like">You May Also Like</a></li>
+<li><a href="#license">License</a></li>
+<li><a href="#authors">Authors</a></li>
+</ul>
+<h2 id="why-regexer-">Why Regexer?</h2><p>Regular expressions are awesome and absolutely super useful when it comes to looking for pattern matches in a string, but clearly it is not the easiest topic to get your head around. Don&apos;t believe me, <a href="https://www.quora.com/What-is-the-most-weird-regular-expression-line-you-have-ever-seen">just take a look</a>!</p>
+<p>Regexer just attempts to make the process of using some of the most popular regular expressions easier for you. You no longer need to look all over the place for finding a regular expression for matching an email or a phone number, or a hex value or even a day of the week. Just install regexer and use the built in common functions to verify candidate values.</p>
+<p>Still confused...? Let&apos;s look at an &lt;strong&gt;<a href="#usage">example</a>&lt;/strong&gt;</p>
+<h2 id="installation">Installation</h2><p>Before we get going, make sure you have <a href="https://nodejs.org/en/">Node.js</a> installed on your system, so we can use the NPM (Node Package Manager) to install regexer on your project.
+<br></p>
+<pre><code><code class="source-code prettyprint">$ npm install --save nsp-regexer</code>
+</code></pre><h2 id="usage">Usage</h2><pre><code class="lang-js"><code class="source-code prettyprint">// ES5
+const regexer = require(&apos;nsp-regexer&apos;);
+
+console.log( regexer.isEmail(&apos;jsmith@gmail.com&apos;) )  // true
+console.log( regexer.isLowerCase(&apos;KEVIN&apos;) )     // false</code>
+</code></pre>
+<pre><code class="lang-js"><code class="source-code prettyprint">// ES6+
+import { isVowel, isNegativeNumber } from &apos;nsp-regexer&apos;;
+
+console.log( isVowel(&apos;b&apos;) )  // false
+console.log( isNegativeNumber(-50.67) )  // true</code>
+</code></pre>
+<h2 id="api">API</h2><h3 id="-code--iscreditcard-data-string-number----code-"><code>.isCreditCard(data[string|number])</code></h3><p>Returns <code>true</code> if data is a valid credit card number, otherwise returns <code>false</code></p>
+<pre><code class="lang-js"><code class="source-code prettyprint">import { isCreditCard } from &apos;nsp-regexer&apos;;
+
+isCreditCard(&apos;345768475867474&apos;)  
+// true
+
+isCreditCard(5465838563658274)  
+// true
+
+isCreditCard(&apos;?&apos;)  
+// false</code>
+</code></pre>
+<h3 id="-code--isdayofmonth-data-string-number----code-"><code>.isDayOfMonth(data[string|number])</code></h3><p>Returns <code>true</code> if it is a day of the month (1-31), otherwise returns <code>false</code></p>
+<pre><code class="lang-js"><code class="source-code prettyprint">import { isDayOfMonth } from &apos;nsp-regexer&apos;;
+
+isDayOfMonth(&apos;28&apos;)  
+// true
+
+isDayOfMonth(12)  
+// true
+
+isDayOfMonth(55)  
+// false</code>
+</code></pre>
+<h3 id="-code--isdayofweekstring-data-string----code-"><code>.isDayOfWeekString(data[string])</code></h3><p>Returns <code>true</code> if it is a day of the month (1-31), otherwise returns <code>false</code></p>
+<pre><code class="lang-js"><code class="source-code prettyprint">import { isDayOfWeekString } from &apos;nsp-regexer&apos;;
+
+isDayOfWeekString(&apos;monday&apos;)  
+// true
+
+isDayOfWeekString(&apos;FRIDAY&apos;)  
+// true
+
+isDayOfWeekString(&apos;doomsday&apos;)  
+// false</code>
+</code></pre>
+<h2 id="credits">Credits</h2><p>Source code makes use of several open source packages, a few keys ones include...</p>
+<ul>
+<li><a href="https://babeljs.io/">Babel</a> - To transpile ES6+ syntax to ES5, to run source code in Node and browser</li>
+<li><a href="https://webpack.js.org/">Webpack</a> - For module bundling and generating distributing assets</li>
+<li><a href="https://eslint.org/">ESLint</a> - To lint source code for better readability, syntax consistency and proper formatting</li>
+<li><a href="https://circleci.com/">CircleCI</a> - Continuous integration middleware to verify incremental builds are always passing</li>
+</ul>
+<h2 id="support">Support</h2><p><a href="https://www.buymeacoffee.com/nsplovescoffee" target="_blank">
+  <img src="https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png">
+</a></p>
+<h2 id="you-may-also-like---">You May Also Like...</h2><ul>
+<li><a href="https://github.com/npranto/focus">focus</a> - A simple, elegant task manager application to help students and computer savvy workers get their work done efficiently and on time</li>
+<li><a href="https://github.com/npranto/lists">lists</a> - Quickly draught down your todos, groceries, chores or any other lists of items quickly #powerOfLists</li>
+</ul>
+<h2 id="license">License</h2><p><a href="https://tldrlegal.com/license/mit-license">MIT</a></p>
+<h2 id="contributors">Contributors</h2><p><div>
+  <a href="https://github.com/npranto">
+    <img src="https://avatars2.githubusercontent.com/u/13524077?v=4" width="50">
+  </a>
+</div>
+</p>
+</div>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

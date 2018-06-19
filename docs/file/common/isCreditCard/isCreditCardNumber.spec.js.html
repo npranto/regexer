@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">common/isCreditCard/isCreditCardNumber.spec.js | nsp-regexer</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="A simple and convenient library of functions that leverage regular expressions while hiding its complexity of implementation"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="nsp-regexer"><meta property="twitter:description" content="A simple and convenient library of functions that leverage regular expressions while hiding its complexity of implementation"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/npranto/regexer.git"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#iscreditcard">isCreditCard</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isCreditCardNumber">isCreditCardNumber</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#isdayofmonth">isDayOfMonth</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isDayOfMonth">isDayOfMonth</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#isdayofweekstring">isDayOfWeekString</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isDayOfWeekString">isDayOfWeekString</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#isdecimal">isDecimal</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isDecimal">isDecimal</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#isemail">isEmail</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isEmail">isEmail</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#ishtmltag">isHTMLTag</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isHTMLTag">isHTMLTag</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#ishexvalue">isHexValue</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isHexValue">isHexValue</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#isipaddressv4">isIPAddressV4</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isIPAddressV4">isIPAddressV4</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#isinteger">isInteger</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isInteger">isInteger</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#isletter">isLetter</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isLetter">isLetter</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#islowercase">isLowerCase</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isLowerCase">isLowerCase</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#ismonthofyear">isMonthOfYear</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isMonthOfYear">isMonthOfYear</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#ismonthofyearstring">isMonthOfYearString</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isMonthOfYearString">isMonthOfYearString</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#isnegativeinteger">isNegativeInteger</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isNegativeInteger">isNegativeInteger</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#isnegativenumber">isNegativeNumber</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isNegativeNumber">isNegativeNumber</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#isnumber">isNumber</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isNumber">isNumber</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#ispassword">isPassword</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isPassword">isPassword</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#ispositiveinteger">isPositiveInteger</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isPositiveInteger">isPositiveInteger</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#ispositivenumber">isPositiveNumber</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isPositiveNumber">isPositiveNumber</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#isssn">isSSN</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isSSN">isSSN</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#isstandardzipcode">isStandardZipCode</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isStandardZipCode">isStandardZipCode</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#isusphonenumber">isUSPhoneNumber</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isUSPhoneNumber">isUSPhoneNumber</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#isusstate">isUSState</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isUSState">isUSState</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#isuppercase">isUpperCase</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isUpperCase">isUpperCase</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#isurl">isUrl</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isUrl">isUrl</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#isusername">isUsername</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isUsername">isUsername</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#isvowel">isVowel</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isVowel">isVowel</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#isyear">isYear</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isYear">isYear</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">common/isCreditCard/isCreditCardNumber.spec.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { assert } from &apos;chai&apos;;
+import isCreditCardNumber from &apos;./isCreditCardNumber&apos;;
+
+describe(&apos;Regexer&apos;, () =&gt; {
+  describe(&apos;isCreditCardNumber()&apos;, () =&gt; {
+    it(&apos;should return true when passes 0&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(0), false);
+    });
+    it(&apos;should return true when passes 345768475867474&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(345768475867474), true);
+    });
+    it(&apos;should return true when passes 375768475867474&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(375768475867474), true);
+    });
+    it(&apos;should return true when passes 30065849264810&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(30065849264810), true);
+    });
+    it(&apos;should return true when passes 30165849264810&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(30165849264810), true);
+    });
+    it(&apos;should return true when passes 30265849264810&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(30265849264810), true);
+    });
+    it(&apos;should return true when passes 30365849264810&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(30365849264810), true);
+    });
+    it(&apos;should return true when passes 30465849264810&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(30465849264810), true);
+    });
+    it(&apos;should return true when passes 30565849264810&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(30565849264810), true);
+    });
+    it(&apos;should return true when passes 30665849264810&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(30665849264810), true);
+    });
+    it(&apos;should return true when passes 5465838563658274&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(5465838563658274), true);
+    });
+    it(&apos;should return true when passes 6011666666666666&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(6011666666666666), true);
+    });
+    it(&apos;should return true when passes 6446666666666666&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(6446666666666666), true);
+    });
+    it(&apos;should return true when passes 6456666666666666&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(6456666666666666), true);
+    });
+    it(&apos;should return true when passes 6466666666666666&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(6466666666666666), true);
+    });
+    it(&apos;should return true when passes 6476666666666666&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(6476666666666666), true);
+    });
+    it(&apos;should return true when passes 6486666666666666&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(6486666666666666), true);
+    });
+    it(&apos;should return true when passes 6496666666666666&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(6496666666666666), true);
+    });
+    it(&apos;should return true when passes 6566666666666665&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(6566666666666665), true);
+    });
+    it(&apos;should return true when passes 6221263524660820&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(6221263524660820), true);
+    });
+    it(&apos;should return true when passes 6221265612307271&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(6221265612307271), true);
+    });
+    it(&apos;should return true when passes 6221266746774543&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(6221266746774543), true);
+    });
+    it(&apos;should return true when passes 6221261475756845&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(6221261475756845), true);
+    });
+    it(&apos;should return true when passes 6221264448556250&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(6221264448556250), true);
+    });
+    it(&apos;should return true when passes 6221266577468231&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(6221266577468231), true);
+    });
+    it(&apos;should return true when passes 6221263147160307&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(6221263147160307), true);
+    });
+    it(&apos;should return true when passes 6221268527241486&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(6221268527241486), true);
+    });
+    it(&apos;should return true when passes 6221264566781250&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(6221264566781250), true);
+    });
+    it(&apos;should return true when passes 6221261526554363&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(6221261526554363), true);
+    });
+    it(&apos;should return true when passes 6229253401434268&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(6229253401434268), true);
+    });
+    it(&apos;should return true when passes 6376464646464646&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(6376464646464646), true);
+    });
+    it(&apos;should return true when passes 6386464646464646&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(6386464646464646), true);
+    });
+    it(&apos;should return true when passes 6396464646464646&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(6396464646464646), true);
+    });
+    it(&apos;should return true when passes 3528777777777777&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(3528777777777777), true);
+    });
+    it(&apos;should return true when passes 3533777777777777&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(3533777777777777), true);
+    });
+    it(&apos;should return true when passes 3586777777777777&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(3586777777777777), true);
+    });
+    it(&apos;should return true when passes 3589777777777777&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(3589777777777777), true);
+    });
+    it(&apos;should return true when passes 5018666666666666&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(5018666666666666), true);
+    });
+    it(&apos;should return true when passes 5020777777777776&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(5020777777777776), true);
+    });
+    it(&apos;should return true when passes 5038777777777777&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(5038777777777777), true);
+    });
+    it(&apos;should return true when passes 5893456456464565&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(5893456456464565), true);
+    });
+    it(&apos;should return true when passes 6304546456456465&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(6304546456456465), true);
+    });
+    it(&apos;should return true when passes 6759546456456456&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(6759546456456456), true);
+    });
+    it(&apos;should return true when passes 6761564564565466&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(6761564564565466), true);
+    });
+    it(&apos;should return true when passes 6762736457834686&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(6762736457834686), true);
+    });
+    it(&apos;should return true when passes 6763666666666666&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(6763666666666666), true);
+    });
+    it(&apos;should return true when passes 2221006666666666&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(2221006666666666), true);
+    });
+    it(&apos;should return true when passes 2720996666666666&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(2720996666666666), true);
+    });
+    it(&apos;should return true when passes 2620996666666666&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(2620996666666666), true);
+    });
+    it(&apos;should return true when passes 5166666666666666&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(5166666666666666), true);
+    });
+    it(&apos;should return true when passes 5566666666666666&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(5566666666666666), true);
+    });
+    it(&apos;should return true when passes 5266666666666666&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(5266666666666666), true);
+    });
+    it(&apos;should return true when passes 5465656565656565&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(5465656565656565), true);
+    });
+    it(&apos;should return true when passes 4026564564566646&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(4026564564566646), true);
+    });
+    it(&apos;should return true when passes 4175005464565466&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(4175005464565466), true);
+    });
+    it(&apos;should return true when passes 4508456456456546&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(4508456456456546), true);
+    });
+    it(&apos;should return true when passes 4844546756786887&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(4844546756786887), true);
+    });
+    it(&apos;should return true when passes 4913534534565657&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(4913534534565657), true);
+    });
+    it(&apos;should return true when passes 4917782658876256&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(4917782658876256), true);
+    });
+    it(&apos;should return true when passes 6277777777777777&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(6277777777777777), true);
+    });
+    it(&apos;should return true when passes 4000000000000000&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(4000000000000000), true);
+    });
+    it(&apos;should return false when passes \&apos;\&apos;&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(&apos;&apos;), false);
+    });
+    it(&apos;should return false when passes \&apos;?\&apos;&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(&apos;?&apos;), false);
+    });
+    it(&apos;should return false when passes null&apos;, () =&gt; {
+      assert.equal(isCreditCardNumber(null), false);
+    });
+  });
+});
+
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

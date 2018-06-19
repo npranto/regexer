@@ -1,0 +1,21 @@
+{
+	"source": "./src",
+	"destination": "./docs",
+	"plugins": [
+		{
+			"name": "esdoc-standard-plugin",
+			"brand": {
+        "logo": "./src/assets/images/R-logo.png",
+        "title": "Regexer",
+        "description": "A simple and convenient library of functions that leverage regular expressions while hiding its complexity of implementation",
+        "repository": "https://github.com/npranto/regexer"
+      },
+      "test": {
+        "source": "./src",
+        "interfaces": ["describe", "it", "context", "suite", "test"],
+        "includes": ["(spec|Spec|test|Test)\\.js$"],
+        "excludes": ["\\.config\\.js$"]
+      }
+		}
+	]
+}
