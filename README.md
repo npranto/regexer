@@ -25,8 +25,10 @@ A simple and convenient library of functions that leverage regular expressions w
 * [Installation](#installation)
 * [Usage](#usage)
 * [API](#api)
+    * [`.isCreditCard()`](#)
     * [`.isDayOfMonth()`](#)
     * [`.isDayOfWeekString()`](#)
+    * [`.isDecimal()`](#)
     * [`.isEmail()`](#)
     * [`.isHexValue()`](#)
     * [`.isHTMLTag()`](#)
@@ -37,16 +39,18 @@ A simple and convenient library of functions that leverage regular expressions w
     * [`.isMonthOfYear()`](#)
     * [`.isMonthOfYearString()`](#)
     * [`.isNegativeInteger()`](#)
-    * [`.isNgeativeNumber()`](#)
+    * [`.isNegativeNumber()`](#)
     * [`.isNumber()`](#)
     * [`.isPassword()`](#)
     * [`.isPositiveInteger()`](#)
     * [`.isPositiveNumber()`](#)
     * [`.isSSN()`](#)
+    * [`.isStandardZipCode()`](#)
     * [`.isUpperCase()`](#)
     * [`.isUrl()`](#)
     * [`.isUsername()`](#)
     * [`.isUSPhoneNumber()`](#)
+    * [`.isUSState()`](#)    
     * [`.isVowel()`](#)
     * [`.isYear()`](#)
 
@@ -86,6 +90,59 @@ import { isVowel, isNegativeNumber } from 'nsp-regexer';
 
 console.log( isVowel('b') )  // false
 console.log( isNegativeNumber(-50.67) )  // true
+```
+
+## API
+
+### `.isCreditCard(data[string|number])`
+
+Returns `true` if data is a valid credit card number, otherwise returns `false`
+
+```js
+import { isCreditCard } from 'nsp-regexer';
+
+isCreditCard('345768475867474')  
+// true
+
+isCreditCard(5465838563658274)  
+// true
+
+isCreditCard('?')  
+// false
+```
+
+### `.isDayOfMonth(data[string|number])`
+
+Returns `true` if it is a day of the month (1-31), otherwise returns `false`
+
+```js
+import { isDayOfMonth } from 'nsp-regexer';
+
+isDayOfMonth('28')  
+// true
+
+isDayOfMonth(12)  
+// true
+
+isDayOfMonth(55)  
+// false
+```
+
+### `.isDayOfWeekString(data[string])`
+
+Returns `true` if it is a day of the month (1-31), otherwise returns `false`
+
+```js
+import { isDayOfWeekString } from 'nsp-regexer';
+
+isDayOfWeekString('monday')  
+// true
+
+isDayOfWeekString('FRIDAY')  
+// true
+
+isDayOfWeekString('doomsday')  
+// false
 ```
 
 ## Credits
