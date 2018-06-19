@@ -1,0 +1,1926 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "common/.external-ecmascript.js",
+    "static": true,
+    "longname": "common/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "common/.external-ecmascript.js",
+    "static": true,
+    "longname": "common/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "common/.external-ecmascript.js",
+    "static": true,
+    "longname": "common/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "common/.external-ecmascript.js",
+    "static": true,
+    "longname": "common/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "common/.external-ecmascript.js",
+    "static": true,
+    "longname": "common/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "common/.external-ecmascript.js",
+    "static": true,
+    "longname": "common/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "common/.external-ecmascript.js",
+    "static": true,
+    "longname": "common/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "common/.external-ecmascript.js",
+    "static": true,
+    "longname": "common/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "common/.external-ecmascript.js",
+    "static": true,
+    "longname": "common/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "common/.external-ecmascript.js",
+    "static": true,
+    "longname": "common/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "common/.external-ecmascript.js",
+    "static": true,
+    "longname": "common/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "common/.external-ecmascript.js",
+    "static": true,
+    "longname": "common/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "common/.external-ecmascript.js",
+    "static": true,
+    "longname": "common/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "common/.external-ecmascript.js",
+    "static": true,
+    "longname": "common/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "common/.external-ecmascript.js",
+    "static": true,
+    "longname": "common/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "common/.external-ecmascript.js",
+    "static": true,
+    "longname": "common/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "common/.external-ecmascript.js",
+    "static": true,
+    "longname": "common/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "common/.external-ecmascript.js",
+    "static": true,
+    "longname": "common/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "common/.external-ecmascript.js",
+    "static": true,
+    "longname": "common/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "common/.external-ecmascript.js",
+    "static": true,
+    "longname": "common/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "common/.external-ecmascript.js",
+    "static": true,
+    "longname": "common/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "common/.external-ecmascript.js",
+    "static": true,
+    "longname": "common/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "common/.external-ecmascript.js",
+    "static": true,
+    "longname": "common/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "common/.external-ecmascript.js",
+    "static": true,
+    "longname": "common/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "common/.external-ecmascript.js",
+    "static": true,
+    "longname": "common/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "common/.external-ecmascript.js",
+    "static": true,
+    "longname": "common/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "common/.external-ecmascript.js",
+    "static": true,
+    "longname": "common/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "common/.external-ecmascript.js",
+    "static": true,
+    "longname": "common/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "common/.external-ecmascript.js",
+    "static": true,
+    "longname": "common/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "common/.external-ecmascript.js",
+    "static": true,
+    "longname": "common/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "common/.external-ecmascript.js",
+    "static": true,
+    "longname": "common/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "common/.external-ecmascript.js",
+    "static": true,
+    "longname": "common/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "common/.external-ecmascript.js",
+    "static": true,
+    "longname": "common/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "common/.external-ecmascript.js",
+    "static": true,
+    "longname": "common/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "common/.external-ecmascript.js",
+    "static": true,
+    "longname": "common/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "common/.external-ecmascript.js",
+    "static": true,
+    "longname": "common/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "common/.external-ecmascript.js",
+    "static": true,
+    "longname": "common/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "common/.external-ecmascript.js",
+    "static": true,
+    "longname": "common/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "common/.external-ecmascript.js",
+    "static": true,
+    "longname": "common/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "common/.external-ecmascript.js",
+    "static": true,
+    "longname": "common/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "common/.external-ecmascript.js",
+    "static": true,
+    "longname": "common/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "common/.external-ecmascript.js",
+    "static": true,
+    "longname": "common/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "common/.external-ecmascript.js",
+    "static": true,
+    "longname": "common/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "common/.external-ecmascript.js",
+    "static": true,
+    "longname": "common/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "common/.external-ecmascript.js",
+    "static": true,
+    "longname": "common/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "common/.external-ecmascript.js",
+    "static": true,
+    "longname": "common/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "common/.external-ecmascript.js",
+    "static": true,
+    "longname": "common/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "common/isCreditCard/isCreditCardNumber.js",
+    "content": "import { isUndefined, isNull } from './../../utils';\n\nconst isCreditCardNumber = creditCardNumber => (\n  !isUndefined(creditCardNumber) &&\n  !isNull(creditCardNumber) &&\n  /^(3[47]\\d{13})|(30[0123456]\\d{11})|(54\\d{14})|(6(?:011\\d{12}|5\\d{14}|4[4-9]\\d{13}|22(?:1(?:2[6-9]|[3-9]\\d)|[2-8]\\d{2}|9(?:[01]\\d|2[0-5]))\\d{10})|(63[7-9]\\d{13})|(35(2([89])|([3-8]\\d))\\d{12})|(((5018)|(5020)|(5038)|(5893)|(6304)|(6759)|(676[1-3]))\\d{12})|((?:5[1-5][0-9]{2}|222[1-9]|22[3-9][0-9]|2[3-6][0-9]{2}|27[01][0-9]|2720)[0-9]{12})|(54\\d{14})|(((4026)|(4508)|(4844)|(4913)|(4917))\\d{12}|417500\\d{10})|(62\\d{14})|(4\\d{15}))$/.test(creditCardNumber)\n);\n\nexport default isCreditCardNumber;\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isCreditCard/isCreditCardNumber.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "function",
+    "name": "isCreditCardNumber",
+    "memberof": "common/isCreditCard/isCreditCardNumber.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "common/isCreditCard/isCreditCardNumber.js~isCreditCardNumber",
+    "access": "public",
+    "export": true,
+    "importPath": "nsp-regexer/common/isCreditCard/isCreditCardNumber.js",
+    "importStyle": "isCreditCardNumber",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "creditCardNumber",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 50,
+    "kind": "file",
+    "name": "common/isCreditCard/isCreditCardNumber.spec.js",
+    "content": "import { assert } from 'chai';\nimport isCreditCardNumber from './isCreditCardNumber';\n\ndescribe('Regexer', () => {\n  describe('isCreditCardNumber()', () => {\n    it('should return true when passes 0', () => {\n      assert.equal(isCreditCardNumber(0), false);\n    });\n    it('should return true when passes 345768475867474', () => {\n      assert.equal(isCreditCardNumber(345768475867474), true);\n    });\n    it('should return true when passes 375768475867474', () => {\n      assert.equal(isCreditCardNumber(375768475867474), true);\n    });\n    it('should return true when passes 30065849264810', () => {\n      assert.equal(isCreditCardNumber(30065849264810), true);\n    });\n    it('should return true when passes 30165849264810', () => {\n      assert.equal(isCreditCardNumber(30165849264810), true);\n    });\n    it('should return true when passes 30265849264810', () => {\n      assert.equal(isCreditCardNumber(30265849264810), true);\n    });\n    it('should return true when passes 30365849264810', () => {\n      assert.equal(isCreditCardNumber(30365849264810), true);\n    });\n    it('should return true when passes 30465849264810', () => {\n      assert.equal(isCreditCardNumber(30465849264810), true);\n    });\n    it('should return true when passes 30565849264810', () => {\n      assert.equal(isCreditCardNumber(30565849264810), true);\n    });\n    it('should return true when passes 30665849264810', () => {\n      assert.equal(isCreditCardNumber(30665849264810), true);\n    });\n    it('should return true when passes 5465838563658274', () => {\n      assert.equal(isCreditCardNumber(5465838563658274), true);\n    });\n    it('should return true when passes 6011666666666666', () => {\n      assert.equal(isCreditCardNumber(6011666666666666), true);\n    });\n    it('should return true when passes 6446666666666666', () => {\n      assert.equal(isCreditCardNumber(6446666666666666), true);\n    });\n    it('should return true when passes 6456666666666666', () => {\n      assert.equal(isCreditCardNumber(6456666666666666), true);\n    });\n    it('should return true when passes 6466666666666666', () => {\n      assert.equal(isCreditCardNumber(6466666666666666), true);\n    });\n    it('should return true when passes 6476666666666666', () => {\n      assert.equal(isCreditCardNumber(6476666666666666), true);\n    });\n    it('should return true when passes 6486666666666666', () => {\n      assert.equal(isCreditCardNumber(6486666666666666), true);\n    });\n    it('should return true when passes 6496666666666666', () => {\n      assert.equal(isCreditCardNumber(6496666666666666), true);\n    });\n    it('should return true when passes 6566666666666665', () => {\n      assert.equal(isCreditCardNumber(6566666666666665), true);\n    });\n    it('should return true when passes 6221263524660820', () => {\n      assert.equal(isCreditCardNumber(6221263524660820), true);\n    });\n    it('should return true when passes 6221265612307271', () => {\n      assert.equal(isCreditCardNumber(6221265612307271), true);\n    });\n    it('should return true when passes 6221266746774543', () => {\n      assert.equal(isCreditCardNumber(6221266746774543), true);\n    });\n    it('should return true when passes 6221261475756845', () => {\n      assert.equal(isCreditCardNumber(6221261475756845), true);\n    });\n    it('should return true when passes 6221264448556250', () => {\n      assert.equal(isCreditCardNumber(6221264448556250), true);\n    });\n    it('should return true when passes 6221266577468231', () => {\n      assert.equal(isCreditCardNumber(6221266577468231), true);\n    });\n    it('should return true when passes 6221263147160307', () => {\n      assert.equal(isCreditCardNumber(6221263147160307), true);\n    });\n    it('should return true when passes 6221268527241486', () => {\n      assert.equal(isCreditCardNumber(6221268527241486), true);\n    });\n    it('should return true when passes 6221264566781250', () => {\n      assert.equal(isCreditCardNumber(6221264566781250), true);\n    });\n    it('should return true when passes 6221261526554363', () => {\n      assert.equal(isCreditCardNumber(6221261526554363), true);\n    });\n    it('should return true when passes 6229253401434268', () => {\n      assert.equal(isCreditCardNumber(6229253401434268), true);\n    });\n    it('should return true when passes 6376464646464646', () => {\n      assert.equal(isCreditCardNumber(6376464646464646), true);\n    });\n    it('should return true when passes 6386464646464646', () => {\n      assert.equal(isCreditCardNumber(6386464646464646), true);\n    });\n    it('should return true when passes 6396464646464646', () => {\n      assert.equal(isCreditCardNumber(6396464646464646), true);\n    });\n    it('should return true when passes 3528777777777777', () => {\n      assert.equal(isCreditCardNumber(3528777777777777), true);\n    });\n    it('should return true when passes 3533777777777777', () => {\n      assert.equal(isCreditCardNumber(3533777777777777), true);\n    });\n    it('should return true when passes 3586777777777777', () => {\n      assert.equal(isCreditCardNumber(3586777777777777), true);\n    });\n    it('should return true when passes 3589777777777777', () => {\n      assert.equal(isCreditCardNumber(3589777777777777), true);\n    });\n    it('should return true when passes 5018666666666666', () => {\n      assert.equal(isCreditCardNumber(5018666666666666), true);\n    });\n    it('should return true when passes 5020777777777776', () => {\n      assert.equal(isCreditCardNumber(5020777777777776), true);\n    });\n    it('should return true when passes 5038777777777777', () => {\n      assert.equal(isCreditCardNumber(5038777777777777), true);\n    });\n    it('should return true when passes 5893456456464565', () => {\n      assert.equal(isCreditCardNumber(5893456456464565), true);\n    });\n    it('should return true when passes 6304546456456465', () => {\n      assert.equal(isCreditCardNumber(6304546456456465), true);\n    });\n    it('should return true when passes 6759546456456456', () => {\n      assert.equal(isCreditCardNumber(6759546456456456), true);\n    });\n    it('should return true when passes 6761564564565466', () => {\n      assert.equal(isCreditCardNumber(6761564564565466), true);\n    });\n    it('should return true when passes 6762736457834686', () => {\n      assert.equal(isCreditCardNumber(6762736457834686), true);\n    });\n    it('should return true when passes 6763666666666666', () => {\n      assert.equal(isCreditCardNumber(6763666666666666), true);\n    });\n    it('should return true when passes 2221006666666666', () => {\n      assert.equal(isCreditCardNumber(2221006666666666), true);\n    });\n    it('should return true when passes 2720996666666666', () => {\n      assert.equal(isCreditCardNumber(2720996666666666), true);\n    });\n    it('should return true when passes 2620996666666666', () => {\n      assert.equal(isCreditCardNumber(2620996666666666), true);\n    });\n    it('should return true when passes 5166666666666666', () => {\n      assert.equal(isCreditCardNumber(5166666666666666), true);\n    });\n    it('should return true when passes 5566666666666666', () => {\n      assert.equal(isCreditCardNumber(5566666666666666), true);\n    });\n    it('should return true when passes 5266666666666666', () => {\n      assert.equal(isCreditCardNumber(5266666666666666), true);\n    });\n    it('should return true when passes 5465656565656565', () => {\n      assert.equal(isCreditCardNumber(5465656565656565), true);\n    });\n    it('should return true when passes 4026564564566646', () => {\n      assert.equal(isCreditCardNumber(4026564564566646), true);\n    });\n    it('should return true when passes 4175005464565466', () => {\n      assert.equal(isCreditCardNumber(4175005464565466), true);\n    });\n    it('should return true when passes 4508456456456546', () => {\n      assert.equal(isCreditCardNumber(4508456456456546), true);\n    });\n    it('should return true when passes 4844546756786887', () => {\n      assert.equal(isCreditCardNumber(4844546756786887), true);\n    });\n    it('should return true when passes 4913534534565657', () => {\n      assert.equal(isCreditCardNumber(4913534534565657), true);\n    });\n    it('should return true when passes 4917782658876256', () => {\n      assert.equal(isCreditCardNumber(4917782658876256), true);\n    });\n    it('should return true when passes 6277777777777777', () => {\n      assert.equal(isCreditCardNumber(6277777777777777), true);\n    });\n    it('should return true when passes 4000000000000000', () => {\n      assert.equal(isCreditCardNumber(4000000000000000), true);\n    });\n    it('should return false when passes \\'\\'', () => {\n      assert.equal(isCreditCardNumber(''), false);\n    });\n    it('should return false when passes \\'?\\'', () => {\n      assert.equal(isCreditCardNumber('?'), false);\n    });\n    it('should return false when passes null', () => {\n      assert.equal(isCreditCardNumber(null), false);\n    });\n  });\n});\n\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isCreditCard/isCreditCardNumber.spec.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 51,
+    "kind": "file",
+    "name": "common/isDayOfMonth/isDayOfMonth.js",
+    "content": "import { isUndefined, isNull } from './../../utils';\n\nconst isDayOfMonth = day => (\n  !isUndefined(day) &&\n  !isNull(day) &&\n  /^((3[0-1])|([1-2]{1}\\d{1})|(0?[1-9]{1}))$/.test(day)\n);\n\nexport default isDayOfMonth;\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isDayOfMonth/isDayOfMonth.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 52,
+    "kind": "function",
+    "name": "isDayOfMonth",
+    "memberof": "common/isDayOfMonth/isDayOfMonth.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "common/isDayOfMonth/isDayOfMonth.js~isDayOfMonth",
+    "access": "public",
+    "export": true,
+    "importPath": "nsp-regexer/common/isDayOfMonth/isDayOfMonth.js",
+    "importStyle": "isDayOfMonth",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "day",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 53,
+    "kind": "file",
+    "name": "common/isDayOfMonth/isDayOfMonth.spec.js",
+    "content": "import { assert } from 'chai';\nimport isDayOfMonth from './isDayOfMonth';\n\ndescribe('Regexer', () => {\n  describe('isDayOfMonth()', () => {\n    it('should return false when passes 0', () => {\n      assert.equal(isDayOfMonth(0), false);\n    });\n    it('should return true when passes 1', () => {\n      assert.equal(isDayOfMonth(1), true);\n    });\n    it('should return true when passes 5', () => {\n      assert.equal(isDayOfMonth(5), true);\n    });\n    it('should return true when passes 9', () => {\n      assert.equal(isDayOfMonth(9), true);\n    });\n    it('should return true when passes 10', () => {\n      assert.equal(isDayOfMonth(10), true);\n    });\n    it('should return true when passes 11', () => {\n      assert.equal(isDayOfMonth(11), true);\n    });\n    it('should return true when passes 15', () => {\n      assert.equal(isDayOfMonth(15), true);\n    });\n    it('should return true when passes 19', () => {\n      assert.equal(isDayOfMonth(19), true);\n    });\n    it('should return true when passes \\'20\\'', () => {\n      assert.equal(isDayOfMonth('20'), true);\n    });\n    it('should return true when passes 21', () => {\n      assert.equal(isDayOfMonth(21), true);\n    });\n    it('should return true when passes 25', () => {\n      assert.equal(isDayOfMonth(25), true);\n    });\n    it('should return true when passes 29', () => {\n      assert.equal(isDayOfMonth(29), true);\n    });\n    it('should return true when passes 30', () => {\n      assert.equal(isDayOfMonth(30), true);\n    });\n    it('should return true when passes 31', () => {\n      assert.equal(isDayOfMonth(31), true);\n    });\n    it('should return false when passes 32', () => {\n      assert.equal(isDayOfMonth(32), false);\n    });\n    it('should return true when passes \\'02\\'', () => {\n      assert.equal(isDayOfMonth('02'), true);\n    });\n    it('should return false when passes \\'\\'', () => {\n      assert.equal(isDayOfMonth(''), false);\n    });\n    it('should return false when passes \\'?\\'', () => {\n      assert.equal(isDayOfMonth('?'), false);\n    });\n    it('should return false when passes null', () => {\n      assert.equal(isDayOfMonth(null), false);\n    });\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isDayOfMonth/isDayOfMonth.spec.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 54,
+    "kind": "file",
+    "name": "common/isDayOfWeekString/isDayOfWeekString.js",
+    "content": "import { isUndefined, isNull } from './../../utils';\n\nconst isDayOfWeekString = day => (\n  !isUndefined(day) &&\n  !isNull(day) &&\n  /^(monday|tuesday|wednesday|thursday|friday)$/i.test(day)\n);\n\nexport default isDayOfWeekString;\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isDayOfWeekString/isDayOfWeekString.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 55,
+    "kind": "function",
+    "name": "isDayOfWeekString",
+    "memberof": "common/isDayOfWeekString/isDayOfWeekString.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "common/isDayOfWeekString/isDayOfWeekString.js~isDayOfWeekString",
+    "access": "public",
+    "export": true,
+    "importPath": "nsp-regexer/common/isDayOfWeekString/isDayOfWeekString.js",
+    "importStyle": "isDayOfWeekString",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "day",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 56,
+    "kind": "file",
+    "name": "common/isDayOfWeekString/isDayOfWeekString.spec.js",
+    "content": "import { assert } from 'chai';\nimport isDayOfWeekString from './isDayOfWeekString';\n\ndescribe('Regexer', () => {\n  describe('isDayOfWeekString()', () => {\n    it('should return true when passes \\'monday\\'', () => {\n      assert.equal(isDayOfWeekString('monday'), true);\n    });\n    it('should return true when passes \\'TUESDAY\\'', () => {\n      assert.equal(isDayOfWeekString('TUESDAY'), true);\n    });\n    it('should return true when passes \\'wedNESDAY\\'', () => {\n      assert.equal(isDayOfWeekString('wedNESDAY'), true);\n    });\n    it('should return true when passes \\'thursday\\'', () => {\n      assert.equal(isDayOfWeekString('thursday'), true);\n    });\n    it('should return true when passes \\'friDAY\\'', () => {\n      assert.equal(isDayOfWeekString('friDAY'), true);\n    });\n    it('should return false when passes \\'\\'', () => {\n      assert.equal(isDayOfWeekString(''), false);\n    });\n    it('should return false when passes \\'?\\'', () => {\n      assert.equal(isDayOfWeekString('?'), false);\n    });\n    it('should return false when passes null', () => {\n      assert.equal(isDayOfWeekString(null), false);\n    });\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isDayOfWeekString/isDayOfWeekString.spec.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 57,
+    "kind": "file",
+    "name": "common/isDecimal/isDecimal.js",
+    "content": "import { isUndefined, isNull } from './../../utils';\n\nconst isDecimal = number => (\n  !isUndefined(number) &&\n  !isNull(number) &&\n  /^-?\\d*\\.\\d+$/.test(number)\n);\n\nexport default isDecimal;",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isDecimal/isDecimal.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 58,
+    "kind": "function",
+    "name": "isDecimal",
+    "memberof": "common/isDecimal/isDecimal.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "common/isDecimal/isDecimal.js~isDecimal",
+    "access": "public",
+    "export": true,
+    "importPath": "nsp-regexer/common/isDecimal/isDecimal.js",
+    "importStyle": "isDecimal",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "number",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 59,
+    "kind": "file",
+    "name": "common/isDecimal/isDecimal.spec.js",
+    "content": "import { assert } from 'chai';\nimport isDecimal from './isDecimal';\n\ndescribe('Regexer', () => {\n  describe('isDecimal()', () => {\n    it('should return true when passes \\'0.2\\'', () => {\n        assert.equal(isDecimal('0.2'), true);\n    });\n    it('should return true when passes 0.3545', () => {\n      assert.equal(isDecimal(0.3545), true);\n    });\n    it('should return true when passes 12.2553', () => {\n      assert.equal(isDecimal(12.2553), true);\n    });\n    it('should return true when passes 9.2', () => {\n      assert.equal(isDecimal(9.2), true);\n    });\n    it('should return false when passes \\'0.2.5\\'', () => {\n      assert.equal(isDecimal('0.2.5'), false);\n    });\n    it('should return false when passes \\'a.a\\'', () => {\n      assert.equal(isDecimal('a.a'), false);\n    });\n    it('should return true when passes \\'0.0\\'', () => {\n      assert.equal(isDecimal('0.0'), true);\n    });\n    it('should return false when passes \\'-435.\\'', () => {\n      assert.equal(isDecimal('-435.'), false);\n    });\n    it('should return true when passes \\'-435.6\\'', () => {\n      assert.equal(isDecimal('-435.6'), true);\n    });\n    it('should return false when passes \\'\\'', () => {\n        assert.equal(isDecimal(''), false);\n    });\n    it('should return false when passes \\'?\\'', () => {\n        assert.equal(isDecimal('?'), false);\n    });\n    it('should return false when passes null', () => {\n        assert.equal(isDecimal(null), false);\n    });\n  })\n})",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isDecimal/isDecimal.spec.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 60,
+    "kind": "file",
+    "name": "common/isEmail/isEmail.js",
+    "content": "// @flow\nimport { isUndefined, isNull, isString } from './../../utils';\n\nconst isEmail = email => (\n  !isUndefined(email) &&\n  !isNull(email) &&\n  isString(email) &&\n  /^(([^<>()\\[\\]\\\\.,;:\\s@\"]+(\\.[^<>()\\[\\]\\\\.,;:\\s@\"]+)*)|(\".+\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$/.test(email.toLowerCase())\n);\n\nexport default isEmail;\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isEmail/isEmail.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 61,
+    "kind": "function",
+    "name": "isEmail",
+    "memberof": "common/isEmail/isEmail.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "common/isEmail/isEmail.js~isEmail",
+    "access": "public",
+    "export": true,
+    "importPath": "nsp-regexer/common/isEmail/isEmail.js",
+    "importStyle": "isEmail",
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "params": [
+      {
+        "name": "email",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 62,
+    "kind": "file",
+    "name": "common/isEmail/isEmail.spec.js",
+    "content": "import { assert } from 'chai';\nimport isEmail from './isEmail';\n\ndescribe('Regexer', () => {\n  describe('isEmail()', () => {\n    it('should return true when passed \\'npranto@gmail.com\\'', () => {\n      assert.equal(isEmail('npranto@gmail.com'), true);\n    });\n    it('should return false when passed \\'npranto@gmail\\'', () => {\n      assert.equal(isEmail('npranto@gmail'), false);\n    });\n    it('should return false when passed \\'nprantogmail.com\\'', () => {\n      assert.equal(isEmail('nprantogmail.com'), false);\n    });\n    it('should return true when passed \\'npranto@123gmail.co\\'', () => {\n      assert.equal(isEmail('npranto@123gmail.co'), true);\n    });\n    it('should return false when passed null', () => {\n      assert.equal(isEmail(null), false);\n    });\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isEmail/isEmail.spec.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 63,
+    "kind": "file",
+    "name": "common/isHTMLTag/isHTMLTag.js",
+    "content": "import { isUndefined, isNull, isString } from './../../utils';\n\nconst isHTMLTag = htmlTag => (\n  !isUndefined(htmlTag) &&\n  !isNull(htmlTag) &&\n  isString(htmlTag) &&\n  /^<([a-z0-9]+)([^<]+)*(?:>(.*)<\\/\\1>|\\s+\\/>)$/.test(htmlTag)\n);\n\nexport default isHTMLTag;\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isHTMLTag/isHTMLTag.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 64,
+    "kind": "function",
+    "name": "isHTMLTag",
+    "memberof": "common/isHTMLTag/isHTMLTag.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "common/isHTMLTag/isHTMLTag.js~isHTMLTag",
+    "access": "public",
+    "export": true,
+    "importPath": "nsp-regexer/common/isHTMLTag/isHTMLTag.js",
+    "importStyle": "isHTMLTag",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "htmlTag",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 65,
+    "kind": "file",
+    "name": "common/isHTMLTag/isHTMLTag.spec.js",
+    "content": "import { assert } from 'chai';\nimport isHTMLTag from './isHTMLTag';\n\ndescribe('Regexer', () => {\n  describe('isHTMLTag()', () => {\n    it('should return true when passed \\'<img src=\"./img/cat.png\" />\\'', () => {\n      assert.equal(isHTMLTag('<img src=\"./img/cat.png\" />'), true);\n    });\n    it('should return true when passed \\'<body>\\'', () => {\n      assert.equal(isHTMLTag('<body>'), false);\n    });\n    it('should return false when passed \\'<h1> Hello World <h1>\\'', () => {\n      assert.equal(isHTMLTag('<h1> Hello World <h1>'), false);\n    });\n    it('should return false when passed \\'\\'', () => {\n      assert.equal(isHTMLTag(''), false);\n    });\n    it('should return true when passed \\'<h1 class=\"center\"> Hello World! </h1>\\'', () => {\n      assert.equal(isHTMLTag('<h1 class=\"center\"> Hello World! </h1>'), true);\n    });\n    it('should return false when passed null', () => {\n      assert.equal(isHTMLTag(null), false);\n    });\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isHTMLTag/isHTMLTag.spec.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 66,
+    "kind": "file",
+    "name": "common/isHexValue/isHexValue.js",
+    "content": "import { isNull, isUndefined, isString } from './../../utils';\n\nconst isHexValue = hexValue => (\n  !isUndefined(hexValue) &&\n  !isNull(hexValue) &&\n  isString(hexValue) &&\n  /^#?([A-Za-z0-9]{3}|[A-Za-z0-9]{4}|[A-Za-z0-9]{6})$/.test(hexValue)\n);\n\nexport default isHexValue;\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isHexValue/isHexValue.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 67,
+    "kind": "function",
+    "name": "isHexValue",
+    "memberof": "common/isHexValue/isHexValue.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "common/isHexValue/isHexValue.js~isHexValue",
+    "access": "public",
+    "export": true,
+    "importPath": "nsp-regexer/common/isHexValue/isHexValue.js",
+    "importStyle": "isHexValue",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "hexValue",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 68,
+    "kind": "file",
+    "name": "common/isHexValue/isHexValue.spec.js",
+    "content": "import { assert } from 'chai';\nimport isHexValue from './isHexValue';\n\ndescribe('Regexer', () => {\n  describe('isHexValue()', () => {\n    it('should return true when passed \\'#FBB\\'', () => {\n      assert.equal(isHexValue('#FBB'), true);\n    });\n    it('should return false when passed \\'#Fka7-t\\'', () => {\n      assert.equal(isHexValue('sbfj&&#'), false);\n    });\n    it('should return false when passed \\'\\'', () => {\n      assert.equal(isHexValue(''), false);\n    });\n    it('should return true when passed \\'#SHFF56\\'', () => {\n      assert.equal(isHexValue('#SHFF56'), true);\n    });\n    it('should return true when passed \\'#FF56\\'', () => {\n      assert.equal(isHexValue('#FF56'), true);\n    });\n    it('should return true when passed \\'#FF563\\'', () => {\n      assert.equal(isHexValue('#FF563'), false);\n    });\n    it('should return true when passed \\'#FF563dsff\\'', () => {\n      assert.equal(isHexValue('#FF563dsff'), false);\n    });\n    it('should return false when passed null', () => {\n      assert.equal(isHexValue(null), false);\n    });\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isHexValue/isHexValue.spec.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 69,
+    "kind": "file",
+    "name": "common/isIPAddressV4/isIPAddressV4.js",
+    "content": "import { isUndefined, isNull, isString } from './../../utils';\n\nconst isIPAddressV4 = ipAddress => (\n  !isUndefined(ipAddress) &&\n  !isNull(ipAddress) &&\n  isString(ipAddress) &&\n  /^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/.test(ipAddress)\n);\n\nexport default isIPAddressV4;\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isIPAddressV4/isIPAddressV4.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 70,
+    "kind": "function",
+    "name": "isIPAddressV4",
+    "memberof": "common/isIPAddressV4/isIPAddressV4.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "common/isIPAddressV4/isIPAddressV4.js~isIPAddressV4",
+    "access": "public",
+    "export": true,
+    "importPath": "nsp-regexer/common/isIPAddressV4/isIPAddressV4.js",
+    "importStyle": "isIPAddressV4",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "ipAddress",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 71,
+    "kind": "file",
+    "name": "common/isIPAddressV4/isIPAddressV4.spec.js",
+    "content": "import { assert } from 'chai';\nimport isIPAddressV4 from './isIPAddressV4';\n\ndescribe('Regexer', () => {\n  describe('isIPAddressV4()', () => {\n    it('should return true when passed \\'172.16.254.1\\'', () => {\n      assert.equal(isIPAddressV4('172.16.254.1'), true);\n    });\n    it('should return true when passed \\'172.16.254.1\\'', () => {\n      assert.equal(isIPAddressV4('172.16.257.1'), false);\n    });\n    it('should return false when passed \\'sbfj&&#\\'', () => {\n      assert.equal(isIPAddressV4('54.45.222.345'), false);\n    });\n    it('should return false when passed \\'\\'', () => {\n      assert.equal(isIPAddressV4(''), false);\n    });\n    it('should return true when passed \\'0.1.0.1\\'', () => {\n      assert.equal(isIPAddressV4('0.1.0.1'), true);\n    });\n    it('should return false when passed null', () => {\n      assert.equal(isIPAddressV4(null), false);\n    });\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isIPAddressV4/isIPAddressV4.spec.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 72,
+    "kind": "file",
+    "name": "common/isInteger/isInteger.js",
+    "content": "import { isNull, isUndefined } from './../../utils';\n\nconst isInteger = integer => (\n  !isUndefined(integer) &&\n  !isNull(integer) &&\n  /^-?\\d+$/.test(integer)\n);\n\nexport default isInteger;\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isInteger/isInteger.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 73,
+    "kind": "function",
+    "name": "isInteger",
+    "memberof": "common/isInteger/isInteger.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "common/isInteger/isInteger.js~isInteger",
+    "access": "public",
+    "export": true,
+    "importPath": "nsp-regexer/common/isInteger/isInteger.js",
+    "importStyle": "isInteger",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "integer",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 74,
+    "kind": "file",
+    "name": "common/isInteger/isInteger.spec.js",
+    "content": "import { assert } from 'chai';\nimport isInteger from './isInteger';\n\ndescribe('Regexer', () => {\n  describe('isInteger()', () => {\n    it('should return true when passed \\'5\\'', () => {\n      assert.equal(isInteger('5'), true);\n    });\n    it('should return true when passed \\'554\\'', () => {\n      assert.equal(isInteger('554'), true);\n    });\n    it('should return true when passed 8726', () => {\n      assert.equal(isInteger(8726), true);\n    });\n    it('should return true when passed \\'1027399\\'', () => {\n      assert.equal(isInteger('1027399'), true);\n    });\n    it('should return true when passed \\'0\\'', () => {\n      assert.equal(isInteger('0'), true);\n    });\n    it('should return true when passed 34', () => {\n      assert.equal(isInteger(-34), true);\n    });\n    it('should return false when passed \\'\\'', () => {\n      assert.equal(isInteger(''), false);\n    });\n    it('should return false when passed null', () => {\n      assert.equal(isInteger(null), false);\n    });\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isInteger/isInteger.spec.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 75,
+    "kind": "file",
+    "name": "common/isLetter/isLetter.js",
+    "content": "import { isNull, isUndefined, isString } from './../../utils';\n\nconst isLetter = str => (\n  !isUndefined(str) &&\n  !isNull(str) &&\n  isString(str) &&\n  /^[A-Za-z]+$/.test(str)\n);\n\nexport default isLetter;\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isLetter/isLetter.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 76,
+    "kind": "function",
+    "name": "isLetter",
+    "memberof": "common/isLetter/isLetter.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "common/isLetter/isLetter.js~isLetter",
+    "access": "public",
+    "export": true,
+    "importPath": "nsp-regexer/common/isLetter/isLetter.js",
+    "importStyle": "isLetter",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "str",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 77,
+    "kind": "file",
+    "name": "common/isLetter/isLetter.spec.js",
+    "content": "import { assert } from 'chai';\nimport isLetter from './isLetter';\n\ndescribe('Regexer', () => {\n  describe('isLetter()', () => {\n    it('should return true when passed \\'a\\'', () => {\n      assert.equal(isLetter('a'), true);\n    });\n    it('should return true when passed \\'ACTIVITY\\'', () => {\n      assert.equal(isLetter('ACTIVITY'), true);\n    });\n    it('should return false when passed \\'72864783246\\'', () => {\n      assert.equal(isLetter('72864783246'), false);\n    });\n    it('should return false when passed \\'haha?!\\'', () => {\n      assert.equal(isLetter('haha?!'), false);\n    });\n    it('should return false when passed \\'A coffee shop is nearby\\'', () => {\n      assert.equal(isLetter('A coffee shop is nearby'), false);\n    });\n    it('should return false when passed \\'Is that any coffee shop nearby?\\'', () => {\n      assert.equal(isLetter('Is that any coffee shop nearby?'), false);\n    });\n    it('should return false when passed \\' \\'', () => {\n      assert.equal(isLetter(' '), false);\n    });\n    it('should return false when passed \\'\\'', () => {\n      assert.equal(isLetter(''), false);\n    });\n    it('should return false when passed null', () => {\n      assert.equal(isLetter(null), false);\n    });\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isLetter/isLetter.spec.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 78,
+    "kind": "file",
+    "name": "common/isLowerCase/isLowerCase.js",
+    "content": "import { isNull, isUndefined, isString } from './../../utils';\n\nconst isLowerCase = str => (\n  !isUndefined(str) &&\n  !isNull(str) &&\n  isString(str) &&\n  /^[^A-Z]+$/.test(str)\n);\n\nexport default isLowerCase;\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isLowerCase/isLowerCase.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 79,
+    "kind": "function",
+    "name": "isLowerCase",
+    "memberof": "common/isLowerCase/isLowerCase.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "common/isLowerCase/isLowerCase.js~isLowerCase",
+    "access": "public",
+    "export": true,
+    "importPath": "nsp-regexer/common/isLowerCase/isLowerCase.js",
+    "importStyle": "isLowerCase",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "str",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 80,
+    "kind": "file",
+    "name": "common/isLowerCase/isLowerCase.spec.js",
+    "content": "import { assert } from 'chai';\nimport isLowerCase from './isLowerCase';\n\ndescribe('Regexer', () => {\n  describe('isLowerCase()', () => {\n    it('should return true when passed \\'a\\'', () => {\n      assert.equal(isLowerCase('a'), true);\n    });\n    it('should return true when passed \\'dog\\'', () => {\n      assert.equal(isLowerCase('dog'), true);\n    });\n    it('should return true when passed \\'f\\'', () => {\n      assert.equal(isLowerCase('f'), true);\n    });\n    it('should return true when passed \\'ian\\'', () => {\n      assert.equal(isLowerCase('ian'), true);\n    });\n    it('should return true when passed \\'k\\'', () => {\n      assert.equal(isLowerCase('k'), true);\n    });\n    it('should return true when passed \\'A\\'', () => {\n      assert.equal(isLowerCase('A'), false);\n    });\n    it('should return true when passed \\'false\\'', () => {\n      assert.equal(isLowerCase('false'), true);\n    });\n    it('should return true when passed \\'U\\'', () => {\n      assert.equal(isLowerCase('U'), false);\n    });\n    it('should return true when passed \\'aB\\'', () => {\n      assert.equal(isLowerCase('aB'), false);\n    });\n    it('should return true when passed \\'?\\'', () => {\n      assert.equal(isLowerCase('?'), true);\n    });\n    it('should return true when passed \\' \\'', () => {\n      assert.equal(isLowerCase(' '), true);\n    });\n    it('should return false when passed \\'\\'', () => {\n      assert.equal(isLowerCase(''), false);\n    });\n    it('should return false when passed null', () => {\n      assert.equal(isLowerCase(null), false);\n    });\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isLowerCase/isLowerCase.spec.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 81,
+    "kind": "file",
+    "name": "common/isMonthOfYear/isMonthOfYear.js",
+    "content": "import { isUndefined, isNull } from './../../utils';\n\nconst isMonthOfYear = number => (\n  !isUndefined(number) &&\n  !isNull(number) &&\n  /^((1[0-2])|(0?[1-9]{1}))$/.test(number)\n);\n\nexport default isMonthOfYear;\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isMonthOfYear/isMonthOfYear.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 82,
+    "kind": "function",
+    "name": "isMonthOfYear",
+    "memberof": "common/isMonthOfYear/isMonthOfYear.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "common/isMonthOfYear/isMonthOfYear.js~isMonthOfYear",
+    "access": "public",
+    "export": true,
+    "importPath": "nsp-regexer/common/isMonthOfYear/isMonthOfYear.js",
+    "importStyle": "isMonthOfYear",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "number",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 83,
+    "kind": "file",
+    "name": "common/isMonthOfYear/isMonthOfYear.spec.js",
+    "content": "import { assert } from 'chai';\nimport isMonthOfYear from './isMonthOfYear';\n\ndescribe('Regexer', () => {\n  describe('isMonthOfYear()', () => {\n    it('should return false when passes 0', () => {\n      assert.equal(isMonthOfYear(0), false);\n    });\n    it('should return true when passes 1', () => {\n      assert.equal(isMonthOfYear(1), true);\n    });\n    it('should return true when passes 3', () => {\n      assert.equal(isMonthOfYear(3), true);\n    });\n    it('should return true when passes 5', () => {\n      assert.equal(isMonthOfYear(5), true);\n    });\n    it('should return true when passes \\'07\\'', () => {\n      assert.equal(isMonthOfYear('07'), true);\n    });\n    it('should return true when passes 9', () => {\n      assert.equal(isMonthOfYear(9), true);\n    });\n    it('should return true when passes \\'10\\'', () => {\n      assert.equal(isMonthOfYear('10'), true);\n    });\n    it('should return true when passes 11', () => {\n      assert.equal(isMonthOfYear(11), true);\n    });\n    it('should return true when passes 12', () => {\n      assert.equal(isMonthOfYear(12), true);\n    });\n    it('should return false when passes 13', () => {\n      assert.equal(isMonthOfYear(13), false);\n    });\n    it('should return false when passes 20', () => {\n      assert.equal(isMonthOfYear(20), false);\n    });\n    it('should return false when passes \\'\\'', () => {\n      assert.equal(isMonthOfYear(''), false);\n    });\n    it('should return false when passes \\'?\\'', () => {\n      assert.equal(isMonthOfYear('?'), false);\n    });\n    it('should return false when passes null', () => {\n      assert.equal(isMonthOfYear(null), false);\n    });\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isMonthOfYear/isMonthOfYear.spec.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 84,
+    "kind": "file",
+    "name": "common/isMonthOfYearString/isMonthOfYearString.js",
+    "content": "import { isUndefined, isNull } from './../../utils';\n\nconst isMonthOfYearString = month => (\n  !isUndefined(month) &&\n  !isNull(month) &&\n  /^(january|february|march|april|may|june|july|august|september|october|november|december)$/i.test(month)\n);\n\nexport default isMonthOfYearString;\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isMonthOfYearString/isMonthOfYearString.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 85,
+    "kind": "function",
+    "name": "isMonthOfYearString",
+    "memberof": "common/isMonthOfYearString/isMonthOfYearString.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "common/isMonthOfYearString/isMonthOfYearString.js~isMonthOfYearString",
+    "access": "public",
+    "export": true,
+    "importPath": "nsp-regexer/common/isMonthOfYearString/isMonthOfYearString.js",
+    "importStyle": "isMonthOfYearString",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "month",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 86,
+    "kind": "file",
+    "name": "common/isMonthOfYearString/isMonthOfYearString.spec.js",
+    "content": "import { assert } from 'chai';\nimport isMonthOfYearString from './isMonthOfYearString';\n\ndescribe('Regexer', () => {\n  describe('isMonthOfYearString()', () => {\n    it('should return true when passes \\'january\\'', () => {\n      assert.equal(isMonthOfYearString('january'), true);\n    });\n    it('should return true when passes \\'February\\'', () => {\n      assert.equal(isMonthOfYearString('February'), true);\n    });\n    it('should return true when passes \\'March\\'', () => {\n      assert.equal(isMonthOfYearString('March'), true);\n    });\n    it('should return true when passes \\'APRIL\\'', () => {\n      assert.equal(isMonthOfYearString('APRIL'), true);\n    });\n    it('should return true when passes \\'may\\'', () => {\n      assert.equal(isMonthOfYearString('may'), true);\n    });\n    it('should return true when passes \\'jUNE\\'', () => {\n      assert.equal(isMonthOfYearString('jUNE'), true);\n    });\n    it('should return true when passes \\'july\\'', () => {\n      assert.equal(isMonthOfYearString('july'), true);\n    });\n    it('should return true when passes \\'august\\'', () => {\n      assert.equal(isMonthOfYearString('august'), true);\n    });\n    it('should return true when passes \\'september\\'', () => {\n      assert.equal(isMonthOfYearString('september'), true);\n    });\n    it('should return true when passes \\'OCTOBER\\'', () => {\n      assert.equal(isMonthOfYearString('OCTOBER'), true);\n    });\n    it('should return true when passes \\'NOvember\\'', () => {\n      assert.equal(isMonthOfYearString('NOvember'), true);\n    });\n    it('should return true when passes \\'decemBER\\'', () => {\n      assert.equal(isMonthOfYearString('decemBER'), true);\n    });\n    it('should return false when passes \\'jun\\'', () => {\n      assert.equal(isMonthOfYearString('jun'), false);\n    });\n    it('should return false when passes \\'DEC\\'', () => {\n      assert.equal(isMonthOfYearString('DEC'), false);\n    });\n    it('should return false when passes \\'\\'', () => {\n      assert.equal(isMonthOfYearString(''), false);\n    });\n    it('should return false when passes \\'?\\'', () => {\n      assert.equal(isMonthOfYearString('?'), false);\n    });\n    it('should return false when passes null', () => {\n      assert.equal(isMonthOfYearString(null), false);\n    });\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isMonthOfYearString/isMonthOfYearString.spec.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 87,
+    "kind": "file",
+    "name": "common/isNegativeInteger/isNegativeInteger.js",
+    "content": "import { isNull, isUndefined } from './../../utils';\n\nconst isNegativeInteger = integer => (\n  !isUndefined(integer) &&\n  !isNull(integer) &&\n  /^(-\\d+)|0$/.test(integer)\n);\n\nexport default isNegativeInteger;\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isNegativeInteger/isNegativeInteger.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 88,
+    "kind": "function",
+    "name": "isNegativeInteger",
+    "memberof": "common/isNegativeInteger/isNegativeInteger.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "common/isNegativeInteger/isNegativeInteger.js~isNegativeInteger",
+    "access": "public",
+    "export": true,
+    "importPath": "nsp-regexer/common/isNegativeInteger/isNegativeInteger.js",
+    "importStyle": "isNegativeInteger",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "integer",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 89,
+    "kind": "file",
+    "name": "common/isNegativeInteger/isNegativeInteger.spec.js",
+    "content": "import { assert } from 'chai';\nimport isNegativeInteger from './isNegativeInteger';\n\ndescribe('Regexer', () => {\n  describe('isNegativeInteger()', () => {\n    it('should return false when passed \\'5\\'', () => {\n      assert.equal(isNegativeInteger('5'), false);\n    });\n    it('should return false when passed \\'554\\'', () => {\n      assert.equal(isNegativeInteger('554'), false);\n    });\n    it('should return true when passed -8726', () => {\n      assert.equal(isNegativeInteger(-8726), true);\n    });\n    it('should return false when passed 0.3443', () => {\n      assert.equal(isNegativeInteger(0.3443), false);\n    });\n    it('should return false when passed \\'1027399\\'', () => {\n      assert.equal(isNegativeInteger('1027399'), false);\n    });\n    it('should return true when passed \\'0\\'', () => {\n      assert.equal(isNegativeInteger('0'), true);\n    });\n    it('should return true when passed -34', () => {\n      assert.equal(isNegativeInteger(-34), true);\n    });\n    it('should return false when passed \\'\\'', () => {\n      assert.equal(isNegativeInteger(''), false);\n    });\n    it('should return false when passed null', () => {\n      assert.equal(isNegativeInteger(null), false);\n    });\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isNegativeInteger/isNegativeInteger.spec.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 90,
+    "kind": "file",
+    "name": "common/isNegativeNumber/isNegativeNumber.js",
+    "content": "import { isUndefined, isNull } from './../../utils';\n\nconst isNegativeNumber = number => (\n  !isUndefined(number) &&\n  !isNull(number) &&\n  /^((-)(\\d+)(\\.)?(\\d+)?)|0$/.test(number)\n);\n\nexport default isNegativeNumber;\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isNegativeNumber/isNegativeNumber.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 91,
+    "kind": "function",
+    "name": "isNegativeNumber",
+    "memberof": "common/isNegativeNumber/isNegativeNumber.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "common/isNegativeNumber/isNegativeNumber.js~isNegativeNumber",
+    "access": "public",
+    "export": true,
+    "importPath": "nsp-regexer/common/isNegativeNumber/isNegativeNumber.js",
+    "importStyle": "isNegativeNumber",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "number",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 92,
+    "kind": "file",
+    "name": "common/isNegativeNumber/isNegativeNumber.spec.js",
+    "content": "import { assert } from 'chai';\nimport isNegativeNumber from './isNegativeNumber';\n\ndescribe('Regexer', () => {\n  describe('isNegativeNumber()', () => {\n    it('should return false when passes 43', () => {\n      assert.equal(isNegativeNumber(43), false);\n    });\n    it('should return true when passes -21', () => {\n      assert.equal(isNegativeNumber(-21), true);\n    });\n    it('should return true when passes 0', () => {\n      assert.equal(isNegativeNumber(0), true);\n    });\n    it('should return false when passes 98.2', () => {\n      assert.equal(isNegativeNumber(98.2), false);\n    });\n    it('should return true when passes -0.1', () => {\n      assert.equal(isNegativeNumber(-0.1), true);\n    });\n    it('should return false when passes 0.99', () => {\n      assert.equal(isNegativeNumber(0.99), false);\n    });\n    it('should return false when passes 7/2', () => {\n      assert.equal(isNegativeNumber((7 / 2)), false);\n    });\n    it('should return false when passes \\'321.123\\'', () => {\n      assert.equal(isNegativeNumber('321.123'), false);\n    });\n    it('should return true when passes \\'-321.\\'', () => {\n      assert.equal(isNegativeNumber('-321.'), true);\n    });\n    it('should return false when passes \\'\\'', () => {\n      assert.equal(isNegativeNumber(''), false);\n    });\n    it('should return false when passes \\'?\\'', () => {\n      assert.equal(isNegativeNumber('?'), false);\n    });\n    it('should return false when passes null', () => {\n      assert.equal(isNegativeNumber(null), false);\n    });\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isNegativeNumber/isNegativeNumber.spec.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 93,
+    "kind": "file",
+    "name": "common/isNumber/isNumber.js",
+    "content": "import { isUndefined, isNull } from './../../utils';\n\nconst isNumber = number => (\n  !isUndefined(number) &&\n  !isNull(number) &&\n  /^(-)?(\\d+)(\\.)?(\\d+)?$/.test(number)\n);\n\nexport default isNumber;\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isNumber/isNumber.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 94,
+    "kind": "function",
+    "name": "isNumber",
+    "memberof": "common/isNumber/isNumber.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "common/isNumber/isNumber.js~isNumber",
+    "access": "public",
+    "export": true,
+    "importPath": "nsp-regexer/common/isNumber/isNumber.js",
+    "importStyle": "isNumber",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "number",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 95,
+    "kind": "file",
+    "name": "common/isNumber/isNumber.spec.js",
+    "content": "import { assert } from 'chai';\nimport isNumber from './isNumber';\n\ndescribe('Regexer', () => {\n  describe('isNumber()', () => {\n    it('should return true when passes 43', () => {\n      assert.equal(isNumber(43), true);\n    });\n    it('should return true when passes -21', () => {\n      assert.equal(isNumber(-21), true);\n    });\n    it('should return true when passes 0', () => {\n      assert.equal(isNumber(0), true);\n    });\n    it('should return true when passes 98.2', () => {\n      assert.equal(isNumber(98.2), true);\n    });\n    it('should return true when passes 0.1', () => {\n      assert.equal(isNumber(0.1), true);\n    });\n    it('should return true when passes 0.99', () => {\n      assert.equal(isNumber(0.99), true);\n    });\n    it('should return true when passes 7/2', () => {\n      assert.equal(isNumber((7 / 2)), true);\n    });\n    it('should return true when passes \\'321.123\\'', () => {\n      assert.equal(isNumber('321.123'), true);\n    });\n    it('should return false when passes \\'\\'', () => {\n      assert.equal(isNumber(''), false);\n    });\n    it('should return false when passes \\'?\\'', () => {\n      assert.equal(isNumber('?'), false);\n    });\n    it('should return false when passes null', () => {\n      assert.equal(isNumber(null), false);\n    });\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isNumber/isNumber.spec.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 96,
+    "kind": "file",
+    "name": "common/isPassword/isPassword.js",
+    "content": "import { isUndefined, isNull, isString } from './../../utils';\n\nconst isPassword = password => (\n  !isUndefined(password) &&\n  !isNull(password) &&\n  isString(password) &&\n  /^[\\w-]{6,18}$/.test(password)\n);\n\nexport default isPassword;\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isPassword/isPassword.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 97,
+    "kind": "function",
+    "name": "isPassword",
+    "memberof": "common/isPassword/isPassword.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "common/isPassword/isPassword.js~isPassword",
+    "access": "public",
+    "export": true,
+    "importPath": "nsp-regexer/common/isPassword/isPassword.js",
+    "importStyle": "isPassword",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "password",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 98,
+    "kind": "file",
+    "name": "common/isPassword/isPassword.spec.js",
+    "content": "import { assert } from 'chai';\nimport isPassword from './isPassword';\n\ndescribe('Regexer', () => {\n  describe('isPassword()', () => {\n    it('should return true when passed \\'npranto\\'', () => {\n      assert.equal(isPassword('npranto'), true);\n    });\n    it('should return false when passed \\'sbfj&&#\\'', () => {\n      assert.equal(isPassword('sbfj&&#'), false);\n    });\n    it('should return false when passed \\'\\'', () => {\n      assert.equal(isPassword(''), false);\n    });\n    it('should return true when passed \\'NS-pranto_236\\'', () => {\n      assert.equal(isPassword('NS-pranto_236'), true);\n    });\n    it('should return false when passed null', () => {\n      assert.equal(isPassword(null), false);\n    });\n    it('should return false when passed nothing', () => {\n      assert.equal(isPassword(), false);\n    });\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isPassword/isPassword.spec.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 99,
+    "kind": "file",
+    "name": "common/isPositiveInteger/isPositiveInteger.js",
+    "content": "import { isNull, isUndefined } from './../../utils';\n\nconst isPositiveInteger = integer => (\n  !isUndefined(integer) &&\n  !isNull(integer) &&\n  /^\\d+$/.test(integer)\n);\n\nexport default isPositiveInteger;\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isPositiveInteger/isPositiveInteger.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 100,
+    "kind": "function",
+    "name": "isPositiveInteger",
+    "memberof": "common/isPositiveInteger/isPositiveInteger.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "common/isPositiveInteger/isPositiveInteger.js~isPositiveInteger",
+    "access": "public",
+    "export": true,
+    "importPath": "nsp-regexer/common/isPositiveInteger/isPositiveInteger.js",
+    "importStyle": "isPositiveInteger",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "integer",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 101,
+    "kind": "file",
+    "name": "common/isPositiveInteger/isPositiveInteger.spec.js",
+    "content": "import { assert } from 'chai';\nimport isPositiveInteger from './isPositiveInteger';\n\ndescribe('Regexer', () => {\n  describe('isPositiveInteger()', () => {\n    it('should return true when passed \\'5\\'', () => {\n      assert.equal(isPositiveInteger('5'), true);\n    });\n    it('should return true when passed \\'554\\'', () => {\n      assert.equal(isPositiveInteger('554'), true);\n    });\n    it('should return false when passed -8726', () => {\n      assert.equal(isPositiveInteger(-8726), false);\n    });\n    it('should return false when passed 0.3443', () => {\n      assert.equal(isPositiveInteger(0.3443), false);\n    });\n    it('should return true when passed \\'1027399\\'', () => {\n      assert.equal(isPositiveInteger('1027399'), true);\n    });\n    it('should return true when passed \\'0\\'', () => {\n      assert.equal(isPositiveInteger('0'), true);\n    });\n    it('should return false when passed -34', () => {\n      assert.equal(isPositiveInteger(-34), false);\n    });\n    it('should return false when passed \\'\\'', () => {\n      assert.equal(isPositiveInteger(''), false);\n    });\n    it('should return false when passed null', () => {\n      assert.equal(isPositiveInteger(null), false);\n    });\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isPositiveInteger/isPositiveInteger.spec.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 102,
+    "kind": "file",
+    "name": "common/isPositiveNumber/isPositiveNumber.js",
+    "content": "import { isUndefined, isNull } from './../../utils';\n\nconst isPositiveNumber = number => (\n  !isUndefined(number) &&\n  !isNull(number) &&\n  /^(\\d+)(\\.)?(\\d+)?$/.test(number)\n);\n\nexport default isPositiveNumber;\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isPositiveNumber/isPositiveNumber.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 103,
+    "kind": "function",
+    "name": "isPositiveNumber",
+    "memberof": "common/isPositiveNumber/isPositiveNumber.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "common/isPositiveNumber/isPositiveNumber.js~isPositiveNumber",
+    "access": "public",
+    "export": true,
+    "importPath": "nsp-regexer/common/isPositiveNumber/isPositiveNumber.js",
+    "importStyle": "isPositiveNumber",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "number",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 104,
+    "kind": "file",
+    "name": "common/isPositiveNumber/isPositiveNumber.spec.js",
+    "content": "import { assert } from 'chai';\nimport isPositiveNumber from './isPositiveNumber';\n\ndescribe('Regexer', () => {\n  describe('isPositiveNumber()', () => {\n    it('should return true when passes 43', () => {\n      assert.equal(isPositiveNumber(43), true);\n    });\n    it('should return false when passes -21', () => {\n      assert.equal(isPositiveNumber(-21), false);\n    });\n    it('should return true when passes 0', () => {\n      assert.equal(isPositiveNumber(0), true);\n    });\n    it('should return true when passes 98.2', () => {\n      assert.equal(isPositiveNumber(98.2), true);\n    });\n    it('should return true when passes 0.1', () => {\n      assert.equal(isPositiveNumber(0.1), true);\n    });\n    it('should return false when passes -0.99', () => {\n      assert.equal(isPositiveNumber(-0.99), false);\n    });\n    it('should return true when passes 7/2', () => {\n      assert.equal(isPositiveNumber((7 / 2)), true);\n    });\n    it('should return true when passes \\'321.123\\'', () => {\n      assert.equal(isPositiveNumber('321.123'), true);\n    });\n    it('should return true when passes \\'321.\\'', () => {\n      assert.equal(isPositiveNumber('321.'), true);\n    });\n    it('should return false when passes \\'\\'', () => {\n      assert.equal(isPositiveNumber(''), false);\n    });\n    it('should return false when passes \\'?\\'', () => {\n      assert.equal(isPositiveNumber('?'), false);\n    });\n    it('should return false when passes null', () => {\n      assert.equal(isPositiveNumber(null), false);\n    });\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isPositiveNumber/isPositiveNumber.spec.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 105,
+    "kind": "file",
+    "name": "common/isSSN/isSSN.js",
+    "content": "import { isUndefined, isNull } from './../../utils';\n\nconst isSSN = number => (\n  !isUndefined(number) &&\n  !isNull(number) &&\n  /^(\\d{3})-?(\\d{2})-?(\\d{4})$/.test(number)\n);\n\nexport default isSSN;\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isSSN/isSSN.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 106,
+    "kind": "function",
+    "name": "isSSN",
+    "memberof": "common/isSSN/isSSN.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "common/isSSN/isSSN.js~isSSN",
+    "access": "public",
+    "export": true,
+    "importPath": "nsp-regexer/common/isSSN/isSSN.js",
+    "importStyle": "isSSN",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "number",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 107,
+    "kind": "file",
+    "name": "common/isSSN/isSSN.spec.js",
+    "content": "import { assert } from 'chai';\nimport isSSN from './isSSN';\n\ndescribe('Regexer', () => {\n  describe('isSSN()', () => {\n    it('should return true when passes \\'123456789\\'', () => {\n      assert.equal(isSSN('123456789'), true);\n    });\n    it('should return true when passes \\'455-54-4545\\'', () => {\n      assert.equal(isSSN('455-54-4545'), true);\n    });\n    it('should return false when passes \\'00-45-4545\\'', () => {\n      assert.equal(isSSN('00-45-4545'), false);\n    });\n    it('should return false when passes \\'fdg-gf-oiio\\'', () => {\n      assert.equal(isSSN('fdg-gf-oiio'), false);\n    });\n    it('should return false when passes \\'\\'', () => {\n      assert.equal(isSSN(''), false);\n    });\n    it('should return false when passes \\'?\\'', () => {\n      assert.equal(isSSN('?'), false);\n    });\n    it('should return false when passes null', () => {\n      assert.equal(isSSN(null), false);\n    });\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isSSN/isSSN.spec.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 108,
+    "kind": "file",
+    "name": "common/isStandardZipCode/isStandardZipCode.js",
+    "content": "import { isUndefined, isNull } from './../../utils';\n\nconst isStandardZipCode = zipCode => (\n  !isUndefined(zipCode) &&\n  !isNull(zipCode) &&\n  /^\\d{5}(-\\d{4})?$/.test(zipCode)\n);\n\nexport default isStandardZipCode;\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isStandardZipCode/isStandardZipCode.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 109,
+    "kind": "function",
+    "name": "isStandardZipCode",
+    "memberof": "common/isStandardZipCode/isStandardZipCode.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "common/isStandardZipCode/isStandardZipCode.js~isStandardZipCode",
+    "access": "public",
+    "export": true,
+    "importPath": "nsp-regexer/common/isStandardZipCode/isStandardZipCode.js",
+    "importStyle": "isStandardZipCode",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "zipCode",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 110,
+    "kind": "file",
+    "name": "common/isStandardZipCode/isStandardZipCode.spec.js",
+    "content": "import { assert } from 'chai';\nimport isStandardZipCode from './isStandardZipCode';\n\ndescribe('Regexer', () => {\n  describe('isStandardZipCode()', () => {\n    it('should return true when passes \\'02140\\'', () => {\n      assert.equal(isStandardZipCode('02140'), true);\n    });\n    it('should return true when passes 45546', () => {\n      assert.equal(isStandardZipCode(45546), true);\n    });\n    it('should return true when passes \\'12345-6789\\'', () => {\n      assert.equal(isStandardZipCode('12345-6789'), true);\n    });\n    it('should return false when passes \\'12345-678932\\'', () => {\n      assert.equal(isStandardZipCode('12345-678932'), false);\n    });\n    it('should return false when passes \\'12345 6789\\'', () => {\n      assert.equal(isStandardZipCode('12345 6789'), false);\n    });\n    it('should return false when passes \\'98121-\\'', () => {\n      assert.equal(isStandardZipCode('98121-'), false);\n    });\n    it('should return false when passes \\'\\'', () => {\n      assert.equal(isStandardZipCode(''), false);\n    });\n    it('should return false when passes \\'?\\'', () => {\n      assert.equal(isStandardZipCode('?'), false);\n    });\n    it('should return false when passes null', () => {\n      assert.equal(isStandardZipCode(null), false);\n    });\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isStandardZipCode/isStandardZipCode.spec.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 111,
+    "kind": "file",
+    "name": "common/isUSPhoneNumber/isUSPhoneNumber.js",
+    "content": "import { isUndefined, isNull } from './../../utils';\n\nconst isUSPhoneNumber = phoneNumber => (\n  !isUndefined(phoneNumber) &&\n  !isNull(phoneNumber) &&\n  /^(\\()?(\\d{3})(\\))?[\\s.-]?(\\d{3})[\\s.-]?(\\d{4})$/.test(phoneNumber)\n);\n\nexport default isUSPhoneNumber;\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isUSPhoneNumber/isUSPhoneNumber.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 112,
+    "kind": "function",
+    "name": "isUSPhoneNumber",
+    "memberof": "common/isUSPhoneNumber/isUSPhoneNumber.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "common/isUSPhoneNumber/isUSPhoneNumber.js~isUSPhoneNumber",
+    "access": "public",
+    "export": true,
+    "importPath": "nsp-regexer/common/isUSPhoneNumber/isUSPhoneNumber.js",
+    "importStyle": "isUSPhoneNumber",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "phoneNumber",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 113,
+    "kind": "file",
+    "name": "common/isUSPhoneNumber/isUSPhoneNumber.spec.js",
+    "content": "import { assert } from 'chai';\nimport isUSPhoneNumber from './isUSPhoneNumber';\n\ndescribe('Regexer', () => {\n  describe('isUSPhoneNumber()', () => {\n    it('should return true when passes \\'6174330080\\'', () => {\n      assert.equal(isUSPhoneNumber('6174330080'), true);\n    });\n    it('should return true when passes \\'(617) 433-0080\\'', () => {\n      assert.equal(isUSPhoneNumber('(617) 433-0080'), true);\n    });\n    it('should return true when passes \\'(617)433-0080\\'', () => {\n      assert.equal(isUSPhoneNumber('(617)433-0080'), true);\n    });\n    it('should return true when passes \\'617.433.0080\\'', () => {\n      assert.equal(isUSPhoneNumber('617.433.0080'), true);\n    });\n    it('should return true when passes \\'617-433-0080\\'', () => {\n      assert.equal(isUSPhoneNumber('617-433-0080'), true);\n    });\n    it('should return true when passes \\'617 433 0080\\'', () => {\n      assert.equal(isUSPhoneNumber('617 433 0080'), true);\n    });\n    it('should return false when passes \\'16174330080\\'', () => {\n      assert.equal(isUSPhoneNumber('16174330080'), false);\n    });\n    it('should return false when passes \\'+16174330080\\'', () => {\n      assert.equal(isUSPhoneNumber('+16174330080'), false);\n    });\n    it('should return false when passes \\'61743300800\\'', () => {\n      assert.equal(isUSPhoneNumber('61743300800'), false);\n    });\n    it('should return false when passes \\'\\'', () => {\n      assert.equal(isUSPhoneNumber(''), false);\n    });\n    it('should return false when passes \\'?\\'', () => {\n      assert.equal(isUSPhoneNumber('?'), false);\n    });\n    it('should return false when passes null', () => {\n      assert.equal(isUSPhoneNumber(null), false);\n    });\n  });\n});",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isUSPhoneNumber/isUSPhoneNumber.spec.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 114,
+    "kind": "file",
+    "name": "common/isUSState/isUSState.js",
+    "content": "import { isUndefined, isNull } from './../../utils';\n\nconst isUSState = state => (\n    !isUndefined(state) &&\n    !isNull(state) &&\n    /^(Alabama)|(Alaska)|(Arizona)|(Arkansas)|(California)|(Colorado)|(Connecticut)|(Delaware)|(Florida)|(Georgia)|(Hawaii)|(Idaho)|(Illinois)|(Indiana)|(Iowa)|(Kansas)|(Kentucky)|(Louisiana)|(Maine)|(Maryland)|(Massachusetts)|(Michigan)|(Minnesota)|(Mississippi)|(Missouri)|(Montana)|(Nebraska)|(Nevada)|(New Hampshire)|(New Jersey)|(New Mexico)|(New York)|(North Carolina)|(North Dakota)|(Ohio)|(Oklahoma)|(Oregon)|(Pennsylvania)|(Rhode Island)|(South Carolina)|(South Dakota)|(Tennessee)|(Texas)|(Utah)|(Vermont)|(Virginia)|(Washington)|(West Virginia)|(Wisconsin)|(Wyoming)$/i.test(state)\n);\n\nexport default isUSState;",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isUSState/isUSState.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 115,
+    "kind": "function",
+    "name": "isUSState",
+    "memberof": "common/isUSState/isUSState.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "common/isUSState/isUSState.js~isUSState",
+    "access": "public",
+    "export": true,
+    "importPath": "nsp-regexer/common/isUSState/isUSState.js",
+    "importStyle": "isUSState",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "state",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 116,
+    "kind": "file",
+    "name": "common/isUSState/isUSState.spec.js",
+    "content": "import { assert } from 'chai';\nimport isUSState from './isUSState';\n\ndescribe('Regexer', () => {\n  describe('isUSState()', () => {\n    it('should return true when passed \\'Alabama\\'', () => {\n      assert.equal(isUSState('Alabama'), true);\n    });\n    it('should return true when passed \\'Alaska\\'', () => {\n      assert.equal(isUSState('Alaska'), true);\n    });\n    it('should return true when passed \\'Arizona\\'', () => {\n      assert.equal(isUSState('Arizona'), true);\n    });\n    it('should return true when passed \\'Arkansas\\'', () => {\n      assert.equal(isUSState('Arkansas'), true);\n    });\n    it('should return true when passed \\'California\\'', () => {\n      assert.equal(isUSState('California'), true);\n    });\n    it('should return true when passed \\'Colorado\\'', () => {\n      assert.equal(isUSState('Colorado'), true);\n    });\n    it('should return true when passed \\'Connecticut\\'', () => {\n      assert.equal(isUSState('Connecticut'), true);\n    });\n    it('should return true when passed \\'Delaware\\'', () => {\n      assert.equal(isUSState('Delaware'), true);\n    });\n    it('should return true when passed \\'Florida\\'', () => {\n      assert.equal(isUSState('Florida'), true);\n    });\n    it('should return true when passed \\'Georgia\\'', () => {\n      assert.equal(isUSState('Georgia'), true);\n    });\n    it('should return true when passed \\'Hawaii\\'', () => {\n      assert.equal(isUSState('Hawaii'), true);\n    });\n    it('should return true when passed \\'Idaho\\'', () => {\n      assert.equal(isUSState('Idaho'), true);\n    });\n    it('should return true when passed \\'Illinois\\'', () => {\n      assert.equal(isUSState('Illinois'), true);\n    });\n    it('should return true when passed \\'Indiana\\'', () => {\n      assert.equal(isUSState('Indiana'), true);\n    });\n    it('should return true when passed \\'Iowa\\'', () => {\n      assert.equal(isUSState('Iowa'), true);\n    });\n    it('should return true when passed \\'Kansas\\'', () => {\n      assert.equal(isUSState('Kansas'), true);\n    });\n    it('should return true when passed \\'Kentucky\\'', () => {\n      assert.equal(isUSState('Kentucky'), true);\n    });\n    it('should return true when passed \\'Louisiana\\'', () => {\n      assert.equal(isUSState('Louisiana'), true);\n    });\n    it('should return true when passed \\'Maine\\'', () => {\n      assert.equal(isUSState('Maine'), true);\n    });\n    it('should return true when passed \\'Maryland\\'', () => {\n      assert.equal(isUSState('Maryland'), true);\n    });\n    it('should return true when passed \\'Massachusetts\\'', () => {\n      assert.equal(isUSState('Massachusetts'), true);\n    });\n    it('should return true when passed \\'Michigan\\'', () => {\n      assert.equal(isUSState('Michigan'), true);\n    });\n    it('should return true when passed \\'Minnesota\\'', () => {\n      assert.equal(isUSState('Minnesota'), true);\n    });\n    it('should return true when passed \\'Mississippi\\'', () => {\n      assert.equal(isUSState('Mississippi'), true);\n    });\n    it('should return true when passed \\'Missouri\\'', () => {\n      assert.equal(isUSState('Missouri'), true);\n    });\n    it('should return true when passed \\'Montana\\'', () => {\n      assert.equal(isUSState('Montana'), true);\n    });\n    it('should return true when passed \\'Nebraska\\'', () => {\n      assert.equal(isUSState('Nebraska'), true);\n    });\n    it('should return true when passed \\'Nevada\\'', () => {\n      assert.equal(isUSState('Nevada'), true);\n    });\n    it('should return true when passed \\'New Hampshire\\'', () => {\n      assert.equal(isUSState('New Hampshire'), true);\n    });\n    it('should return true when passed \\'New Jersey\\'', () => {\n      assert.equal(isUSState('New Jersey'), true);\n    });\n    it('should return true when passed \\'New Mexico\\'', () => {\n      assert.equal(isUSState('New Mexico'), true);\n    });\n    it('should return true when passed \\'New York\\'', () => {\n      assert.equal(isUSState('New York'), true);\n    });\n    it('should return true when passed \\'North Carolina\\'', () => {\n      assert.equal(isUSState('North Carolina'), true);\n    });\n    it('should return true when passed \\'North Dakota\\'', () => {\n      assert.equal(isUSState('North Dakota'), true);\n    });\n    it('should return true when passed \\'Ohio\\'', () => {\n      assert.equal(isUSState('Ohio'), true);\n    });\n    it('should return true when passed \\'Oklahoma\\'', () => {\n      assert.equal(isUSState('Oklahoma'), true);\n    });\n    it('should return true when passed \\'Oregon\\'', () => {\n      assert.equal(isUSState('Oregon'), true);\n    });\n    it('should return true when passed \\'Pennsylvania\\'', () => {\n      assert.equal(isUSState('Pennsylvania'), true);\n    });\n    it('should return true when passed \\'Rhode Island\\'', () => {\n      assert.equal(isUSState('Rhode Island'), true);\n    });\n    it('should return true when passed \\'South Carolina\\'', () => {\n      assert.equal(isUSState('South Carolina'), true);\n    });\n    it('should return true when passed \\'South Dakota\\'', () => {\n      assert.equal(isUSState('South Dakota'), true);\n    });\n    it('should return true when passed \\'Tennessee\\'', () => {\n      assert.equal(isUSState('Tennessee'), true);\n    });\n    it('should return true when passed \\'Texas\\'', () => {\n      assert.equal(isUSState('Texas'), true);\n    });\n    it('should return true when passed \\'Utah\\'', () => {\n      assert.equal(isUSState('Utah'), true);\n    });\n    it('should return true when passed \\'Vermont\\'', () => {\n      assert.equal(isUSState('Vermont'), true);\n    });\n    it('should return true when passed \\'Virginia\\'', () => {\n      assert.equal(isUSState('Virginia'), true);\n    });\n    it('should return true when passed \\'Washington\\'', () => {\n      assert.equal(isUSState('Washington'), true);\n    });\n    it('should return true when passed \\'West Virginia\\'', () => {\n      assert.equal(isUSState('West Virginia'), true);\n    });\n    it('should return true when passed \\'Wisconsin\\'', () => {\n      assert.equal(isUSState('Wisconsin'), true);\n    });\n    it('should return true when passed \\'Wyoming\\'', () => {\n      assert.equal(isUSState('Wyoming'), true);\n    });\n    it('should return false when passed \\'Wyominga\\'', () => {\n      assert.equal(isUSState('Wyominga'), false);\n    });\n    it('should return false when passed \\'America\\'', () => {\n      assert.equal(isUSState('America'), false);\n    });\n    it('should return true when passed \\'new york\\'', () => {\n      assert.equal(isUSState('new york'), true);\n    });\n    it('should return false when passed \\'Paris\\'', () => {\n      assert.equal(isUSState('Paris'), false);\n    });\n    it('should return false when passed -34', () => {\n      assert.equal(isUSState(-34), false);\n    });\n    it('should return false when passed \\'\\'', () => {\n      assert.equal(isUSState(''), false);\n    });\n    it('should return false when passed null', () => {\n      assert.equal(isUSState(null), false);\n    });\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isUSState/isUSState.spec.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 117,
+    "kind": "file",
+    "name": "common/isUpperCase/isUpperCase.js",
+    "content": "import { isNull, isUndefined, isString } from './../../utils';\n\nconst isUpperCase = str => (\n  !isUndefined(str) &&\n  !isNull(str) &&\n  isString(str) &&\n  /^[^a-z]+$/.test(str)\n);\n\nexport default isUpperCase;\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isUpperCase/isUpperCase.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 118,
+    "kind": "function",
+    "name": "isUpperCase",
+    "memberof": "common/isUpperCase/isUpperCase.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "common/isUpperCase/isUpperCase.js~isUpperCase",
+    "access": "public",
+    "export": true,
+    "importPath": "nsp-regexer/common/isUpperCase/isUpperCase.js",
+    "importStyle": "isUpperCase",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "str",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 119,
+    "kind": "file",
+    "name": "common/isUpperCase/isUpperCase.spec.js",
+    "content": "import { assert } from 'chai';\nimport isUpperCase from './isUpperCase';\n\ndescribe('Regexer', () => {\n  describe('isUpperCase()', () => {\n    it('should return true when passed \\'a\\'', () => {\n      assert.equal(isUpperCase('a'), false);\n    });\n    it('should return true when passed \\'dog\\'', () => {\n      assert.equal(isUpperCase('dog'), false);\n    });\n    it('should return true when passed \\'f\\'', () => {\n      assert.equal(isUpperCase('f'), false);\n    });\n    it('should return true when passed \\'IAN\\'', () => {\n      assert.equal(isUpperCase('IAN'), true);\n    });\n    it('should return true when passed \\'k\\'', () => {\n      assert.equal(isUpperCase('k'), false);\n    });\n    it('should return true when passed \\'A\\'', () => {\n      assert.equal(isUpperCase('A'), true);\n    });\n    it('should return true when passed \\'false\\'', () => {\n      assert.equal(isUpperCase('false'), false);\n    });\n    it('should return true when passed \\'U\\'', () => {\n      assert.equal(isUpperCase('U'), true);\n    });\n    it('should return true when passed \\'aB\\'', () => {\n      assert.equal(isUpperCase('aB'), false);\n    });\n    it('should return true when passed \\'?\\'', () => {\n      assert.equal(isUpperCase('?'), true);\n    });\n    it('should return true when passed \\' \\'', () => {\n      assert.equal(isUpperCase(' '), true);\n    });\n    it('should return false when passed \\'\\'', () => {\n      assert.equal(isUpperCase(''), false);\n    });\n    it('should return false when passed null', () => {\n      assert.equal(isUpperCase(null), false);\n    });\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isUpperCase/isUpperCase.spec.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 120,
+    "kind": "file",
+    "name": "common/isUrl/isUrl.js",
+    "content": "import { isUndefined, isNull, isString } from './../../utils';\n\nconst isUrl = url => (\n  !isUndefined(url) &&\n  !isNull(url) &&\n  isString(url) &&\n  /^((((H|h)(T|t)|(F|f))(T|t)(P|p)((S|s)?))\\:\\/\\/)?(www.|[a-zA-Z0-9].)?[a-zA-Z0-9\\-\\.]+\\.[a-zA-Z]{2,6}(\\:[0-9]{1,5})*(\\/($|[a-zA-Z0-9\\.\\,\\;\\?\\'\\\\\\+&amp;%\\$#\\=~_\\-]+))*$/.test(url)\n);\n\nexport default isUrl;\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isUrl/isUrl.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 121,
+    "kind": "function",
+    "name": "isUrl",
+    "memberof": "common/isUrl/isUrl.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "common/isUrl/isUrl.js~isUrl",
+    "access": "public",
+    "export": true,
+    "importPath": "nsp-regexer/common/isUrl/isUrl.js",
+    "importStyle": "isUrl",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "url",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 122,
+    "kind": "file",
+    "name": "common/isUrl/isUrl.spec.js",
+    "content": "import { assert } from 'chai';\nimport isUrl from './isUrl';\n\ndescribe('Regexer', () => {\n  describe('isUrl()', () => {\n    it('should return true when passed \\'http://www.youtube.com/watch?v=-wtIMTCHWuI\\'', () => {\n      assert.equal(isUrl('http://www.youtube.com/watch?v=-wtIMTCHWuI'), true);\n    });\n    it('should return false when passed \\'http://google.com/some/file!.html\\'', () => {\n      assert.equal(isUrl('http://google.com/some/file!.html'), false);\n    });\n    it('should return false when passed \\'\\'', () => {\n      assert.equal(isUrl(''), false);\n    });\n    it('should return true when passed \\'http://youtu.be/-wtIMTCHWuI\\'', () => {\n      assert.equal(isUrl('http://youtu.be/-wtIMTCHWuI'), true);\n    });\n    it('should return true when passed \\'ttp://i2.ytimg.com/vi/-wtIMTCHWuI/hqdefault.jpg\\'', () => {\n      assert.equal(isUrl('http://i2.ytimg.com/vi/-wtIMTCHWuI/hqdefault.jpg'), true);\n    });\n    it('should return false when passed null', () => {\n      assert.equal(isUrl(null), false);\n    });\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isUrl/isUrl.spec.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 123,
+    "kind": "file",
+    "name": "common/isUsername/isUsername.js",
+    "content": "import { isNull, isUndefined, isString } from './../../utils';\n\nconst isUsername = username => (\n  !isUndefined(username) &&\n  !isNull(username) &&\n  isString(username) &&\n  /^[\\w-]{3,16}$/.test(username)\n);\n\nexport default isUsername;\n\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isUsername/isUsername.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 124,
+    "kind": "function",
+    "name": "isUsername",
+    "memberof": "common/isUsername/isUsername.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "common/isUsername/isUsername.js~isUsername",
+    "access": "public",
+    "export": true,
+    "importPath": "nsp-regexer/common/isUsername/isUsername.js",
+    "importStyle": "isUsername",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "username",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 125,
+    "kind": "file",
+    "name": "common/isUsername/isUsername.spec.js",
+    "content": "import { assert } from 'chai';\nimport isUsername from './isUsername';\n\ndescribe('Regexer', () => {\n  describe('isUsername()', () => {\n    it('should return true when passed \\'npranto\\'', () => {\n      assert.equal(isUsername('npranto'), true);\n    });\n    it('should return false when passed \\'sbfj&&#\\'', () => {\n      assert.equal(isUsername('sbfj&&#'), false);\n    });\n    it('should return false when passed \\'\\'', () => {\n      assert.equal(isUsername(''), false);\n    });\n    it('should return true when passed \\'NS-pranto_236\\'', () => {\n      assert.equal(isUsername('NS-pranto_236'), true);\n    });\n    it('should return false when passed null', () => {\n      assert.equal(isUsername(null), false);\n    });\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isUsername/isUsername.spec.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 126,
+    "kind": "file",
+    "name": "common/isVowel/isVowel.js",
+    "content": "import { isNull, isUndefined, isString } from './../../utils';\n\nconst isVowel = char => (\n  !isUndefined(char) &&\n  !isNull(char) &&\n  isString(char) &&\n  (char.length === 1) &&\n  /^[a|e|i|o|u|A|E|I|O|U]$/.test(char)\n);\n\nexport default isVowel;\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isVowel/isVowel.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 127,
+    "kind": "function",
+    "name": "isVowel",
+    "memberof": "common/isVowel/isVowel.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "common/isVowel/isVowel.js~isVowel",
+    "access": "public",
+    "export": true,
+    "importPath": "nsp-regexer/common/isVowel/isVowel.js",
+    "importStyle": "isVowel",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "char",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 128,
+    "kind": "file",
+    "name": "common/isVowel/isVowel.spec.js",
+    "content": "import { assert } from 'chai';\nimport isVowel from './isVowel';\n\ndescribe('Regexer', () => {\n  describe('isVowel()', () => {\n    it('should return true when passed \\'a\\'', () => {\n      assert.equal(isVowel('a'), true);\n    });\n    it('should return true when passed \\'e\\'', () => {\n      assert.equal(isVowel('e'), true);\n    });\n    it('should return true when passed \\'i\\'', () => {\n      assert.equal(isVowel('i'), true);\n    });\n    it('should return true when passed \\'o\\'', () => {\n      assert.equal(isVowel('o'), true);\n    });\n    it('should return true when passed \\'u\\'', () => {\n      assert.equal(isVowel('u'), true);\n    });\n    it('should return true when passed \\'A\\'', () => {\n      assert.equal(isVowel('A'), true);\n    });\n    it('should return true when passed \\'E\\'', () => {\n      assert.equal(isVowel('E'), true);\n    });\n    it('should return true when passed \\'I\\'', () => {\n      assert.equal(isVowel('I'), true);\n    });\n    it('should return true when passed \\'O\\'', () => {\n      assert.equal(isVowel('O'), true);\n    });\n    it('should return true when passed \\'U\\'', () => {\n      assert.equal(isVowel('U'), true);\n    });\n    it('should return false when passed \\'B\\'', () => {\n      assert.equal(isVowel('B'), false);\n    });\n    it('should return false when passed \\'x\\'', () => {\n      assert.equal(isVowel('x'), false);\n    });\n    it('should return false when passed \\'?\\'', () => {\n      assert.equal(isVowel('?'), false);\n    });\n    it('should return false when passed \\' \\'', () => {\n      assert.equal(isVowel(' '), false);\n    });\n    it('should return false when passed \\'\\'', () => {\n      assert.equal(isVowel(''), false);\n    });\n    it('should return false when passed null', () => {\n      assert.equal(isVowel(null), false);\n    });\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isVowel/isVowel.spec.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 129,
+    "kind": "file",
+    "name": "common/isYear/isYear.js",
+    "content": "import { isUndefined, isNull } from './../../utils';\n\nconst isYear = number => (\n  !isUndefined(number) &&\n  !isNull(number) &&\n  /^\\d{4}$/.test(number)\n);\n\nexport default isYear;\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isYear/isYear.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 130,
+    "kind": "function",
+    "name": "isYear",
+    "memberof": "common/isYear/isYear.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "common/isYear/isYear.js~isYear",
+    "access": "public",
+    "export": true,
+    "importPath": "nsp-regexer/common/isYear/isYear.js",
+    "importStyle": "isYear",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "number",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 131,
+    "kind": "file",
+    "name": "common/isYear/isYear.spec.js",
+    "content": "import { assert } from 'chai';\nimport isYear from './isYear';\n\ndescribe('Regexer', () => {\n  describe('isYear()', () => {\n    it('should return true when passes 1945', () => {\n      assert.equal(isYear(1945), true);\n    });\n    it('should return true when passes \\'0000\\'', () => {\n      assert.equal(isYear('0000'), true);\n    });\n    it('should return false when passes \\'fggf\\'', () => {\n      assert.equal(isYear('fggf'), false);\n    });\n    it('should return true when passes 2010', () => {\n      assert.equal(isYear(2010), true);\n    });\n    it('should return false when passes \\'?\\'', () => {\n      assert.equal(isYear(')'), false);\n    });\n    it('should return false when passes \\'\\'', () => {\n      assert.equal(isYear(''), false);\n    });\n    it('should return false when passes null', () => {\n      assert.equal(isYear(null), false);\n    });\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isYear/isYear.spec.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "kind": "index",
+    "content": "<h1 align=\"center\">\n  <br>\n  <a href=\"https://github.com/npranto/regexer\"><img src=\"./src/assets/images/R-logo.png\" alt=\"Regexer\" width=\"300\"></a>\n  <br>\n  <strong>Regexer</strong>\n  <br>\n</h1>\n\n[![NPM](https://nodei.co/npm/nsp-regexer.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/nsp-regexer/)\n\n[![CircleCI](https://img.shields.io/circleci/project/github/npranto/regexer.svg?style=for-the-badge)](https://circleci.com/gh/npranto/regexer)\n![npm](https://img.shields.io/npm/v/nsp-regexer.svg?style=for-the-badge)\n![npm](https://img.shields.io/npm/dt/nsp-regexer.svg?style=for-the-badge)\n[![GitHub issues](https://img.shields.io/github/issues/npranto/regexer.svg?style=for-the-badge)](https://github.com/npranto/regexer/issues)\n[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=for-the-badge)](http://commitizen.github.io/cz-cli/)\n[![GitHub license](https://img.shields.io/github/license/npranto/regexer.svg?style=for-the-badge)](https://github.com/npranto/regexer/blob/master/LICENSE)\n\n\n<h4 align=\"left\">\nA simple and convenient library of functions that leverage regular expressions while hiding its complexity of implementation\n</h4>\n\n## Table of Contents\n* [Why Regexer?](#why-regexer)\n* [Installation](#installation)\n* [Usage](#usage)\n* [API](#api)\n    * [`.isCreditCard()`](#)\n    * [`.isDayOfMonth()`](#)\n    * [`.isDayOfWeekString()`](#)\n    * [`.isDecimal()`](#)\n    * [`.isEmail()`](#)\n    * [`.isHexValue()`](#)\n    * [`.isHTMLTag()`](#)\n    * [`.isInteger()`](#)\n    * [`.isIPAddressV4()`](#)\n    * [`.isLetter()`](#)\n    * [`.isLowerCase()`](#)\n    * [`.isMonthOfYear()`](#)\n    * [`.isMonthOfYearString()`](#)\n    * [`.isNegativeInteger()`](#)\n    * [`.isNegativeNumber()`](#)\n    * [`.isNumber()`](#)\n    * [`.isPassword()`](#)\n    * [`.isPositiveInteger()`](#)\n    * [`.isPositiveNumber()`](#)\n    * [`.isSSN()`](#)\n    * [`.isStandardZipCode()`](#)\n    * [`.isUpperCase()`](#)\n    * [`.isUrl()`](#)\n    * [`.isUsername()`](#)\n    * [`.isUSPhoneNumber()`](#)\n    * [`.isUSState()`](#)    \n    * [`.isVowel()`](#)\n    * [`.isYear()`](#)\n\n* [Credits](#credits)\n* [Support](#support)\n* [You May Also Like](#you-may-also-like)\n* [License](#license)\n* [Authors](#authors)\n\n## Why Regexer?\n\nRegular expressions are awesome and absolutely super useful when it comes to looking for pattern matches in a string, but clearly it is not the easiest topic to get your head around. Don't believe me, [just take a look](https://www.quora.com/What-is-the-most-weird-regular-expression-line-you-have-ever-seen)!\n\nRegexer just attempts to make the process of using some of the most popular regular expressions easier for you. You no longer need to look all over the place for finding a regular expression for matching an email or a phone number, or a hex value or even a day of the week. Just install regexer and use the built in common functions to verify candidate values.\n\nStill confused...? Let's look at an <strong>[example](#usage)</strong>\n\n## Installation\nBefore we get going, make sure you have [Node.js](https://nodejs.org/en/) installed on your system, so we can use the NPM (Node Package Manager) to install regexer on your project.\n<br />\n```\n$ npm install --save nsp-regexer\n```\n\n## Usage\n\n```js\n// ES5\nconst regexer = require('nsp-regexer');\n\nconsole.log( regexer.isEmail('jsmith@gmail.com') )  // true\nconsole.log( regexer.isLowerCase('KEVIN') )     // false\n```\n```js\n// ES6+\nimport { isVowel, isNegativeNumber } from 'nsp-regexer';\n\nconsole.log( isVowel('b') )  // false\nconsole.log( isNegativeNumber(-50.67) )  // true\n```\n\n## API\n\n### `.isCreditCard(data[string|number])`\n\nReturns `true` if data is a valid credit card number, otherwise returns `false`\n\n```js\nimport { isCreditCard } from 'nsp-regexer';\n\nisCreditCard('345768475867474')  \n// true\n\nisCreditCard(5465838563658274)  \n// true\n\nisCreditCard('?')  \n// false\n```\n\n### `.isDayOfMonth(data[string|number])`\n\nReturns `true` if it is a day of the month (1-31), otherwise returns `false`\n\n```js\nimport { isDayOfMonth } from 'nsp-regexer';\n\nisDayOfMonth('28')  \n// true\n\nisDayOfMonth(12)  \n// true\n\nisDayOfMonth(55)  \n// false\n```\n\n### `.isDayOfWeekString(data[string])`\n\nReturns `true` if it is a day of the month (1-31), otherwise returns `false`\n\n```js\nimport { isDayOfWeekString } from 'nsp-regexer';\n\nisDayOfWeekString('monday')  \n// true\n\nisDayOfWeekString('FRIDAY')  \n// true\n\nisDayOfWeekString('doomsday')  \n// false\n```\n\n## Credits\n\nSource code makes use of several open source packages, a few keys ones include...\n\n- [Babel](https://babeljs.io/) - To transpile ES6+ syntax to ES5, to run source code in Node and browser\n- [Webpack](https://webpack.js.org/) - For module bundling and generating distributing assets\n- [ESLint](https://eslint.org/) - To lint source code for better readability, syntax consistency and proper formatting\n- [CircleCI](https://circleci.com/) - Continuous integration middleware to verify incremental builds are always passing\n\n## Support\n\n<a href=\"https://www.buymeacoffee.com/nsplovescoffee\" target=\"_blank\">\n  <img src=\"https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png\" alt=\"Buy Me A Coffee\" style=\"height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;\" >\n</a>\n\n## You May Also Like...\n\n- [focus](https://github.com/npranto/focus) - A simple, elegant task manager application to help students and computer savvy workers get their work done efficiently and on time\n- [lists](https://github.com/npranto/lists) - Quickly draught down your todos, groceries, chores or any other lists of items quickly #powerOfLists\n\n## License\n\n[MIT](https://tldrlegal.com/license/mit-license)\n\n## Contributors\n\n<div>\n  <a href=\"https://github.com/npranto\">\n    <img src=\"https://avatars2.githubusercontent.com/u/13524077?v=4\" alt=\"Nazmuz Shakib pranto\" width=\"50\" />\n  </a>\n</div>\n",
+    "longname": "/Users/Focus/regexer/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"nsp-regexer\",\n  \"version\": \"0.0.0-semantically-released\",\n  \"description\": \"A simple and convenient library of functions that leverage regular expressions while hiding its complexity of implementation\",\n  \"main\": \"dist/index.js\",\n  \"dependencies\": {\n    \"npm\": \"^6.1.0\"\n  },\n  \"devDependencies\": {\n    \"babel-cli\": \"^6.26.0\",\n    \"babel-core\": \"6.26.3\",\n    \"babel-loader\": \"7.1.4\",\n    \"babel-preset-env\": \"1.7.0\",\n    \"chai\": \"4.1.2\",\n    \"commitizen\": \"^2.10.1\",\n    \"cz-conventional-changelog\": \"^2.1.0\",\n    \"esdoc\": \"1.1.0\",\n    \"esdoc-standard-plugin\": \"1.0.0\",\n    \"eslint\": \"4.19.1\",\n    \"eslint-config-airbnb-base\": \"12.1.0\",\n    \"eslint-plugin-import\": \"2.12.0\",\n    \"mocha\": \"5.2.0\",\n    \"npm-run-all\": \"4.1.3\",\n    \"nyc\": \"11.8.0\",\n    \"rimraf\": \"2.6.2\",\n    \"semantic-release\": \"^15.5.2\",\n    \"semantic-release-cli\": \"^4.0.5\",\n    \"webpack\": \"4.8.3\",\n    \"webpack-cli\": \"2.1.4\"\n  },\n  \"scripts\": {\n    \"clean\": \"rimraf dist && rimraf coverage && rimraf .nyc_output\",\n    \"build\": \"npm run clean && npm-run-all --parallel build:*\",\n    \"build:main\": \"babel --out-dir dist --ignore *.spec.js src\",\n    \"build:umd\": \"webpack --output-filename index.umd.js\",\n    \"build:umd.min\": \"webpack --output-filename index.umd.min.js -p\",\n    \"test\": \"mocha \\\"src/**/*.spec.js\\\" --require babel-core/register\",\n    \"test:watch\": \"mocha \\\"src/**/*.spec.js\\\" --require babel-core/register --watch\",\n    \"coverage\": \"nyc mocha src/**/*spec.js --require babel-core/register\",\n    \"report-coverage\": \"npm run coverage && nyc report --reporter=html && open ./coverage/index.html\",\n    \"check-coverage\": \"npm run coverage && nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100\",\n    \"semantic-release\": \"semantic-release\",\n    \"start\": \"npm install && npm test\",\n    \"commit\": \"git-cz\",\n    \"save\": \"npm run build && git status && git add . && git status && npm run commit\",\n    \"docs\": \"./node_modules/.bin/esdoc\",\n    \"open-docs\": \"npm run docs && open ./docs/index.html\"\n  },\n  \"files\": [\n    \"dist\",\n    \"README.md\"\n  ],\n  \"nyc\": {\n    \"exclude\": [\n      \"src/**/*.spec.js\"\n    ]\n  },\n  \"config\": {\n    \"commitizen\": {\n      \"path\": \"./node_modules/cz-conventional-changelog\"\n    }\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/npranto/regexer.git\"\n  },\n  \"keywords\": [\n    \"regex\",\n    \"function\",\n    \"simple\"\n  ],\n  \"author\": \"Nazmuz Shakib Pranto <npranto@gmail.com> (http://nsp.surge.sh/)\",\n  \"license\": \"MIT\",\n  \"bugs\": {\n    \"url\": \"https://github.com/npranto/regexer/issues\"\n  },\n  \"homepage\": \"https://github.com/npranto/regexer#readme\"\n}\n",
+    "longname": "/Users/Focus/regexer/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  }
+]

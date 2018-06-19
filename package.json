@@ -14,6 +14,8 @@
     "chai": "4.1.2",
     "commitizen": "^2.10.1",
     "cz-conventional-changelog": "^2.1.0",
+    "esdoc": "1.1.0",
+    "esdoc-standard-plugin": "1.0.0",
     "eslint": "4.19.1",
     "eslint-config-airbnb-base": "12.1.0",
     "eslint-plugin-import": "2.12.0",
@@ -40,7 +42,9 @@
     "semantic-release": "semantic-release",
     "start": "npm install && npm test",
     "commit": "git-cz",
-    "save": "npm run build && git status && git add . && git status && npm run commit"
+    "save": "npm run build && git status && git add . && git status && npm run commit",
+    "docs": "./node_modules/.bin/esdoc",
+    "open-docs": "npm run docs && open ./docs/index.html"
   },
   "files": [
     "dist",
