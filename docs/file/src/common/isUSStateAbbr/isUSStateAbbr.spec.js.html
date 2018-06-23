@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <base data-ice="baseUrl" href="../../../../">
-  <title data-ice="title">src/common/isCreditCard/isCreditCardNumber.js | nsp-regexer</title>
+  <title data-ice="title">src/common/isUSStateAbbr/isUSStateAbbr.spec.js | nsp-regexer</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -93,24 +93,188 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><h1 data-ice="title">src/common/isCreditCard/isCreditCardNumber.js</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { isUndefined, isNull } from &apos;./../../utils&apos;;
+<div class="content" data-ice="content"><h1 data-ice="title">src/common/isUSStateAbbr/isUSStateAbbr.spec.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { assert } from &apos;chai&apos;;
+import isUSStateAbbr from &apos;./isUSStateAbbr&apos;;
 
-/**
- * @desc Returns true if creditCardNumber is a valid credit card number, otherwise returns false
- * @param {number|string} creditCardNumber - credit card number
- * @return {boolean} - true or false 
- *
- * @example
- * &apos;345768475867474&apos;, 6476666666666666
- */
-const isCreditCardNumber = creditCardNumber =&gt; (
-  !isUndefined(creditCardNumber) &amp;&amp;
-  !isNull(creditCardNumber) &amp;&amp;
-  /^(3[47]\d{13})|(30[0123456]\d{11})|(54\d{14})|(6(?:011\d{12}|5\d{14}|4[4-9]\d{13}|22(?:1(?:2[6-9]|[3-9]\d)|[2-8]\d{2}|9(?:[01]\d|2[0-5]))\d{10})|(63[7-9]\d{13})|(35(2([89])|([3-8]\d))\d{12})|(((5018)|(5020)|(5038)|(5893)|(6304)|(6759)|(676[1-3]))\d{12})|((?:5[1-5][0-9]{2}|222[1-9]|22[3-9][0-9]|2[3-6][0-9]{2}|27[01][0-9]|2720)[0-9]{12})|(54\d{14})|(((4026)|(4508)|(4844)|(4913)|(4917))\d{12}|417500\d{10})|(62\d{14})|(4\d{15}))$/.test(creditCardNumber)
-);
-
-export default isCreditCardNumber;
+describe(&apos;Regexer&apos;, () =&gt; {
+  describe(&apos;isUSStateAbbr()&apos;, () =&gt; {
+    it(&apos;should return true when passed \&apos;AK\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;AK&apos;), true);
+		});
+		it(&apos;should return true when passed \&apos;AL\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;AL&apos;), true);
+		});
+		it(&apos;should return true when passed \&apos;AR\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;AR&apos;), true);
+		});
+		it(&apos;should return true when passed \&apos;AZ\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;AZ&apos;), true);
+		});
+		it(&apos;should return true when passed \&apos;CA\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;CA&apos;), true);
+		});
+		it(&apos;should return true when passed \&apos;CO\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;CO&apos;), true);
+		});
+		it(&apos;should return true when passed \&apos;CT\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;CT&apos;), true);
+		});
+		it(&apos;should return true when passed \&apos;DC\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;DC&apos;), true);
+		});
+		it(&apos;should return true when passed \&apos;DE\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;DE&apos;), true);
+		});
+		it(&apos;should return true when passed \&apos;FL\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;FL&apos;), true);
+		});
+		it(&apos;should return true when passed \&apos;GA\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;GA&apos;), true);
+		});
+		it(&apos;should return true when passed \&apos;HI\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;HI&apos;), true);
+		});
+		it(&apos;should return true when passed \&apos;IA\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;IA&apos;), true);
+		});
+		it(&apos;should return true when passed \&apos;ID\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;ID&apos;), true);
+		});
+		it(&apos;should return true when passed \&apos;IL\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;IL&apos;), true);
+		});
+		it(&apos;should return true when passed \&apos;IN\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;IN&apos;), true);
+		});
+		it(&apos;should return true when passed \&apos;KS\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;KS&apos;), true);
+		});
+		it(&apos;should return true when passed \&apos;KY\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;KY&apos;), true);
+		});
+		it(&apos;should return true when passed \&apos;LA\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;LA&apos;), true);
+		});
+		it(&apos;should return true when passed \&apos;MA\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;MA&apos;), true);
+		});
+		it(&apos;should return true when passed \&apos;MD\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;MD&apos;), true);
+		});
+		it(&apos;should return true when passed \&apos;ME\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;ME&apos;), true);
+		});
+		it(&apos;should return true when passed \&apos;MI\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;MI&apos;), true);
+		});
+		it(&apos;should return true when passed \&apos;MN\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;MN&apos;), true);
+		});
+		it(&apos;should return true when passed \&apos;MO\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;MO&apos;), true);
+		});
+		it(&apos;should return true when passed \&apos;MS\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;MS&apos;), true);
+		});
+		it(&apos;should return true when passed \&apos;MT\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;MT&apos;), true);
+		});
+		it(&apos;should return true when passed \&apos;NC\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;NC&apos;), true);
+		});
+		it(&apos;should return true when passed \&apos;ND\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;ND&apos;), true);
+		});
+		it(&apos;should return true when passed \&apos;NE\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;NE&apos;), true);
+		});
+		it(&apos;should return true when passed \&apos;NH\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;NH&apos;), true);
+		});
+		it(&apos;should return true when passed \&apos;NJ\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;NJ&apos;), true);
+		});
+		it(&apos;should return true when passed \&apos;NM\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;NM&apos;), true);
+		});
+		it(&apos;should return true when passed \&apos;NV\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;NV&apos;), true);
+		});
+		it(&apos;should return true when passed \&apos;NY\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;NY&apos;), true);
+		});
+		it(&apos;should return true when passed \&apos;OH\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;OH&apos;), true);
+		});
+		it(&apos;should return true when passed \&apos;OK\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;OK&apos;), true);
+		});
+		it(&apos;should return true when passed \&apos;OR\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;OR&apos;), true);
+		});
+		it(&apos;should return true when passed \&apos;PA\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;PA&apos;), true);
+		});
+		it(&apos;should return true when passed \&apos;RI\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;RI&apos;), true);
+		});
+		it(&apos;should return true when passed \&apos;SC\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;SC&apos;), true);
+		});
+		it(&apos;should return true when passed \&apos;SD\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;SD&apos;), true);
+		});
+		it(&apos;should return true when passed \&apos;TN\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;TN&apos;), true);
+		});
+		it(&apos;should return true when passed \&apos;TX\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;TX&apos;), true);
+		});
+		it(&apos;should return true when passed \&apos;UT\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;UT&apos;), true);
+		});
+		it(&apos;should return true when passed \&apos;VA\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;VA&apos;), true);
+		});
+		it(&apos;should return true when passed \&apos;VT\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;VT&apos;), true);
+		});
+		it(&apos;should return true when passed \&apos;WA\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;WA&apos;), true);
+		});
+		it(&apos;should return true when passed \&apos;WI\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;WI&apos;), true);
+		});
+		it(&apos;should return true when passed \&apos;WV\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;WV&apos;), true);
+		});
+		it(&apos;should return true when passed \&apos;WY\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;WY&apos;), true);
+		});
+		it(&apos;should return false when passed \&apos;Wyominga\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;Wyominga&apos;), false);
+		});
+		it(&apos;should return false when passed \&apos;America\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;America&apos;), false);
+		});
+		it(&apos;should return false when passed \&apos;new york\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;new york&apos;), false);
+		});
+		it(&apos;should return false when passed \&apos;Paris\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;Paris&apos;), false);
+		});
+		it(&apos;should return false when passed -34&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(-34), false);
+		});
+		it(&apos;should return false when passed \&apos;\&apos;&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(&apos;&apos;), false);
+		});
+		it(&apos;should return false when passed null&apos;, () =&gt; {
+			assert.equal(isUSStateAbbr(null), false);
+		});
+  });
+});
 </code></pre>
 
 </div>

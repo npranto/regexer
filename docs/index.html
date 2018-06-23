@@ -76,6 +76,7 @@
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#common-isstandardzipcode">common/isStandardZipCode</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isStandardZipCode">isStandardZipCode</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#common-isusphonenumber">common/isUSPhoneNumber</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isUSPhoneNumber">isUSPhoneNumber</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#common-isusstate">common/isUSState</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isUSState">isUSState</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#common-isusstateabbr">common/isUSStateAbbr</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isUSStateAbbr">isUSStateAbbr</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#common-isuppercase">common/isUpperCase</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isUpperCase">isUpperCase</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#common-isurl">common/isUrl</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isUrl">isUrl</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#common-isusername">common/isUsername</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isUsername">isUsername</a></span></span></li>
@@ -144,7 +145,10 @@ A simple and convenient library of functions that leverage regular expressions w
 <li><a href="#isurlurlstring"><code>.isUrl()</code></a></li>
 <li><a href="#isusernameusernamestring"><code>.isUsername()</code></a></li>
 <li><a href="#isusphonenumberphonenumberstring"><code>.isUSPhoneNumber()</code></a></li>
-<li><a href="#isusstatestatestring"><code>.isUSState()</code></a>    </li>
+<li><a href="#isusstatestatestring"><code>.isUSState()</code></a>   <ul>
+<li><a href="#isusstateabbrstateabbrstring"><code>.isUSStateAbbr()</code></a>    </li>
+</ul>
+</li>
 <li><a href="#isvowelcharstring"><code>.isVowel()</code></a><ul>
 <li><a href="#iswhitespacecharstring"><code>.isWhiteSpace()</code></a></li>
 </ul>
@@ -505,6 +509,18 @@ isUSState(&apos;Rhode Island&apos;)
 // true
 
 isUSState(&apos;Boston&apos;)  
+// false</code>
+</code></pre>
+<h3 id="-code--isusstateabbr-stateabbr-string----code-"><code>.isUSStateAbbr(stateAbbr[string])</code></h3><p>Returns true if stateAbbr an abbreviation of a name of one of US state, otherwise returns false</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">import { isUSStateAbbr } from &apos;nsp-regexer&apos;;
+
+isUSStateAbbr(&apos;MA&apos;)  
+// true
+
+isUSStateAbbr(&apos;ca&apos;)  
+// true
+
+isUSStateAbbr(&apos;bos&apos;)  
 // false</code>
 </code></pre>
 <h3 id="-code--isvowel-char-string----code-"><code>.isVowel(char[string])</code></h3><p>Returns <code>true</code> if char a vowel letter, otherwise returns <code>false</code></p>
