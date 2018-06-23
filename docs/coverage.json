@@ -1,7 +1,7 @@
 {
-  "coverage": "53.44%",
-  "expectCount": 58,
-  "actualCount": 31,
+  "coverage": "54.23%",
+  "expectCount": 59,
+  "actualCount": 32,
   "files": {
     "src/common/isCreditCard/isCreditCardNumber.js": {
       "expectCount": 1,
@@ -134,6 +134,11 @@
       "undocumentLines": []
     },
     "src/common/isVowel/isVowel.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/common/isWhiteSpace/isWhiteSpace.js": {
       "expectCount": 1,
       "actualCount": 1,
       "undocumentLines": []

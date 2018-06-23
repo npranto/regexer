@@ -30,7 +30,7 @@
   },
   "scripts": {
     "clean": "rimraf node_modules && npm install && rimraf dist && rimraf coverage && rimraf .nyc_output",
-    "build": "npm run clean && npm-run-all --parallel build:*",
+    "build": "npm-run-all --parallel build:*",
     "build:main": "babel --out-dir dist --ignore *.spec.js src",
     "build:umd": "webpack --output-filename index.umd.js",
     "build:umd.min": "webpack --output-filename index.umd.min.js -p",

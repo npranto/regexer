@@ -2223,6 +2223,67 @@
   {
     "__docId__": 129,
     "kind": "file",
+    "name": "src/common/isWhiteSpace/isWhiteSpace.js",
+    "content": "/**\n * @desc Returns true if char a white space, otherwise returns false\n * @param {string} char - a space\n * @return {boolean} - true or false\n *\n * @example\n * ' ' - just a single white space\n */\nconst isWhiteSpace = char => (\n  /^\\s$/.test(char)\n);\n\nexport default isWhiteSpace;\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isWhiteSpace/isWhiteSpace.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 130,
+    "kind": "function",
+    "name": "isWhiteSpace",
+    "memberof": "src/common/isWhiteSpace/isWhiteSpace.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/common/isWhiteSpace/isWhiteSpace.js~isWhiteSpace",
+    "access": "public",
+    "export": true,
+    "importPath": "nsp-regexer/src/common/isWhiteSpace/isWhiteSpace.js",
+    "importStyle": "isWhiteSpace",
+    "description": "Returns true if char a white space, otherwise returns false",
+    "examples": [
+      "' ' - just a single white space"
+    ],
+    "lineNumber": 9,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "char",
+        "description": "a space"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "boolean"
+      ],
+      "spread": false,
+      "description": "true or false"
+    }
+  },
+  {
+    "__docId__": 131,
+    "kind": "file",
+    "name": "src/common/isWhiteSpace/isWhiteSpace.spec.js",
+    "content": "import { assert } from 'chai';\nimport isWhiteSpace from './isWhiteSpace';\n\ndescribe('Regexer', () => {\n  describe('isWhiteSpace()', () => {\n    it('should return false when passed \\'about\\'', () => {\n      assert.equal(isWhiteSpace('about'), false);\n    });\n    it('should return true when passed \\' \\'', () => {\n      assert.equal(isWhiteSpace(' '), true);\n    });\n    it('should return false when passed \\'  \\'', () => {\n      assert.equal(isWhiteSpace('  '), false);\n    });\n    it('should return false when passed \\'\\'', () => {\n      assert.equal(isWhiteSpace(''), false);\n    });\n    it('should return false when passed null', () => {\n      assert.equal(isWhiteSpace(null), false);\n    });\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isWhiteSpace/isWhiteSpace.spec.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 132,
+    "kind": "file",
     "name": "src/common/isYear/isYear.js",
     "content": "import { isUndefined, isNull } from './../../utils';\n\n/**\n * @desc Returns true if number a year, otherwise returns false\n * @param {number|string} number - a year\n * @return {boolean} - true or false \n *\n * @example\n * 1345, 1784, 1934, 2012, 2018 \n */\n\nconst isYear = number => (\n  !isUndefined(number) &&\n  !isNull(number) &&\n  /^[1-9]\\d{3}$/.test(number)\n);\n\nexport default isYear;\n",
     "static": true,
@@ -2232,7 +2293,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 130,
+    "__docId__": 133,
     "kind": "function",
     "name": "isYear",
     "memberof": "src/common/isYear/isYear.js",
@@ -2272,7 +2333,7 @@
     }
   },
   {
-    "__docId__": 131,
+    "__docId__": 134,
     "kind": "file",
     "name": "src/common/isYear/isYear.spec.js",
     "content": "import { assert } from 'chai';\nimport isYear from './isYear';\n\ndescribe('Regexer', () => {\n  describe('isYear()', () => {\n    it('should return true when passes 1945', () => {\n      assert.equal(isYear(1945), true);\n    });\n    it('should return true when passes \\'0000\\'', () => {\n      assert.equal(isYear('0000'), false);\n    });\n    it('should return false when passes \\'fggf\\'', () => {\n      assert.equal(isYear('fggf'), false);\n    });\n    it('should return true when passes 2010', () => {\n      assert.equal(isYear(2010), true);\n    });\n    it('should return true when passes 1545', () => {\n      assert.equal(isYear(1545), true);\n    });\n    it('should return false when passes \\'?\\'', () => {\n      assert.equal(isYear(')'), false);\n    });\n    it('should return false when passes \\'\\'', () => {\n      assert.equal(isYear(''), false);\n    });\n    it('should return false when passes null', () => {\n      assert.equal(isYear(null), false);\n    });\n  });\n});\n",
@@ -2283,7 +2344,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 132,
+    "__docId__": 135,
     "kind": "file",
     "name": "src/index.js",
     "content": "import _isDayOfMonth from './common/isDayOfMonth/isDayOfMonth';\nimport _isDayOfWeekString from './common/isDayOfWeekString/isDayOfWeekString';\nimport _isEmail from './common/isEmail/isEmail';\nimport _isHexValue from './common/isHexValue/isHexValue';\nimport _isHTMLTag from './common/isHTMLTag/isHTMLTag';\nimport _isInteger from './common/isInteger/isInteger';\nimport _isIPAddressV4 from './common/isIPAddressV4/isIPAddressV4';\nimport _isLetter from './common/isLetter/isLetter';\nimport _isLowerCase from './common/isLowerCase/isLowerCase';\nimport _isMonthOfYear from './common/isMonthOfYear/isMonthOfYear';\nimport _isMonthOfYearString from './common/isMonthOfYearString/isMonthOfYearString';\nimport _isNegativeInteger from './common/isNegativeInteger/isNegativeInteger';\nimport _isNegativeNumber from './common/isNegativeNumber/isNegativeNumber';\nimport _isNumber from './common/isNumber/isNumber';\nimport _isPassword from './common/isPassword/isPassword';\nimport _isPositiveInteger from './common/isPositiveInteger/isPositiveInteger';\nimport _isPositiveNumber from './common/isPositiveNumber/isPositiveNumber';\nimport _isSSN from './common/isSSN/isSSN';\nimport _isUpperCase from './common/isUpperCase/isUpperCase';\nimport _isUrl from './common/isUrl/isUrl';\nimport _isUsername from './common/isUsername/isUsername';\nimport _isUSPhoneNumber from './common/isUSPhoneNumber/isUSPhoneNumber';\nimport _isVowel from './common/isVowel/isVowel';\nimport _isYear from './common/isYear/isYear';\n\nexport const isDayOfMonth = _isDayOfMonth;\nexport const isDayOfWeekString = _isDayOfWeekString;\nexport const isEmail = _isEmail;\nexport const isHexValue = _isHexValue;\nexport const isHTMLTag = _isHTMLTag;\nexport const isInteger = _isInteger;\nexport const isIPAddressV4 = _isIPAddressV4;\nexport const isLetter = _isLetter;\nexport const isLowerCase = _isLowerCase;\nexport const isMonthOfYear = _isMonthOfYear;\nexport const isMonthOfYearString = _isMonthOfYearString;\nexport const isNegativeInteger = _isNegativeInteger;\nexport const isNegativeNumber = _isNegativeNumber;\nexport const isNumber = _isNumber;\nexport const isPassword = _isPassword;\nexport const isPositiveInteger = _isPositiveInteger;\nexport const isPositiveNumber = _isPositiveNumber;\nexport const isSSN = _isSSN;\nexport const isUpperCase = _isUpperCase;\nexport const isUrl = _isUrl;\nexport const isUsername = _isUsername;\nexport const isUSPhoneNumber = _isUSPhoneNumber;\nexport const isVowel = _isVowel;\nexport const isYear = _isYear;\n\n",
@@ -2294,7 +2355,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 133,
+    "__docId__": 136,
     "kind": "variable",
     "name": "isDayOfMonth",
     "memberof": "src/index.js",
@@ -2314,7 +2375,7 @@
     }
   },
   {
-    "__docId__": 134,
+    "__docId__": 137,
     "kind": "variable",
     "name": "isDayOfWeekString",
     "memberof": "src/index.js",
@@ -2334,7 +2395,7 @@
     }
   },
   {
-    "__docId__": 135,
+    "__docId__": 138,
     "kind": "variable",
     "name": "isEmail",
     "memberof": "src/index.js",
@@ -2354,7 +2415,7 @@
     }
   },
   {
-    "__docId__": 136,
+    "__docId__": 139,
     "kind": "variable",
     "name": "isHexValue",
     "memberof": "src/index.js",
@@ -2374,7 +2435,7 @@
     }
   },
   {
-    "__docId__": 137,
+    "__docId__": 140,
     "kind": "variable",
     "name": "isHTMLTag",
     "memberof": "src/index.js",
@@ -2394,7 +2455,7 @@
     }
   },
   {
-    "__docId__": 138,
+    "__docId__": 141,
     "kind": "variable",
     "name": "isInteger",
     "memberof": "src/index.js",
@@ -2414,7 +2475,7 @@
     }
   },
   {
-    "__docId__": 139,
+    "__docId__": 142,
     "kind": "variable",
     "name": "isIPAddressV4",
     "memberof": "src/index.js",
@@ -2434,7 +2495,7 @@
     }
   },
   {
-    "__docId__": 140,
+    "__docId__": 143,
     "kind": "variable",
     "name": "isLetter",
     "memberof": "src/index.js",
@@ -2454,7 +2515,7 @@
     }
   },
   {
-    "__docId__": 141,
+    "__docId__": 144,
     "kind": "variable",
     "name": "isLowerCase",
     "memberof": "src/index.js",
@@ -2474,7 +2535,7 @@
     }
   },
   {
-    "__docId__": 142,
+    "__docId__": 145,
     "kind": "variable",
     "name": "isMonthOfYear",
     "memberof": "src/index.js",
@@ -2494,7 +2555,7 @@
     }
   },
   {
-    "__docId__": 143,
+    "__docId__": 146,
     "kind": "variable",
     "name": "isMonthOfYearString",
     "memberof": "src/index.js",
@@ -2514,7 +2575,7 @@
     }
   },
   {
-    "__docId__": 144,
+    "__docId__": 147,
     "kind": "variable",
     "name": "isNegativeInteger",
     "memberof": "src/index.js",
@@ -2534,7 +2595,7 @@
     }
   },
   {
-    "__docId__": 145,
+    "__docId__": 148,
     "kind": "variable",
     "name": "isNegativeNumber",
     "memberof": "src/index.js",
@@ -2554,7 +2615,7 @@
     }
   },
   {
-    "__docId__": 146,
+    "__docId__": 149,
     "kind": "variable",
     "name": "isNumber",
     "memberof": "src/index.js",
@@ -2574,7 +2635,7 @@
     }
   },
   {
-    "__docId__": 147,
+    "__docId__": 150,
     "kind": "variable",
     "name": "isPassword",
     "memberof": "src/index.js",
@@ -2594,7 +2655,7 @@
     }
   },
   {
-    "__docId__": 148,
+    "__docId__": 151,
     "kind": "variable",
     "name": "isPositiveInteger",
     "memberof": "src/index.js",
@@ -2614,7 +2675,7 @@
     }
   },
   {
-    "__docId__": 149,
+    "__docId__": 152,
     "kind": "variable",
     "name": "isPositiveNumber",
     "memberof": "src/index.js",
@@ -2634,7 +2695,7 @@
     }
   },
   {
-    "__docId__": 150,
+    "__docId__": 153,
     "kind": "variable",
     "name": "isSSN",
     "memberof": "src/index.js",
@@ -2654,7 +2715,7 @@
     }
   },
   {
-    "__docId__": 151,
+    "__docId__": 154,
     "kind": "variable",
     "name": "isUpperCase",
     "memberof": "src/index.js",
@@ -2674,7 +2735,7 @@
     }
   },
   {
-    "__docId__": 152,
+    "__docId__": 155,
     "kind": "variable",
     "name": "isUrl",
     "memberof": "src/index.js",
@@ -2694,7 +2755,7 @@
     }
   },
   {
-    "__docId__": 153,
+    "__docId__": 156,
     "kind": "variable",
     "name": "isUsername",
     "memberof": "src/index.js",
@@ -2714,7 +2775,7 @@
     }
   },
   {
-    "__docId__": 154,
+    "__docId__": 157,
     "kind": "variable",
     "name": "isUSPhoneNumber",
     "memberof": "src/index.js",
@@ -2734,7 +2795,7 @@
     }
   },
   {
-    "__docId__": 155,
+    "__docId__": 158,
     "kind": "variable",
     "name": "isVowel",
     "memberof": "src/index.js",
@@ -2754,7 +2815,7 @@
     }
   },
   {
-    "__docId__": 156,
+    "__docId__": 159,
     "kind": "variable",
     "name": "isYear",
     "memberof": "src/index.js",
@@ -2774,7 +2835,7 @@
     }
   },
   {
-    "__docId__": 157,
+    "__docId__": 160,
     "kind": "file",
     "name": "src/utils/index.js",
     "content": "import _isNull from './isNull';\nimport _isUndefined from './isUndefined';\nimport _isString from './isString';\n\nexport const isNull = _isNull;\nexport const isUndefined = _isUndefined;\nexport const isString = _isString;\n",
@@ -2785,7 +2846,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 158,
+    "__docId__": 161,
     "kind": "variable",
     "name": "isNull",
     "memberof": "src/utils/index.js",
@@ -2805,7 +2866,7 @@
     }
   },
   {
-    "__docId__": 159,
+    "__docId__": 162,
     "kind": "variable",
     "name": "isUndefined",
     "memberof": "src/utils/index.js",
@@ -2825,7 +2886,7 @@
     }
   },
   {
-    "__docId__": 160,
+    "__docId__": 163,
     "kind": "variable",
     "name": "isString",
     "memberof": "src/utils/index.js",
@@ -2845,7 +2906,7 @@
     }
   },
   {
-    "__docId__": 161,
+    "__docId__": 164,
     "kind": "file",
     "name": "src/utils/isNull.js",
     "content": "import isUndefined from './isUndefined';\n\n/**\n * @desc returns true if value is null, otherwise returns false\n * @param {?null} value\n * @return {boolean} - true or false \n */\nconst isNull = value => (\n  !isUndefined(value) &&\n  (value === null)\n);\n\nexport default isNull;\n",
@@ -2856,7 +2917,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 162,
+    "__docId__": 165,
     "kind": "function",
     "name": "isNull",
     "memberof": "src/utils/isNull.js",
@@ -2892,7 +2953,7 @@
     }
   },
   {
-    "__docId__": 163,
+    "__docId__": 166,
     "kind": "file",
     "name": "src/utils/isString.js",
     "content": "/**\n * @desc returns true if value is a string, otherwise returns false\n * @param {?null} value - a string\n * @return {boolean} - true or false \n */\nconst isString = value => typeof value === 'string';\n\nexport default isString;\n",
@@ -2903,7 +2964,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 164,
+    "__docId__": 167,
     "kind": "function",
     "name": "isString",
     "memberof": "src/utils/isString.js",
@@ -2939,7 +3000,7 @@
     }
   },
   {
-    "__docId__": 165,
+    "__docId__": 168,
     "kind": "file",
     "name": "src/utils/isUndefined.js",
     "content": "/**\n * @desc returns true if value is undefined, otherwise returns false\n * @param {?null} value\n * @return {boolean} - true or false \n */\nconst isUndefined = value => typeof value === 'undefined';\n\nexport default isUndefined;\n",
@@ -2950,7 +3011,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 166,
+    "__docId__": 169,
     "kind": "function",
     "name": "isUndefined",
     "memberof": "src/utils/isUndefined.js",
@@ -2987,7 +3048,7 @@
   },
   {
     "kind": "index",
-    "content": "<h1 align=\"center\">\n  <br>\n  <a href=\"https://github.com/npranto/regexer\"><img src=\"./src/assets/images/R-logo.png\" alt=\"Regexer\" width=\"300\"></a>\n  <br>\n    Regexer\n  <br>\n</h1>\n\n[![NPM](https://nodei.co/npm/nsp-regexer.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/nsp-regexer/)\n\n[![CircleCI](https://img.shields.io/circleci/project/github/npranto/regexer.svg?style=for-the-badge)](https://circleci.com/gh/npranto/regexer)\n![npm](https://img.shields.io/npm/v/nsp-regexer.svg?style=for-the-badge)\n![npm](https://img.shields.io/npm/dt/nsp-regexer.svg?style=for-the-badge)\n[![GitHub issues](https://img.shields.io/github/issues/npranto/regexer.svg?style=for-the-badge)](https://github.com/npranto/regexer/issues)\n[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=for-the-badge)](http://commitizen.github.io/cz-cli/)\n[![GitHub license](https://img.shields.io/github/license/npranto/regexer.svg?style=for-the-badge)](https://github.com/npranto/regexer/blob/master/LICENSE)\n\n\n<h4 align=\"left\">\nA simple and convenient library of functions that leverage regular expressions while hiding its complexity of implementation\n</h4>\n\n## Table of Contents\n* [Why Regexer?](#why-regexer)\n* [Installation](#installation)\n* [Usage](#usage)\n* [API](#api)\n    * [`.isCreditCard()`](#iscreditcardcreditcardnumbernumberstring)\n    * [`.isDayOfMonth()`](#isdayofmonthdaynumberstring)\n    * [`.isDayOfWeekString()`](#isdayofweekstringdaynumberstring)\n    * [`.isDecimal()`](#isdecimalnumbernumberstring)\n    * [`.isEmail()`](#isemailemailstring)\n    * [`.isHexValue()`](#ishexvaluehexvaluestring)\n    * [`.isHTMLTag()`](#ishtmltaghtmltagstring)\n    * [`.isInteger()`](#isintegerintegernumberstring)\n    * [`.isIPAddressV4()`](#isipaddressv4ipaddressstring)\n    * [`.isLetter()`](#islettercharstring)\n    * [`.isLowerCase()`](#islowercasestrstring)\n    * [`.isMonthOfYear()`](#ismonthofyearnumbernumberstring)\n    * [`.isMonthOfYearString()`](#ismonthofyearstringmonthstring)\n    * [`.isNegativeInteger()`](#isnegativeintegerintegernumberstring)\n    * [`.isNegativeNumber()`](#isnegativenumbernumbernumberstring)\n    * [`.isNumber()`](#isnumbernumbernumberstring)\n    * [`.isPassword()`](#ispasswordpasswordstring)\n    * [`.isPositiveInteger()`](#ispositiveintegerintegernumberstring)\n    * [`.isPositiveNumber()`](#ispositivenumbernumbernumberstring)\n    * [`.isSSN()`](#isssnnumberstring)\n    * [`.isStandardZipCode()`](#isstandardzipcodezipcodestring)\n    * [`.isUpperCase()`](#isuppercasestrstring)\n    * [`.isUrl()`](#isurlurlstring)\n    * [`.isUsername()`](#isusernameusernamestring)\n    * [`.isUSPhoneNumber()`](#isusphonenumberphonenumberstring)\n    * [`.isUSState()`](#isusstatestatestring)    \n    * [`.isVowel()`](#isvowelcharstring)\n    * [`.isYear()`](#isyearnumbernumberstring)\n\n* [Credits](#credits)\n* [Support](#support)\n* [You May Also Like](#you-may-also-like)\n* [License](#license)\n* [Authors](#authors)\n\n## Why Regexer?\n\nRegular expressions are awesome and absolutely super useful when it comes to looking for pattern matches in a string, but clearly it is not the easiest topic to get your head around. Don't believe me, [just take a look](https://www.quora.com/What-is-the-most-weird-regular-expression-line-you-have-ever-seen)!\n\nRegexer just attempts to make the process of using some of the most popular regular expressions easier for you. You no longer need to look all over the place for finding a regular expression for matching an email or a phone number, or a hex value or even a day of the week. Just install regexer and use the built in common functions to verify candidate values.\n\nStill confused...? Let's look at an **[example](#usage)**\n\n## Installation\nBefore we get going, make sure you have [Node.js](https://nodejs.org/en/) installed on your system, so we can use the NPM (Node Package Manager) to install regexer on your project.\n<br />\n```\n$ npm install --save nsp-regexer\n```\n\n## Usage\n\n```js\n// ES5\nconst regexer = require('nsp-regexer');\n\nconsole.log( regexer.isEmail('jsmith@gmail.com') )  // true\nconsole.log( regexer.isLowerCase('KEVIN') )     // false\n```\n```js\n// ES6+\nimport { isVowel, isNegativeNumber } from 'nsp-regexer';\n\nconsole.log( isVowel('b') )  // false\nconsole.log( isNegativeNumber(-50.67) )  // true\n```\n\n## API\n\n### `.isCreditCard(creditCardNumber[number|string])`\n\nReturns `true` if creditCardNumber is a valid credit card number, otherwise returns `false`\n\n```js\nimport { isCreditCard } from 'nsp-regexer';\n\nisCreditCard('345768475867474')  \n// true\n\nisCreditCard(5465838563658274)  \n// true\n\nisCreditCard('?')  \n// false\n```\n\n### `.isDayOfMonth(day[number|string])`\n\nReturns `true` if day is a day of the month (1-31), otherwise returns `false`\n\n```js\nimport { isDayOfMonth } from 'nsp-regexer';\n\nisDayOfMonth('28')  \n// true\n\nisDayOfMonth(12)  \n// true\n\nisDayOfMonth(55)  \n// false\n```\n\n### `.isDayOfWeekString(day[number|string])`\n\nReturns `true` if day is name of a week day, otherwise returns `false`\n\n```js\nimport { isDayOfWeekString } from 'nsp-regexer';\n\nisDayOfWeekString('monday')  \n// true\n\nisDayOfWeekString('Tuesday')  \n// true\n\nisDayOfWeekString('thURSdAy')  \n// true\n\nisDayOfWeekString('FRIDAY')  \n// true\n\nisDayOfWeekString('doomsday')  \n// false\n```\n\n### `.isDecimal(number[number|string])`\n\nReturns `true` if number is a decimal number, otherwise returns `false`\n\n```js\nimport { isDecimal } from 'nsp-regexer';\n\nisDecimal('55.55')  \n// true\n\nisDecimal(-0.999)  \n// true\n\nisDecimal(50)  \n// false\n```\n\n### `.isEmail(email[string])`\n\nReturns `true` if email is a valid email address, otherwise returns `false`\n\n```js\nimport { isEmail } from 'nsp-regexer';\n\nisEmail('jsmith@gmail.com')  \n// true\n\nisEmail('sdfsdfsdfsd.com')  \n// false\n```\n\n### `.isHexValue(hexValue[string])`\n\nReturns `true` if hexValue is a valid hex value, otherwise returns `false`\n\n```js\nimport { isHexValue } from 'nsp-regexer';\n\nisHexValue('#FBB')  \n// true\n\nisHexValue('#SHFF56')  \n// true\n\nisHexValue('#FF56')  \n// true\n\nisHexValue('sbfj&&#')  \n// false\n```\n\n### `.isHTMLTag(htmlTag[string])`\n\nReturns `true` if htmlTag is an HTML tag, otherwise returns `false`\n\n```js\nimport { isHTMLTag } from 'nsp-regexer';\n\nisHTMLTag('<img src=\"./img/cat.png\" />')  \n// true\n\nisHTMLTag('#SHFF56')  \n// true\n\nisHTMLTag('<h1 class=\"center\"> Hello World! </h1>')  \n// true\n\nisHTMLTag('<body>')  \n// false\n```\n\n### `.isInteger(integer[number|string])`\n\nReturns `true` if integer is an integer, otherwise returns `false`\n\n```js\nimport { isInteger } from 'nsp-regexer';\n\nisInteger('455')  \n// true\n\nisInteger(-44)  \n// true\n\nisInteger('-34.66')  \n// false\n```\n\n### `.isIPAddressV4(ipAddress[string])`\n\nReturns `true` if ipAddress a valid IP address, otherwise returns `false`\n\n```js\nimport { isIPAddressV4 } from 'nsp-regexer';\n\nisIPAddressV4('172.16.254.1')  \n// true\n\nisIPAddressV4('0.1.0.1')  \n// true\n\nisIPAddressV4('54.45.222.345')  \n// false\n```\n\n### `.isLetter(char[string])`\n\nReturns `true` if char an alphabetic letter, otherwise returns `false`\n\n```js\nimport { isLetter } from 'nsp-regexer';\n\nisLetter('v')  \n// true\n\nisLetter('P')  \n// true\n\nisLetter('?')  \n// false\n```\n\n### `.isLowerCase(str[string])`\n\nReturns `true` if str contains all lower case letters, otherwise returns `false`\n\n```js\nimport { isLowerCase } from 'nsp-regexer';\n\nisLowerCase('coffee')  \n// true\n\nisLowerCase('life is awesome!')  \n// true\n\nisLowerCase('I love the new Avengers!')  \n// false\n```\n\n### `.isMonthOfYear(number[number|string])`\n\nReturns `true` if number is a month of year (1-12), otherwise returns `false`\n\n```js\nimport { isMonthOfYear } from 'nsp-regexer';\n\nisMonthOfYear('4')  \n// true\n\nisMonthOfYear(12)  \n// true\n\nisMonthOfYear(30)  \n// false\n```\n\n### `.isMonthOfYearString(month[string])`\n\nReturns `true` if month is a name of a month of year, otherwise returns `false`\n\n```js\nimport { isMonthOfYearString } from 'nsp-regexer';\n\nisMonthOfYearString('march')  \n// true\n\nisMonthOfYearString('April')  \n// true\n\nisMonthOfYearString('augusta')  \n// false\n```\n\n### `.isNegativeInteger(integer[number|string])`\n\nReturns `true` if integer is a negative integer, otherwise returns `false`\n\n```js\nimport { isNegativeInteger } from 'nsp-regexer';\n\nisNegativeInteger('-55')  \n// true\n\nisNegativeInteger(-6456)  \n// true\n\nisNegativeInteger('0.33')  \n// false\n```\n\n### `.isNegativeNumber(number[number|string])`\n\nReturns `true` if number is a negative number, otherwise returns `false`\n\n```js\nimport { isNegativeNumber } from 'nsp-regexer';\n\nisNegativeNumber('-0.44')  \n// true\n\nisNegativeNumber(-55)  \n// true\n\nisNegativeNumber('-1434.44')  \n// true\n\nisNegativeNumber(10)  \n// false\n```\n\n### `.isNumber(number[number|string])`\n\nReturns `true` if number is a number, otherwise returns `false`\n\n```js\nimport { isNumber } from 'nsp-regexer';\n\nisNumber('-0.44')  \n// true\n\nisNumber('-4.6')  \n// true\n\nisNumber(45)  \n// true\n\nisNumber('a coffee')  \n// false\n```\n\n### `.isPassword(password[string])`\n\nReturns `true` if password meets simple ruleset of a password (contains letters, numbers, hyphens, and underscores; length is between 6 to 18 characters), otherwise returns `false`\n\n```js\nimport { isPassword } from 'nsp-regexer';\n\nisPassword('')  \n// true\n\nisPassword('i-love-cats_haha')  \n// true\n\nisPassword('02140coffee')  \n// false\n```\n\n### `.isPositiveInteger(integer[number|string])`\n\nReturns `true` if integer is a positive integer, otherwise returns `false`\n\n```js\nimport { isPositiveInteger } from 'nsp-regexer';\n\nisPositiveInteger('55')  \n// true\n\nisPositiveInteger(-140)  \n// false\n```\n\n### `.isPositiveNumber(number[number|string])`\n\nReturns `true` if number is a positive number, otherwise returns `false`\n\n```js\nimport { isPositiveNumber } from 'nsp-regexer';\n\nisPositiveNumber('4')  \n// true\n\nisPositiveNumber('0.5')  \n// true\n\nisPositiveNumber(74.23)  \n// true\n\nisPositiveNumber(-6)  \n// false\n```\n\n### `.isSSN(number[string])`\n\nReturns `true` if number is a valid social security number, otherwise returns `false`\n\n```js\nimport { isSSN } from 'nsp-regexer';\n\nisSSN('031767927')  \n// true\n\nisSSN('031-76-7927')  \n// true\n\nisSSN('031 76 7927')  \n// true\n\nisSSN('545-454-4555')  \n// false\n```\n\n### `.isStandardZipCode(zipCode[string])`\n\nReturns `true` if zipCode is a valid zip code, otherwise returns `false`\n\n```js\nimport { isStandardZipCode } from 'nsp-regexer';\n\nisStandardZipCode('02166')  \n// true\n\nisStandardZipCode('12045-6089')  \n// true\n\nisStandardZipCode('545-454-4555')  \n// false\n```\n\n### `.isUpperCase(str[string])`\n\nReturns `true` if str contains all upper case letters, otherwise returns `false`\n\n```js\nimport { isUpperCase } from 'nsp-regexer';\n\nisUpperCase('G')  \n// true\n\nisUpperCase('OH WOW!')  \n// true\n\nisUpperCase('tea is always BETTER!')  \n// false\n```\n\n### `.isUrl(url[string])`\n\nReturns true if url a valid URL address, otherwise returns `false`\n\n```js\nimport { isUrl } from 'nsp-regexer';\n\nisUrl('http://3iem.museum:1337/')  \n// true\n\nisUrl('plik.co.uk')  \n// true\n\nisUrl('tea@g!.org')  \n// false\n```\n\n### `.isUsername(username[string])`\n\nReturns `true` if username meets the basic requirement of an username (contains letters, numbers, hyphens, and underscores; length is between 3 to 16 characters), otherwise returns `false`\n\n```js\nimport { isUsername } from 'nsp-regexer';\n\nisUsername('jSmith455')  \n// true\n\nisUsername('james-bond007')  \n// true\n\nisUsername('0coffeeEnergy')  \n// false\n```\n\n### `.isUSPhoneNumber(phoneNumber[string])`\n\nReturns `true` if phoneNumber a valid US phone number, otherwise returns `false`\n\n```js\nimport { isUSPhoneNumber } from 'nsp-regexer';\n\nisUSPhoneNumber('6174330080')  \n// true\n\nisUSPhoneNumber('(617) 433-0080')  \n// true\n\nisUSPhoneNumber('454-454-4544-45')  \n// false\n```\n\n### `.isUSState(state[string])`\n\nReturns `true` if state a name of one of US state, otherwise returns `false`\n\n```js\nimport { isUSState } from 'nsp-regexer';\n\nisUSState('arizona')  \n// true\n\nisUSState('Rhode Island')  \n// true\n\nisUSState('Boston')  \n// false\n```\n\n### `.isVowel(char[string])`\n\nReturns `true` if char a vowel letter, otherwise returns `false`\n\n```js\nimport { isVowel } from 'nsp-regexer';\n\nisVowel('a')  \n// true\n\nisVowel('U')  \n// true\n\nisVowel('v')  \n// false\n```\n\n### `.isYear(number[number|string])`\n\nReturns `true` if number a year, otherwise returns `false`\n\n```js\nimport { isYear } from 'nsp-regexer';\n\nisYear('1985')  \n// true\n\nisYear('2019')  \n// true\n\nisYear('0344')  \n// false\n```\n\n*Obviously, more to come soon...!*\n\n## Credits\n\nSource code makes use of several open source packages, a few keys ones include...\n\n- [Babel](https://babeljs.io/) - To transpile ES6+ syntax to ES5, to run source code in Node and browser\n- [Webpack](https://webpack.js.org/) - For module bundling and generating distributing assets\n- [ESLint](https://eslint.org/) - To lint source code for better readability, syntax consistency and proper formatting\n- [CircleCI](https://circleci.com/) - Continuous integration middleware to verify incremental builds are always passing\n\n## Support\n\n<a href=\"https://www.buymeacoffee.com/nsplovescoffee\" target=\"_blank\">\n  <img src=\"https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png\" alt=\"Buy Me A Coffee\" style=\"height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;\" >\n</a>\n\n## You May Also Like...\n\n- [focus](https://github.com/npranto/focus) - A simple, elegant task manager application to help students and computer savvy workers get their work done efficiently and on time\n- [lists](https://github.com/npranto/lists) - Quickly draught down your todos, groceries, chores or any other lists of items quickly #powerOfLists\n\n## License\n\n[MIT](https://tldrlegal.com/license/mit-license)\n\n## Contributors\n\n<div>\n  <a href=\"https://github.com/npranto\">\n    <img src=\"https://avatars2.githubusercontent.com/u/13524077?v=4\" alt=\"Nazmuz Shakib pranto\" width=\"50\" />\n  </a>\n</div>\n",
+    "content": "<h1 align=\"center\">\n  <br>\n  <a href=\"https://github.com/npranto/regexer\"><img src=\"./src/assets/images/R-logo.png\" alt=\"Regexer\" width=\"300\"></a>\n  <br>\n    Regexer\n  <br>\n</h1>\n\n[![NPM](https://nodei.co/npm/nsp-regexer.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/nsp-regexer/)\n\n[![CircleCI](https://img.shields.io/circleci/project/github/npranto/regexer.svg?style=for-the-badge)](https://circleci.com/gh/npranto/regexer)\n![npm](https://img.shields.io/npm/v/nsp-regexer.svg?style=for-the-badge)\n![npm](https://img.shields.io/npm/dt/nsp-regexer.svg?style=for-the-badge)\n[![GitHub issues](https://img.shields.io/github/issues/npranto/regexer.svg?style=for-the-badge)](https://github.com/npranto/regexer/issues)\n[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=for-the-badge)](http://commitizen.github.io/cz-cli/)\n[![GitHub license](https://img.shields.io/github/license/npranto/regexer.svg?style=for-the-badge)](https://github.com/npranto/regexer/blob/master/LICENSE)\n\n\n<h4 align=\"left\">\nA simple and convenient library of functions that leverage regular expressions while hiding its complexity of implementation\n</h4>\n\n## Table of Contents\n* [Why Regexer?](#why-regexer)\n* [Installation](#installation)\n* [Usage](#usage)\n* [API](#api)\n    * [`.isCreditCard()`](#iscreditcardcreditcardnumbernumberstring)\n    * [`.isDayOfMonth()`](#isdayofmonthdaynumberstring)\n    * [`.isDayOfWeekString()`](#isdayofweekstringdaynumberstring)\n    * [`.isDecimal()`](#isdecimalnumbernumberstring)\n    * [`.isEmail()`](#isemailemailstring)\n    * [`.isHexValue()`](#ishexvaluehexvaluestring)\n    * [`.isHTMLTag()`](#ishtmltaghtmltagstring)\n    * [`.isInteger()`](#isintegerintegernumberstring)\n    * [`.isIPAddressV4()`](#isipaddressv4ipaddressstring)\n    * [`.isLetter()`](#islettercharstring)\n    * [`.isLowerCase()`](#islowercasestrstring)\n    * [`.isMonthOfYear()`](#ismonthofyearnumbernumberstring)\n    * [`.isMonthOfYearString()`](#ismonthofyearstringmonthstring)\n    * [`.isNegativeInteger()`](#isnegativeintegerintegernumberstring)\n    * [`.isNegativeNumber()`](#isnegativenumbernumbernumberstring)\n    * [`.isNumber()`](#isnumbernumbernumberstring)\n    * [`.isPassword()`](#ispasswordpasswordstring)\n    * [`.isPositiveInteger()`](#ispositiveintegerintegernumberstring)\n    * [`.isPositiveNumber()`](#ispositivenumbernumbernumberstring)\n    * [`.isSSN()`](#isssnnumberstring)\n    * [`.isStandardZipCode()`](#isstandardzipcodezipcodestring)\n    * [`.isUpperCase()`](#isuppercasestrstring)\n    * [`.isUrl()`](#isurlurlstring)\n    * [`.isUsername()`](#isusernameusernamestring)\n    * [`.isUSPhoneNumber()`](#isusphonenumberphonenumberstring)\n    * [`.isUSState()`](#isusstatestatestring)    \n    * [`.isVowel()`](#isvowelcharstring)\n\t\t* [`.isWhiteSpace()`](#iswhitespacecharstring)\n    * [`.isYear()`](#isyearnumbernumberstring)\n\n* [Credits](#credits)\n* [Support](#support)\n* [You May Also Like](#you-may-also-like)\n* [License](#license)\n* [Authors](#authors)\n\n## Why Regexer?\n\nRegular expressions are awesome and absolutely super useful when it comes to looking for pattern matches in a string, but clearly it is not the easiest topic to get your head around. Don't believe me, [just take a look](https://www.quora.com/What-is-the-most-weird-regular-expression-line-you-have-ever-seen)!\n\nRegexer just attempts to make the process of using some of the most popular regular expressions easier for you. You no longer need to look all over the place for finding a regular expression for matching an email or a phone number, or a hex value or even a day of the week. Just install regexer and use the built in common functions to verify candidate values.\n\nStill confused...? Let's look at an **[example](#usage)**\n\n## Installation\nBefore we get going, make sure you have [Node.js](https://nodejs.org/en/) installed on your system, so we can use the NPM (Node Package Manager) to install regexer on your project.\n<br />\n```\n$ npm install --save nsp-regexer\n```\n\n## Usage\n\n```js\n// ES5\nconst regexer = require('nsp-regexer');\n\nconsole.log( regexer.isEmail('jsmith@gmail.com') )  // true\nconsole.log( regexer.isLowerCase('KEVIN') )     // false\n```\n```js\n// ES6+\nimport { isVowel, isNegativeNumber } from 'nsp-regexer';\n\nconsole.log( isVowel('b') )  // false\nconsole.log( isNegativeNumber(-50.67) )  // true\n```\n\n## API\n\n### `.isCreditCard(creditCardNumber[number|string])`\n\nReturns `true` if creditCardNumber is a valid credit card number, otherwise returns `false`\n\n```js\nimport { isCreditCard } from 'nsp-regexer';\n\nisCreditCard('345768475867474')  \n// true\n\nisCreditCard(5465838563658274)  \n// true\n\nisCreditCard('?')  \n// false\n```\n\n### `.isDayOfMonth(day[number|string])`\n\nReturns `true` if day is a day of the month (1-31), otherwise returns `false`\n\n```js\nimport { isDayOfMonth } from 'nsp-regexer';\n\nisDayOfMonth('28')  \n// true\n\nisDayOfMonth(12)  \n// true\n\nisDayOfMonth(55)  \n// false\n```\n\n### `.isDayOfWeekString(day[number|string])`\n\nReturns `true` if day is name of a week day, otherwise returns `false`\n\n```js\nimport { isDayOfWeekString } from 'nsp-regexer';\n\nisDayOfWeekString('monday')  \n// true\n\nisDayOfWeekString('Tuesday')  \n// true\n\nisDayOfWeekString('thURSdAy')  \n// true\n\nisDayOfWeekString('FRIDAY')  \n// true\n\nisDayOfWeekString('doomsday')  \n// false\n```\n\n### `.isDecimal(number[number|string])`\n\nReturns `true` if number is a decimal number, otherwise returns `false`\n\n```js\nimport { isDecimal } from 'nsp-regexer';\n\nisDecimal('55.55')  \n// true\n\nisDecimal(-0.999)  \n// true\n\nisDecimal(50)  \n// false\n```\n\n### `.isEmail(email[string])`\n\nReturns `true` if email is a valid email address, otherwise returns `false`\n\n```js\nimport { isEmail } from 'nsp-regexer';\n\nisEmail('jsmith@gmail.com')  \n// true\n\nisEmail('sdfsdfsdfsd.com')  \n// false\n```\n\n### `.isHexValue(hexValue[string])`\n\nReturns `true` if hexValue is a valid hex value, otherwise returns `false`\n\n```js\nimport { isHexValue } from 'nsp-regexer';\n\nisHexValue('#FBB')  \n// true\n\nisHexValue('#SHFF56')  \n// true\n\nisHexValue('#FF56')  \n// true\n\nisHexValue('sbfj&&#')  \n// false\n```\n\n### `.isHTMLTag(htmlTag[string])`\n\nReturns `true` if htmlTag is an HTML tag, otherwise returns `false`\n\n```js\nimport { isHTMLTag } from 'nsp-regexer';\n\nisHTMLTag('<img src=\"./img/cat.png\" />')  \n// true\n\nisHTMLTag('#SHFF56')  \n// true\n\nisHTMLTag('<h1 class=\"center\"> Hello World! </h1>')  \n// true\n\nisHTMLTag('<body>')  \n// false\n```\n\n### `.isInteger(integer[number|string])`\n\nReturns `true` if integer is an integer, otherwise returns `false`\n\n```js\nimport { isInteger } from 'nsp-regexer';\n\nisInteger('455')  \n// true\n\nisInteger(-44)  \n// true\n\nisInteger('-34.66')  \n// false\n```\n\n### `.isIPAddressV4(ipAddress[string])`\n\nReturns `true` if ipAddress a valid IP address, otherwise returns `false`\n\n```js\nimport { isIPAddressV4 } from 'nsp-regexer';\n\nisIPAddressV4('172.16.254.1')  \n// true\n\nisIPAddressV4('0.1.0.1')  \n// true\n\nisIPAddressV4('54.45.222.345')  \n// false\n```\n\n### `.isLetter(char[string])`\n\nReturns `true` if char an alphabetic letter, otherwise returns `false`\n\n```js\nimport { isLetter } from 'nsp-regexer';\n\nisLetter('v')  \n// true\n\nisLetter('P')  \n// true\n\nisLetter('?')  \n// false\n```\n\n### `.isLowerCase(str[string])`\n\nReturns `true` if str contains all lower case letters, otherwise returns `false`\n\n```js\nimport { isLowerCase } from 'nsp-regexer';\n\nisLowerCase('coffee')  \n// true\n\nisLowerCase('life is awesome!')  \n// true\n\nisLowerCase('I love the new Avengers!')  \n// false\n```\n\n### `.isMonthOfYear(number[number|string])`\n\nReturns `true` if number is a month of year (1-12), otherwise returns `false`\n\n```js\nimport { isMonthOfYear } from 'nsp-regexer';\n\nisMonthOfYear('4')  \n// true\n\nisMonthOfYear(12)  \n// true\n\nisMonthOfYear(30)  \n// false\n```\n\n### `.isMonthOfYearString(month[string])`\n\nReturns `true` if month is a name of a month of year, otherwise returns `false`\n\n```js\nimport { isMonthOfYearString } from 'nsp-regexer';\n\nisMonthOfYearString('march')  \n// true\n\nisMonthOfYearString('April')  \n// true\n\nisMonthOfYearString('augusta')  \n// false\n```\n\n### `.isNegativeInteger(integer[number|string])`\n\nReturns `true` if integer is a negative integer, otherwise returns `false`\n\n```js\nimport { isNegativeInteger } from 'nsp-regexer';\n\nisNegativeInteger('-55')  \n// true\n\nisNegativeInteger(-6456)  \n// true\n\nisNegativeInteger('0.33')  \n// false\n```\n\n### `.isNegativeNumber(number[number|string])`\n\nReturns `true` if number is a negative number, otherwise returns `false`\n\n```js\nimport { isNegativeNumber } from 'nsp-regexer';\n\nisNegativeNumber('-0.44')  \n// true\n\nisNegativeNumber(-55)  \n// true\n\nisNegativeNumber('-1434.44')  \n// true\n\nisNegativeNumber(10)  \n// false\n```\n\n### `.isNumber(number[number|string])`\n\nReturns `true` if number is a number, otherwise returns `false`\n\n```js\nimport { isNumber } from 'nsp-regexer';\n\nisNumber('-0.44')  \n// true\n\nisNumber('-4.6')  \n// true\n\nisNumber(45)  \n// true\n\nisNumber('a coffee')  \n// false\n```\n\n### `.isPassword(password[string])`\n\nReturns `true` if password meets simple ruleset of a password (contains letters, numbers, hyphens, and underscores; length is between 6 to 18 characters), otherwise returns `false`\n\n```js\nimport { isPassword } from 'nsp-regexer';\n\nisPassword('')  \n// true\n\nisPassword('i-love-cats_haha')  \n// true\n\nisPassword('02140coffee')  \n// false\n```\n\n### `.isPositiveInteger(integer[number|string])`\n\nReturns `true` if integer is a positive integer, otherwise returns `false`\n\n```js\nimport { isPositiveInteger } from 'nsp-regexer';\n\nisPositiveInteger('55')  \n// true\n\nisPositiveInteger(-140)  \n// false\n```\n\n### `.isPositiveNumber(number[number|string])`\n\nReturns `true` if number is a positive number, otherwise returns `false`\n\n```js\nimport { isPositiveNumber } from 'nsp-regexer';\n\nisPositiveNumber('4')  \n// true\n\nisPositiveNumber('0.5')  \n// true\n\nisPositiveNumber(74.23)  \n// true\n\nisPositiveNumber(-6)  \n// false\n```\n\n### `.isSSN(number[string])`\n\nReturns `true` if number is a valid social security number, otherwise returns `false`\n\n```js\nimport { isSSN } from 'nsp-regexer';\n\nisSSN('031767927')  \n// true\n\nisSSN('031-76-7927')  \n// true\n\nisSSN('031 76 7927')  \n// true\n\nisSSN('545-454-4555')  \n// false\n```\n\n### `.isStandardZipCode(zipCode[string])`\n\nReturns `true` if zipCode is a valid zip code, otherwise returns `false`\n\n```js\nimport { isStandardZipCode } from 'nsp-regexer';\n\nisStandardZipCode('02166')  \n// true\n\nisStandardZipCode('12045-6089')  \n// true\n\nisStandardZipCode('545-454-4555')  \n// false\n```\n\n### `.isUpperCase(str[string])`\n\nReturns `true` if str contains all upper case letters, otherwise returns `false`\n\n```js\nimport { isUpperCase } from 'nsp-regexer';\n\nisUpperCase('G')  \n// true\n\nisUpperCase('OH WOW!')  \n// true\n\nisUpperCase('tea is always BETTER!')  \n// false\n```\n\n### `.isUrl(url[string])`\n\nReturns true if url a valid URL address, otherwise returns `false`\n\n```js\nimport { isUrl } from 'nsp-regexer';\n\nisUrl('http://3iem.museum:1337/')  \n// true\n\nisUrl('plik.co.uk')  \n// true\n\nisUrl('tea@g!.org')  \n// false\n```\n\n### `.isUsername(username[string])`\n\nReturns `true` if username meets the basic requirement of an username (contains letters, numbers, hyphens, and underscores; length is between 3 to 16 characters), otherwise returns `false`\n\n```js\nimport { isUsername } from 'nsp-regexer';\n\nisUsername('jSmith455')  \n// true\n\nisUsername('james-bond007')  \n// true\n\nisUsername('0coffeeEnergy')  \n// false\n```\n\n### `.isUSPhoneNumber(phoneNumber[string])`\n\nReturns `true` if phoneNumber a valid US phone number, otherwise returns `false`\n\n```js\nimport { isUSPhoneNumber } from 'nsp-regexer';\n\nisUSPhoneNumber('6174330080')  \n// true\n\nisUSPhoneNumber('(617) 433-0080')  \n// true\n\nisUSPhoneNumber('454-454-4544-45')  \n// false\n```\n\n### `.isUSState(state[string])`\n\nReturns `true` if state a name of one of US state, otherwise returns `false`\n\n```js\nimport { isUSState } from 'nsp-regexer';\n\nisUSState('arizona')  \n// true\n\nisUSState('Rhode Island')  \n// true\n\nisUSState('Boston')  \n// false\n```\n\n### `.isVowel(char[string])`\n\nReturns `true` if char a vowel letter, otherwise returns `false`\n\n```js\nimport { isVowel } from 'nsp-regexer';\n\nisVowel('a')  \n// true\n\nisVowel('U')  \n// true\n\nisVowel('v')  \n// false\n```\n\n### `.isWhiteSpace(char[string])`\n\nReturns true if char a white space, otherwise returns false\n\n```js\nimport { isWhiteSpace } from 'nsp-regexer';\n\nisWhiteSpace(' ')  \n// true\n\nisWhiteSpace('  ')  \n// false\n\nisWhiteSpace('hello')  \n// false\n```\n\n### `.isYear(number[number|string])`\n\nReturns `true` if number a year, otherwise returns `false`\n\n```js\nimport { isYear } from 'nsp-regexer';\n\nisYear('1985')  \n// true\n\nisYear('2019')  \n// true\n\nisYear('0344')  \n// false\n```\n\n*Obviously, more to come soon...!*\n\n## Credits\n\nSource code makes use of several open source packages, a few keys ones include...\n\n- [Babel](https://babeljs.io/) - To transpile ES6+ syntax to ES5, to run source code in Node and browser\n- [Webpack](https://webpack.js.org/) - For module bundling and generating distributing assets\n- [ESLint](https://eslint.org/) - To lint source code for better readability, syntax consistency and proper formatting\n- [CircleCI](https://circleci.com/) - Continuous integration middleware to verify incremental builds are always passing\n\n## Support\n\n<a href=\"https://www.buymeacoffee.com/nsplovescoffee\" target=\"_blank\">\n  <img src=\"https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png\" alt=\"Buy Me A Coffee\" style=\"height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;\" >\n</a>\n\n## You May Also Like...\n\n- [focus](https://github.com/npranto/focus) - A simple, elegant task manager application to help students and computer savvy workers get their work done efficiently and on time\n- [lists](https://github.com/npranto/lists) - Quickly draught down your todos, groceries, chores or any other lists of items quickly #powerOfLists\n\n## License\n\n[MIT](https://tldrlegal.com/license/mit-license)\n\n## Contributors\n\n<div>\n  <a href=\"https://github.com/npranto\">\n    <img src=\"https://avatars2.githubusercontent.com/u/13524077?v=4\" alt=\"Nazmuz Shakib pranto\" width=\"50\" />\n  </a>\n</div>\n",
     "longname": "/Users/Focus/regexer/README.md",
     "name": "./README.md",
     "static": true,
@@ -2995,7 +3056,7 @@
   },
   {
     "kind": "packageJSON",
-    "content": "{\n  \"name\": \"nsp-regexer\",\n  \"version\": \"0.0.0-semantically-released\",\n  \"description\": \"A simple and convenient library of functions that leverage regular expressions while hiding its complexity of implementation\",\n  \"main\": \"dist/index.js\",\n  \"dependencies\": {\n    \"npm\": \"^6.1.0\"\n  },\n  \"devDependencies\": {\n    \"babel-cli\": \"^6.26.0\",\n    \"babel-core\": \"6.26.3\",\n    \"babel-loader\": \"7.1.4\",\n    \"babel-preset-env\": \"1.7.0\",\n    \"chai\": \"4.1.2\",\n    \"commitizen\": \"^2.10.1\",\n    \"cz-conventional-changelog\": \"^2.1.0\",\n    \"esdoc\": \"1.1.0\",\n    \"esdoc-standard-plugin\": \"1.0.0\",\n    \"eslint\": \"4.19.1\",\n    \"eslint-config-airbnb-base\": \"12.1.0\",\n    \"eslint-plugin-import\": \"2.12.0\",\n    \"mocha\": \"5.2.0\",\n    \"npm-run-all\": \"4.1.3\",\n    \"nyc\": \"11.8.0\",\n    \"rimraf\": \"2.6.2\",\n    \"semantic-release\": \"^15.5.2\",\n    \"semantic-release-cli\": \"^4.0.5\",\n    \"webpack\": \"4.8.3\",\n    \"webpack-cli\": \"2.1.4\"\n  },\n  \"scripts\": {\n    \"clean\": \"rimraf node_modules && npm install && rimraf dist && rimraf coverage && rimraf .nyc_output\",\n    \"build\": \"npm run clean && npm-run-all --parallel build:*\",\n    \"build:main\": \"babel --out-dir dist --ignore *.spec.js src\",\n    \"build:umd\": \"webpack --output-filename index.umd.js\",\n    \"build:umd.min\": \"webpack --output-filename index.umd.min.js -p\",\n    \"test\": \"mocha \\\"src/**/*.spec.js\\\" --require babel-core/register\",\n    \"test:watch\": \"mocha \\\"src/**/*.spec.js\\\" --require babel-core/register --watch\",\n    \"coverage\": \"nyc mocha src/**/*spec.js --require babel-core/register\",\n    \"report-coverage\": \"npm run coverage && nyc report --reporter=html && open ./coverage/index.html\",\n    \"check-coverage\": \"npm run coverage && nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100\",\n    \"semantic-release\": \"semantic-release\",\n    \"start\": \"npm install && npm test\",\n    \"commit\": \"git-cz\",\n    \"save\": \"npm run test && npm run build && npm run create-docs && git status && git add . && git status && npm run commit\",\n    \"create-docs\": \"./node_modules/.bin/esdoc\",\n    \"open-docs\": \"npm run create-docs && open ./docs/index.html\"\n  },\n  \"files\": [\n    \"dist\",\n    \"README.md\"\n  ],\n  \"config\": {\n    \"commitizen\": {\n      \"path\": \"./node_modules/cz-conventional-changelog\"\n    }\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/npranto/regexer.git\"\n  },\n  \"keywords\": [\n    \"regex\",\n    \"function\",\n    \"simple\"\n  ],\n  \"author\": \"Nazmuz Shakib Pranto <npranto@gmail.com> (http://nsp.surge.sh/)\",\n  \"license\": \"MIT\",\n  \"bugs\": {\n    \"url\": \"https://github.com/npranto/regexer/issues\"\n  },\n  \"homepage\": \"https://github.com/npranto/regexer#readme\"\n}\n",
+    "content": "{\n  \"name\": \"nsp-regexer\",\n  \"version\": \"0.0.0-semantically-released\",\n  \"description\": \"A simple and convenient library of functions that leverage regular expressions while hiding its complexity of implementation\",\n  \"main\": \"dist/index.js\",\n  \"dependencies\": {\n    \"npm\": \"^6.1.0\"\n  },\n  \"devDependencies\": {\n    \"babel-cli\": \"^6.26.0\",\n    \"babel-core\": \"6.26.3\",\n    \"babel-loader\": \"7.1.4\",\n    \"babel-preset-env\": \"1.7.0\",\n    \"chai\": \"4.1.2\",\n    \"commitizen\": \"^2.10.1\",\n    \"cz-conventional-changelog\": \"^2.1.0\",\n    \"esdoc\": \"1.1.0\",\n    \"esdoc-standard-plugin\": \"1.0.0\",\n    \"eslint\": \"4.19.1\",\n    \"eslint-config-airbnb-base\": \"12.1.0\",\n    \"eslint-plugin-import\": \"2.12.0\",\n    \"mocha\": \"5.2.0\",\n    \"npm-run-all\": \"4.1.3\",\n    \"nyc\": \"11.8.0\",\n    \"rimraf\": \"2.6.2\",\n    \"semantic-release\": \"^15.5.2\",\n    \"semantic-release-cli\": \"^4.0.5\",\n    \"webpack\": \"4.8.3\",\n    \"webpack-cli\": \"2.1.4\"\n  },\n  \"scripts\": {\n    \"clean\": \"rimraf node_modules && npm install && rimraf dist && rimraf coverage && rimraf .nyc_output\",\n    \"build\": \"npm-run-all --parallel build:*\",\n    \"build:main\": \"babel --out-dir dist --ignore *.spec.js src\",\n    \"build:umd\": \"webpack --output-filename index.umd.js\",\n    \"build:umd.min\": \"webpack --output-filename index.umd.min.js -p\",\n    \"test\": \"mocha \\\"src/**/*.spec.js\\\" --require babel-core/register\",\n    \"test:watch\": \"mocha \\\"src/**/*.spec.js\\\" --require babel-core/register --watch\",\n    \"coverage\": \"nyc mocha src/**/*spec.js --require babel-core/register\",\n    \"report-coverage\": \"npm run coverage && nyc report --reporter=html && open ./coverage/index.html\",\n    \"check-coverage\": \"npm run coverage && nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100\",\n    \"semantic-release\": \"semantic-release\",\n    \"start\": \"npm install && npm test\",\n    \"commit\": \"git-cz\",\n    \"save\": \"npm run test && npm run build && npm run create-docs && git status && git add . && git status && npm run commit\",\n    \"create-docs\": \"./node_modules/.bin/esdoc\",\n    \"open-docs\": \"npm run create-docs && open ./docs/index.html\"\n  },\n  \"files\": [\n    \"dist\",\n    \"README.md\"\n  ],\n  \"config\": {\n    \"commitizen\": {\n      \"path\": \"./node_modules/cz-conventional-changelog\"\n    }\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/npranto/regexer.git\"\n  },\n  \"keywords\": [\n    \"regex\",\n    \"function\",\n    \"simple\"\n  ],\n  \"author\": \"Nazmuz Shakib Pranto <npranto@gmail.com> (http://nsp.surge.sh/)\",\n  \"license\": \"MIT\",\n  \"bugs\": {\n    \"url\": \"https://github.com/npranto/regexer/issues\"\n  },\n  \"homepage\": \"https://github.com/npranto/regexer#readme\"\n}\n",
     "longname": "/Users/Focus/regexer/package.json",
     "name": "package.json",
     "static": true,
