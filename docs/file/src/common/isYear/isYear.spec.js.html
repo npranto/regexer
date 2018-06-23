@@ -101,13 +101,16 @@ describe(&apos;Regexer&apos;, () =&gt; {
       assert.equal(isYear(1945), true);
     });
     it(&apos;should return true when passes \&apos;0000\&apos;&apos;, () =&gt; {
-      assert.equal(isYear(&apos;0000&apos;), true);
+      assert.equal(isYear(&apos;0000&apos;), false);
     });
     it(&apos;should return false when passes \&apos;fggf\&apos;&apos;, () =&gt; {
       assert.equal(isYear(&apos;fggf&apos;), false);
     });
     it(&apos;should return true when passes 2010&apos;, () =&gt; {
       assert.equal(isYear(2010), true);
+    });
+    it(&apos;should return true when passes 1545&apos;, () =&gt; {
+      assert.equal(isYear(1545), true);
     });
     it(&apos;should return false when passes \&apos;?\&apos;&apos;, () =&gt; {
       assert.equal(isYear(&apos;)&apos;), false);

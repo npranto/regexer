@@ -94,6 +94,14 @@
 <div class="content" data-ice="content"><h1 data-ice="title">src/common/isMonthOfYear/isMonthOfYear.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { isUndefined, isNull } from &apos;./../../utils&apos;;
 
+/**
+ * @desc Returns true if number is a month of year (1-12), otherwise returns false
+ * @param {number} number - a month 
+ * @return {boolean} - true or false 
+ *
+ * @example
+ * &apos;4&apos;, 12
+ */
 const isMonthOfYear = number =&gt; (
   !isUndefined(number) &amp;&amp;
   !isNull(number) &amp;&amp;

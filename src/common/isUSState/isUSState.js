@@ -1,5 +1,13 @@
 import { isUndefined, isNull } from './../../utils';
 
+/**
+ * @desc Returns true if state a name of one of US state, otherwise returns false
+ * @param {string} state - a state
+ * @return {boolean} - true or false 
+ *
+ * @example
+ * 'arizona', 'Oklahoma', 'RhOdE islaNd'
+ */
 const isUSState = state => (
     !isUndefined(state) &&
     !isNull(state) &&

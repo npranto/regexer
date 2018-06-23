@@ -94,6 +94,14 @@
 <div class="content" data-ice="content"><h1 data-ice="title">src/common/isDecimal/isDecimal.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { isUndefined, isNull } from &apos;./../../utils&apos;;
 
+/**
+ * @desc Returns true if number is a decimal number, otherwise returns false
+ * @param {number|string} number - a decimal number
+ * @return {boolean} - true or false 
+ *
+ * @example
+ * &apos;55.55&apos;, -0.999
+ */
 const isDecimal = number =&gt; (
   !isUndefined(number) &amp;&amp;
   !isNull(number) &amp;&amp;

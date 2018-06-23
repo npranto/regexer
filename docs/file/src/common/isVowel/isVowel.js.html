@@ -94,6 +94,14 @@
 <div class="content" data-ice="content"><h1 data-ice="title">src/common/isVowel/isVowel.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { isNull, isUndefined, isString } from &apos;./../../utils&apos;;
 
+/**
+ * @desc Returns true if char a vowel letter, otherwise returns false
+ * @param {string} char - a vowel letter
+ * @return {boolean} - true or false 
+ *
+ * @example
+ * &apos;a&apos;, &apos;E&apos;, &apos;i&apos;, &apos;O&apos;, &apos;u&apos;
+ */
 const isVowel = char =&gt; (
   !isUndefined(char) &amp;&amp;
   !isNull(char) &amp;&amp;

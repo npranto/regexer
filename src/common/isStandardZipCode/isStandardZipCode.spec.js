@@ -7,10 +7,10 @@ describe('Regexer', () => {
       assert.equal(isStandardZipCode('02140'), true);
     });
     it('should return true when passes 45546', () => {
-      assert.equal(isStandardZipCode(45546), true);
+      assert.equal(isStandardZipCode('45546'), true);
     });
-    it('should return true when passes \'12345-6789\'', () => {
-      assert.equal(isStandardZipCode('12345-6789'), true);
+    it('should return true when passes \'12045-6089\'', () => {
+      assert.equal(isStandardZipCode('12045-6089'), true);
     });
     it('should return false when passes \'12345-678932\'', () => {
       assert.equal(isStandardZipCode('12345-678932'), false);

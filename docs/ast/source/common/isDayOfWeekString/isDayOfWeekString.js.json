@@ -1,28 +1,28 @@
 {
   "type": "File",
   "start": 0,
-  "end": 228,
+  "end": 442,
   "loc": {
     "start": {
       "line": 1,
       "column": 0
     },
     "end": {
-      "line": 10,
+      "line": 18,
       "column": 0
     }
   },
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 228,
+    "end": 442,
     "loc": {
       "start": {
         "line": 1,
         "column": 0
       },
       "end": {
-        "line": 10,
+        "line": 18,
         "column": 0
       }
     },
@@ -161,65 +161,84 @@
             "raw": "'./../../utils'"
           },
           "value": "./../../utils"
-        }
+        },
+        "trailingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * @desc Returns true if day is name of a week day, otherwise returns false\n * @param {number|string} day - day of week\n * @return {boolean} - true or false \n *\n * @example\n * 'monday', 'Tuesday', 'FRIDAY'\n ",
+            "start": 54,
+            "end": 267,
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 0
+              },
+              "end": {
+                "line": 10,
+                "column": 3
+              }
+            }
+          }
+        ]
       },
       {
         "type": "Identifier",
-        "start": 54,
-        "end": 192,
+        "start": 268,
+        "end": 406,
         "loc": {
           "start": {
-            "line": 3,
+            "line": 11,
             "column": 0
           },
           "end": {
-            "line": 7,
+            "line": 15,
             "column": 2
           }
         },
         "declarations": [
           {
             "type": "VariableDeclarator",
-            "start": 60,
-            "end": 191,
+            "start": 274,
+            "end": 405,
             "loc": {
               "start": {
-                "line": 3,
+                "line": 11,
                 "column": 6
               },
               "end": {
-                "line": 7,
+                "line": 15,
                 "column": 1
               }
             },
             "id": {
               "type": "Identifier",
-              "start": 60,
-              "end": 77,
+              "start": 274,
+              "end": 291,
               "loc": {
                 "start": {
-                  "line": 3,
+                  "line": 11,
                   "column": 6
                 },
                 "end": {
-                  "line": 3,
+                  "line": 11,
                   "column": 23
                 },
                 "identifierName": "isDayOfWeekString"
               },
-              "name": "isDayOfWeekString"
+              "name": "isDayOfWeekString",
+              "leadingComments": null
             },
             "init": {
               "type": "ArrowFunctionExpression",
-              "start": 80,
-              "end": 191,
+              "start": 294,
+              "end": 405,
               "loc": {
                 "start": {
-                  "line": 3,
+                  "line": 11,
                   "column": 26
                 },
                 "end": {
-                  "line": 7,
+                  "line": 15,
                   "column": 1
                 }
               },
@@ -230,15 +249,15 @@
               "params": [
                 {
                   "type": "Identifier",
-                  "start": 80,
-                  "end": 83,
+                  "start": 294,
+                  "end": 297,
                   "loc": {
                     "start": {
-                      "line": 3,
+                      "line": 11,
                       "column": 26
                     },
                     "end": {
-                      "line": 3,
+                      "line": 11,
                       "column": 29
                     },
                     "identifierName": "day"
@@ -248,43 +267,43 @@
               ],
               "body": {
                 "type": "LogicalExpression",
-                "start": 91,
-                "end": 189,
+                "start": 305,
+                "end": 403,
                 "loc": {
                   "start": {
-                    "line": 4,
+                    "line": 12,
                     "column": 2
                   },
                   "end": {
-                    "line": 6,
+                    "line": 14,
                     "column": 59
                   }
                 },
                 "left": {
                   "type": "LogicalExpression",
-                  "start": 91,
-                  "end": 126,
+                  "start": 305,
+                  "end": 340,
                   "loc": {
                     "start": {
-                      "line": 4,
+                      "line": 12,
                       "column": 2
                     },
                     "end": {
-                      "line": 5,
+                      "line": 13,
                       "column": 14
                     }
                   },
                   "left": {
                     "type": "UnaryExpression",
-                    "start": 91,
-                    "end": 108,
+                    "start": 305,
+                    "end": 322,
                     "loc": {
                       "start": {
-                        "line": 4,
+                        "line": 12,
                         "column": 2
                       },
                       "end": {
-                        "line": 4,
+                        "line": 12,
                         "column": 19
                       }
                     },
@@ -292,29 +311,29 @@
                     "prefix": true,
                     "argument": {
                       "type": "CallExpression",
-                      "start": 92,
-                      "end": 108,
+                      "start": 306,
+                      "end": 322,
                       "loc": {
                         "start": {
-                          "line": 4,
+                          "line": 12,
                           "column": 3
                         },
                         "end": {
-                          "line": 4,
+                          "line": 12,
                           "column": 19
                         }
                       },
                       "callee": {
                         "type": "Identifier",
-                        "start": 92,
-                        "end": 103,
+                        "start": 306,
+                        "end": 317,
                         "loc": {
                           "start": {
-                            "line": 4,
+                            "line": 12,
                             "column": 3
                           },
                           "end": {
-                            "line": 4,
+                            "line": 12,
                             "column": 14
                           },
                           "identifierName": "isUndefined"
@@ -324,15 +343,15 @@
                       "arguments": [
                         {
                           "type": "Identifier",
-                          "start": 104,
-                          "end": 107,
+                          "start": 318,
+                          "end": 321,
                           "loc": {
                             "start": {
-                              "line": 4,
+                              "line": 12,
                               "column": 15
                             },
                             "end": {
-                              "line": 4,
+                              "line": 12,
                               "column": 18
                             },
                             "identifierName": "day"
@@ -348,15 +367,15 @@
                   "operator": "&&",
                   "right": {
                     "type": "UnaryExpression",
-                    "start": 114,
-                    "end": 126,
+                    "start": 328,
+                    "end": 340,
                     "loc": {
                       "start": {
-                        "line": 5,
+                        "line": 13,
                         "column": 2
                       },
                       "end": {
-                        "line": 5,
+                        "line": 13,
                         "column": 14
                       }
                     },
@@ -364,29 +383,29 @@
                     "prefix": true,
                     "argument": {
                       "type": "CallExpression",
-                      "start": 115,
-                      "end": 126,
+                      "start": 329,
+                      "end": 340,
                       "loc": {
                         "start": {
-                          "line": 5,
+                          "line": 13,
                           "column": 3
                         },
                         "end": {
-                          "line": 5,
+                          "line": 13,
                           "column": 14
                         }
                       },
                       "callee": {
                         "type": "Identifier",
-                        "start": 115,
-                        "end": 121,
+                        "start": 329,
+                        "end": 335,
                         "loc": {
                           "start": {
-                            "line": 5,
+                            "line": 13,
                             "column": 3
                           },
                           "end": {
-                            "line": 5,
+                            "line": 13,
                             "column": 9
                           },
                           "identifierName": "isNull"
@@ -396,15 +415,15 @@
                       "arguments": [
                         {
                           "type": "Identifier",
-                          "start": 122,
-                          "end": 125,
+                          "start": 336,
+                          "end": 339,
                           "loc": {
                             "start": {
-                              "line": 5,
+                              "line": 13,
                               "column": 10
                             },
                             "end": {
-                              "line": 5,
+                              "line": 13,
                               "column": 13
                             },
                             "identifierName": "day"
@@ -421,43 +440,43 @@
                 "operator": "&&",
                 "right": {
                   "type": "CallExpression",
-                  "start": 132,
-                  "end": 189,
+                  "start": 346,
+                  "end": 403,
                   "loc": {
                     "start": {
-                      "line": 6,
+                      "line": 14,
                       "column": 2
                     },
                     "end": {
-                      "line": 6,
+                      "line": 14,
                       "column": 59
                     }
                   },
                   "callee": {
                     "type": "MemberExpression",
-                    "start": 132,
-                    "end": 184,
+                    "start": 346,
+                    "end": 398,
                     "loc": {
                       "start": {
-                        "line": 6,
+                        "line": 14,
                         "column": 2
                       },
                       "end": {
-                        "line": 6,
+                        "line": 14,
                         "column": 54
                       }
                     },
                     "object": {
                       "type": "RegExpLiteral",
-                      "start": 132,
-                      "end": 179,
+                      "start": 346,
+                      "end": 393,
                       "loc": {
                         "start": {
-                          "line": 6,
+                          "line": 14,
                           "column": 2
                         },
                         "end": {
-                          "line": 6,
+                          "line": 14,
                           "column": 49
                         }
                       },
@@ -469,15 +488,15 @@
                     },
                     "property": {
                       "type": "Identifier",
-                      "start": 180,
-                      "end": 184,
+                      "start": 394,
+                      "end": 398,
                       "loc": {
                         "start": {
-                          "line": 6,
+                          "line": 14,
                           "column": 50
                         },
                         "end": {
-                          "line": 6,
+                          "line": 14,
                           "column": 54
                         },
                         "identifierName": "test"
@@ -489,15 +508,15 @@
                   "arguments": [
                     {
                       "type": "Identifier",
-                      "start": 185,
-                      "end": 188,
+                      "start": 399,
+                      "end": 402,
                       "loc": {
                         "start": {
-                          "line": 6,
+                          "line": 14,
                           "column": 55
                         },
                         "end": {
-                          "line": 6,
+                          "line": 14,
                           "column": 58
                         },
                         "identifierName": "day"
@@ -508,42 +527,43 @@
                 },
                 "extra": {
                   "parenthesized": true,
-                  "parenStart": 87
+                  "parenStart": 301
                 }
               }
-            }
+            },
+            "leadingComments": null
           }
         ],
         "kind": "const",
-        "name": "_",
         "leadingComments": [],
+        "name": "_",
         "trailingComments": []
       },
       {
         "type": "Identifier",
-        "start": 194,
-        "end": 227,
+        "start": 408,
+        "end": 441,
         "loc": {
           "start": {
-            "line": 9,
+            "line": 17,
             "column": 0
           },
           "end": {
-            "line": 9,
+            "line": 17,
             "column": 33
           }
         },
         "declaration": {
           "type": "Identifier",
-          "start": 209,
-          "end": 226,
+          "start": 423,
+          "end": 440,
           "loc": {
             "start": {
-              "line": 9,
+              "line": 17,
               "column": 15
             },
             "end": {
-              "line": 9,
+              "line": 17,
               "column": 32
             },
             "identifierName": "isDayOfWeekString"
@@ -556,94 +576,96 @@
       },
       {
         "type": "ExportDefaultDeclaration",
-        "start": 194,
-        "end": 227,
+        "start": 408,
+        "end": 441,
         "loc": {
           "start": {
-            "line": 9,
+            "line": 17,
             "column": 0
           },
           "end": {
-            "line": 9,
+            "line": 17,
             "column": 33
           }
         },
         "declaration": {
           "type": "VariableDeclaration",
-          "start": 54,
-          "end": 192,
+          "start": 268,
+          "end": 406,
           "loc": {
             "start": {
-              "line": 3,
+              "line": 11,
               "column": 0
             },
             "end": {
-              "line": 7,
+              "line": 15,
               "column": 2
             }
           },
           "declarations": [
             {
               "type": "VariableDeclarator",
-              "start": 60,
-              "end": 191,
+              "start": 274,
+              "end": 405,
               "loc": {
                 "start": {
-                  "line": 3,
+                  "line": 11,
                   "column": 6
                 },
                 "end": {
-                  "line": 7,
+                  "line": 15,
                   "column": 1
                 }
               },
               "id": {
                 "type": "Identifier",
-                "start": 60,
-                "end": 77,
+                "start": 274,
+                "end": 291,
                 "loc": {
                   "start": {
-                    "line": 3,
+                    "line": 11,
                     "column": 6
                   },
                   "end": {
-                    "line": 3,
+                    "line": 11,
                     "column": 23
                   },
                   "identifierName": "isDayOfWeekString"
                 },
-                "name": "isDayOfWeekString"
+                "name": "isDayOfWeekString",
+                "leadingComments": null
               },
               "init": {
                 "type": "ArrowFunctionExpression",
-                "start": 80,
-                "end": 191,
+                "start": 294,
+                "end": 405,
                 "loc": {
                   "start": {
-                    "line": 3,
+                    "line": 11,
                     "column": 26
                   },
                   "end": {
-                    "line": 7,
+                    "line": 15,
                     "column": 1
                   }
                 },
                 "id": {
                   "type": "Identifier",
-                  "start": 60,
-                  "end": 77,
+                  "start": 274,
+                  "end": 291,
                   "loc": {
                     "start": {
-                      "line": 3,
+                      "line": 11,
                       "column": 6
                     },
                     "end": {
-                      "line": 3,
+                      "line": 11,
                       "column": 23
                     },
                     "identifierName": "isDayOfWeekString"
                   },
-                  "name": "isDayOfWeekString"
+                  "name": "isDayOfWeekString",
+                  "leadingComments": null
                 },
                 "generator": false,
                 "expression": true,
@@ -651,15 +673,15 @@
                 "params": [
                   {
                     "type": "Identifier",
-                    "start": 80,
-                    "end": 83,
+                    "start": 294,
+                    "end": 297,
                     "loc": {
                       "start": {
-                        "line": 3,
+                        "line": 11,
                         "column": 26
                       },
                       "end": {
-                        "line": 3,
+                        "line": 11,
                         "column": 29
                       },
                       "identifierName": "day"
@@ -669,43 +691,43 @@
                 ],
                 "body": {
                   "type": "LogicalExpression",
-                  "start": 91,
-                  "end": 189,
+                  "start": 305,
+                  "end": 403,
                   "loc": {
                     "start": {
-                      "line": 4,
+                      "line": 12,
                       "column": 2
                     },
                     "end": {
-                      "line": 6,
+                      "line": 14,
                       "column": 59
                     }
                   },
                   "left": {
                     "type": "LogicalExpression",
-                    "start": 91,
-                    "end": 126,
+                    "start": 305,
+                    "end": 340,
                     "loc": {
                       "start": {
-                        "line": 4,
+                        "line": 12,
                         "column": 2
                       },
                       "end": {
-                        "line": 5,
+                        "line": 13,
                         "column": 14
                       }
                     },
                     "left": {
                       "type": "UnaryExpression",
-                      "start": 91,
-                      "end": 108,
+                      "start": 305,
+                      "end": 322,
                       "loc": {
                         "start": {
-                          "line": 4,
+                          "line": 12,
                           "column": 2
                         },
                         "end": {
-                          "line": 4,
+                          "line": 12,
                           "column": 19
                         }
                       },
@@ -713,29 +735,29 @@
                       "prefix": true,
                       "argument": {
                         "type": "CallExpression",
-                        "start": 92,
-                        "end": 108,
+                        "start": 306,
+                        "end": 322,
                         "loc": {
                           "start": {
-                            "line": 4,
+                            "line": 12,
                             "column": 3
                           },
                           "end": {
-                            "line": 4,
+                            "line": 12,
                             "column": 19
                           }
                         },
                         "callee": {
                           "type": "Identifier",
-                          "start": 92,
-                          "end": 103,
+                          "start": 306,
+                          "end": 317,
                           "loc": {
                             "start": {
-                              "line": 4,
+                              "line": 12,
                               "column": 3
                             },
                             "end": {
-                              "line": 4,
+                              "line": 12,
                               "column": 14
                             },
                             "identifierName": "isUndefined"
@@ -745,15 +767,15 @@
                         "arguments": [
                           {
                             "type": "Identifier",
-                            "start": 104,
-                            "end": 107,
+                            "start": 318,
+                            "end": 321,
                             "loc": {
                               "start": {
-                                "line": 4,
+                                "line": 12,
                                 "column": 15
                               },
                               "end": {
-                                "line": 4,
+                                "line": 12,
                                 "column": 18
                               },
                               "identifierName": "day"
@@ -769,15 +791,15 @@
                     "operator": "&&",
                     "right": {
                       "type": "UnaryExpression",
-                      "start": 114,
-                      "end": 126,
+                      "start": 328,
+                      "end": 340,
                       "loc": {
                         "start": {
-                          "line": 5,
+                          "line": 13,
                           "column": 2
                         },
                         "end": {
-                          "line": 5,
+                          "line": 13,
                           "column": 14
                         }
                       },
@@ -785,29 +807,29 @@
                       "prefix": true,
                       "argument": {
                         "type": "CallExpression",
-                        "start": 115,
-                        "end": 126,
+                        "start": 329,
+                        "end": 340,
                         "loc": {
                           "start": {
-                            "line": 5,
+                            "line": 13,
                             "column": 3
                           },
                           "end": {
-                            "line": 5,
+                            "line": 13,
                             "column": 14
                           }
                         },
                         "callee": {
                           "type": "Identifier",
-                          "start": 115,
-                          "end": 121,
+                          "start": 329,
+                          "end": 335,
                           "loc": {
                             "start": {
-                              "line": 5,
+                              "line": 13,
                               "column": 3
                             },
                             "end": {
-                              "line": 5,
+                              "line": 13,
                               "column": 9
                             },
                             "identifierName": "isNull"
@@ -817,15 +839,15 @@
                         "arguments": [
                           {
                             "type": "Identifier",
-                            "start": 122,
-                            "end": 125,
+                            "start": 336,
+                            "end": 339,
                             "loc": {
                               "start": {
-                                "line": 5,
+                                "line": 13,
                                 "column": 10
                               },
                               "end": {
-                                "line": 5,
+                                "line": 13,
                                 "column": 13
                               },
                               "identifierName": "day"
@@ -842,43 +864,43 @@
                   "operator": "&&",
                   "right": {
                     "type": "CallExpression",
-                    "start": 132,
-                    "end": 189,
+                    "start": 346,
+                    "end": 403,
                     "loc": {
                       "start": {
-                        "line": 6,
+                        "line": 14,
                         "column": 2
                       },
                       "end": {
-                        "line": 6,
+                        "line": 14,
                         "column": 59
                       }
                     },
                     "callee": {
                       "type": "MemberExpression",
-                      "start": 132,
-                      "end": 184,
+                      "start": 346,
+                      "end": 398,
                       "loc": {
                         "start": {
-                          "line": 6,
+                          "line": 14,
                           "column": 2
                         },
                         "end": {
-                          "line": 6,
+                          "line": 14,
                           "column": 54
                         }
                       },
                       "object": {
                         "type": "RegExpLiteral",
-                        "start": 132,
-                        "end": 179,
+                        "start": 346,
+                        "end": 393,
                         "loc": {
                           "start": {
-                            "line": 6,
+                            "line": 14,
                             "column": 2
                           },
                           "end": {
-                            "line": 6,
+                            "line": 14,
                             "column": 49
                           }
                         },
@@ -890,15 +912,15 @@
                       },
                       "property": {
                         "type": "Identifier",
-                        "start": 180,
-                        "end": 184,
+                        "start": 394,
+                        "end": 398,
                         "loc": {
                           "start": {
-                            "line": 6,
+                            "line": 14,
                             "column": 50
                           },
                           "end": {
-                            "line": 6,
+                            "line": 14,
                             "column": 54
                           },
                           "identifierName": "test"
@@ -910,15 +932,15 @@
                     "arguments": [
                       {
                         "type": "Identifier",
-                        "start": 185,
-                        "end": 188,
+                        "start": 399,
+                        "end": 402,
                         "loc": {
                           "start": {
-                            "line": 6,
+                            "line": 14,
                             "column": 55
                           },
                           "end": {
-                            "line": 6,
+                            "line": 14,
                             "column": 58
                           },
                           "identifierName": "day"
@@ -929,21 +951,56 @@
                   },
                   "extra": {
                     "parenthesized": true,
-                    "parenStart": 87
+                    "parenStart": 301
                   }
+                }
+              },
+              "leadingComments": null
+            }
+          ],
+          "kind": "const",
+          "leadingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\n * @desc Returns true if day is name of a week day, otherwise returns false\n * @param {number|string} day - day of week\n * @return {boolean} - true or false \n *\n * @example\n * 'monday', 'Tuesday', 'FRIDAY'\n ",
+              "start": 54,
+              "end": 267,
+              "loc": {
+                "start": {
+                  "line": 3,
+                  "column": 0
+                },
+                "end": {
+                  "line": 10,
+                  "column": 3
                 }
               }
             }
           ],
-          "kind": "const",
-          "leadingComments": [],
           "trailingComments": []
         }
       }
     ],
     "directives": []
   },
-  "comments": [],
+  "comments": [
+    {
+      "type": "CommentBlock",
+      "value": "*\n * @desc Returns true if day is name of a week day, otherwise returns false\n * @param {number|string} day - day of week\n * @return {boolean} - true or false \n *\n * @example\n * 'monday', 'Tuesday', 'FRIDAY'\n ",
+      "start": 54,
+      "end": 267,
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 0
+        },
+        "end": {
+          "line": 10,
+          "column": 3
+        }
+      }
+    }
+  ],
   "tokens": [
     {
       "type": {
@@ -1181,6 +1238,22 @@
       }
     },
     {
+      "type": "CommentBlock",
+      "value": "*\n * @desc Returns true if day is name of a week day, otherwise returns false\n * @param {number|string} day - day of week\n * @return {boolean} - true or false \n *\n * @example\n * 'monday', 'Tuesday', 'FRIDAY'\n ",
+      "start": 54,
+      "end": 267,
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 0
+        },
+        "end": {
+          "line": 10,
+          "column": 3
+        }
+      }
+    },
+    {
       "type": {
         "label": "const",
         "keyword": "const",
@@ -1195,15 +1268,15 @@
         "updateContext": null
       },
       "value": "const",
-      "start": 54,
-      "end": 59,
+      "start": 268,
+      "end": 273,
       "loc": {
         "start": {
-          "line": 3,
+          "line": 11,
           "column": 0
         },
         "end": {
-          "line": 3,
+          "line": 11,
           "column": 5
         }
       }
@@ -1221,15 +1294,15 @@
         "binop": null
       },
       "value": "isDayOfWeekString",
-      "start": 60,
-      "end": 77,
+      "start": 274,
+      "end": 291,
       "loc": {
         "start": {
-          "line": 3,
+          "line": 11,
           "column": 6
         },
         "end": {
-          "line": 3,
+          "line": 11,
           "column": 23
         }
       }
@@ -1248,15 +1321,15 @@
         "updateContext": null
       },
       "value": "=",
-      "start": 78,
-      "end": 79,
+      "start": 292,
+      "end": 293,
       "loc": {
         "start": {
-          "line": 3,
+          "line": 11,
           "column": 24
         },
         "end": {
-          "line": 3,
+          "line": 11,
           "column": 25
         }
       }
@@ -1274,15 +1347,15 @@
         "binop": null
       },
       "value": "day",
-      "start": 80,
-      "end": 83,
+      "start": 294,
+      "end": 297,
       "loc": {
         "start": {
-          "line": 3,
+          "line": 11,
           "column": 26
         },
         "end": {
-          "line": 3,
+          "line": 11,
           "column": 29
         }
       }
@@ -1300,15 +1373,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 84,
-      "end": 86,
+      "start": 298,
+      "end": 300,
       "loc": {
         "start": {
-          "line": 3,
+          "line": 11,
           "column": 30
         },
         "end": {
-          "line": 3,
+          "line": 11,
           "column": 32
         }
       }
@@ -1325,15 +1398,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 87,
-      "end": 88,
+      "start": 301,
+      "end": 302,
       "loc": {
         "start": {
-          "line": 3,
+          "line": 11,
           "column": 33
         },
         "end": {
-          "line": 3,
+          "line": 11,
           "column": 34
         }
       }
@@ -1352,15 +1425,15 @@
         "updateContext": null
       },
       "value": "!",
-      "start": 91,
-      "end": 92,
+      "start": 305,
+      "end": 306,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 12,
           "column": 2
         },
         "end": {
-          "line": 4,
+          "line": 12,
           "column": 3
         }
       }
@@ -1378,15 +1451,15 @@
         "binop": null
       },
       "value": "isUndefined",
-      "start": 92,
-      "end": 103,
+      "start": 306,
+      "end": 317,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 12,
           "column": 3
         },
         "end": {
-          "line": 4,
+          "line": 12,
           "column": 14
         }
       }
@@ -1403,15 +1476,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 103,
-      "end": 104,
+      "start": 317,
+      "end": 318,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 12,
           "column": 14
         },
         "end": {
-          "line": 4,
+          "line": 12,
           "column": 15
         }
       }
@@ -1429,15 +1502,15 @@
         "binop": null
       },
       "value": "day",
-      "start": 104,
-      "end": 107,
+      "start": 318,
+      "end": 321,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 12,
           "column": 15
         },
         "end": {
-          "line": 4,
+          "line": 12,
           "column": 18
         }
       }
@@ -1454,15 +1527,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 107,
-      "end": 108,
+      "start": 321,
+      "end": 322,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 12,
           "column": 18
         },
         "end": {
-          "line": 4,
+          "line": 12,
           "column": 19
         }
       }
@@ -1481,15 +1554,15 @@
         "updateContext": null
       },
       "value": "&&",
-      "start": 109,
-      "end": 111,
+      "start": 323,
+      "end": 325,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 12,
           "column": 20
         },
         "end": {
-          "line": 4,
+          "line": 12,
           "column": 22
         }
       }
@@ -1508,15 +1581,15 @@
         "updateContext": null
       },
       "value": "!",
-      "start": 114,
-      "end": 115,
+      "start": 328,
+      "end": 329,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 13,
           "column": 2
         },
         "end": {
-          "line": 5,
+          "line": 13,
           "column": 3
         }
       }
@@ -1534,15 +1607,15 @@
         "binop": null
       },
       "value": "isNull",
-      "start": 115,
-      "end": 121,
+      "start": 329,
+      "end": 335,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 13,
           "column": 3
         },
         "end": {
-          "line": 5,
+          "line": 13,
           "column": 9
         }
       }
@@ -1559,15 +1632,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 121,
-      "end": 122,
+      "start": 335,
+      "end": 336,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 13,
           "column": 9
         },
         "end": {
-          "line": 5,
+          "line": 13,
           "column": 10
         }
       }
@@ -1585,15 +1658,15 @@
         "binop": null
       },
       "value": "day",
-      "start": 122,
-      "end": 125,
+      "start": 336,
+      "end": 339,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 13,
           "column": 10
         },
         "end": {
-          "line": 5,
+          "line": 13,
           "column": 13
         }
       }
@@ -1610,15 +1683,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 125,
-      "end": 126,
+      "start": 339,
+      "end": 340,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 13,
           "column": 13
         },
         "end": {
-          "line": 5,
+          "line": 13,
           "column": 14
         }
       }
@@ -1637,15 +1710,15 @@
         "updateContext": null
       },
       "value": "&&",
-      "start": 127,
-      "end": 129,
+      "start": 341,
+      "end": 343,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 13,
           "column": 15
         },
         "end": {
-          "line": 5,
+          "line": 13,
           "column": 17
         }
       }
@@ -1667,15 +1740,15 @@
         "pattern": "^(monday|tuesday|wednesday|thursday|friday)$",
         "flags": "i"
       },
-      "start": 132,
-      "end": 179,
+      "start": 346,
+      "end": 393,
       "loc": {
         "start": {
-          "line": 6,
+          "line": 14,
           "column": 2
         },
         "end": {
-          "line": 6,
+          "line": 14,
           "column": 49
         }
       }
@@ -1693,15 +1766,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 179,
-      "end": 180,
+      "start": 393,
+      "end": 394,
       "loc": {
         "start": {
-          "line": 6,
+          "line": 14,
           "column": 49
         },
         "end": {
-          "line": 6,
+          "line": 14,
           "column": 50
         }
       }
@@ -1719,15 +1792,15 @@
         "binop": null
       },
       "value": "test",
-      "start": 180,
-      "end": 184,
+      "start": 394,
+      "end": 398,
       "loc": {
         "start": {
-          "line": 6,
+          "line": 14,
           "column": 50
         },
         "end": {
-          "line": 6,
+          "line": 14,
           "column": 54
         }
       }
@@ -1744,15 +1817,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 184,
-      "end": 185,
+      "start": 398,
+      "end": 399,
       "loc": {
         "start": {
-          "line": 6,
+          "line": 14,
           "column": 54
         },
         "end": {
-          "line": 6,
+          "line": 14,
           "column": 55
         }
       }
@@ -1770,15 +1843,15 @@
         "binop": null
       },
       "value": "day",
-      "start": 185,
-      "end": 188,
+      "start": 399,
+      "end": 402,
       "loc": {
         "start": {
-          "line": 6,
+          "line": 14,
           "column": 55
         },
         "end": {
-          "line": 6,
+          "line": 14,
           "column": 58
         }
       }
@@ -1795,15 +1868,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 188,
-      "end": 189,
+      "start": 402,
+      "end": 403,
       "loc": {
         "start": {
-          "line": 6,
+          "line": 14,
           "column": 58
         },
         "end": {
-          "line": 6,
+          "line": 14,
           "column": 59
         }
       }
@@ -1820,15 +1893,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 190,
-      "end": 191,
+      "start": 404,
+      "end": 405,
       "loc": {
         "start": {
-          "line": 7,
+          "line": 15,
           "column": 0
         },
         "end": {
-          "line": 7,
+          "line": 15,
           "column": 1
         }
       }
@@ -1846,15 +1919,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 191,
-      "end": 192,
+      "start": 405,
+      "end": 406,
       "loc": {
         "start": {
-          "line": 7,
+          "line": 15,
           "column": 1
         },
         "end": {
-          "line": 7,
+          "line": 15,
           "column": 2
         }
       }
@@ -1874,15 +1947,15 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 194,
-      "end": 200,
+      "start": 408,
+      "end": 414,
       "loc": {
         "start": {
-          "line": 9,
+          "line": 17,
           "column": 0
         },
         "end": {
-          "line": 9,
+          "line": 17,
           "column": 6
         }
       }
@@ -1902,15 +1975,15 @@
         "updateContext": null
       },
       "value": "default",
-      "start": 201,
-      "end": 208,
+      "start": 415,
+      "end": 422,
       "loc": {
         "start": {
-          "line": 9,
+          "line": 17,
           "column": 7
         },
         "end": {
-          "line": 9,
+          "line": 17,
           "column": 14
         }
       }
@@ -1928,15 +2001,15 @@
         "binop": null
       },
       "value": "isDayOfWeekString",
-      "start": 209,
-      "end": 226,
+      "start": 423,
+      "end": 440,
       "loc": {
         "start": {
-          "line": 9,
+          "line": 17,
           "column": 15
         },
         "end": {
-          "line": 9,
+          "line": 17,
           "column": 32
         }
       }
@@ -1954,15 +2027,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 226,
-      "end": 227,
+      "start": 440,
+      "end": 441,
       "loc": {
         "start": {
-          "line": 9,
+          "line": 17,
           "column": 32
         },
         "end": {
-          "line": 9,
+          "line": 17,
           "column": 33
         }
       }
@@ -1980,15 +2053,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 228,
-      "end": 228,
+      "start": 442,
+      "end": 442,
       "loc": {
         "start": {
-          "line": 10,
+          "line": 18,
           "column": 0
         },
         "end": {
-          "line": 10,
+          "line": 18,
           "column": 0
         }
       }

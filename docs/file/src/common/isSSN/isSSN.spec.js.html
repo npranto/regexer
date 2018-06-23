@@ -100,8 +100,11 @@ describe(&apos;Regexer&apos;, () =&gt; {
     it(&apos;should return true when passes \&apos;123456789\&apos;&apos;, () =&gt; {
       assert.equal(isSSN(&apos;123456789&apos;), true);
     });
-    it(&apos;should return true when passes \&apos;455-54-4545\&apos;&apos;, () =&gt; {
-      assert.equal(isSSN(&apos;455-54-4545&apos;), true);
+    it(&apos;should return true when passes \&apos;055-54-4545\&apos;&apos;, () =&gt; {
+      assert.equal(isSSN(&apos;055-54-4545&apos;), true);
+    });
+    it(&apos;should return true when passes \&apos;055 65 4545\&apos;&apos;, () =&gt; {
+      assert.equal(isSSN(&apos;055 65 4545&apos;), true);
     });
     it(&apos;should return false when passes \&apos;00-45-4545\&apos;&apos;, () =&gt; {
       assert.equal(isSSN(&apos;00-45-4545&apos;), false);

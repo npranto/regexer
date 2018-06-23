@@ -94,6 +94,14 @@
 <div class="content" data-ice="content"><h1 data-ice="title">src/common/isHTMLTag/isHTMLTag.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { isUndefined, isNull, isString } from &apos;./../../utils&apos;;
 
+/**
+ * @desc Returns true if htmlTag is an HTML tag, otherwise returns false
+ * @param {string} htmlTag - a HTML tag
+ * @return {boolean} - true or false
+ *
+ * @example
+ * &apos;&lt;h1 class=&quot;center&quot;&gt; Hello World &lt;/h1&gt;
+ */
 const isHTMLTag = htmlTag =&gt; (
   !isUndefined(htmlTag) &amp;&amp;
   !isNull(htmlTag) &amp;&amp;

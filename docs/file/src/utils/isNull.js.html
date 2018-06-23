@@ -94,6 +94,11 @@
 <div class="content" data-ice="content"><h1 data-ice="title">src/utils/isNull.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import isUndefined from &apos;./isUndefined&apos;;
 
+/**
+ * @desc returns true if value is null, otherwise returns false
+ * @param {?null} value
+ * @return {boolean} - true or false 
+ */
 const isNull = value =&gt; (
   !isUndefined(value) &amp;&amp;
   (value === null)

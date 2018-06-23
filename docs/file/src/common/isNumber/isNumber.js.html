@@ -94,6 +94,14 @@
 <div class="content" data-ice="content"><h1 data-ice="title">src/common/isNumber/isNumber.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { isUndefined, isNull } from &apos;./../../utils&apos;;
 
+/**
+ * @desc Returns true if number is a number, otherwise returns false
+ * @param {number|string} number - a number
+ * @return {boolean} - true or false 
+ *
+ * @example
+ * &apos;-4.6&apos;, 0.34, -0.22, 45, 9980328.44
+ */
 const isNumber = number =&gt; (
   !isUndefined(number) &amp;&amp;
   !isNull(number) &amp;&amp;

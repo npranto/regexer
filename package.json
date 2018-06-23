@@ -29,7 +29,7 @@
     "webpack-cli": "2.1.4"
   },
   "scripts": {
-    "clean": "rimraf dist && rimraf coverage && rimraf .nyc_output",
+    "clean": "rimraf node_modules && npm install && rimraf dist && rimraf coverage && rimraf .nyc_output",
     "build": "npm run clean && npm-run-all --parallel build:*",
     "build:main": "babel --out-dir dist --ignore *.spec.js src",
     "build:umd": "webpack --output-filename index.umd.js",
@@ -42,9 +42,9 @@
     "semantic-release": "semantic-release",
     "start": "npm install && npm test",
     "commit": "git-cz",
-    "save": "npm run build && git status && git add . && git status && npm run commit",
-    "docs": "./node_modules/.bin/esdoc",
-    "open-docs": "npm run docs && open ./docs/index.html"
+    "save": "npm run test && npm run build && npm run create-docs && git status && git add . && git status && npm run commit",
+    "create-docs": "./node_modules/.bin/esdoc",
+    "open-docs": "npm run create-docs && open ./docs/index.html"
   },
   "files": [
     "dist",

@@ -97,17 +97,17 @@ import isEmail from &apos;./isEmail&apos;;
 
 describe(&apos;Regexer&apos;, () =&gt; {
   describe(&apos;isEmail()&apos;, () =&gt; {
-    it(&apos;should return true when passed \&apos;npranto@gmail.com\&apos;&apos;, () =&gt; {
-      assert.equal(isEmail(&apos;npranto@gmail.com&apos;), true);
+    it(&apos;should return true when passed \&apos;nfgdfgg@gmail.com\&apos;&apos;, () =&gt; {
+      assert.equal(isEmail(&apos;nfgdfgg@gmail.com&apos;), true);
     });
-    it(&apos;should return false when passed \&apos;npranto@gmail\&apos;&apos;, () =&gt; {
-      assert.equal(isEmail(&apos;npranto@gmail&apos;), false);
+    it(&apos;should return false when passed \&apos;dfgdfg@gmail\&apos;&apos;, () =&gt; {
+      assert.equal(isEmail(&apos;dfgdfg@gmail&apos;), false);
     });
-    it(&apos;should return false when passed \&apos;nprantogmail.com\&apos;&apos;, () =&gt; {
-      assert.equal(isEmail(&apos;nprantogmail.com&apos;), false);
+    it(&apos;should return false when passed \&apos;sdfsdfsdfsd.com\&apos;&apos;, () =&gt; {
+      assert.equal(isEmail(&apos;sdfsdfsdfsd.com&apos;), false);
     });
-    it(&apos;should return true when passed \&apos;npranto@123gmail.co\&apos;&apos;, () =&gt; {
-      assert.equal(isEmail(&apos;npranto@123gmail.co&apos;), true);
+    it(&apos;should return true when passed \&apos;npraxx@123gmail.co\&apos;&apos;, () =&gt; {
+      assert.equal(isEmail(&apos;npraxx@123gmail.co&apos;), true);
     });
     it(&apos;should return false when passed null&apos;, () =&gt; {
       assert.equal(isEmail(null), false);

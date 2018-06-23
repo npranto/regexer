@@ -1,5 +1,13 @@
 import { isUndefined, isNull, isString } from './../../utils';
 
+/**
+ * @desc Returns true if url a valid URL address, otherwise returns false
+ * @param {string} url - an URL address
+ * @return {boolean} - true or false 
+ *
+ * @example
+ * 'http://3iem.museum:1337/', 'plik.co.uk'
+ */
 const isUrl = url => (
   !isUndefined(url) &&
   !isNull(url) &&

@@ -94,6 +94,14 @@
 <div class="content" data-ice="content"><h1 data-ice="title">src/common/isCreditCard/isCreditCardNumber.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { isUndefined, isNull } from &apos;./../../utils&apos;;
 
+/**
+ * @desc Returns true if creditCardNumber is a valid credit card number, otherwise returns false
+ * @param {number|string} creditCardNumber - credit card number
+ * @return {boolean} - true or false 
+ *
+ * @example
+ * &apos;345768475867474&apos;, 6476666666666666
+ */
 const isCreditCardNumber = creditCardNumber =&gt; (
   !isUndefined(creditCardNumber) &amp;&amp;
   !isNull(creditCardNumber) &amp;&amp;

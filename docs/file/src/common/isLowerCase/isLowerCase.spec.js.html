@@ -106,6 +106,9 @@ describe(&apos;Regexer&apos;, () =&gt; {
     it(&apos;should return true when passed \&apos;f\&apos;&apos;, () =&gt; {
       assert.equal(isLowerCase(&apos;f&apos;), true);
     });
+    it(&apos;should return true when passed \&apos;life is great\&apos;&apos;, () =&gt; {
+      assert.equal(isLowerCase(&apos;life is great&apos;), true);
+    });
     it(&apos;should return true when passed \&apos;ian\&apos;&apos;, () =&gt; {
       assert.equal(isLowerCase(&apos;ian&apos;), true);
     });

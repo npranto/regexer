@@ -101,10 +101,10 @@ describe(&apos;Regexer&apos;, () =&gt; {
       assert.equal(isStandardZipCode(&apos;02140&apos;), true);
     });
     it(&apos;should return true when passes 45546&apos;, () =&gt; {
-      assert.equal(isStandardZipCode(45546), true);
+      assert.equal(isStandardZipCode(&apos;45546&apos;), true);
     });
-    it(&apos;should return true when passes \&apos;12345-6789\&apos;&apos;, () =&gt; {
-      assert.equal(isStandardZipCode(&apos;12345-6789&apos;), true);
+    it(&apos;should return true when passes \&apos;12045-6089\&apos;&apos;, () =&gt; {
+      assert.equal(isStandardZipCode(&apos;12045-6089&apos;), true);
     });
     it(&apos;should return false when passes \&apos;12345-678932\&apos;&apos;, () =&gt; {
       assert.equal(isStandardZipCode(&apos;12345-678932&apos;), false);

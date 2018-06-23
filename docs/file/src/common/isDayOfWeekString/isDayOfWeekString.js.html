@@ -94,6 +94,14 @@
 <div class="content" data-ice="content"><h1 data-ice="title">src/common/isDayOfWeekString/isDayOfWeekString.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { isUndefined, isNull } from &apos;./../../utils&apos;;
 
+/**
+ * @desc Returns true if day is name of a week day, otherwise returns false
+ * @param {number|string} day - day of week
+ * @return {boolean} - true or false 
+ *
+ * @example
+ * &apos;monday&apos;, &apos;Tuesday&apos;, &apos;FRIDAY&apos;
+ */
 const isDayOfWeekString = day =&gt; (
   !isUndefined(day) &amp;&amp;
   !isNull(day) &amp;&amp;

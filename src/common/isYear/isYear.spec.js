@@ -7,13 +7,16 @@ describe('Regexer', () => {
       assert.equal(isYear(1945), true);
     });
     it('should return true when passes \'0000\'', () => {
-      assert.equal(isYear('0000'), true);
+      assert.equal(isYear('0000'), false);
     });
     it('should return false when passes \'fggf\'', () => {
       assert.equal(isYear('fggf'), false);
     });
     it('should return true when passes 2010', () => {
       assert.equal(isYear(2010), true);
+    });
+    it('should return true when passes 1545', () => {
+      assert.equal(isYear(1545), true);
     });
     it('should return false when passes \'?\'', () => {
       assert.equal(isYear(')'), false);

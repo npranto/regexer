@@ -7,13 +7,13 @@ describe('Regexer', () => {
       assert.equal(isLetter('a'), true);
     });
     it('should return true when passed \'ACTIVITY\'', () => {
-      assert.equal(isLetter('ACTIVITY'), true);
+      assert.equal(isLetter('ACTIVITY'), false);
     });
     it('should return false when passed \'72864783246\'', () => {
       assert.equal(isLetter('72864783246'), false);
     });
-    it('should return false when passed \'haha?!\'', () => {
-      assert.equal(isLetter('haha?!'), false);
+    it('should return false when passed \'X\'', () => {
+      assert.equal(isLetter('X'), true);
     });
     it('should return false when passed \'A coffee shop is nearby\'', () => {
       assert.equal(isLetter('A coffee shop is nearby'), false);

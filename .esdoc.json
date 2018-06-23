@@ -11,7 +11,7 @@
         "repository": "https://github.com/npranto/regexer"
       },
       "test": {
-        "source": "./src",
+        "source": "./src/common/",
         "interfaces": ["describe", "it", "context", "suite", "test"],
         "includes": ["(spec|Spec|test|Test)\\.js$"],
         "excludes": ["\\.config\\.js$"]

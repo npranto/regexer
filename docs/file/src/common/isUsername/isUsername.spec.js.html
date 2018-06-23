@@ -109,6 +109,9 @@ describe(&apos;Regexer&apos;, () =&gt; {
     it(&apos;should return true when passed \&apos;NS-pranto_236\&apos;&apos;, () =&gt; {
       assert.equal(isUsername(&apos;NS-pranto_236&apos;), true);
     });
+    it(&apos;should return true when passed \&apos;james-bond007\&apos;&apos;, () =&gt; {
+      assert.equal(isUsername(&apos;james-bond007&apos;), true);
+    });
     it(&apos;should return false when passed null&apos;, () =&gt; {
       assert.equal(isUsername(null), false);
     });

@@ -1,5 +1,13 @@
 import { isNull, isUndefined, isString } from './../../utils';
 
+/**
+ * @desc Returns true if hexValue is a valid hex value, otherwise returns false
+ * @param {string} hexValue - a hex value
+ * @return {boolean} - true or false
+ *
+ * @example
+ * '#FBB', '#SHFF56', '#FF56'
+ */
 const isHexValue = hexValue => (
   !isUndefined(hexValue) &&
   !isNull(hexValue) &&

@@ -94,6 +94,14 @@
 <div class="content" data-ice="content"><h1 data-ice="title">src/common/isLowerCase/isLowerCase.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { isNull, isUndefined, isString } from &apos;./../../utils&apos;;
 
+/**
+ * @desc Returns true if str contains all lower case letters, otherwise returns false
+ * @param {string} str - a string 
+ * @return {boolean} - true or false 
+ *
+ * @example
+ * &apos;coffee&apos;, &apos;chai&apos;, &apos;cold&apos;, &apos;life is awesome&apos;
+ */
 const isLowerCase = str =&gt; (
   !isUndefined(str) &amp;&amp;
   !isNull(str) &amp;&amp;

@@ -66,6 +66,7 @@
 import isCreditCardNumber from &apos;./isCreditCardNumber&apos;;
 
 describe(&apos;Regexer&apos;, () =&gt; {
+  /** @test {isCreditCardNumber} */
   describe(&apos;isCreditCardNumber()&apos;, () =&gt; {
     it(&apos;should return true when passes 0&apos;, () =&gt; {
       assert.equal(isCreditCardNumber(0), false);
