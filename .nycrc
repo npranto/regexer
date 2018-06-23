@@ -1,0 +1,7 @@
+{
+	"nyc": {
+    "exclude": [
+      "src/**/*.spec.js"
+    ]
+  }
+}
