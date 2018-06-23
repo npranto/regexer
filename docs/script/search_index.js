@@ -1,788 +1,998 @@
 window.esdocSearchIndex = [
   [
-    "nsp-regexer/common/iscreditcard/iscreditcardnumber.js~iscreditcardnumber",
+    "nsp-regexer/src/common/iscreditcard/iscreditcardnumber.js~iscreditcardnumber",
     "function/index.html#static-function-isCreditCardNumber",
-    "<span>isCreditCardNumber</span> <span class=\"search-result-import-path\">nsp-regexer/common/isCreditCard/isCreditCardNumber.js</span>",
+    "<span>isCreditCardNumber</span> <span class=\"search-result-import-path\">nsp-regexer/src/common/isCreditCard/isCreditCardNumber.js</span>",
     "function"
   ],
   [
-    "nsp-regexer/common/isdayofmonth/isdayofmonth.js~isdayofmonth",
+    "nsp-regexer/src/common/isdayofmonth/isdayofmonth.js~isdayofmonth",
     "function/index.html#static-function-isDayOfMonth",
-    "<span>isDayOfMonth</span> <span class=\"search-result-import-path\">nsp-regexer/common/isDayOfMonth/isDayOfMonth.js</span>",
+    "<span>isDayOfMonth</span> <span class=\"search-result-import-path\">nsp-regexer/src/common/isDayOfMonth/isDayOfMonth.js</span>",
     "function"
   ],
   [
-    "nsp-regexer/common/isdayofweekstring/isdayofweekstring.js~isdayofweekstring",
+    "nsp-regexer/src/index.js~isdayofmonth",
+    "variable/index.html#static-variable-isDayOfMonth",
+    "<span>isDayOfMonth</span> <span class=\"search-result-import-path\">nsp-regexer/src/index.js</span>",
+    "variable"
+  ],
+  [
+    "nsp-regexer/src/common/isdayofweekstring/isdayofweekstring.js~isdayofweekstring",
     "function/index.html#static-function-isDayOfWeekString",
-    "<span>isDayOfWeekString</span> <span class=\"search-result-import-path\">nsp-regexer/common/isDayOfWeekString/isDayOfWeekString.js</span>",
+    "<span>isDayOfWeekString</span> <span class=\"search-result-import-path\">nsp-regexer/src/common/isDayOfWeekString/isDayOfWeekString.js</span>",
     "function"
   ],
   [
-    "nsp-regexer/common/isdecimal/isdecimal.js~isdecimal",
+    "nsp-regexer/src/index.js~isdayofweekstring",
+    "variable/index.html#static-variable-isDayOfWeekString",
+    "<span>isDayOfWeekString</span> <span class=\"search-result-import-path\">nsp-regexer/src/index.js</span>",
+    "variable"
+  ],
+  [
+    "nsp-regexer/src/common/isdecimal/isdecimal.js~isdecimal",
     "function/index.html#static-function-isDecimal",
-    "<span>isDecimal</span> <span class=\"search-result-import-path\">nsp-regexer/common/isDecimal/isDecimal.js</span>",
+    "<span>isDecimal</span> <span class=\"search-result-import-path\">nsp-regexer/src/common/isDecimal/isDecimal.js</span>",
     "function"
   ],
   [
-    "nsp-regexer/common/isemail/isemail.js~isemail",
+    "nsp-regexer/src/common/isemail/isemail.js~isemail",
     "function/index.html#static-function-isEmail",
-    "<span>isEmail</span> <span class=\"search-result-import-path\">nsp-regexer/common/isEmail/isEmail.js</span>",
+    "<span>isEmail</span> <span class=\"search-result-import-path\">nsp-regexer/src/common/isEmail/isEmail.js</span>",
     "function"
   ],
   [
-    "nsp-regexer/common/ishtmltag/ishtmltag.js~ishtmltag",
+    "nsp-regexer/src/index.js~isemail",
+    "variable/index.html#static-variable-isEmail",
+    "<span>isEmail</span> <span class=\"search-result-import-path\">nsp-regexer/src/index.js</span>",
+    "variable"
+  ],
+  [
+    "nsp-regexer/src/common/ishtmltag/ishtmltag.js~ishtmltag",
     "function/index.html#static-function-isHTMLTag",
-    "<span>isHTMLTag</span> <span class=\"search-result-import-path\">nsp-regexer/common/isHTMLTag/isHTMLTag.js</span>",
+    "<span>isHTMLTag</span> <span class=\"search-result-import-path\">nsp-regexer/src/common/isHTMLTag/isHTMLTag.js</span>",
     "function"
   ],
   [
-    "nsp-regexer/common/ishexvalue/ishexvalue.js~ishexvalue",
+    "nsp-regexer/src/index.js~ishtmltag",
+    "variable/index.html#static-variable-isHTMLTag",
+    "<span>isHTMLTag</span> <span class=\"search-result-import-path\">nsp-regexer/src/index.js</span>",
+    "variable"
+  ],
+  [
+    "nsp-regexer/src/common/ishexvalue/ishexvalue.js~ishexvalue",
     "function/index.html#static-function-isHexValue",
-    "<span>isHexValue</span> <span class=\"search-result-import-path\">nsp-regexer/common/isHexValue/isHexValue.js</span>",
+    "<span>isHexValue</span> <span class=\"search-result-import-path\">nsp-regexer/src/common/isHexValue/isHexValue.js</span>",
     "function"
   ],
   [
-    "nsp-regexer/common/isipaddressv4/isipaddressv4.js~isipaddressv4",
+    "nsp-regexer/src/index.js~ishexvalue",
+    "variable/index.html#static-variable-isHexValue",
+    "<span>isHexValue</span> <span class=\"search-result-import-path\">nsp-regexer/src/index.js</span>",
+    "variable"
+  ],
+  [
+    "nsp-regexer/src/common/isipaddressv4/isipaddressv4.js~isipaddressv4",
     "function/index.html#static-function-isIPAddressV4",
-    "<span>isIPAddressV4</span> <span class=\"search-result-import-path\">nsp-regexer/common/isIPAddressV4/isIPAddressV4.js</span>",
+    "<span>isIPAddressV4</span> <span class=\"search-result-import-path\">nsp-regexer/src/common/isIPAddressV4/isIPAddressV4.js</span>",
     "function"
   ],
   [
-    "nsp-regexer/common/isinteger/isinteger.js~isinteger",
+    "nsp-regexer/src/index.js~isipaddressv4",
+    "variable/index.html#static-variable-isIPAddressV4",
+    "<span>isIPAddressV4</span> <span class=\"search-result-import-path\">nsp-regexer/src/index.js</span>",
+    "variable"
+  ],
+  [
+    "nsp-regexer/src/common/isinteger/isinteger.js~isinteger",
     "function/index.html#static-function-isInteger",
-    "<span>isInteger</span> <span class=\"search-result-import-path\">nsp-regexer/common/isInteger/isInteger.js</span>",
+    "<span>isInteger</span> <span class=\"search-result-import-path\">nsp-regexer/src/common/isInteger/isInteger.js</span>",
     "function"
   ],
   [
-    "nsp-regexer/common/isletter/isletter.js~isletter",
+    "nsp-regexer/src/index.js~isinteger",
+    "variable/index.html#static-variable-isInteger",
+    "<span>isInteger</span> <span class=\"search-result-import-path\">nsp-regexer/src/index.js</span>",
+    "variable"
+  ],
+  [
+    "nsp-regexer/src/common/isletter/isletter.js~isletter",
     "function/index.html#static-function-isLetter",
-    "<span>isLetter</span> <span class=\"search-result-import-path\">nsp-regexer/common/isLetter/isLetter.js</span>",
+    "<span>isLetter</span> <span class=\"search-result-import-path\">nsp-regexer/src/common/isLetter/isLetter.js</span>",
     "function"
   ],
   [
-    "nsp-regexer/common/islowercase/islowercase.js~islowercase",
+    "nsp-regexer/src/index.js~isletter",
+    "variable/index.html#static-variable-isLetter",
+    "<span>isLetter</span> <span class=\"search-result-import-path\">nsp-regexer/src/index.js</span>",
+    "variable"
+  ],
+  [
+    "nsp-regexer/src/common/islowercase/islowercase.js~islowercase",
     "function/index.html#static-function-isLowerCase",
-    "<span>isLowerCase</span> <span class=\"search-result-import-path\">nsp-regexer/common/isLowerCase/isLowerCase.js</span>",
+    "<span>isLowerCase</span> <span class=\"search-result-import-path\">nsp-regexer/src/common/isLowerCase/isLowerCase.js</span>",
     "function"
   ],
   [
-    "nsp-regexer/common/ismonthofyear/ismonthofyear.js~ismonthofyear",
+    "nsp-regexer/src/index.js~islowercase",
+    "variable/index.html#static-variable-isLowerCase",
+    "<span>isLowerCase</span> <span class=\"search-result-import-path\">nsp-regexer/src/index.js</span>",
+    "variable"
+  ],
+  [
+    "nsp-regexer/src/common/ismonthofyear/ismonthofyear.js~ismonthofyear",
     "function/index.html#static-function-isMonthOfYear",
-    "<span>isMonthOfYear</span> <span class=\"search-result-import-path\">nsp-regexer/common/isMonthOfYear/isMonthOfYear.js</span>",
+    "<span>isMonthOfYear</span> <span class=\"search-result-import-path\">nsp-regexer/src/common/isMonthOfYear/isMonthOfYear.js</span>",
     "function"
   ],
   [
-    "nsp-regexer/common/ismonthofyearstring/ismonthofyearstring.js~ismonthofyearstring",
+    "nsp-regexer/src/index.js~ismonthofyear",
+    "variable/index.html#static-variable-isMonthOfYear",
+    "<span>isMonthOfYear</span> <span class=\"search-result-import-path\">nsp-regexer/src/index.js</span>",
+    "variable"
+  ],
+  [
+    "nsp-regexer/src/common/ismonthofyearstring/ismonthofyearstring.js~ismonthofyearstring",
     "function/index.html#static-function-isMonthOfYearString",
-    "<span>isMonthOfYearString</span> <span class=\"search-result-import-path\">nsp-regexer/common/isMonthOfYearString/isMonthOfYearString.js</span>",
+    "<span>isMonthOfYearString</span> <span class=\"search-result-import-path\">nsp-regexer/src/common/isMonthOfYearString/isMonthOfYearString.js</span>",
     "function"
   ],
   [
-    "nsp-regexer/common/isnegativeinteger/isnegativeinteger.js~isnegativeinteger",
+    "nsp-regexer/src/index.js~ismonthofyearstring",
+    "variable/index.html#static-variable-isMonthOfYearString",
+    "<span>isMonthOfYearString</span> <span class=\"search-result-import-path\">nsp-regexer/src/index.js</span>",
+    "variable"
+  ],
+  [
+    "nsp-regexer/src/common/isnegativeinteger/isnegativeinteger.js~isnegativeinteger",
     "function/index.html#static-function-isNegativeInteger",
-    "<span>isNegativeInteger</span> <span class=\"search-result-import-path\">nsp-regexer/common/isNegativeInteger/isNegativeInteger.js</span>",
+    "<span>isNegativeInteger</span> <span class=\"search-result-import-path\">nsp-regexer/src/common/isNegativeInteger/isNegativeInteger.js</span>",
     "function"
   ],
   [
-    "nsp-regexer/common/isnegativenumber/isnegativenumber.js~isnegativenumber",
+    "nsp-regexer/src/index.js~isnegativeinteger",
+    "variable/index.html#static-variable-isNegativeInteger",
+    "<span>isNegativeInteger</span> <span class=\"search-result-import-path\">nsp-regexer/src/index.js</span>",
+    "variable"
+  ],
+  [
+    "nsp-regexer/src/common/isnegativenumber/isnegativenumber.js~isnegativenumber",
     "function/index.html#static-function-isNegativeNumber",
-    "<span>isNegativeNumber</span> <span class=\"search-result-import-path\">nsp-regexer/common/isNegativeNumber/isNegativeNumber.js</span>",
+    "<span>isNegativeNumber</span> <span class=\"search-result-import-path\">nsp-regexer/src/common/isNegativeNumber/isNegativeNumber.js</span>",
     "function"
   ],
   [
-    "nsp-regexer/common/isnumber/isnumber.js~isnumber",
+    "nsp-regexer/src/index.js~isnegativenumber",
+    "variable/index.html#static-variable-isNegativeNumber",
+    "<span>isNegativeNumber</span> <span class=\"search-result-import-path\">nsp-regexer/src/index.js</span>",
+    "variable"
+  ],
+  [
+    "nsp-regexer/src/utils/index.js~isnull",
+    "variable/index.html#static-variable-isNull",
+    "<span>isNull</span> <span class=\"search-result-import-path\">nsp-regexer/src/utils/index.js</span>",
+    "variable"
+  ],
+  [
+    "nsp-regexer/src/utils/isnull.js~isnull",
+    "function/index.html#static-function-isNull",
+    "<span>isNull</span> <span class=\"search-result-import-path\">nsp-regexer/src/utils/isNull.js</span>",
+    "function"
+  ],
+  [
+    "nsp-regexer/src/common/isnumber/isnumber.js~isnumber",
     "function/index.html#static-function-isNumber",
-    "<span>isNumber</span> <span class=\"search-result-import-path\">nsp-regexer/common/isNumber/isNumber.js</span>",
+    "<span>isNumber</span> <span class=\"search-result-import-path\">nsp-regexer/src/common/isNumber/isNumber.js</span>",
     "function"
   ],
   [
-    "nsp-regexer/common/ispassword/ispassword.js~ispassword",
+    "nsp-regexer/src/index.js~isnumber",
+    "variable/index.html#static-variable-isNumber",
+    "<span>isNumber</span> <span class=\"search-result-import-path\">nsp-regexer/src/index.js</span>",
+    "variable"
+  ],
+  [
+    "nsp-regexer/src/common/ispassword/ispassword.js~ispassword",
     "function/index.html#static-function-isPassword",
-    "<span>isPassword</span> <span class=\"search-result-import-path\">nsp-regexer/common/isPassword/isPassword.js</span>",
+    "<span>isPassword</span> <span class=\"search-result-import-path\">nsp-regexer/src/common/isPassword/isPassword.js</span>",
     "function"
   ],
   [
-    "nsp-regexer/common/ispositiveinteger/ispositiveinteger.js~ispositiveinteger",
+    "nsp-regexer/src/index.js~ispassword",
+    "variable/index.html#static-variable-isPassword",
+    "<span>isPassword</span> <span class=\"search-result-import-path\">nsp-regexer/src/index.js</span>",
+    "variable"
+  ],
+  [
+    "nsp-regexer/src/common/ispositiveinteger/ispositiveinteger.js~ispositiveinteger",
     "function/index.html#static-function-isPositiveInteger",
-    "<span>isPositiveInteger</span> <span class=\"search-result-import-path\">nsp-regexer/common/isPositiveInteger/isPositiveInteger.js</span>",
+    "<span>isPositiveInteger</span> <span class=\"search-result-import-path\">nsp-regexer/src/common/isPositiveInteger/isPositiveInteger.js</span>",
     "function"
   ],
   [
-    "nsp-regexer/common/ispositivenumber/ispositivenumber.js~ispositivenumber",
+    "nsp-regexer/src/index.js~ispositiveinteger",
+    "variable/index.html#static-variable-isPositiveInteger",
+    "<span>isPositiveInteger</span> <span class=\"search-result-import-path\">nsp-regexer/src/index.js</span>",
+    "variable"
+  ],
+  [
+    "nsp-regexer/src/common/ispositivenumber/ispositivenumber.js~ispositivenumber",
     "function/index.html#static-function-isPositiveNumber",
-    "<span>isPositiveNumber</span> <span class=\"search-result-import-path\">nsp-regexer/common/isPositiveNumber/isPositiveNumber.js</span>",
+    "<span>isPositiveNumber</span> <span class=\"search-result-import-path\">nsp-regexer/src/common/isPositiveNumber/isPositiveNumber.js</span>",
     "function"
   ],
   [
-    "nsp-regexer/common/isssn/isssn.js~isssn",
+    "nsp-regexer/src/index.js~ispositivenumber",
+    "variable/index.html#static-variable-isPositiveNumber",
+    "<span>isPositiveNumber</span> <span class=\"search-result-import-path\">nsp-regexer/src/index.js</span>",
+    "variable"
+  ],
+  [
+    "nsp-regexer/src/common/isssn/isssn.js~isssn",
     "function/index.html#static-function-isSSN",
-    "<span>isSSN</span> <span class=\"search-result-import-path\">nsp-regexer/common/isSSN/isSSN.js</span>",
+    "<span>isSSN</span> <span class=\"search-result-import-path\">nsp-regexer/src/common/isSSN/isSSN.js</span>",
     "function"
   ],
   [
-    "nsp-regexer/common/isstandardzipcode/isstandardzipcode.js~isstandardzipcode",
+    "nsp-regexer/src/index.js~isssn",
+    "variable/index.html#static-variable-isSSN",
+    "<span>isSSN</span> <span class=\"search-result-import-path\">nsp-regexer/src/index.js</span>",
+    "variable"
+  ],
+  [
+    "nsp-regexer/src/common/isstandardzipcode/isstandardzipcode.js~isstandardzipcode",
     "function/index.html#static-function-isStandardZipCode",
-    "<span>isStandardZipCode</span> <span class=\"search-result-import-path\">nsp-regexer/common/isStandardZipCode/isStandardZipCode.js</span>",
+    "<span>isStandardZipCode</span> <span class=\"search-result-import-path\">nsp-regexer/src/common/isStandardZipCode/isStandardZipCode.js</span>",
     "function"
   ],
   [
-    "nsp-regexer/common/isusphonenumber/isusphonenumber.js~isusphonenumber",
+    "nsp-regexer/src/utils/index.js~isstring",
+    "variable/index.html#static-variable-isString",
+    "<span>isString</span> <span class=\"search-result-import-path\">nsp-regexer/src/utils/index.js</span>",
+    "variable"
+  ],
+  [
+    "nsp-regexer/src/utils/isstring.js~isstring",
+    "function/index.html#static-function-isString",
+    "<span>isString</span> <span class=\"search-result-import-path\">nsp-regexer/src/utils/isString.js</span>",
+    "function"
+  ],
+  [
+    "nsp-regexer/src/common/isusphonenumber/isusphonenumber.js~isusphonenumber",
     "function/index.html#static-function-isUSPhoneNumber",
-    "<span>isUSPhoneNumber</span> <span class=\"search-result-import-path\">nsp-regexer/common/isUSPhoneNumber/isUSPhoneNumber.js</span>",
+    "<span>isUSPhoneNumber</span> <span class=\"search-result-import-path\">nsp-regexer/src/common/isUSPhoneNumber/isUSPhoneNumber.js</span>",
     "function"
   ],
   [
-    "nsp-regexer/common/isusstate/isusstate.js~isusstate",
+    "nsp-regexer/src/index.js~isusphonenumber",
+    "variable/index.html#static-variable-isUSPhoneNumber",
+    "<span>isUSPhoneNumber</span> <span class=\"search-result-import-path\">nsp-regexer/src/index.js</span>",
+    "variable"
+  ],
+  [
+    "nsp-regexer/src/common/isusstate/isusstate.js~isusstate",
     "function/index.html#static-function-isUSState",
-    "<span>isUSState</span> <span class=\"search-result-import-path\">nsp-regexer/common/isUSState/isUSState.js</span>",
+    "<span>isUSState</span> <span class=\"search-result-import-path\">nsp-regexer/src/common/isUSState/isUSState.js</span>",
     "function"
   ],
   [
-    "nsp-regexer/common/isuppercase/isuppercase.js~isuppercase",
+    "nsp-regexer/src/utils/index.js~isundefined",
+    "variable/index.html#static-variable-isUndefined",
+    "<span>isUndefined</span> <span class=\"search-result-import-path\">nsp-regexer/src/utils/index.js</span>",
+    "variable"
+  ],
+  [
+    "nsp-regexer/src/utils/isundefined.js~isundefined",
+    "function/index.html#static-function-isUndefined",
+    "<span>isUndefined</span> <span class=\"search-result-import-path\">nsp-regexer/src/utils/isUndefined.js</span>",
+    "function"
+  ],
+  [
+    "nsp-regexer/src/common/isuppercase/isuppercase.js~isuppercase",
     "function/index.html#static-function-isUpperCase",
-    "<span>isUpperCase</span> <span class=\"search-result-import-path\">nsp-regexer/common/isUpperCase/isUpperCase.js</span>",
+    "<span>isUpperCase</span> <span class=\"search-result-import-path\">nsp-regexer/src/common/isUpperCase/isUpperCase.js</span>",
     "function"
   ],
   [
-    "nsp-regexer/common/isurl/isurl.js~isurl",
+    "nsp-regexer/src/index.js~isuppercase",
+    "variable/index.html#static-variable-isUpperCase",
+    "<span>isUpperCase</span> <span class=\"search-result-import-path\">nsp-regexer/src/index.js</span>",
+    "variable"
+  ],
+  [
+    "nsp-regexer/src/common/isurl/isurl.js~isurl",
     "function/index.html#static-function-isUrl",
-    "<span>isUrl</span> <span class=\"search-result-import-path\">nsp-regexer/common/isUrl/isUrl.js</span>",
+    "<span>isUrl</span> <span class=\"search-result-import-path\">nsp-regexer/src/common/isUrl/isUrl.js</span>",
     "function"
   ],
   [
-    "nsp-regexer/common/isusername/isusername.js~isusername",
+    "nsp-regexer/src/index.js~isurl",
+    "variable/index.html#static-variable-isUrl",
+    "<span>isUrl</span> <span class=\"search-result-import-path\">nsp-regexer/src/index.js</span>",
+    "variable"
+  ],
+  [
+    "nsp-regexer/src/common/isusername/isusername.js~isusername",
     "function/index.html#static-function-isUsername",
-    "<span>isUsername</span> <span class=\"search-result-import-path\">nsp-regexer/common/isUsername/isUsername.js</span>",
+    "<span>isUsername</span> <span class=\"search-result-import-path\">nsp-regexer/src/common/isUsername/isUsername.js</span>",
     "function"
   ],
   [
-    "nsp-regexer/common/isvowel/isvowel.js~isvowel",
+    "nsp-regexer/src/index.js~isusername",
+    "variable/index.html#static-variable-isUsername",
+    "<span>isUsername</span> <span class=\"search-result-import-path\">nsp-regexer/src/index.js</span>",
+    "variable"
+  ],
+  [
+    "nsp-regexer/src/common/isvowel/isvowel.js~isvowel",
     "function/index.html#static-function-isVowel",
-    "<span>isVowel</span> <span class=\"search-result-import-path\">nsp-regexer/common/isVowel/isVowel.js</span>",
+    "<span>isVowel</span> <span class=\"search-result-import-path\">nsp-regexer/src/common/isVowel/isVowel.js</span>",
     "function"
   ],
   [
-    "nsp-regexer/common/isyear/isyear.js~isyear",
+    "nsp-regexer/src/index.js~isvowel",
+    "variable/index.html#static-variable-isVowel",
+    "<span>isVowel</span> <span class=\"search-result-import-path\">nsp-regexer/src/index.js</span>",
+    "variable"
+  ],
+  [
+    "nsp-regexer/src/common/isyear/isyear.js~isyear",
     "function/index.html#static-function-isYear",
-    "<span>isYear</span> <span class=\"search-result-import-path\">nsp-regexer/common/isYear/isYear.js</span>",
+    "<span>isYear</span> <span class=\"search-result-import-path\">nsp-regexer/src/common/isYear/isYear.js</span>",
     "function"
   ],
   [
-    "common/.external-ecmascript.js~array",
+    "nsp-regexer/src/index.js~isyear",
+    "variable/index.html#static-variable-isYear",
+    "<span>isYear</span> <span class=\"search-result-import-path\">nsp-regexer/src/index.js</span>",
+    "variable"
+  ],
+  [
+    "src/.external-ecmascript.js~array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
-    "common/.external-ecmascript.js~Array",
+    "src/.external-ecmascript.js~Array",
     "external"
   ],
   [
-    "common/.external-ecmascript.js~arraybuffer",
+    "src/.external-ecmascript.js~arraybuffer",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
-    "common/.external-ecmascript.js~ArrayBuffer",
+    "src/.external-ecmascript.js~ArrayBuffer",
     "external"
   ],
   [
-    "common/.external-ecmascript.js~boolean",
+    "src/.external-ecmascript.js~boolean",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
-    "common/.external-ecmascript.js~Boolean",
+    "src/.external-ecmascript.js~Boolean",
     "external"
   ],
   [
-    "common/.external-ecmascript.js~dataview",
+    "src/.external-ecmascript.js~dataview",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
-    "common/.external-ecmascript.js~DataView",
+    "src/.external-ecmascript.js~DataView",
     "external"
   ],
   [
-    "common/.external-ecmascript.js~date",
+    "src/.external-ecmascript.js~date",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
-    "common/.external-ecmascript.js~Date",
+    "src/.external-ecmascript.js~Date",
     "external"
   ],
   [
-    "common/.external-ecmascript.js~error",
+    "src/.external-ecmascript.js~error",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
-    "common/.external-ecmascript.js~Error",
+    "src/.external-ecmascript.js~Error",
     "external"
   ],
   [
-    "common/.external-ecmascript.js~evalerror",
+    "src/.external-ecmascript.js~evalerror",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
-    "common/.external-ecmascript.js~EvalError",
+    "src/.external-ecmascript.js~EvalError",
     "external"
   ],
   [
-    "common/.external-ecmascript.js~float32array",
+    "src/.external-ecmascript.js~float32array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
-    "common/.external-ecmascript.js~Float32Array",
+    "src/.external-ecmascript.js~Float32Array",
     "external"
   ],
   [
-    "common/.external-ecmascript.js~float64array",
+    "src/.external-ecmascript.js~float64array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
-    "common/.external-ecmascript.js~Float64Array",
+    "src/.external-ecmascript.js~Float64Array",
     "external"
   ],
   [
-    "common/.external-ecmascript.js~function",
+    "src/.external-ecmascript.js~function",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
-    "common/.external-ecmascript.js~Function",
+    "src/.external-ecmascript.js~Function",
     "external"
   ],
   [
-    "common/.external-ecmascript.js~generator",
+    "src/.external-ecmascript.js~generator",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
-    "common/.external-ecmascript.js~Generator",
+    "src/.external-ecmascript.js~Generator",
     "external"
   ],
   [
-    "common/.external-ecmascript.js~generatorfunction",
+    "src/.external-ecmascript.js~generatorfunction",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
-    "common/.external-ecmascript.js~GeneratorFunction",
+    "src/.external-ecmascript.js~GeneratorFunction",
     "external"
   ],
   [
-    "common/.external-ecmascript.js~infinity",
+    "src/.external-ecmascript.js~infinity",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
-    "common/.external-ecmascript.js~Infinity",
+    "src/.external-ecmascript.js~Infinity",
     "external"
   ],
   [
-    "common/.external-ecmascript.js~int16array",
+    "src/.external-ecmascript.js~int16array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
-    "common/.external-ecmascript.js~Int16Array",
+    "src/.external-ecmascript.js~Int16Array",
     "external"
   ],
   [
-    "common/.external-ecmascript.js~int32array",
+    "src/.external-ecmascript.js~int32array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
-    "common/.external-ecmascript.js~Int32Array",
+    "src/.external-ecmascript.js~Int32Array",
     "external"
   ],
   [
-    "common/.external-ecmascript.js~int8array",
+    "src/.external-ecmascript.js~int8array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
-    "common/.external-ecmascript.js~Int8Array",
+    "src/.external-ecmascript.js~Int8Array",
     "external"
   ],
   [
-    "common/.external-ecmascript.js~internalerror",
+    "src/.external-ecmascript.js~internalerror",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
-    "common/.external-ecmascript.js~InternalError",
+    "src/.external-ecmascript.js~InternalError",
     "external"
   ],
   [
-    "common/.external-ecmascript.js~json",
+    "src/.external-ecmascript.js~json",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
-    "common/.external-ecmascript.js~JSON",
+    "src/.external-ecmascript.js~JSON",
     "external"
   ],
   [
-    "common/.external-ecmascript.js~map",
+    "src/.external-ecmascript.js~map",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
-    "common/.external-ecmascript.js~Map",
+    "src/.external-ecmascript.js~Map",
     "external"
   ],
   [
-    "common/.external-ecmascript.js~nan",
+    "src/.external-ecmascript.js~nan",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
-    "common/.external-ecmascript.js~NaN",
+    "src/.external-ecmascript.js~NaN",
     "external"
   ],
   [
-    "common/.external-ecmascript.js~number",
+    "src/.external-ecmascript.js~number",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
-    "common/.external-ecmascript.js~Number",
+    "src/.external-ecmascript.js~Number",
     "external"
   ],
   [
-    "common/.external-ecmascript.js~object",
+    "src/.external-ecmascript.js~object",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
-    "common/.external-ecmascript.js~Object",
+    "src/.external-ecmascript.js~Object",
     "external"
   ],
   [
-    "common/.external-ecmascript.js~promise",
+    "src/.external-ecmascript.js~promise",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
-    "common/.external-ecmascript.js~Promise",
+    "src/.external-ecmascript.js~Promise",
     "external"
   ],
   [
-    "common/.external-ecmascript.js~proxy",
+    "src/.external-ecmascript.js~proxy",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
-    "common/.external-ecmascript.js~Proxy",
+    "src/.external-ecmascript.js~Proxy",
     "external"
   ],
   [
-    "common/.external-ecmascript.js~rangeerror",
+    "src/.external-ecmascript.js~rangeerror",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
-    "common/.external-ecmascript.js~RangeError",
+    "src/.external-ecmascript.js~RangeError",
     "external"
   ],
   [
-    "common/.external-ecmascript.js~referenceerror",
+    "src/.external-ecmascript.js~referenceerror",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
-    "common/.external-ecmascript.js~ReferenceError",
+    "src/.external-ecmascript.js~ReferenceError",
     "external"
   ],
   [
-    "common/.external-ecmascript.js~reflect",
+    "src/.external-ecmascript.js~reflect",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
-    "common/.external-ecmascript.js~Reflect",
+    "src/.external-ecmascript.js~Reflect",
     "external"
   ],
   [
-    "common/.external-ecmascript.js~regexp",
+    "src/.external-ecmascript.js~regexp",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
-    "common/.external-ecmascript.js~RegExp",
+    "src/.external-ecmascript.js~RegExp",
     "external"
   ],
   [
-    "common/.external-ecmascript.js~set",
+    "src/.external-ecmascript.js~set",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
-    "common/.external-ecmascript.js~Set",
+    "src/.external-ecmascript.js~Set",
     "external"
   ],
   [
-    "common/.external-ecmascript.js~string",
+    "src/.external-ecmascript.js~string",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
-    "common/.external-ecmascript.js~String",
+    "src/.external-ecmascript.js~String",
     "external"
   ],
   [
-    "common/.external-ecmascript.js~symbol",
+    "src/.external-ecmascript.js~symbol",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
-    "common/.external-ecmascript.js~Symbol",
+    "src/.external-ecmascript.js~Symbol",
     "external"
   ],
   [
-    "common/.external-ecmascript.js~syntaxerror",
+    "src/.external-ecmascript.js~syntaxerror",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
-    "common/.external-ecmascript.js~SyntaxError",
+    "src/.external-ecmascript.js~SyntaxError",
     "external"
   ],
   [
-    "common/.external-ecmascript.js~typeerror",
+    "src/.external-ecmascript.js~typeerror",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
-    "common/.external-ecmascript.js~TypeError",
+    "src/.external-ecmascript.js~TypeError",
     "external"
   ],
   [
-    "common/.external-ecmascript.js~urierror",
+    "src/.external-ecmascript.js~urierror",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
-    "common/.external-ecmascript.js~URIError",
+    "src/.external-ecmascript.js~URIError",
     "external"
   ],
   [
-    "common/.external-ecmascript.js~uint16array",
+    "src/.external-ecmascript.js~uint16array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
-    "common/.external-ecmascript.js~Uint16Array",
+    "src/.external-ecmascript.js~Uint16Array",
     "external"
   ],
   [
-    "common/.external-ecmascript.js~uint32array",
+    "src/.external-ecmascript.js~uint32array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
-    "common/.external-ecmascript.js~Uint32Array",
+    "src/.external-ecmascript.js~Uint32Array",
     "external"
   ],
   [
-    "common/.external-ecmascript.js~uint8array",
+    "src/.external-ecmascript.js~uint8array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
-    "common/.external-ecmascript.js~Uint8Array",
+    "src/.external-ecmascript.js~Uint8Array",
     "external"
   ],
   [
-    "common/.external-ecmascript.js~uint8clampedarray",
+    "src/.external-ecmascript.js~uint8clampedarray",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
-    "common/.external-ecmascript.js~Uint8ClampedArray",
+    "src/.external-ecmascript.js~Uint8ClampedArray",
     "external"
   ],
   [
-    "common/.external-ecmascript.js~weakmap",
+    "src/.external-ecmascript.js~weakmap",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
-    "common/.external-ecmascript.js~WeakMap",
+    "src/.external-ecmascript.js~WeakMap",
     "external"
   ],
   [
-    "common/.external-ecmascript.js~weakset",
+    "src/.external-ecmascript.js~weakset",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
-    "common/.external-ecmascript.js~WeakSet",
+    "src/.external-ecmascript.js~WeakSet",
     "external"
   ],
   [
-    "common/.external-ecmascript.js~boolean",
+    "src/.external-ecmascript.js~boolean",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
-    "common/.external-ecmascript.js~boolean",
+    "src/.external-ecmascript.js~boolean",
     "external"
   ],
   [
-    "common/.external-ecmascript.js~function",
+    "src/.external-ecmascript.js~function",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
-    "common/.external-ecmascript.js~function",
+    "src/.external-ecmascript.js~function",
     "external"
   ],
   [
-    "common/.external-ecmascript.js~null",
+    "src/.external-ecmascript.js~null",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
-    "common/.external-ecmascript.js~null",
+    "src/.external-ecmascript.js~null",
     "external"
   ],
   [
-    "common/.external-ecmascript.js~number",
+    "src/.external-ecmascript.js~number",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
-    "common/.external-ecmascript.js~number",
+    "src/.external-ecmascript.js~number",
     "external"
   ],
   [
-    "common/.external-ecmascript.js~object",
+    "src/.external-ecmascript.js~object",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
-    "common/.external-ecmascript.js~object",
+    "src/.external-ecmascript.js~object",
     "external"
   ],
   [
-    "common/.external-ecmascript.js~string",
+    "src/.external-ecmascript.js~string",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
-    "common/.external-ecmascript.js~string",
+    "src/.external-ecmascript.js~string",
     "external"
   ],
   [
-    "common/.external-ecmascript.js~undefined",
+    "src/.external-ecmascript.js~undefined",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
-    "common/.external-ecmascript.js~undefined",
+    "src/.external-ecmascript.js~undefined",
     "external"
   ],
   [
-    "common/iscreditcard/iscreditcardnumber.js",
-    "file/common/isCreditCard/isCreditCardNumber.js.html",
-    "common/isCreditCard/isCreditCardNumber.js",
+    "src/common/iscreditcard/iscreditcardnumber.js",
+    "file/src/common/isCreditCard/isCreditCardNumber.js.html",
+    "src/common/isCreditCard/isCreditCardNumber.js",
     "file"
   ],
   [
-    "common/iscreditcard/iscreditcardnumber.spec.js",
-    "file/common/isCreditCard/isCreditCardNumber.spec.js.html",
-    "common/isCreditCard/isCreditCardNumber.spec.js",
+    "src/common/iscreditcard/iscreditcardnumber.spec.js",
+    "file/src/common/isCreditCard/isCreditCardNumber.spec.js.html",
+    "src/common/isCreditCard/isCreditCardNumber.spec.js",
     "file"
   ],
   [
-    "common/isdayofmonth/isdayofmonth.js",
-    "file/common/isDayOfMonth/isDayOfMonth.js.html",
-    "common/isDayOfMonth/isDayOfMonth.js",
+    "src/common/isdayofmonth/isdayofmonth.js",
+    "file/src/common/isDayOfMonth/isDayOfMonth.js.html",
+    "src/common/isDayOfMonth/isDayOfMonth.js",
     "file"
   ],
   [
-    "common/isdayofmonth/isdayofmonth.spec.js",
-    "file/common/isDayOfMonth/isDayOfMonth.spec.js.html",
-    "common/isDayOfMonth/isDayOfMonth.spec.js",
+    "src/common/isdayofmonth/isdayofmonth.spec.js",
+    "file/src/common/isDayOfMonth/isDayOfMonth.spec.js.html",
+    "src/common/isDayOfMonth/isDayOfMonth.spec.js",
     "file"
   ],
   [
-    "common/isdayofweekstring/isdayofweekstring.js",
-    "file/common/isDayOfWeekString/isDayOfWeekString.js.html",
-    "common/isDayOfWeekString/isDayOfWeekString.js",
+    "src/common/isdayofweekstring/isdayofweekstring.js",
+    "file/src/common/isDayOfWeekString/isDayOfWeekString.js.html",
+    "src/common/isDayOfWeekString/isDayOfWeekString.js",
     "file"
   ],
   [
-    "common/isdayofweekstring/isdayofweekstring.spec.js",
-    "file/common/isDayOfWeekString/isDayOfWeekString.spec.js.html",
-    "common/isDayOfWeekString/isDayOfWeekString.spec.js",
+    "src/common/isdayofweekstring/isdayofweekstring.spec.js",
+    "file/src/common/isDayOfWeekString/isDayOfWeekString.spec.js.html",
+    "src/common/isDayOfWeekString/isDayOfWeekString.spec.js",
     "file"
   ],
   [
-    "common/isdecimal/isdecimal.js",
-    "file/common/isDecimal/isDecimal.js.html",
-    "common/isDecimal/isDecimal.js",
+    "src/common/isdecimal/isdecimal.js",
+    "file/src/common/isDecimal/isDecimal.js.html",
+    "src/common/isDecimal/isDecimal.js",
     "file"
   ],
   [
-    "common/isdecimal/isdecimal.spec.js",
-    "file/common/isDecimal/isDecimal.spec.js.html",
-    "common/isDecimal/isDecimal.spec.js",
+    "src/common/isdecimal/isdecimal.spec.js",
+    "file/src/common/isDecimal/isDecimal.spec.js.html",
+    "src/common/isDecimal/isDecimal.spec.js",
     "file"
   ],
   [
-    "common/isemail/isemail.js",
-    "file/common/isEmail/isEmail.js.html",
-    "common/isEmail/isEmail.js",
+    "src/common/isemail/isemail.js",
+    "file/src/common/isEmail/isEmail.js.html",
+    "src/common/isEmail/isEmail.js",
     "file"
   ],
   [
-    "common/isemail/isemail.spec.js",
-    "file/common/isEmail/isEmail.spec.js.html",
-    "common/isEmail/isEmail.spec.js",
+    "src/common/isemail/isemail.spec.js",
+    "file/src/common/isEmail/isEmail.spec.js.html",
+    "src/common/isEmail/isEmail.spec.js",
     "file"
   ],
   [
-    "common/ishtmltag/ishtmltag.js",
-    "file/common/isHTMLTag/isHTMLTag.js.html",
-    "common/isHTMLTag/isHTMLTag.js",
+    "src/common/ishtmltag/ishtmltag.js",
+    "file/src/common/isHTMLTag/isHTMLTag.js.html",
+    "src/common/isHTMLTag/isHTMLTag.js",
     "file"
   ],
   [
-    "common/ishtmltag/ishtmltag.spec.js",
-    "file/common/isHTMLTag/isHTMLTag.spec.js.html",
-    "common/isHTMLTag/isHTMLTag.spec.js",
+    "src/common/ishtmltag/ishtmltag.spec.js",
+    "file/src/common/isHTMLTag/isHTMLTag.spec.js.html",
+    "src/common/isHTMLTag/isHTMLTag.spec.js",
     "file"
   ],
   [
-    "common/ishexvalue/ishexvalue.js",
-    "file/common/isHexValue/isHexValue.js.html",
-    "common/isHexValue/isHexValue.js",
+    "src/common/ishexvalue/ishexvalue.js",
+    "file/src/common/isHexValue/isHexValue.js.html",
+    "src/common/isHexValue/isHexValue.js",
     "file"
   ],
   [
-    "common/ishexvalue/ishexvalue.spec.js",
-    "file/common/isHexValue/isHexValue.spec.js.html",
-    "common/isHexValue/isHexValue.spec.js",
+    "src/common/ishexvalue/ishexvalue.spec.js",
+    "file/src/common/isHexValue/isHexValue.spec.js.html",
+    "src/common/isHexValue/isHexValue.spec.js",
     "file"
   ],
   [
-    "common/isipaddressv4/isipaddressv4.js",
-    "file/common/isIPAddressV4/isIPAddressV4.js.html",
-    "common/isIPAddressV4/isIPAddressV4.js",
+    "src/common/isipaddressv4/isipaddressv4.js",
+    "file/src/common/isIPAddressV4/isIPAddressV4.js.html",
+    "src/common/isIPAddressV4/isIPAddressV4.js",
     "file"
   ],
   [
-    "common/isipaddressv4/isipaddressv4.spec.js",
-    "file/common/isIPAddressV4/isIPAddressV4.spec.js.html",
-    "common/isIPAddressV4/isIPAddressV4.spec.js",
+    "src/common/isipaddressv4/isipaddressv4.spec.js",
+    "file/src/common/isIPAddressV4/isIPAddressV4.spec.js.html",
+    "src/common/isIPAddressV4/isIPAddressV4.spec.js",
     "file"
   ],
   [
-    "common/isinteger/isinteger.js",
-    "file/common/isInteger/isInteger.js.html",
-    "common/isInteger/isInteger.js",
+    "src/common/isinteger/isinteger.js",
+    "file/src/common/isInteger/isInteger.js.html",
+    "src/common/isInteger/isInteger.js",
     "file"
   ],
   [
-    "common/isinteger/isinteger.spec.js",
-    "file/common/isInteger/isInteger.spec.js.html",
-    "common/isInteger/isInteger.spec.js",
+    "src/common/isinteger/isinteger.spec.js",
+    "file/src/common/isInteger/isInteger.spec.js.html",
+    "src/common/isInteger/isInteger.spec.js",
     "file"
   ],
   [
-    "common/isletter/isletter.js",
-    "file/common/isLetter/isLetter.js.html",
-    "common/isLetter/isLetter.js",
+    "src/common/isletter/isletter.js",
+    "file/src/common/isLetter/isLetter.js.html",
+    "src/common/isLetter/isLetter.js",
     "file"
   ],
   [
-    "common/isletter/isletter.spec.js",
-    "file/common/isLetter/isLetter.spec.js.html",
-    "common/isLetter/isLetter.spec.js",
+    "src/common/isletter/isletter.spec.js",
+    "file/src/common/isLetter/isLetter.spec.js.html",
+    "src/common/isLetter/isLetter.spec.js",
     "file"
   ],
   [
-    "common/islowercase/islowercase.js",
-    "file/common/isLowerCase/isLowerCase.js.html",
-    "common/isLowerCase/isLowerCase.js",
+    "src/common/islowercase/islowercase.js",
+    "file/src/common/isLowerCase/isLowerCase.js.html",
+    "src/common/isLowerCase/isLowerCase.js",
     "file"
   ],
   [
-    "common/islowercase/islowercase.spec.js",
-    "file/common/isLowerCase/isLowerCase.spec.js.html",
-    "common/isLowerCase/isLowerCase.spec.js",
+    "src/common/islowercase/islowercase.spec.js",
+    "file/src/common/isLowerCase/isLowerCase.spec.js.html",
+    "src/common/isLowerCase/isLowerCase.spec.js",
     "file"
   ],
   [
-    "common/ismonthofyear/ismonthofyear.js",
-    "file/common/isMonthOfYear/isMonthOfYear.js.html",
-    "common/isMonthOfYear/isMonthOfYear.js",
+    "src/common/ismonthofyear/ismonthofyear.js",
+    "file/src/common/isMonthOfYear/isMonthOfYear.js.html",
+    "src/common/isMonthOfYear/isMonthOfYear.js",
     "file"
   ],
   [
-    "common/ismonthofyear/ismonthofyear.spec.js",
-    "file/common/isMonthOfYear/isMonthOfYear.spec.js.html",
-    "common/isMonthOfYear/isMonthOfYear.spec.js",
+    "src/common/ismonthofyear/ismonthofyear.spec.js",
+    "file/src/common/isMonthOfYear/isMonthOfYear.spec.js.html",
+    "src/common/isMonthOfYear/isMonthOfYear.spec.js",
     "file"
   ],
   [
-    "common/ismonthofyearstring/ismonthofyearstring.js",
-    "file/common/isMonthOfYearString/isMonthOfYearString.js.html",
-    "common/isMonthOfYearString/isMonthOfYearString.js",
+    "src/common/ismonthofyearstring/ismonthofyearstring.js",
+    "file/src/common/isMonthOfYearString/isMonthOfYearString.js.html",
+    "src/common/isMonthOfYearString/isMonthOfYearString.js",
     "file"
   ],
   [
-    "common/ismonthofyearstring/ismonthofyearstring.spec.js",
-    "file/common/isMonthOfYearString/isMonthOfYearString.spec.js.html",
-    "common/isMonthOfYearString/isMonthOfYearString.spec.js",
+    "src/common/ismonthofyearstring/ismonthofyearstring.spec.js",
+    "file/src/common/isMonthOfYearString/isMonthOfYearString.spec.js.html",
+    "src/common/isMonthOfYearString/isMonthOfYearString.spec.js",
     "file"
   ],
   [
-    "common/isnegativeinteger/isnegativeinteger.js",
-    "file/common/isNegativeInteger/isNegativeInteger.js.html",
-    "common/isNegativeInteger/isNegativeInteger.js",
+    "src/common/isnegativeinteger/isnegativeinteger.js",
+    "file/src/common/isNegativeInteger/isNegativeInteger.js.html",
+    "src/common/isNegativeInteger/isNegativeInteger.js",
     "file"
   ],
   [
-    "common/isnegativeinteger/isnegativeinteger.spec.js",
-    "file/common/isNegativeInteger/isNegativeInteger.spec.js.html",
-    "common/isNegativeInteger/isNegativeInteger.spec.js",
+    "src/common/isnegativeinteger/isnegativeinteger.spec.js",
+    "file/src/common/isNegativeInteger/isNegativeInteger.spec.js.html",
+    "src/common/isNegativeInteger/isNegativeInteger.spec.js",
     "file"
   ],
   [
-    "common/isnegativenumber/isnegativenumber.js",
-    "file/common/isNegativeNumber/isNegativeNumber.js.html",
-    "common/isNegativeNumber/isNegativeNumber.js",
+    "src/common/isnegativenumber/isnegativenumber.js",
+    "file/src/common/isNegativeNumber/isNegativeNumber.js.html",
+    "src/common/isNegativeNumber/isNegativeNumber.js",
     "file"
   ],
   [
-    "common/isnegativenumber/isnegativenumber.spec.js",
-    "file/common/isNegativeNumber/isNegativeNumber.spec.js.html",
-    "common/isNegativeNumber/isNegativeNumber.spec.js",
+    "src/common/isnegativenumber/isnegativenumber.spec.js",
+    "file/src/common/isNegativeNumber/isNegativeNumber.spec.js.html",
+    "src/common/isNegativeNumber/isNegativeNumber.spec.js",
     "file"
   ],
   [
-    "common/isnumber/isnumber.js",
-    "file/common/isNumber/isNumber.js.html",
-    "common/isNumber/isNumber.js",
+    "src/common/isnumber/isnumber.js",
+    "file/src/common/isNumber/isNumber.js.html",
+    "src/common/isNumber/isNumber.js",
     "file"
   ],
   [
-    "common/isnumber/isnumber.spec.js",
-    "file/common/isNumber/isNumber.spec.js.html",
-    "common/isNumber/isNumber.spec.js",
+    "src/common/isnumber/isnumber.spec.js",
+    "file/src/common/isNumber/isNumber.spec.js.html",
+    "src/common/isNumber/isNumber.spec.js",
     "file"
   ],
   [
-    "common/ispassword/ispassword.js",
-    "file/common/isPassword/isPassword.js.html",
-    "common/isPassword/isPassword.js",
+    "src/common/ispassword/ispassword.js",
+    "file/src/common/isPassword/isPassword.js.html",
+    "src/common/isPassword/isPassword.js",
     "file"
   ],
   [
-    "common/ispassword/ispassword.spec.js",
-    "file/common/isPassword/isPassword.spec.js.html",
-    "common/isPassword/isPassword.spec.js",
+    "src/common/ispassword/ispassword.spec.js",
+    "file/src/common/isPassword/isPassword.spec.js.html",
+    "src/common/isPassword/isPassword.spec.js",
     "file"
   ],
   [
-    "common/ispositiveinteger/ispositiveinteger.js",
-    "file/common/isPositiveInteger/isPositiveInteger.js.html",
-    "common/isPositiveInteger/isPositiveInteger.js",
+    "src/common/ispositiveinteger/ispositiveinteger.js",
+    "file/src/common/isPositiveInteger/isPositiveInteger.js.html",
+    "src/common/isPositiveInteger/isPositiveInteger.js",
     "file"
   ],
   [
-    "common/ispositiveinteger/ispositiveinteger.spec.js",
-    "file/common/isPositiveInteger/isPositiveInteger.spec.js.html",
-    "common/isPositiveInteger/isPositiveInteger.spec.js",
+    "src/common/ispositiveinteger/ispositiveinteger.spec.js",
+    "file/src/common/isPositiveInteger/isPositiveInteger.spec.js.html",
+    "src/common/isPositiveInteger/isPositiveInteger.spec.js",
     "file"
   ],
   [
-    "common/ispositivenumber/ispositivenumber.js",
-    "file/common/isPositiveNumber/isPositiveNumber.js.html",
-    "common/isPositiveNumber/isPositiveNumber.js",
+    "src/common/ispositivenumber/ispositivenumber.js",
+    "file/src/common/isPositiveNumber/isPositiveNumber.js.html",
+    "src/common/isPositiveNumber/isPositiveNumber.js",
     "file"
   ],
   [
-    "common/ispositivenumber/ispositivenumber.spec.js",
-    "file/common/isPositiveNumber/isPositiveNumber.spec.js.html",
-    "common/isPositiveNumber/isPositiveNumber.spec.js",
+    "src/common/ispositivenumber/ispositivenumber.spec.js",
+    "file/src/common/isPositiveNumber/isPositiveNumber.spec.js.html",
+    "src/common/isPositiveNumber/isPositiveNumber.spec.js",
     "file"
   ],
   [
-    "common/isssn/isssn.js",
-    "file/common/isSSN/isSSN.js.html",
-    "common/isSSN/isSSN.js",
+    "src/common/isssn/isssn.js",
+    "file/src/common/isSSN/isSSN.js.html",
+    "src/common/isSSN/isSSN.js",
     "file"
   ],
   [
-    "common/isssn/isssn.spec.js",
-    "file/common/isSSN/isSSN.spec.js.html",
-    "common/isSSN/isSSN.spec.js",
+    "src/common/isssn/isssn.spec.js",
+    "file/src/common/isSSN/isSSN.spec.js.html",
+    "src/common/isSSN/isSSN.spec.js",
     "file"
   ],
   [
-    "common/isstandardzipcode/isstandardzipcode.js",
-    "file/common/isStandardZipCode/isStandardZipCode.js.html",
-    "common/isStandardZipCode/isStandardZipCode.js",
+    "src/common/isstandardzipcode/isstandardzipcode.js",
+    "file/src/common/isStandardZipCode/isStandardZipCode.js.html",
+    "src/common/isStandardZipCode/isStandardZipCode.js",
     "file"
   ],
   [
-    "common/isstandardzipcode/isstandardzipcode.spec.js",
-    "file/common/isStandardZipCode/isStandardZipCode.spec.js.html",
-    "common/isStandardZipCode/isStandardZipCode.spec.js",
+    "src/common/isstandardzipcode/isstandardzipcode.spec.js",
+    "file/src/common/isStandardZipCode/isStandardZipCode.spec.js.html",
+    "src/common/isStandardZipCode/isStandardZipCode.spec.js",
     "file"
   ],
   [
-    "common/isusphonenumber/isusphonenumber.js",
-    "file/common/isUSPhoneNumber/isUSPhoneNumber.js.html",
-    "common/isUSPhoneNumber/isUSPhoneNumber.js",
+    "src/common/isusphonenumber/isusphonenumber.js",
+    "file/src/common/isUSPhoneNumber/isUSPhoneNumber.js.html",
+    "src/common/isUSPhoneNumber/isUSPhoneNumber.js",
     "file"
   ],
   [
-    "common/isusphonenumber/isusphonenumber.spec.js",
-    "file/common/isUSPhoneNumber/isUSPhoneNumber.spec.js.html",
-    "common/isUSPhoneNumber/isUSPhoneNumber.spec.js",
+    "src/common/isusphonenumber/isusphonenumber.spec.js",
+    "file/src/common/isUSPhoneNumber/isUSPhoneNumber.spec.js.html",
+    "src/common/isUSPhoneNumber/isUSPhoneNumber.spec.js",
     "file"
   ],
   [
-    "common/isusstate/isusstate.js",
-    "file/common/isUSState/isUSState.js.html",
-    "common/isUSState/isUSState.js",
+    "src/common/isusstate/isusstate.js",
+    "file/src/common/isUSState/isUSState.js.html",
+    "src/common/isUSState/isUSState.js",
     "file"
   ],
   [
-    "common/isusstate/isusstate.spec.js",
-    "file/common/isUSState/isUSState.spec.js.html",
-    "common/isUSState/isUSState.spec.js",
+    "src/common/isusstate/isusstate.spec.js",
+    "file/src/common/isUSState/isUSState.spec.js.html",
+    "src/common/isUSState/isUSState.spec.js",
     "file"
   ],
   [
-    "common/isuppercase/isuppercase.js",
-    "file/common/isUpperCase/isUpperCase.js.html",
-    "common/isUpperCase/isUpperCase.js",
+    "src/common/isuppercase/isuppercase.js",
+    "file/src/common/isUpperCase/isUpperCase.js.html",
+    "src/common/isUpperCase/isUpperCase.js",
     "file"
   ],
   [
-    "common/isuppercase/isuppercase.spec.js",
-    "file/common/isUpperCase/isUpperCase.spec.js.html",
-    "common/isUpperCase/isUpperCase.spec.js",
+    "src/common/isuppercase/isuppercase.spec.js",
+    "file/src/common/isUpperCase/isUpperCase.spec.js.html",
+    "src/common/isUpperCase/isUpperCase.spec.js",
     "file"
   ],
   [
-    "common/isurl/isurl.js",
-    "file/common/isUrl/isUrl.js.html",
-    "common/isUrl/isUrl.js",
+    "src/common/isurl/isurl.js",
+    "file/src/common/isUrl/isUrl.js.html",
+    "src/common/isUrl/isUrl.js",
     "file"
   ],
   [
-    "common/isurl/isurl.spec.js",
-    "file/common/isUrl/isUrl.spec.js.html",
-    "common/isUrl/isUrl.spec.js",
+    "src/common/isurl/isurl.spec.js",
+    "file/src/common/isUrl/isUrl.spec.js.html",
+    "src/common/isUrl/isUrl.spec.js",
     "file"
   ],
   [
-    "common/isusername/isusername.js",
-    "file/common/isUsername/isUsername.js.html",
-    "common/isUsername/isUsername.js",
+    "src/common/isusername/isusername.js",
+    "file/src/common/isUsername/isUsername.js.html",
+    "src/common/isUsername/isUsername.js",
     "file"
   ],
   [
-    "common/isusername/isusername.spec.js",
-    "file/common/isUsername/isUsername.spec.js.html",
-    "common/isUsername/isUsername.spec.js",
+    "src/common/isusername/isusername.spec.js",
+    "file/src/common/isUsername/isUsername.spec.js.html",
+    "src/common/isUsername/isUsername.spec.js",
     "file"
   ],
   [
-    "common/isvowel/isvowel.js",
-    "file/common/isVowel/isVowel.js.html",
-    "common/isVowel/isVowel.js",
+    "src/common/isvowel/isvowel.js",
+    "file/src/common/isVowel/isVowel.js.html",
+    "src/common/isVowel/isVowel.js",
     "file"
   ],
   [
-    "common/isvowel/isvowel.spec.js",
-    "file/common/isVowel/isVowel.spec.js.html",
-    "common/isVowel/isVowel.spec.js",
+    "src/common/isvowel/isvowel.spec.js",
+    "file/src/common/isVowel/isVowel.spec.js.html",
+    "src/common/isVowel/isVowel.spec.js",
     "file"
   ],
   [
-    "common/isyear/isyear.js",
-    "file/common/isYear/isYear.js.html",
-    "common/isYear/isYear.js",
+    "src/common/isyear/isyear.js",
+    "file/src/common/isYear/isYear.js.html",
+    "src/common/isYear/isYear.js",
     "file"
   ],
   [
-    "common/isyear/isyear.spec.js",
-    "file/common/isYear/isYear.spec.js.html",
-    "common/isYear/isYear.spec.js",
+    "src/common/isyear/isyear.spec.js",
+    "file/src/common/isYear/isYear.spec.js.html",
+    "src/common/isYear/isYear.spec.js",
+    "file"
+  ],
+  [
+    "src/index.js",
+    "file/src/index.js.html",
+    "src/index.js",
+    "file"
+  ],
+  [
+    "src/utils/index.js",
+    "file/src/utils/index.js.html",
+    "src/utils/index.js",
+    "file"
+  ],
+  [
+    "src/utils/isnull.js",
+    "file/src/utils/isNull.js.html",
+    "src/utils/isNull.js",
+    "file"
+  ],
+  [
+    "src/utils/isstring.js",
+    "file/src/utils/isString.js.html",
+    "src/utils/isString.js",
+    "file"
+  ],
+  [
+    "src/utils/isundefined.js",
+    "file/src/utils/isUndefined.js.html",
+    "src/utils/isUndefined.js",
     "file"
   ]
 ]

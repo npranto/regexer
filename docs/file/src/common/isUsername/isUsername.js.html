@@ -94,11 +94,19 @@
 <div class="content" data-ice="content"><h1 data-ice="title">src/common/isUsername/isUsername.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { isNull, isUndefined, isString } from &apos;./../../utils&apos;;
 
+/**
+ * @desc Returns true if username meets the basic requirement of an username (contains letters, numbers, hyphens, and underscores; length is between 3 to 16 characters), otherwise returns false
+ * @param {number|string} username - an username
+ * @return {boolean} - true or false 
+ *
+ * @example
+ * jSmith455, kevin_bacon89, kevin, james-bond007 
+ */
 const isUsername = username =&gt; (
   !isUndefined(username) &amp;&amp;
   !isNull(username) &amp;&amp;
   isString(username) &amp;&amp;
-  /^[\w-]{3,16}$/.test(username)
+  /^[\w-0]{3,16}$/.test(username)
 );
 
 export default isUsername;

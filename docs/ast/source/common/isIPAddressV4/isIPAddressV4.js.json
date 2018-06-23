@@ -1,28 +1,28 @@
 {
   "type": "File",
   "start": 0,
-  "end": 325,
+  "end": 539,
   "loc": {
     "start": {
       "line": 1,
       "column": 0
     },
     "end": {
-      "line": 11,
+      "line": 19,
       "column": 0
     }
   },
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 325,
+    "end": 539,
     "loc": {
       "start": {
         "line": 1,
         "column": 0
       },
       "end": {
-        "line": 11,
+        "line": 19,
         "column": 0
       }
     },
@@ -210,65 +210,84 @@
             "raw": "'./../../utils'"
           },
           "value": "./../../utils"
-        }
+        },
+        "trailingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * @desc Returns true if ipAddress a valid IP address, otherwise returns false\n * @param {string} ipAddress - an IP address\n * @return {boolean} - true or false \n *\n * @example\n * '172.16.254.1', '0.1.0.1'\n ",
+            "start": 64,
+            "end": 277,
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 0
+              },
+              "end": {
+                "line": 10,
+                "column": 3
+              }
+            }
+          }
+        ]
       },
       {
         "type": "Identifier",
-        "start": 64,
-        "end": 293,
+        "start": 278,
+        "end": 507,
         "loc": {
           "start": {
-            "line": 3,
+            "line": 11,
             "column": 0
           },
           "end": {
-            "line": 8,
+            "line": 16,
             "column": 2
           }
         },
         "declarations": [
           {
             "type": "VariableDeclarator",
-            "start": 70,
-            "end": 292,
+            "start": 284,
+            "end": 506,
             "loc": {
               "start": {
-                "line": 3,
+                "line": 11,
                 "column": 6
               },
               "end": {
-                "line": 8,
+                "line": 16,
                 "column": 1
               }
             },
             "id": {
               "type": "Identifier",
-              "start": 70,
-              "end": 83,
+              "start": 284,
+              "end": 297,
               "loc": {
                 "start": {
-                  "line": 3,
+                  "line": 11,
                   "column": 6
                 },
                 "end": {
-                  "line": 3,
+                  "line": 11,
                   "column": 19
                 },
                 "identifierName": "isIPAddressV4"
               },
-              "name": "isIPAddressV4"
+              "name": "isIPAddressV4",
+              "leadingComments": null
             },
             "init": {
               "type": "ArrowFunctionExpression",
-              "start": 86,
-              "end": 292,
+              "start": 300,
+              "end": 506,
               "loc": {
                 "start": {
-                  "line": 3,
+                  "line": 11,
                   "column": 22
                 },
                 "end": {
-                  "line": 8,
+                  "line": 16,
                   "column": 1
                 }
               },
@@ -279,15 +298,15 @@
               "params": [
                 {
                   "type": "Identifier",
-                  "start": 86,
-                  "end": 95,
+                  "start": 300,
+                  "end": 309,
                   "loc": {
                     "start": {
-                      "line": 3,
+                      "line": 11,
                       "column": 22
                     },
                     "end": {
-                      "line": 3,
+                      "line": 11,
                       "column": 31
                     },
                     "identifierName": "ipAddress"
@@ -297,57 +316,57 @@
               ],
               "body": {
                 "type": "LogicalExpression",
-                "start": 103,
-                "end": 290,
+                "start": 317,
+                "end": 504,
                 "loc": {
                   "start": {
-                    "line": 4,
+                    "line": 12,
                     "column": 2
                   },
                   "end": {
-                    "line": 7,
+                    "line": 15,
                     "column": 111
                   }
                 },
                 "left": {
                   "type": "LogicalExpression",
-                  "start": 103,
-                  "end": 175,
+                  "start": 317,
+                  "end": 389,
                   "loc": {
                     "start": {
-                      "line": 4,
+                      "line": 12,
                       "column": 2
                     },
                     "end": {
-                      "line": 6,
+                      "line": 14,
                       "column": 21
                     }
                   },
                   "left": {
                     "type": "LogicalExpression",
-                    "start": 103,
-                    "end": 150,
+                    "start": 317,
+                    "end": 364,
                     "loc": {
                       "start": {
-                        "line": 4,
+                        "line": 12,
                         "column": 2
                       },
                       "end": {
-                        "line": 5,
+                        "line": 13,
                         "column": 20
                       }
                     },
                     "left": {
                       "type": "UnaryExpression",
-                      "start": 103,
-                      "end": 126,
+                      "start": 317,
+                      "end": 340,
                       "loc": {
                         "start": {
-                          "line": 4,
+                          "line": 12,
                           "column": 2
                         },
                         "end": {
-                          "line": 4,
+                          "line": 12,
                           "column": 25
                         }
                       },
@@ -355,29 +374,29 @@
                       "prefix": true,
                       "argument": {
                         "type": "CallExpression",
-                        "start": 104,
-                        "end": 126,
+                        "start": 318,
+                        "end": 340,
                         "loc": {
                           "start": {
-                            "line": 4,
+                            "line": 12,
                             "column": 3
                           },
                           "end": {
-                            "line": 4,
+                            "line": 12,
                             "column": 25
                           }
                         },
                         "callee": {
                           "type": "Identifier",
-                          "start": 104,
-                          "end": 115,
+                          "start": 318,
+                          "end": 329,
                           "loc": {
                             "start": {
-                              "line": 4,
+                              "line": 12,
                               "column": 3
                             },
                             "end": {
-                              "line": 4,
+                              "line": 12,
                               "column": 14
                             },
                             "identifierName": "isUndefined"
@@ -387,15 +406,15 @@
                         "arguments": [
                           {
                             "type": "Identifier",
-                            "start": 116,
-                            "end": 125,
+                            "start": 330,
+                            "end": 339,
                             "loc": {
                               "start": {
-                                "line": 4,
+                                "line": 12,
                                 "column": 15
                               },
                               "end": {
-                                "line": 4,
+                                "line": 12,
                                 "column": 24
                               },
                               "identifierName": "ipAddress"
@@ -411,15 +430,15 @@
                     "operator": "&&",
                     "right": {
                       "type": "UnaryExpression",
-                      "start": 132,
-                      "end": 150,
+                      "start": 346,
+                      "end": 364,
                       "loc": {
                         "start": {
-                          "line": 5,
+                          "line": 13,
                           "column": 2
                         },
                         "end": {
-                          "line": 5,
+                          "line": 13,
                           "column": 20
                         }
                       },
@@ -427,29 +446,29 @@
                       "prefix": true,
                       "argument": {
                         "type": "CallExpression",
-                        "start": 133,
-                        "end": 150,
+                        "start": 347,
+                        "end": 364,
                         "loc": {
                           "start": {
-                            "line": 5,
+                            "line": 13,
                             "column": 3
                           },
                           "end": {
-                            "line": 5,
+                            "line": 13,
                             "column": 20
                           }
                         },
                         "callee": {
                           "type": "Identifier",
-                          "start": 133,
-                          "end": 139,
+                          "start": 347,
+                          "end": 353,
                           "loc": {
                             "start": {
-                              "line": 5,
+                              "line": 13,
                               "column": 3
                             },
                             "end": {
-                              "line": 5,
+                              "line": 13,
                               "column": 9
                             },
                             "identifierName": "isNull"
@@ -459,15 +478,15 @@
                         "arguments": [
                           {
                             "type": "Identifier",
-                            "start": 140,
-                            "end": 149,
+                            "start": 354,
+                            "end": 363,
                             "loc": {
                               "start": {
-                                "line": 5,
+                                "line": 13,
                                 "column": 10
                               },
                               "end": {
-                                "line": 5,
+                                "line": 13,
                                 "column": 19
                               },
                               "identifierName": "ipAddress"
@@ -484,29 +503,29 @@
                   "operator": "&&",
                   "right": {
                     "type": "CallExpression",
-                    "start": 156,
-                    "end": 175,
+                    "start": 370,
+                    "end": 389,
                     "loc": {
                       "start": {
-                        "line": 6,
+                        "line": 14,
                         "column": 2
                       },
                       "end": {
-                        "line": 6,
+                        "line": 14,
                         "column": 21
                       }
                     },
                     "callee": {
                       "type": "Identifier",
-                      "start": 156,
-                      "end": 164,
+                      "start": 370,
+                      "end": 378,
                       "loc": {
                         "start": {
-                          "line": 6,
+                          "line": 14,
                           "column": 2
                         },
                         "end": {
-                          "line": 6,
+                          "line": 14,
                           "column": 10
                         },
                         "identifierName": "isString"
@@ -516,15 +535,15 @@
                     "arguments": [
                       {
                         "type": "Identifier",
-                        "start": 165,
-                        "end": 174,
+                        "start": 379,
+                        "end": 388,
                         "loc": {
                           "start": {
-                            "line": 6,
+                            "line": 14,
                             "column": 11
                           },
                           "end": {
-                            "line": 6,
+                            "line": 14,
                             "column": 20
                           },
                           "identifierName": "ipAddress"
@@ -537,43 +556,43 @@
                 "operator": "&&",
                 "right": {
                   "type": "CallExpression",
-                  "start": 181,
-                  "end": 290,
+                  "start": 395,
+                  "end": 504,
                   "loc": {
                     "start": {
-                      "line": 7,
+                      "line": 15,
                       "column": 2
                     },
                     "end": {
-                      "line": 7,
+                      "line": 15,
                       "column": 111
                     }
                   },
                   "callee": {
                     "type": "MemberExpression",
-                    "start": 181,
-                    "end": 279,
+                    "start": 395,
+                    "end": 493,
                     "loc": {
                       "start": {
-                        "line": 7,
+                        "line": 15,
                         "column": 2
                       },
                       "end": {
-                        "line": 7,
+                        "line": 15,
                         "column": 100
                       }
                     },
                     "object": {
                       "type": "RegExpLiteral",
-                      "start": 181,
-                      "end": 274,
+                      "start": 395,
+                      "end": 488,
                       "loc": {
                         "start": {
-                          "line": 7,
+                          "line": 15,
                           "column": 2
                         },
                         "end": {
-                          "line": 7,
+                          "line": 15,
                           "column": 95
                         }
                       },
@@ -585,15 +604,15 @@
                     },
                     "property": {
                       "type": "Identifier",
-                      "start": 275,
-                      "end": 279,
+                      "start": 489,
+                      "end": 493,
                       "loc": {
                         "start": {
-                          "line": 7,
+                          "line": 15,
                           "column": 96
                         },
                         "end": {
-                          "line": 7,
+                          "line": 15,
                           "column": 100
                         },
                         "identifierName": "test"
@@ -605,15 +624,15 @@
                   "arguments": [
                     {
                       "type": "Identifier",
-                      "start": 280,
-                      "end": 289,
+                      "start": 494,
+                      "end": 503,
                       "loc": {
                         "start": {
-                          "line": 7,
+                          "line": 15,
                           "column": 101
                         },
                         "end": {
-                          "line": 7,
+                          "line": 15,
                           "column": 110
                         },
                         "identifierName": "ipAddress"
@@ -624,42 +643,43 @@
                 },
                 "extra": {
                   "parenthesized": true,
-                  "parenStart": 99
+                  "parenStart": 313
                 }
               }
-            }
+            },
+            "leadingComments": null
           }
         ],
         "kind": "const",
-        "name": "_",
         "leadingComments": [],
+        "name": "_",
         "trailingComments": []
       },
       {
         "type": "Identifier",
-        "start": 295,
-        "end": 324,
+        "start": 509,
+        "end": 538,
         "loc": {
           "start": {
-            "line": 10,
+            "line": 18,
             "column": 0
           },
           "end": {
-            "line": 10,
+            "line": 18,
             "column": 29
           }
         },
         "declaration": {
           "type": "Identifier",
-          "start": 310,
-          "end": 323,
+          "start": 524,
+          "end": 537,
           "loc": {
             "start": {
-              "line": 10,
+              "line": 18,
               "column": 15
             },
             "end": {
-              "line": 10,
+              "line": 18,
               "column": 28
             },
             "identifierName": "isIPAddressV4"
@@ -672,94 +692,96 @@
       },
       {
         "type": "ExportDefaultDeclaration",
-        "start": 295,
-        "end": 324,
+        "start": 509,
+        "end": 538,
         "loc": {
           "start": {
-            "line": 10,
+            "line": 18,
             "column": 0
           },
           "end": {
-            "line": 10,
+            "line": 18,
             "column": 29
           }
         },
         "declaration": {
           "type": "VariableDeclaration",
-          "start": 64,
-          "end": 293,
+          "start": 278,
+          "end": 507,
           "loc": {
             "start": {
-              "line": 3,
+              "line": 11,
               "column": 0
             },
             "end": {
-              "line": 8,
+              "line": 16,
               "column": 2
             }
           },
           "declarations": [
             {
               "type": "VariableDeclarator",
-              "start": 70,
-              "end": 292,
+              "start": 284,
+              "end": 506,
               "loc": {
                 "start": {
-                  "line": 3,
+                  "line": 11,
                   "column": 6
                 },
                 "end": {
-                  "line": 8,
+                  "line": 16,
                   "column": 1
                 }
               },
               "id": {
                 "type": "Identifier",
-                "start": 70,
-                "end": 83,
+                "start": 284,
+                "end": 297,
                 "loc": {
                   "start": {
-                    "line": 3,
+                    "line": 11,
                     "column": 6
                   },
                   "end": {
-                    "line": 3,
+                    "line": 11,
                     "column": 19
                   },
                   "identifierName": "isIPAddressV4"
                 },
-                "name": "isIPAddressV4"
+                "name": "isIPAddressV4",
+                "leadingComments": null
               },
               "init": {
                 "type": "ArrowFunctionExpression",
-                "start": 86,
-                "end": 292,
+                "start": 300,
+                "end": 506,
                 "loc": {
                   "start": {
-                    "line": 3,
+                    "line": 11,
                     "column": 22
                   },
                   "end": {
-                    "line": 8,
+                    "line": 16,
                     "column": 1
                   }
                 },
                 "id": {
                   "type": "Identifier",
-                  "start": 70,
-                  "end": 83,
+                  "start": 284,
+                  "end": 297,
                   "loc": {
                     "start": {
-                      "line": 3,
+                      "line": 11,
                       "column": 6
                     },
                     "end": {
-                      "line": 3,
+                      "line": 11,
                       "column": 19
                     },
                     "identifierName": "isIPAddressV4"
                   },
-                  "name": "isIPAddressV4"
+                  "name": "isIPAddressV4",
+                  "leadingComments": null
                 },
                 "generator": false,
                 "expression": true,
@@ -767,15 +789,15 @@
                 "params": [
                   {
                     "type": "Identifier",
-                    "start": 86,
-                    "end": 95,
+                    "start": 300,
+                    "end": 309,
                     "loc": {
                       "start": {
-                        "line": 3,
+                        "line": 11,
                         "column": 22
                       },
                       "end": {
-                        "line": 3,
+                        "line": 11,
                         "column": 31
                       },
                       "identifierName": "ipAddress"
@@ -785,57 +807,57 @@
                 ],
                 "body": {
                   "type": "LogicalExpression",
-                  "start": 103,
-                  "end": 290,
+                  "start": 317,
+                  "end": 504,
                   "loc": {
                     "start": {
-                      "line": 4,
+                      "line": 12,
                       "column": 2
                     },
                     "end": {
-                      "line": 7,
+                      "line": 15,
                       "column": 111
                     }
                   },
                   "left": {
                     "type": "LogicalExpression",
-                    "start": 103,
-                    "end": 175,
+                    "start": 317,
+                    "end": 389,
                     "loc": {
                       "start": {
-                        "line": 4,
+                        "line": 12,
                         "column": 2
                       },
                       "end": {
-                        "line": 6,
+                        "line": 14,
                         "column": 21
                       }
                     },
                     "left": {
                       "type": "LogicalExpression",
-                      "start": 103,
-                      "end": 150,
+                      "start": 317,
+                      "end": 364,
                       "loc": {
                         "start": {
-                          "line": 4,
+                          "line": 12,
                           "column": 2
                         },
                         "end": {
-                          "line": 5,
+                          "line": 13,
                           "column": 20
                         }
                       },
                       "left": {
                         "type": "UnaryExpression",
-                        "start": 103,
-                        "end": 126,
+                        "start": 317,
+                        "end": 340,
                         "loc": {
                           "start": {
-                            "line": 4,
+                            "line": 12,
                             "column": 2
                           },
                           "end": {
-                            "line": 4,
+                            "line": 12,
                             "column": 25
                           }
                         },
@@ -843,29 +865,29 @@
                         "prefix": true,
                         "argument": {
                           "type": "CallExpression",
-                          "start": 104,
-                          "end": 126,
+                          "start": 318,
+                          "end": 340,
                           "loc": {
                             "start": {
-                              "line": 4,
+                              "line": 12,
                               "column": 3
                             },
                             "end": {
-                              "line": 4,
+                              "line": 12,
                               "column": 25
                             }
                           },
                           "callee": {
                             "type": "Identifier",
-                            "start": 104,
-                            "end": 115,
+                            "start": 318,
+                            "end": 329,
                             "loc": {
                               "start": {
-                                "line": 4,
+                                "line": 12,
                                 "column": 3
                               },
                               "end": {
-                                "line": 4,
+                                "line": 12,
                                 "column": 14
                               },
                               "identifierName": "isUndefined"
@@ -875,15 +897,15 @@
                           "arguments": [
                             {
                               "type": "Identifier",
-                              "start": 116,
-                              "end": 125,
+                              "start": 330,
+                              "end": 339,
                               "loc": {
                                 "start": {
-                                  "line": 4,
+                                  "line": 12,
                                   "column": 15
                                 },
                                 "end": {
-                                  "line": 4,
+                                  "line": 12,
                                   "column": 24
                                 },
                                 "identifierName": "ipAddress"
@@ -899,15 +921,15 @@
                       "operator": "&&",
                       "right": {
                         "type": "UnaryExpression",
-                        "start": 132,
-                        "end": 150,
+                        "start": 346,
+                        "end": 364,
                         "loc": {
                           "start": {
-                            "line": 5,
+                            "line": 13,
                             "column": 2
                           },
                           "end": {
-                            "line": 5,
+                            "line": 13,
                             "column": 20
                           }
                         },
@@ -915,29 +937,29 @@
                         "prefix": true,
                         "argument": {
                           "type": "CallExpression",
-                          "start": 133,
-                          "end": 150,
+                          "start": 347,
+                          "end": 364,
                           "loc": {
                             "start": {
-                              "line": 5,
+                              "line": 13,
                               "column": 3
                             },
                             "end": {
-                              "line": 5,
+                              "line": 13,
                               "column": 20
                             }
                           },
                           "callee": {
                             "type": "Identifier",
-                            "start": 133,
-                            "end": 139,
+                            "start": 347,
+                            "end": 353,
                             "loc": {
                               "start": {
-                                "line": 5,
+                                "line": 13,
                                 "column": 3
                               },
                               "end": {
-                                "line": 5,
+                                "line": 13,
                                 "column": 9
                               },
                               "identifierName": "isNull"
@@ -947,15 +969,15 @@
                           "arguments": [
                             {
                               "type": "Identifier",
-                              "start": 140,
-                              "end": 149,
+                              "start": 354,
+                              "end": 363,
                               "loc": {
                                 "start": {
-                                  "line": 5,
+                                  "line": 13,
                                   "column": 10
                                 },
                                 "end": {
-                                  "line": 5,
+                                  "line": 13,
                                   "column": 19
                                 },
                                 "identifierName": "ipAddress"
@@ -972,29 +994,29 @@
                     "operator": "&&",
                     "right": {
                       "type": "CallExpression",
-                      "start": 156,
-                      "end": 175,
+                      "start": 370,
+                      "end": 389,
                       "loc": {
                         "start": {
-                          "line": 6,
+                          "line": 14,
                           "column": 2
                         },
                         "end": {
-                          "line": 6,
+                          "line": 14,
                           "column": 21
                         }
                       },
                       "callee": {
                         "type": "Identifier",
-                        "start": 156,
-                        "end": 164,
+                        "start": 370,
+                        "end": 378,
                         "loc": {
                           "start": {
-                            "line": 6,
+                            "line": 14,
                             "column": 2
                           },
                           "end": {
-                            "line": 6,
+                            "line": 14,
                             "column": 10
                           },
                           "identifierName": "isString"
@@ -1004,15 +1026,15 @@
                       "arguments": [
                         {
                           "type": "Identifier",
-                          "start": 165,
-                          "end": 174,
+                          "start": 379,
+                          "end": 388,
                           "loc": {
                             "start": {
-                              "line": 6,
+                              "line": 14,
                               "column": 11
                             },
                             "end": {
-                              "line": 6,
+                              "line": 14,
                               "column": 20
                             },
                             "identifierName": "ipAddress"
@@ -1025,43 +1047,43 @@
                   "operator": "&&",
                   "right": {
                     "type": "CallExpression",
-                    "start": 181,
-                    "end": 290,
+                    "start": 395,
+                    "end": 504,
                     "loc": {
                       "start": {
-                        "line": 7,
+                        "line": 15,
                         "column": 2
                       },
                       "end": {
-                        "line": 7,
+                        "line": 15,
                         "column": 111
                       }
                     },
                     "callee": {
                       "type": "MemberExpression",
-                      "start": 181,
-                      "end": 279,
+                      "start": 395,
+                      "end": 493,
                       "loc": {
                         "start": {
-                          "line": 7,
+                          "line": 15,
                           "column": 2
                         },
                         "end": {
-                          "line": 7,
+                          "line": 15,
                           "column": 100
                         }
                       },
                       "object": {
                         "type": "RegExpLiteral",
-                        "start": 181,
-                        "end": 274,
+                        "start": 395,
+                        "end": 488,
                         "loc": {
                           "start": {
-                            "line": 7,
+                            "line": 15,
                             "column": 2
                           },
                           "end": {
-                            "line": 7,
+                            "line": 15,
                             "column": 95
                           }
                         },
@@ -1073,15 +1095,15 @@
                       },
                       "property": {
                         "type": "Identifier",
-                        "start": 275,
-                        "end": 279,
+                        "start": 489,
+                        "end": 493,
                         "loc": {
                           "start": {
-                            "line": 7,
+                            "line": 15,
                             "column": 96
                           },
                           "end": {
-                            "line": 7,
+                            "line": 15,
                             "column": 100
                           },
                           "identifierName": "test"
@@ -1093,15 +1115,15 @@
                     "arguments": [
                       {
                         "type": "Identifier",
-                        "start": 280,
-                        "end": 289,
+                        "start": 494,
+                        "end": 503,
                         "loc": {
                           "start": {
-                            "line": 7,
+                            "line": 15,
                             "column": 101
                           },
                           "end": {
-                            "line": 7,
+                            "line": 15,
                             "column": 110
                           },
                           "identifierName": "ipAddress"
@@ -1112,21 +1134,56 @@
                   },
                   "extra": {
                     "parenthesized": true,
-                    "parenStart": 99
+                    "parenStart": 313
                   }
+                }
+              },
+              "leadingComments": null
+            }
+          ],
+          "kind": "const",
+          "leadingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\n * @desc Returns true if ipAddress a valid IP address, otherwise returns false\n * @param {string} ipAddress - an IP address\n * @return {boolean} - true or false \n *\n * @example\n * '172.16.254.1', '0.1.0.1'\n ",
+              "start": 64,
+              "end": 277,
+              "loc": {
+                "start": {
+                  "line": 3,
+                  "column": 0
+                },
+                "end": {
+                  "line": 10,
+                  "column": 3
                 }
               }
             }
           ],
-          "kind": "const",
-          "leadingComments": [],
           "trailingComments": []
         }
       }
     ],
     "directives": []
   },
-  "comments": [],
+  "comments": [
+    {
+      "type": "CommentBlock",
+      "value": "*\n * @desc Returns true if ipAddress a valid IP address, otherwise returns false\n * @param {string} ipAddress - an IP address\n * @return {boolean} - true or false \n *\n * @example\n * '172.16.254.1', '0.1.0.1'\n ",
+      "start": 64,
+      "end": 277,
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 0
+        },
+        "end": {
+          "line": 10,
+          "column": 3
+        }
+      }
+    }
+  ],
   "tokens": [
     {
       "type": {
@@ -1416,6 +1473,22 @@
       }
     },
     {
+      "type": "CommentBlock",
+      "value": "*\n * @desc Returns true if ipAddress a valid IP address, otherwise returns false\n * @param {string} ipAddress - an IP address\n * @return {boolean} - true or false \n *\n * @example\n * '172.16.254.1', '0.1.0.1'\n ",
+      "start": 64,
+      "end": 277,
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 0
+        },
+        "end": {
+          "line": 10,
+          "column": 3
+        }
+      }
+    },
+    {
       "type": {
         "label": "const",
         "keyword": "const",
@@ -1430,15 +1503,15 @@
         "updateContext": null
       },
       "value": "const",
-      "start": 64,
-      "end": 69,
+      "start": 278,
+      "end": 283,
       "loc": {
         "start": {
-          "line": 3,
+          "line": 11,
           "column": 0
         },
         "end": {
-          "line": 3,
+          "line": 11,
           "column": 5
         }
       }
@@ -1456,15 +1529,15 @@
         "binop": null
       },
       "value": "isIPAddressV4",
-      "start": 70,
-      "end": 83,
+      "start": 284,
+      "end": 297,
       "loc": {
         "start": {
-          "line": 3,
+          "line": 11,
           "column": 6
         },
         "end": {
-          "line": 3,
+          "line": 11,
           "column": 19
         }
       }
@@ -1483,15 +1556,15 @@
         "updateContext": null
       },
       "value": "=",
-      "start": 84,
-      "end": 85,
+      "start": 298,
+      "end": 299,
       "loc": {
         "start": {
-          "line": 3,
+          "line": 11,
           "column": 20
         },
         "end": {
-          "line": 3,
+          "line": 11,
           "column": 21
         }
       }
@@ -1509,15 +1582,15 @@
         "binop": null
       },
       "value": "ipAddress",
-      "start": 86,
-      "end": 95,
+      "start": 300,
+      "end": 309,
       "loc": {
         "start": {
-          "line": 3,
+          "line": 11,
           "column": 22
         },
         "end": {
-          "line": 3,
+          "line": 11,
           "column": 31
         }
       }
@@ -1535,15 +1608,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 96,
-      "end": 98,
+      "start": 310,
+      "end": 312,
       "loc": {
         "start": {
-          "line": 3,
+          "line": 11,
           "column": 32
         },
         "end": {
-          "line": 3,
+          "line": 11,
           "column": 34
         }
       }
@@ -1560,15 +1633,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 99,
-      "end": 100,
+      "start": 313,
+      "end": 314,
       "loc": {
         "start": {
-          "line": 3,
+          "line": 11,
           "column": 35
         },
         "end": {
-          "line": 3,
+          "line": 11,
           "column": 36
         }
       }
@@ -1587,15 +1660,15 @@
         "updateContext": null
       },
       "value": "!",
-      "start": 103,
-      "end": 104,
+      "start": 317,
+      "end": 318,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 12,
           "column": 2
         },
         "end": {
-          "line": 4,
+          "line": 12,
           "column": 3
         }
       }
@@ -1613,15 +1686,15 @@
         "binop": null
       },
       "value": "isUndefined",
-      "start": 104,
-      "end": 115,
+      "start": 318,
+      "end": 329,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 12,
           "column": 3
         },
         "end": {
-          "line": 4,
+          "line": 12,
           "column": 14
         }
       }
@@ -1638,15 +1711,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 115,
-      "end": 116,
+      "start": 329,
+      "end": 330,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 12,
           "column": 14
         },
         "end": {
-          "line": 4,
+          "line": 12,
           "column": 15
         }
       }
@@ -1664,15 +1737,15 @@
         "binop": null
       },
       "value": "ipAddress",
-      "start": 116,
-      "end": 125,
+      "start": 330,
+      "end": 339,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 12,
           "column": 15
         },
         "end": {
-          "line": 4,
+          "line": 12,
           "column": 24
         }
       }
@@ -1689,15 +1762,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 125,
-      "end": 126,
+      "start": 339,
+      "end": 340,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 12,
           "column": 24
         },
         "end": {
-          "line": 4,
+          "line": 12,
           "column": 25
         }
       }
@@ -1716,15 +1789,15 @@
         "updateContext": null
       },
       "value": "&&",
-      "start": 127,
-      "end": 129,
+      "start": 341,
+      "end": 343,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 12,
           "column": 26
         },
         "end": {
-          "line": 4,
+          "line": 12,
           "column": 28
         }
       }
@@ -1743,15 +1816,15 @@
         "updateContext": null
       },
       "value": "!",
-      "start": 132,
-      "end": 133,
+      "start": 346,
+      "end": 347,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 13,
           "column": 2
         },
         "end": {
-          "line": 5,
+          "line": 13,
           "column": 3
         }
       }
@@ -1769,15 +1842,15 @@
         "binop": null
       },
       "value": "isNull",
-      "start": 133,
-      "end": 139,
+      "start": 347,
+      "end": 353,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 13,
           "column": 3
         },
         "end": {
-          "line": 5,
+          "line": 13,
           "column": 9
         }
       }
@@ -1794,15 +1867,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 139,
-      "end": 140,
+      "start": 353,
+      "end": 354,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 13,
           "column": 9
         },
         "end": {
-          "line": 5,
+          "line": 13,
           "column": 10
         }
       }
@@ -1820,15 +1893,15 @@
         "binop": null
       },
       "value": "ipAddress",
-      "start": 140,
-      "end": 149,
+      "start": 354,
+      "end": 363,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 13,
           "column": 10
         },
         "end": {
-          "line": 5,
+          "line": 13,
           "column": 19
         }
       }
@@ -1845,15 +1918,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 149,
-      "end": 150,
+      "start": 363,
+      "end": 364,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 13,
           "column": 19
         },
         "end": {
-          "line": 5,
+          "line": 13,
           "column": 20
         }
       }
@@ -1872,15 +1945,15 @@
         "updateContext": null
       },
       "value": "&&",
-      "start": 151,
-      "end": 153,
+      "start": 365,
+      "end": 367,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 13,
           "column": 21
         },
         "end": {
-          "line": 5,
+          "line": 13,
           "column": 23
         }
       }
@@ -1898,15 +1971,15 @@
         "binop": null
       },
       "value": "isString",
-      "start": 156,
-      "end": 164,
+      "start": 370,
+      "end": 378,
       "loc": {
         "start": {
-          "line": 6,
+          "line": 14,
           "column": 2
         },
         "end": {
-          "line": 6,
+          "line": 14,
           "column": 10
         }
       }
@@ -1923,15 +1996,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 164,
-      "end": 165,
+      "start": 378,
+      "end": 379,
       "loc": {
         "start": {
-          "line": 6,
+          "line": 14,
           "column": 10
         },
         "end": {
-          "line": 6,
+          "line": 14,
           "column": 11
         }
       }
@@ -1949,15 +2022,15 @@
         "binop": null
       },
       "value": "ipAddress",
-      "start": 165,
-      "end": 174,
+      "start": 379,
+      "end": 388,
       "loc": {
         "start": {
-          "line": 6,
+          "line": 14,
           "column": 11
         },
         "end": {
-          "line": 6,
+          "line": 14,
           "column": 20
         }
       }
@@ -1974,15 +2047,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 174,
-      "end": 175,
+      "start": 388,
+      "end": 389,
       "loc": {
         "start": {
-          "line": 6,
+          "line": 14,
           "column": 20
         },
         "end": {
-          "line": 6,
+          "line": 14,
           "column": 21
         }
       }
@@ -2001,15 +2074,15 @@
         "updateContext": null
       },
       "value": "&&",
-      "start": 176,
-      "end": 178,
+      "start": 390,
+      "end": 392,
       "loc": {
         "start": {
-          "line": 6,
+          "line": 14,
           "column": 22
         },
         "end": {
-          "line": 6,
+          "line": 14,
           "column": 24
         }
       }
@@ -2031,15 +2104,15 @@
         "pattern": "^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$",
         "flags": ""
       },
-      "start": 181,
-      "end": 274,
+      "start": 395,
+      "end": 488,
       "loc": {
         "start": {
-          "line": 7,
+          "line": 15,
           "column": 2
         },
         "end": {
-          "line": 7,
+          "line": 15,
           "column": 95
         }
       }
@@ -2057,15 +2130,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 274,
-      "end": 275,
+      "start": 488,
+      "end": 489,
       "loc": {
         "start": {
-          "line": 7,
+          "line": 15,
           "column": 95
         },
         "end": {
-          "line": 7,
+          "line": 15,
           "column": 96
         }
       }
@@ -2083,15 +2156,15 @@
         "binop": null
       },
       "value": "test",
-      "start": 275,
-      "end": 279,
+      "start": 489,
+      "end": 493,
       "loc": {
         "start": {
-          "line": 7,
+          "line": 15,
           "column": 96
         },
         "end": {
-          "line": 7,
+          "line": 15,
           "column": 100
         }
       }
@@ -2108,15 +2181,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 279,
-      "end": 280,
+      "start": 493,
+      "end": 494,
       "loc": {
         "start": {
-          "line": 7,
+          "line": 15,
           "column": 100
         },
         "end": {
-          "line": 7,
+          "line": 15,
           "column": 101
         }
       }
@@ -2134,15 +2207,15 @@
         "binop": null
       },
       "value": "ipAddress",
-      "start": 280,
-      "end": 289,
+      "start": 494,
+      "end": 503,
       "loc": {
         "start": {
-          "line": 7,
+          "line": 15,
           "column": 101
         },
         "end": {
-          "line": 7,
+          "line": 15,
           "column": 110
         }
       }
@@ -2159,15 +2232,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 289,
-      "end": 290,
+      "start": 503,
+      "end": 504,
       "loc": {
         "start": {
-          "line": 7,
+          "line": 15,
           "column": 110
         },
         "end": {
-          "line": 7,
+          "line": 15,
           "column": 111
         }
       }
@@ -2184,15 +2257,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 291,
-      "end": 292,
+      "start": 505,
+      "end": 506,
       "loc": {
         "start": {
-          "line": 8,
+          "line": 16,
           "column": 0
         },
         "end": {
-          "line": 8,
+          "line": 16,
           "column": 1
         }
       }
@@ -2210,15 +2283,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 292,
-      "end": 293,
+      "start": 506,
+      "end": 507,
       "loc": {
         "start": {
-          "line": 8,
+          "line": 16,
           "column": 1
         },
         "end": {
-          "line": 8,
+          "line": 16,
           "column": 2
         }
       }
@@ -2238,15 +2311,15 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 295,
-      "end": 301,
+      "start": 509,
+      "end": 515,
       "loc": {
         "start": {
-          "line": 10,
+          "line": 18,
           "column": 0
         },
         "end": {
-          "line": 10,
+          "line": 18,
           "column": 6
         }
       }
@@ -2266,15 +2339,15 @@
         "updateContext": null
       },
       "value": "default",
-      "start": 302,
-      "end": 309,
+      "start": 516,
+      "end": 523,
       "loc": {
         "start": {
-          "line": 10,
+          "line": 18,
           "column": 7
         },
         "end": {
-          "line": 10,
+          "line": 18,
           "column": 14
         }
       }
@@ -2292,15 +2365,15 @@
         "binop": null
       },
       "value": "isIPAddressV4",
-      "start": 310,
-      "end": 323,
+      "start": 524,
+      "end": 537,
       "loc": {
         "start": {
-          "line": 10,
+          "line": 18,
           "column": 15
         },
         "end": {
-          "line": 10,
+          "line": 18,
           "column": 28
         }
       }
@@ -2318,15 +2391,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 323,
-      "end": 324,
+      "start": 537,
+      "end": 538,
       "loc": {
         "start": {
-          "line": 10,
+          "line": 18,
           "column": 28
         },
         "end": {
-          "line": 10,
+          "line": 18,
           "column": 29
         }
       }
@@ -2344,15 +2417,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 325,
-      "end": 325,
+      "start": 539,
+      "end": 539,
       "loc": {
         "start": {
-          "line": 11,
+          "line": 19,
           "column": 0
         },
         "end": {
-          "line": 11,
+          "line": 19,
           "column": 0
         }
       }

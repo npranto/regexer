@@ -94,6 +94,14 @@
 <div class="content" data-ice="content"><h1 data-ice="title">src/common/isMonthOfYearString/isMonthOfYearString.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { isUndefined, isNull } from &apos;./../../utils&apos;;
 
+/**
+ * @desc Returns true if month is a name of a month of year, otherwise returns false
+ * @param {string} month - name of month 
+ * @return {boolean} - true or false
+ *
+ * @example
+ * &apos;march&apos;, &apos;APRIL&apos;, &apos;mAy&apos;
+ */
 const isMonthOfYearString = month =&gt; (
   !isUndefined(month) &amp;&amp;
   !isNull(month) &amp;&amp;

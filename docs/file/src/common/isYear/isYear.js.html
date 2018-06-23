@@ -94,10 +94,19 @@
 <div class="content" data-ice="content"><h1 data-ice="title">src/common/isYear/isYear.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { isUndefined, isNull } from &apos;./../../utils&apos;;
 
+/**
+ * @desc Returns true if number a year, otherwise returns false
+ * @param {number|string} number - a year
+ * @return {boolean} - true or false 
+ *
+ * @example
+ * 1345, 1784, 1934, 2012, 2018 
+ */
+
 const isYear = number =&gt; (
   !isUndefined(number) &amp;&amp;
   !isNull(number) &amp;&amp;
-  /^\d{4}$/.test(number)
+  /^[1-9]\d{3}$/.test(number)
 );
 
 export default isYear;

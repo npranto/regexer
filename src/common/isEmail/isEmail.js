@@ -1,6 +1,13 @@
-// @flow
 import { isUndefined, isNull, isString } from './../../utils';
 
+/**
+ * @desc Returns true if email is a valid email address, otherwise returns false
+ * @param {string} email - an email address
+ * @return {boolean} - true or false
+ *
+ * @example
+ * 'jsmith@gmail.com', 'npraxx@123gmail.co'
+ */
 const isEmail = email => (
   !isUndefined(email) &&
   !isNull(email) &&

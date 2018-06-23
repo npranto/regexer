@@ -94,6 +94,14 @@
 <div class="content" data-ice="content"><h1 data-ice="title">src/common/isUpperCase/isUpperCase.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { isNull, isUndefined, isString } from &apos;./../../utils&apos;;
 
+/**
+ * @desc Returns true if str contains all upper case letters, otherwise returns false
+ * @param {string} str - a string
+ * @return {boolean} - true or false 
+ *
+ * @example
+ * &apos;A&apos;, &apos;B&apos;, &apos;Y&apos;
+ */
 const isUpperCase = str =&gt; (
   !isUndefined(str) &amp;&amp;
   !isNull(str) &amp;&amp;

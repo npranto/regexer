@@ -15,6 +15,9 @@ describe('Regexer', () => {
     it('should return true when passed \'NS-pranto_236\'', () => {
       assert.equal(isUsername('NS-pranto_236'), true);
     });
+    it('should return true when passed \'james-bond007\'', () => {
+      assert.equal(isUsername('james-bond007'), true);
+    });
     it('should return false when passed null', () => {
       assert.equal(isUsername(null), false);
     });

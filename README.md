@@ -2,7 +2,7 @@
   <br>
   <a href="https://github.com/npranto/regexer"><img src="./src/assets/images/R-logo.png" alt="Regexer" width="300"></a>
   <br>
-  <strong>Regexer</strong>
+  **Regexer**
   <br>
 </h1>
 
@@ -66,7 +66,7 @@ Regular expressions are awesome and absolutely super useful when it comes to loo
 
 Regexer just attempts to make the process of using some of the most popular regular expressions easier for you. You no longer need to look all over the place for finding a regular expression for matching an email or a phone number, or a hex value or even a day of the week. Just install regexer and use the built in common functions to verify candidate values.
 
-Still confused...? Let's look at an <strong>[example](#usage)</strong>
+Still confused...? Let's look at an **[example](#usage)**
 
 ## Installation
 Before we get going, make sure you have [Node.js](https://nodejs.org/en/) installed on your system, so we can use the NPM (Node Package Manager) to install regexer on your project.
@@ -128,22 +128,7 @@ isDayOfMonth(55)
 // false
 ```
 
-### `.isDayOfWeekString(data[string])`
-
-Returns `true` if it is a day of the month (1-31), otherwise returns `false`
-
-```js
-import { isDayOfWeekString } from 'nsp-regexer';
-
-isDayOfWeekString('monday')  
-// true
-
-isDayOfWeekString('FRIDAY')  
-// true
-
-isDayOfWeekString('doomsday')  
-// false
-```
+*Obviously, more to come soon...*
 
 ## Credits
 

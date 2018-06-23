@@ -94,6 +94,14 @@
 <div class="content" data-ice="content"><h1 data-ice="title">src/common/isUSState/isUSState.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { isUndefined, isNull } from &apos;./../../utils&apos;;
 
+/**
+ * @desc Returns true if state a name of one of US state, otherwise returns false
+ * @param {string} state - a state
+ * @return {boolean} - true or false 
+ *
+ * @example
+ * &apos;arizona&apos;, &apos;Oklahoma&apos;, &apos;RhOdE islaNd&apos;
+ */
 const isUSState = state =&gt; (
     !isUndefined(state) &amp;&amp;
     !isNull(state) &amp;&amp;

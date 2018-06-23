@@ -1,5 +1,13 @@
 import { isUndefined, isNull } from './../../utils';
 
+/**
+ * @desc Returns true if creditCardNumber is a valid credit card number, otherwise returns false
+ * @param {number|string} creditCardNumber - credit card number
+ * @return {boolean} - true or false 
+ *
+ * @example
+ * '345768475867474', 6476666666666666
+ */
 const isCreditCardNumber = creditCardNumber => (
   !isUndefined(creditCardNumber) &&
   !isNull(creditCardNumber) &&

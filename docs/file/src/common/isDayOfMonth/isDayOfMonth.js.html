@@ -94,6 +94,14 @@
 <div class="content" data-ice="content"><h1 data-ice="title">src/common/isDayOfMonth/isDayOfMonth.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { isUndefined, isNull } from &apos;./../../utils&apos;;
 
+/**
+ * @desc Returns true if day is a day of the month (1-31), otherwise returns false
+ * @param {number|string} day - day of month
+ * @return {boolean} - true or false 
+ *
+ * @example
+ * &apos;1&apos;, 5, 29, 31
+ */
 const isDayOfMonth = day =&gt; (
   !isUndefined(day) &amp;&amp;
   !isNull(day) &amp;&amp;

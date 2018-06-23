@@ -94,6 +94,14 @@
 <div class="content" data-ice="content"><h1 data-ice="title">src/common/isInteger/isInteger.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { isNull, isUndefined } from &apos;./../../utils&apos;;
 
+/**
+ * @desc Returns true if integer is an integer, otherwise returns false
+ * @param {number} integer - an integer
+ * @return {boolean} - true or false
+ *
+ * @example
+ * 455, &apos;-44&apos;
+ */
 const isInteger = integer =&gt; (
   !isUndefined(integer) &amp;&amp;
   !isNull(integer) &amp;&amp;

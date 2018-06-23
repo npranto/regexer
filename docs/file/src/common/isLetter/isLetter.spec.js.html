@@ -101,13 +101,13 @@ describe(&apos;Regexer&apos;, () =&gt; {
       assert.equal(isLetter(&apos;a&apos;), true);
     });
     it(&apos;should return true when passed \&apos;ACTIVITY\&apos;&apos;, () =&gt; {
-      assert.equal(isLetter(&apos;ACTIVITY&apos;), true);
+      assert.equal(isLetter(&apos;ACTIVITY&apos;), false);
     });
     it(&apos;should return false when passed \&apos;72864783246\&apos;&apos;, () =&gt; {
       assert.equal(isLetter(&apos;72864783246&apos;), false);
     });
-    it(&apos;should return false when passed \&apos;haha?!\&apos;&apos;, () =&gt; {
-      assert.equal(isLetter(&apos;haha?!&apos;), false);
+    it(&apos;should return false when passed \&apos;X\&apos;&apos;, () =&gt; {
+      assert.equal(isLetter(&apos;X&apos;), true);
     });
     it(&apos;should return false when passed \&apos;A coffee shop is nearby\&apos;&apos;, () =&gt; {
       assert.equal(isLetter(&apos;A coffee shop is nearby&apos;), false);

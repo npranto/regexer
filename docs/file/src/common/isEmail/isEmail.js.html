@@ -92,9 +92,16 @@
 </nav>
 
 <div class="content" data-ice="content"><h1 data-ice="title">src/common/isEmail/isEmail.js</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// @flow
-import { isUndefined, isNull, isString } from &apos;./../../utils&apos;;
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { isUndefined, isNull, isString } from &apos;./../../utils&apos;;
 
+/**
+ * @desc Returns true if email is a valid email address, otherwise returns false
+ * @param {string} email - an email address
+ * @return {boolean} - true or false
+ *
+ * @example
+ * &apos;jsmith@gmail.com&apos;, &apos;npraxx@123gmail.co&apos;
+ */
 const isEmail = email =&gt; (
   !isUndefined(email) &amp;&amp;
   !isNull(email) &amp;&amp;

@@ -94,6 +94,14 @@
 <div class="content" data-ice="content"><h1 data-ice="title">src/common/isHexValue/isHexValue.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { isNull, isUndefined, isString } from &apos;./../../utils&apos;;
 
+/**
+ * @desc Returns true if hexValue is a valid hex value, otherwise returns false
+ * @param {string} hexValue - a hex value
+ * @return {boolean} - true or false
+ *
+ * @example
+ * &apos;#FBB&apos;, &apos;#SHFF56&apos;, &apos;#FF56&apos;
+ */
 const isHexValue = hexValue =&gt; (
   !isUndefined(hexValue) &amp;&amp;
   !isNull(hexValue) &amp;&amp;

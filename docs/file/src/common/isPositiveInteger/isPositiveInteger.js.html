@@ -94,6 +94,14 @@
 <div class="content" data-ice="content"><h1 data-ice="title">src/common/isPositiveInteger/isPositiveInteger.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { isNull, isUndefined } from &apos;./../../utils&apos;;
 
+/**
+ * @desc Returns true if integer is a positive integer, otherwise returns false
+ * @param {number|string} integer - an integer
+ * @return {boolean} - true or false
+ *
+ * @example
+ * &apos;55&apos;, 3, 4645645
+ */
 const isPositiveInteger = integer =&gt; (
   !isUndefined(integer) &amp;&amp;
   !isNull(integer) &amp;&amp;

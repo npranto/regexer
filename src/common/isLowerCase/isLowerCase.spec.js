@@ -12,6 +12,9 @@ describe('Regexer', () => {
     it('should return true when passed \'f\'', () => {
       assert.equal(isLowerCase('f'), true);
     });
+    it('should return true when passed \'life is great\'', () => {
+      assert.equal(isLowerCase('life is great'), true);
+    });
     it('should return true when passed \'ian\'', () => {
       assert.equal(isLowerCase('ian'), true);
     });

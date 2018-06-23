@@ -94,6 +94,14 @@
 <div class="content" data-ice="content"><h1 data-ice="title">src/common/isIPAddressV4/isIPAddressV4.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { isUndefined, isNull, isString } from &apos;./../../utils&apos;;
 
+/**
+ * @desc Returns true if ipAddress a valid IP address, otherwise returns false
+ * @param {string} ipAddress - an IP address
+ * @return {boolean} - true or false 
+ *
+ * @example
+ * &apos;172.16.254.1&apos;, &apos;0.1.0.1&apos;
+ */
 const isIPAddressV4 = ipAddress =&gt; (
   !isUndefined(ipAddress) &amp;&amp;
   !isNull(ipAddress) &amp;&amp;
