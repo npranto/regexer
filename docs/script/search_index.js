@@ -336,6 +336,12 @@ window.esdocSearchIndex = [
     "variable"
   ],
   [
+    "nsp-regexer/src/common/iswhitespace/iswhitespace.js~iswhitespace",
+    "function/index.html#static-function-isWhiteSpace",
+    "<span>isWhiteSpace</span> <span class=\"search-result-import-path\">nsp-regexer/src/common/isWhiteSpace/isWhiteSpace.js</span>",
+    "function"
+  ],
+  [
     "nsp-regexer/src/common/isyear/isyear.js~isyear",
     "function/index.html#static-function-isYear",
     "<span>isYear</span> <span class=\"search-result-import-path\">nsp-regexer/src/common/isYear/isYear.js</span>",
@@ -951,6 +957,18 @@ window.esdocSearchIndex = [
     "src/common/isvowel/isvowel.spec.js",
     "file/src/common/isVowel/isVowel.spec.js.html",
     "src/common/isVowel/isVowel.spec.js",
+    "file"
+  ],
+  [
+    "src/common/iswhitespace/iswhitespace.js",
+    "file/src/common/isWhiteSpace/isWhiteSpace.js.html",
+    "src/common/isWhiteSpace/isWhiteSpace.js",
+    "file"
+  ],
+  [
+    "src/common/iswhitespace/iswhitespace.spec.js",
+    "file/src/common/isWhiteSpace/isWhiteSpace.spec.js.html",
+    "src/common/isWhiteSpace/isWhiteSpace.spec.js",
     "file"
   ],
   [

@@ -52,6 +52,7 @@ A simple and convenient library of functions that leverage regular expressions w
     * [`.isUSPhoneNumber()`](#isusphonenumberphonenumberstring)
     * [`.isUSState()`](#isusstatestatestring)    
     * [`.isVowel()`](#isvowelcharstring)
+		* [`.isWhiteSpace()`](#iswhitespacecharstring)
     * [`.isYear()`](#isyearnumbernumberstring)
 
 * [Credits](#credits)
@@ -568,6 +569,23 @@ isVowel('U')
 // true
 
 isVowel('v')  
+// false
+```
+
+### `.isWhiteSpace(char[string])`
+
+Returns true if char a white space, otherwise returns false
+
+```js
+import { isWhiteSpace } from 'nsp-regexer';
+
+isWhiteSpace(' ')  
+// true
+
+isWhiteSpace('  ')  
+// false
+
+isWhiteSpace('hello')  
 // false
 ```
 

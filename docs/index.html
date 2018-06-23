@@ -80,6 +80,7 @@
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#common-isurl">common/isUrl</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isUrl">isUrl</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#common-isusername">common/isUsername</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isUsername">isUsername</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#common-isvowel">common/isVowel</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isVowel">isVowel</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#common-iswhitespace">common/isWhiteSpace</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isWhiteSpace">isWhiteSpace</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#common-isyear">common/isYear</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isYear">isYear</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#utils">utils</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isNull">isNull</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isString">isString</a></span></span></li>
@@ -144,7 +145,10 @@ A simple and convenient library of functions that leverage regular expressions w
 <li><a href="#isusernameusernamestring"><code>.isUsername()</code></a></li>
 <li><a href="#isusphonenumberphonenumberstring"><code>.isUSPhoneNumber()</code></a></li>
 <li><a href="#isusstatestatestring"><code>.isUSState()</code></a>    </li>
-<li><a href="#isvowelcharstring"><code>.isVowel()</code></a></li>
+<li><a href="#isvowelcharstring"><code>.isVowel()</code></a><ul>
+<li><a href="#iswhitespacecharstring"><code>.isWhiteSpace()</code></a></li>
+</ul>
+</li>
 <li><a href="#isyearnumbernumberstring"><code>.isYear()</code></a></li>
 </ul>
 </li>
@@ -513,6 +517,18 @@ isVowel(&apos;U&apos;)
 // true
 
 isVowel(&apos;v&apos;)  
+// false</code>
+</code></pre>
+<h3 id="-code--iswhitespace-char-string----code-"><code>.isWhiteSpace(char[string])</code></h3><p>Returns true if char a white space, otherwise returns false</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">import { isWhiteSpace } from &apos;nsp-regexer&apos;;
+
+isWhiteSpace(&apos; &apos;)  
+// true
+
+isWhiteSpace(&apos;  &apos;)  
+// false
+
+isWhiteSpace(&apos;hello&apos;)  
 // false</code>
 </code></pre>
 <h3 id="-code--isyear-number-number-string----code-"><code>.isYear(number[number|string])</code></h3><p>Returns <code>true</code> if number a year, otherwise returns <code>false</code></p>
