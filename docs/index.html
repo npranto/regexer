@@ -118,34 +118,34 @@ A simple and convenient library of functions that leverage regular expressions w
 <li><a href="#usage">Usage</a></li>
 <li><p><a href="#api">API</a></p>
 <ul>
-<li><a href="#"><code>.isCreditCard()</code></a></li>
-<li><a href="#"><code>.isDayOfMonth()</code></a></li>
-<li><a href="#"><code>.isDayOfWeekString()</code></a></li>
-<li><a href="#"><code>.isDecimal()</code></a></li>
-<li><a href="#"><code>.isEmail()</code></a></li>
-<li><a href="#"><code>.isHexValue()</code></a></li>
-<li><a href="#"><code>.isHTMLTag()</code></a></li>
-<li><a href="#"><code>.isInteger()</code></a></li>
-<li><a href="#"><code>.isIPAddressV4()</code></a></li>
-<li><a href="#"><code>.isLetter()</code></a></li>
-<li><a href="#"><code>.isLowerCase()</code></a></li>
-<li><a href="#"><code>.isMonthOfYear()</code></a></li>
-<li><a href="#"><code>.isMonthOfYearString()</code></a></li>
-<li><a href="#"><code>.isNegativeInteger()</code></a></li>
-<li><a href="#"><code>.isNegativeNumber()</code></a></li>
-<li><a href="#"><code>.isNumber()</code></a></li>
-<li><a href="#"><code>.isPassword()</code></a></li>
-<li><a href="#"><code>.isPositiveInteger()</code></a></li>
-<li><a href="#"><code>.isPositiveNumber()</code></a></li>
-<li><a href="#"><code>.isSSN()</code></a></li>
-<li><a href="#"><code>.isStandardZipCode()</code></a></li>
-<li><a href="#"><code>.isUpperCase()</code></a></li>
-<li><a href="#"><code>.isUrl()</code></a></li>
-<li><a href="#"><code>.isUsername()</code></a></li>
-<li><a href="#"><code>.isUSPhoneNumber()</code></a></li>
-<li><a href="#"><code>.isUSState()</code></a>    </li>
-<li><a href="#"><code>.isVowel()</code></a></li>
-<li><a href="#"><code>.isYear()</code></a></li>
+<li><a href="#iscreditcardcreditcardnumbernumberstring"><code>.isCreditCard()</code></a></li>
+<li><a href="#isdayofmonthdaynumberstring"><code>.isDayOfMonth()</code></a></li>
+<li><a href="#isdayofweekstringdaynumberstring"><code>.isDayOfWeekString()</code></a></li>
+<li><a href="#isdecimalnumbernumberstring"><code>.isDecimal()</code></a></li>
+<li><a href="#isemailemailstring"><code>.isEmail()</code></a></li>
+<li><a href="#ishexvaluehexvaluestring"><code>.isHexValue()</code></a></li>
+<li><a href="#ishtmltaghtmltagstring"><code>.isHTMLTag()</code></a></li>
+<li><a href="#isintegerintegernumberstring"><code>.isInteger()</code></a></li>
+<li><a href="#isipaddressv4ipaddressstring"><code>.isIPAddressV4()</code></a></li>
+<li><a href="#islettercharstring"><code>.isLetter()</code></a></li>
+<li><a href="#islowercasestrstring"><code>.isLowerCase()</code></a></li>
+<li><a href="#ismonthofyearnumbernumberstring"><code>.isMonthOfYear()</code></a></li>
+<li><a href="#ismonthofyearstringmonthstring"><code>.isMonthOfYearString()</code></a></li>
+<li><a href="#isnegativeintegerintegernumberstring"><code>.isNegativeInteger()</code></a></li>
+<li><a href="#isnegativenumbernumbernumberstring"><code>.isNegativeNumber()</code></a></li>
+<li><a href="#isnumbernumbernumberstring"><code>.isNumber()</code></a></li>
+<li><a href="#ispasswordpasswordstring"><code>.isPassword()</code></a></li>
+<li><a href="#ispositiveintegerintegernumberstring"><code>.isPositiveInteger()</code></a></li>
+<li><a href="#ispositivenumbernumbernumberstring"><code>.isPositiveNumber()</code></a></li>
+<li><a href="#isssnnumberstring"><code>.isSSN()</code></a></li>
+<li><a href="#isstandardzipcodezipcodestring"><code>.isStandardZipCode()</code></a></li>
+<li><a href="#isuppercasestrstring"><code>.isUpperCase()</code></a></li>
+<li><a href="#isurlurlstring"><code>.isUrl()</code></a></li>
+<li><a href="#isusernameusernamestring"><code>.isUsername()</code></a></li>
+<li><a href="#isusphonenumberphonenumberstring"><code>.isUSPhoneNumber()</code></a></li>
+<li><a href="#isusstatestatestring"><code>.isUSState()</code></a>    </li>
+<li><a href="#isvowelcharstring"><code>.isVowel()</code></a></li>
+<li><a href="#isyearnumbernumberstring"><code>.isYear()</code></a></li>
 </ul>
 </li>
 <li><p><a href="#credits">Credits</a></p>
@@ -443,7 +443,7 @@ isStandardZipCode(&apos;12045-6089&apos;)
 isStandardZipCode(&apos;545-454-4555&apos;)  
 // false</code>
 </code></pre>
-<h3 id="-code--isstandardzipcode-str-string----code-"><code>.isStandardZipCode(str[string])</code></h3><p>Returns <code>true</code> if str contains all upper case letters, otherwise returns <code>false</code></p>
+<h3 id="-code--isuppercase-str-string----code-"><code>.isUpperCase(str[string])</code></h3><p>Returns <code>true</code> if str contains all upper case letters, otherwise returns <code>false</code></p>
 <pre><code class="lang-js"><code class="source-code prettyprint">import { isUpperCase } from &apos;nsp-regexer&apos;;
 
 isUpperCase(&apos;G&apos;)  
