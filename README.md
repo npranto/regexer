@@ -51,9 +51,9 @@ A simple and convenient library of functions that leverage regular expressions w
     * [`.isUsername()`](#isusernameusernamestring)
     * [`.isUSPhoneNumber()`](#isusphonenumberphonenumberstring)
     * [`.isUSState()`](#isusstatestatestring)   
-		* [`.isUSStateAbbr()`](#isusstateabbrstateabbrstring)    
+    * [`.isUSStateAbbr()`](#isusstateabbrstateabbrstring)    
     * [`.isVowel()`](#isvowelcharstring)
-		* [`.isWhiteSpace()`](#iswhitespacecharstring)
+    * [`.isWhiteSpace()`](#iswhitespacecharstring)
     * [`.isYear()`](#isyearnumbernumberstring)
 
 * [Credits](#credits)
