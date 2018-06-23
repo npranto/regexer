@@ -92,20 +92,21 @@
 </nav>
 
 <div class="content" data-ice="content"><h1 data-ice="title">src/common/isSSN/isSSN.js</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { isUndefined, isNull } from &apos;./../../utils&apos;;
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { isUndefined, isNull, isString } from &apos;./../../utils&apos;;
 
 /**
  * @desc Returns true if number is a valid social security number, otherwise returns false
- * @param {number|string} number - a number
+ * @param {string} ssn - a social security number
  * @return {boolean} - true or false 
  *
  * @example
  * allows following formats =&gt; &apos;031767927&apos;, &apos;031-76-7927&apos;, &apos;031 76 7927&apos;
  */
-const isSSN = number =&gt; (
-  !isUndefined(number) &amp;&amp;
-  !isNull(number) &amp;&amp;
-  /^(\d{3})(-|\s)?(\d{2})(-|\s)?(\d{4})$/.test(number)
+const isSSN = ssn =&gt; (
+  !isUndefined(ssn) &amp;&amp;
+  !isNull(ssn) &amp;&amp;
+  isString(ssn) &amp;&amp;
+  /^(\d{3})(-|\s)?(\d{2})(-|\s)?(\d{4})$/.test(ssn)
 );
 
 export default isSSN;

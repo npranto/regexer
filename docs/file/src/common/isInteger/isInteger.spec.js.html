@@ -115,6 +115,9 @@ describe(&apos;Regexer&apos;, () =&gt; {
     it(&apos;should return true when passed 34&apos;, () =&gt; {
       assert.equal(isInteger(-34), true);
     });
+    it(&apos;should return false when passed 34.66&apos;, () =&gt; {
+      assert.equal(isInteger(-34.66), false);
+    });
     it(&apos;should return false when passed \&apos;\&apos;&apos;, () =&gt; {
       assert.equal(isInteger(&apos;&apos;), false);
     });

@@ -21,6 +21,9 @@ describe('Regexer', () => {
     it('should return true when passed 34', () => {
       assert.equal(isInteger(-34), true);
     });
+    it('should return false when passed 34.66', () => {
+      assert.equal(isInteger(-34.66), false);
+    });
     it('should return false when passed \'\'', () => {
       assert.equal(isInteger(''), false);
     });

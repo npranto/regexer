@@ -1,7 +1,7 @@
 {
   "type": "File",
   "start": 0,
-  "end": 593,
+  "end": 592,
   "loc": {
     "start": {
       "line": 1,
@@ -15,7 +15,7 @@
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 593,
+    "end": 592,
     "loc": {
       "start": {
         "line": 1,
@@ -214,7 +214,7 @@
         "trailingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\n * @desc Returns true if username meets the basic requirement of an username (contains letters, numbers, hyphens, and underscores; length is between 3 to 16 characters), otherwise returns false\n * @param {number|string} username - an username\n * @return {boolean} - true or false \n *\n * @example\n * jSmith455, kevin_bacon89, kevin, james-bond007 \n ",
+            "value": "*\n * @desc Returns true if username meets the basic requirement of an username (contains letters, numbers, hyphens, and underscores; length is between 3 to 16 characters), otherwise returns false\n * @param {string} username - an username\n * @return {boolean} - true or false \n *\n * @example\n * 'jSmith455', 'kevin_bacon89', 'kevin', 'james-bond007'\n ",
             "start": 64,
             "end": 418,
             "loc": {
@@ -233,7 +233,7 @@
       {
         "type": "Identifier",
         "start": 419,
-        "end": 563,
+        "end": 562,
         "loc": {
           "start": {
             "line": 11,
@@ -248,7 +248,7 @@
           {
             "type": "VariableDeclarator",
             "start": 425,
-            "end": 562,
+            "end": 561,
             "loc": {
               "start": {
                 "line": 11,
@@ -280,7 +280,7 @@
             "init": {
               "type": "ArrowFunctionExpression",
               "start": 438,
-              "end": 562,
+              "end": 561,
               "loc": {
                 "start": {
                   "line": 11,
@@ -317,7 +317,7 @@
               "body": {
                 "type": "LogicalExpression",
                 "start": 454,
-                "end": 560,
+                "end": 559,
                 "loc": {
                   "start": {
                     "line": 12,
@@ -325,7 +325,7 @@
                   },
                   "end": {
                     "line": 15,
-                    "column": 33
+                    "column": 32
                   }
                 },
                 "left": {
@@ -557,7 +557,7 @@
                 "right": {
                   "type": "CallExpression",
                   "start": 529,
-                  "end": 560,
+                  "end": 559,
                   "loc": {
                     "start": {
                       "line": 15,
@@ -565,13 +565,13 @@
                     },
                     "end": {
                       "line": 15,
-                      "column": 33
+                      "column": 32
                     }
                   },
                   "callee": {
                     "type": "MemberExpression",
                     "start": 529,
-                    "end": 550,
+                    "end": 549,
                     "loc": {
                       "start": {
                         "line": 15,
@@ -579,13 +579,13 @@
                       },
                       "end": {
                         "line": 15,
-                        "column": 23
+                        "column": 22
                       }
                     },
                     "object": {
                       "type": "RegExpLiteral",
                       "start": 529,
-                      "end": 545,
+                      "end": 544,
                       "loc": {
                         "start": {
                           "line": 15,
@@ -593,27 +593,27 @@
                         },
                         "end": {
                           "line": 15,
-                          "column": 18
+                          "column": 17
                         }
                       },
                       "extra": {
-                        "raw": "/^[\\w-0]{3,16}$/"
+                        "raw": "/^[\\w-]{3,16}$/"
                       },
-                      "pattern": "^[\\w-0]{3,16}$",
+                      "pattern": "^[\\w-]{3,16}$",
                       "flags": ""
                     },
                     "property": {
                       "type": "Identifier",
-                      "start": 546,
-                      "end": 550,
+                      "start": 545,
+                      "end": 549,
                       "loc": {
                         "start": {
                           "line": 15,
-                          "column": 19
+                          "column": 18
                         },
                         "end": {
                           "line": 15,
-                          "column": 23
+                          "column": 22
                         },
                         "identifierName": "test"
                       },
@@ -624,16 +624,16 @@
                   "arguments": [
                     {
                       "type": "Identifier",
-                      "start": 551,
-                      "end": 559,
+                      "start": 550,
+                      "end": 558,
                       "loc": {
                         "start": {
                           "line": 15,
-                          "column": 24
+                          "column": 23
                         },
                         "end": {
                           "line": 15,
-                          "column": 32
+                          "column": 31
                         },
                         "identifierName": "username"
                       },
@@ -657,8 +657,8 @@
       },
       {
         "type": "Identifier",
-        "start": 565,
-        "end": 591,
+        "start": 564,
+        "end": 590,
         "loc": {
           "start": {
             "line": 18,
@@ -671,8 +671,8 @@
         },
         "declaration": {
           "type": "Identifier",
-          "start": 580,
-          "end": 590,
+          "start": 579,
+          "end": 589,
           "loc": {
             "start": {
               "line": 18,
@@ -692,8 +692,8 @@
       },
       {
         "type": "ExportDefaultDeclaration",
-        "start": 565,
-        "end": 591,
+        "start": 564,
+        "end": 590,
         "loc": {
           "start": {
             "line": 18,
@@ -707,7 +707,7 @@
         "declaration": {
           "type": "VariableDeclaration",
           "start": 419,
-          "end": 563,
+          "end": 562,
           "loc": {
             "start": {
               "line": 11,
@@ -722,7 +722,7 @@
             {
               "type": "VariableDeclarator",
               "start": 425,
-              "end": 562,
+              "end": 561,
               "loc": {
                 "start": {
                   "line": 11,
@@ -754,7 +754,7 @@
               "init": {
                 "type": "ArrowFunctionExpression",
                 "start": 438,
-                "end": 562,
+                "end": 561,
                 "loc": {
                   "start": {
                     "line": 11,
@@ -808,7 +808,7 @@
                 "body": {
                   "type": "LogicalExpression",
                   "start": 454,
-                  "end": 560,
+                  "end": 559,
                   "loc": {
                     "start": {
                       "line": 12,
@@ -816,7 +816,7 @@
                     },
                     "end": {
                       "line": 15,
-                      "column": 33
+                      "column": 32
                     }
                   },
                   "left": {
@@ -1048,7 +1048,7 @@
                   "right": {
                     "type": "CallExpression",
                     "start": 529,
-                    "end": 560,
+                    "end": 559,
                     "loc": {
                       "start": {
                         "line": 15,
@@ -1056,13 +1056,13 @@
                       },
                       "end": {
                         "line": 15,
-                        "column": 33
+                        "column": 32
                       }
                     },
                     "callee": {
                       "type": "MemberExpression",
                       "start": 529,
-                      "end": 550,
+                      "end": 549,
                       "loc": {
                         "start": {
                           "line": 15,
@@ -1070,13 +1070,13 @@
                         },
                         "end": {
                           "line": 15,
-                          "column": 23
+                          "column": 22
                         }
                       },
                       "object": {
                         "type": "RegExpLiteral",
                         "start": 529,
-                        "end": 545,
+                        "end": 544,
                         "loc": {
                           "start": {
                             "line": 15,
@@ -1084,27 +1084,27 @@
                           },
                           "end": {
                             "line": 15,
-                            "column": 18
+                            "column": 17
                           }
                         },
                         "extra": {
-                          "raw": "/^[\\w-0]{3,16}$/"
+                          "raw": "/^[\\w-]{3,16}$/"
                         },
-                        "pattern": "^[\\w-0]{3,16}$",
+                        "pattern": "^[\\w-]{3,16}$",
                         "flags": ""
                       },
                       "property": {
                         "type": "Identifier",
-                        "start": 546,
-                        "end": 550,
+                        "start": 545,
+                        "end": 549,
                         "loc": {
                           "start": {
                             "line": 15,
-                            "column": 19
+                            "column": 18
                           },
                           "end": {
                             "line": 15,
-                            "column": 23
+                            "column": 22
                           },
                           "identifierName": "test"
                         },
@@ -1115,16 +1115,16 @@
                     "arguments": [
                       {
                         "type": "Identifier",
-                        "start": 551,
-                        "end": 559,
+                        "start": 550,
+                        "end": 558,
                         "loc": {
                           "start": {
                             "line": 15,
-                            "column": 24
+                            "column": 23
                           },
                           "end": {
                             "line": 15,
-                            "column": 32
+                            "column": 31
                           },
                           "identifierName": "username"
                         },
@@ -1145,7 +1145,7 @@
           "leadingComments": [
             {
               "type": "CommentBlock",
-              "value": "*\n * @desc Returns true if username meets the basic requirement of an username (contains letters, numbers, hyphens, and underscores; length is between 3 to 16 characters), otherwise returns false\n * @param {number|string} username - an username\n * @return {boolean} - true or false \n *\n * @example\n * jSmith455, kevin_bacon89, kevin, james-bond007 \n ",
+              "value": "*\n * @desc Returns true if username meets the basic requirement of an username (contains letters, numbers, hyphens, and underscores; length is between 3 to 16 characters), otherwise returns false\n * @param {string} username - an username\n * @return {boolean} - true or false \n *\n * @example\n * 'jSmith455', 'kevin_bacon89', 'kevin', 'james-bond007'\n ",
               "start": 64,
               "end": 418,
               "loc": {
@@ -1169,7 +1169,7 @@
   "comments": [
     {
       "type": "CommentBlock",
-      "value": "*\n * @desc Returns true if username meets the basic requirement of an username (contains letters, numbers, hyphens, and underscores; length is between 3 to 16 characters), otherwise returns false\n * @param {number|string} username - an username\n * @return {boolean} - true or false \n *\n * @example\n * jSmith455, kevin_bacon89, kevin, james-bond007 \n ",
+      "value": "*\n * @desc Returns true if username meets the basic requirement of an username (contains letters, numbers, hyphens, and underscores; length is between 3 to 16 characters), otherwise returns false\n * @param {string} username - an username\n * @return {boolean} - true or false \n *\n * @example\n * 'jSmith455', 'kevin_bacon89', 'kevin', 'james-bond007'\n ",
       "start": 64,
       "end": 418,
       "loc": {
@@ -1474,7 +1474,7 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n * @desc Returns true if username meets the basic requirement of an username (contains letters, numbers, hyphens, and underscores; length is between 3 to 16 characters), otherwise returns false\n * @param {number|string} username - an username\n * @return {boolean} - true or false \n *\n * @example\n * jSmith455, kevin_bacon89, kevin, james-bond007 \n ",
+      "value": "*\n * @desc Returns true if username meets the basic requirement of an username (contains letters, numbers, hyphens, and underscores; length is between 3 to 16 characters), otherwise returns false\n * @param {string} username - an username\n * @return {boolean} - true or false \n *\n * @example\n * 'jSmith455', 'kevin_bacon89', 'kevin', 'james-bond007'\n ",
       "start": 64,
       "end": 418,
       "loc": {
@@ -2101,11 +2101,11 @@
         "updateContext": null
       },
       "value": {
-        "pattern": "^[\\w-0]{3,16}$",
+        "pattern": "^[\\w-]{3,16}$",
         "flags": ""
       },
       "start": 529,
-      "end": 545,
+      "end": 544,
       "loc": {
         "start": {
           "line": 15,
@@ -2113,7 +2113,7 @@
         },
         "end": {
           "line": 15,
-          "column": 18
+          "column": 17
         }
       }
     },
@@ -2130,16 +2130,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 545,
-      "end": 546,
+      "start": 544,
+      "end": 545,
       "loc": {
         "start": {
           "line": 15,
-          "column": 18
+          "column": 17
         },
         "end": {
           "line": 15,
-          "column": 19
+          "column": 18
         }
       }
     },
@@ -2156,16 +2156,16 @@
         "binop": null
       },
       "value": "test",
-      "start": 546,
-      "end": 550,
+      "start": 545,
+      "end": 549,
       "loc": {
         "start": {
           "line": 15,
-          "column": 19
+          "column": 18
         },
         "end": {
           "line": 15,
-          "column": 23
+          "column": 22
         }
       }
     },
@@ -2181,16 +2181,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 550,
-      "end": 551,
+      "start": 549,
+      "end": 550,
       "loc": {
         "start": {
           "line": 15,
-          "column": 23
+          "column": 22
         },
         "end": {
           "line": 15,
-          "column": 24
+          "column": 23
         }
       }
     },
@@ -2207,12 +2207,37 @@
         "binop": null
       },
       "value": "username",
-      "start": 551,
+      "start": 550,
+      "end": 558,
+      "loc": {
+        "start": {
+          "line": 15,
+          "column": 23
+        },
+        "end": {
+          "line": 15,
+          "column": 31
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 558,
       "end": 559,
       "loc": {
         "start": {
           "line": 15,
-          "column": 24
+          "column": 31
         },
         "end": {
           "line": 15,
@@ -2232,33 +2257,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 559,
-      "end": 560,
-      "loc": {
-        "start": {
-          "line": 15,
-          "column": 32
-        },
-        "end": {
-          "line": 15,
-          "column": 33
-        }
-      }
-    },
-    {
-      "type": {
-        "label": ")",
-        "beforeExpr": false,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "start": 561,
-      "end": 562,
+      "start": 560,
+      "end": 561,
       "loc": {
         "start": {
           "line": 16,
@@ -2283,8 +2283,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 562,
-      "end": 563,
+      "start": 561,
+      "end": 562,
       "loc": {
         "start": {
           "line": 16,
@@ -2311,8 +2311,8 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 565,
-      "end": 571,
+      "start": 564,
+      "end": 570,
       "loc": {
         "start": {
           "line": 18,
@@ -2339,8 +2339,8 @@
         "updateContext": null
       },
       "value": "default",
-      "start": 572,
-      "end": 579,
+      "start": 571,
+      "end": 578,
       "loc": {
         "start": {
           "line": 18,
@@ -2365,8 +2365,8 @@
         "binop": null
       },
       "value": "isUsername",
-      "start": 580,
-      "end": 590,
+      "start": 579,
+      "end": 589,
       "loc": {
         "start": {
           "line": 18,
@@ -2391,8 +2391,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 590,
-      "end": 591,
+      "start": 589,
+      "end": 590,
       "loc": {
         "start": {
           "line": 18,
@@ -2417,8 +2417,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 593,
-      "end": 593,
+      "start": 592,
+      "end": 592,
       "loc": {
         "start": {
           "line": 20,

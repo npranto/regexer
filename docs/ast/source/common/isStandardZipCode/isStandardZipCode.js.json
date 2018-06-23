@@ -1,28 +1,28 @@
 {
   "type": "File",
   "start": 0,
-  "end": 453,
+  "end": 486,
   "loc": {
     "start": {
       "line": 1,
       "column": 0
     },
     "end": {
-      "line": 18,
+      "line": 19,
       "column": 0
     }
   },
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 453,
+    "end": 486,
     "loc": {
       "start": {
         "line": 1,
         "column": 0
       },
       "end": {
-        "line": 18,
+        "line": 19,
         "column": 0
       }
     },
@@ -31,7 +31,7 @@
       {
         "type": "ImportDeclaration",
         "start": 0,
-        "end": 52,
+        "end": 62,
         "loc": {
           "start": {
             "line": 1,
@@ -39,7 +39,7 @@
           },
           "end": {
             "line": 1,
-            "column": 52
+            "column": 62
           }
         },
         "specifiers": [
@@ -140,20 +140,69 @@
               },
               "name": "isNull"
             }
+          },
+          {
+            "type": "ImportSpecifier",
+            "start": 30,
+            "end": 38,
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 30
+              },
+              "end": {
+                "line": 1,
+                "column": 38
+              }
+            },
+            "imported": {
+              "type": "Identifier",
+              "start": 30,
+              "end": 38,
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 30
+                },
+                "end": {
+                  "line": 1,
+                  "column": 38
+                },
+                "identifierName": "isString"
+              },
+              "name": "isString"
+            },
+            "local": {
+              "type": "Identifier",
+              "start": 30,
+              "end": 38,
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 30
+                },
+                "end": {
+                  "line": 1,
+                  "column": 38
+                },
+                "identifierName": "isString"
+              },
+              "name": "isString"
+            }
           }
         ],
         "source": {
           "type": "StringLiteral",
-          "start": 36,
-          "end": 51,
+          "start": 46,
+          "end": 61,
           "loc": {
             "start": {
               "line": 1,
-              "column": 36
+              "column": 46
             },
             "end": {
               "line": 1,
-              "column": 51
+              "column": 61
             }
           },
           "extra": {
@@ -166,8 +215,8 @@
           {
             "type": "CommentBlock",
             "value": "*\n * @desc Returns true if zipCode is a valid zip code, otherwise returns false\n * @param {string} zipCode - a zip code\n * @return {boolean} - true or false \n *\n * @example\n * allows following formats => '02166', '12045-6089'\n ",
-            "start": 54,
-            "end": 285,
+            "start": 64,
+            "end": 295,
             "loc": {
               "start": {
                 "line": 3,
@@ -183,37 +232,37 @@
       },
       {
         "type": "Identifier",
-        "start": 286,
-        "end": 417,
+        "start": 296,
+        "end": 450,
         "loc": {
           "start": {
             "line": 11,
             "column": 0
           },
           "end": {
-            "line": 15,
+            "line": 16,
             "column": 2
           }
         },
         "declarations": [
           {
             "type": "VariableDeclarator",
-            "start": 292,
-            "end": 416,
+            "start": 302,
+            "end": 449,
             "loc": {
               "start": {
                 "line": 11,
                 "column": 6
               },
               "end": {
-                "line": 15,
+                "line": 16,
                 "column": 1
               }
             },
             "id": {
               "type": "Identifier",
-              "start": 292,
-              "end": 309,
+              "start": 302,
+              "end": 319,
               "loc": {
                 "start": {
                   "line": 11,
@@ -230,15 +279,15 @@
             },
             "init": {
               "type": "ArrowFunctionExpression",
-              "start": 312,
-              "end": 416,
+              "start": 322,
+              "end": 449,
               "loc": {
                 "start": {
                   "line": 11,
                   "column": 26
                 },
                 "end": {
-                  "line": 15,
+                  "line": 16,
                   "column": 1
                 }
               },
@@ -249,8 +298,8 @@
               "params": [
                 {
                   "type": "Identifier",
-                  "start": 312,
-                  "end": 319,
+                  "start": 322,
+                  "end": 329,
                   "loc": {
                     "start": {
                       "line": 11,
@@ -267,432 +316,22 @@
               ],
               "body": {
                 "type": "LogicalExpression",
-                "start": 327,
-                "end": 414,
+                "start": 337,
+                "end": 447,
                 "loc": {
                   "start": {
                     "line": 12,
                     "column": 2
                   },
                   "end": {
-                    "line": 14,
+                    "line": 15,
                     "column": 40
                   }
                 },
                 "left": {
                   "type": "LogicalExpression",
-                  "start": 327,
-                  "end": 370,
-                  "loc": {
-                    "start": {
-                      "line": 12,
-                      "column": 2
-                    },
-                    "end": {
-                      "line": 13,
-                      "column": 18
-                    }
-                  },
-                  "left": {
-                    "type": "UnaryExpression",
-                    "start": 327,
-                    "end": 348,
-                    "loc": {
-                      "start": {
-                        "line": 12,
-                        "column": 2
-                      },
-                      "end": {
-                        "line": 12,
-                        "column": 23
-                      }
-                    },
-                    "operator": "!",
-                    "prefix": true,
-                    "argument": {
-                      "type": "CallExpression",
-                      "start": 328,
-                      "end": 348,
-                      "loc": {
-                        "start": {
-                          "line": 12,
-                          "column": 3
-                        },
-                        "end": {
-                          "line": 12,
-                          "column": 23
-                        }
-                      },
-                      "callee": {
-                        "type": "Identifier",
-                        "start": 328,
-                        "end": 339,
-                        "loc": {
-                          "start": {
-                            "line": 12,
-                            "column": 3
-                          },
-                          "end": {
-                            "line": 12,
-                            "column": 14
-                          },
-                          "identifierName": "isUndefined"
-                        },
-                        "name": "isUndefined"
-                      },
-                      "arguments": [
-                        {
-                          "type": "Identifier",
-                          "start": 340,
-                          "end": 347,
-                          "loc": {
-                            "start": {
-                              "line": 12,
-                              "column": 15
-                            },
-                            "end": {
-                              "line": 12,
-                              "column": 22
-                            },
-                            "identifierName": "zipCode"
-                          },
-                          "name": "zipCode"
-                        }
-                      ]
-                    },
-                    "extra": {
-                      "parenthesizedArgument": false
-                    }
-                  },
-                  "operator": "&&",
-                  "right": {
-                    "type": "UnaryExpression",
-                    "start": 354,
-                    "end": 370,
-                    "loc": {
-                      "start": {
-                        "line": 13,
-                        "column": 2
-                      },
-                      "end": {
-                        "line": 13,
-                        "column": 18
-                      }
-                    },
-                    "operator": "!",
-                    "prefix": true,
-                    "argument": {
-                      "type": "CallExpression",
-                      "start": 355,
-                      "end": 370,
-                      "loc": {
-                        "start": {
-                          "line": 13,
-                          "column": 3
-                        },
-                        "end": {
-                          "line": 13,
-                          "column": 18
-                        }
-                      },
-                      "callee": {
-                        "type": "Identifier",
-                        "start": 355,
-                        "end": 361,
-                        "loc": {
-                          "start": {
-                            "line": 13,
-                            "column": 3
-                          },
-                          "end": {
-                            "line": 13,
-                            "column": 9
-                          },
-                          "identifierName": "isNull"
-                        },
-                        "name": "isNull"
-                      },
-                      "arguments": [
-                        {
-                          "type": "Identifier",
-                          "start": 362,
-                          "end": 369,
-                          "loc": {
-                            "start": {
-                              "line": 13,
-                              "column": 10
-                            },
-                            "end": {
-                              "line": 13,
-                              "column": 17
-                            },
-                            "identifierName": "zipCode"
-                          },
-                          "name": "zipCode"
-                        }
-                      ]
-                    },
-                    "extra": {
-                      "parenthesizedArgument": false
-                    }
-                  }
-                },
-                "operator": "&&",
-                "right": {
-                  "type": "CallExpression",
-                  "start": 376,
-                  "end": 414,
-                  "loc": {
-                    "start": {
-                      "line": 14,
-                      "column": 2
-                    },
-                    "end": {
-                      "line": 14,
-                      "column": 40
-                    }
-                  },
-                  "callee": {
-                    "type": "MemberExpression",
-                    "start": 376,
-                    "end": 405,
-                    "loc": {
-                      "start": {
-                        "line": 14,
-                        "column": 2
-                      },
-                      "end": {
-                        "line": 14,
-                        "column": 31
-                      }
-                    },
-                    "object": {
-                      "type": "RegExpLiteral",
-                      "start": 376,
-                      "end": 400,
-                      "loc": {
-                        "start": {
-                          "line": 14,
-                          "column": 2
-                        },
-                        "end": {
-                          "line": 14,
-                          "column": 26
-                        }
-                      },
-                      "extra": {
-                        "raw": "/^[0-9]{5}(-[0-9]{4})?$/"
-                      },
-                      "pattern": "^[0-9]{5}(-[0-9]{4})?$",
-                      "flags": ""
-                    },
-                    "property": {
-                      "type": "Identifier",
-                      "start": 401,
-                      "end": 405,
-                      "loc": {
-                        "start": {
-                          "line": 14,
-                          "column": 27
-                        },
-                        "end": {
-                          "line": 14,
-                          "column": 31
-                        },
-                        "identifierName": "test"
-                      },
-                      "name": "test"
-                    },
-                    "computed": false
-                  },
-                  "arguments": [
-                    {
-                      "type": "Identifier",
-                      "start": 406,
-                      "end": 413,
-                      "loc": {
-                        "start": {
-                          "line": 14,
-                          "column": 32
-                        },
-                        "end": {
-                          "line": 14,
-                          "column": 39
-                        },
-                        "identifierName": "zipCode"
-                      },
-                      "name": "zipCode"
-                    }
-                  ]
-                },
-                "extra": {
-                  "parenthesized": true,
-                  "parenStart": 323
-                }
-              }
-            },
-            "leadingComments": null
-          }
-        ],
-        "kind": "const",
-        "leadingComments": [],
-        "name": "_",
-        "trailingComments": []
-      },
-      {
-        "type": "Identifier",
-        "start": 419,
-        "end": 452,
-        "loc": {
-          "start": {
-            "line": 17,
-            "column": 0
-          },
-          "end": {
-            "line": 17,
-            "column": 33
-          }
-        },
-        "declaration": {
-          "type": "Identifier",
-          "start": 434,
-          "end": 451,
-          "loc": {
-            "start": {
-              "line": 17,
-              "column": 15
-            },
-            "end": {
-              "line": 17,
-              "column": 32
-            },
-            "identifierName": "isStandardZipCode"
-          },
-          "name": "isStandardZipCode"
-        },
-        "name": "_",
-        "leadingComments": [],
-        "trailingComments": []
-      },
-      {
-        "type": "ExportDefaultDeclaration",
-        "start": 419,
-        "end": 452,
-        "loc": {
-          "start": {
-            "line": 17,
-            "column": 0
-          },
-          "end": {
-            "line": 17,
-            "column": 33
-          }
-        },
-        "declaration": {
-          "type": "VariableDeclaration",
-          "start": 286,
-          "end": 417,
-          "loc": {
-            "start": {
-              "line": 11,
-              "column": 0
-            },
-            "end": {
-              "line": 15,
-              "column": 2
-            }
-          },
-          "declarations": [
-            {
-              "type": "VariableDeclarator",
-              "start": 292,
-              "end": 416,
-              "loc": {
-                "start": {
-                  "line": 11,
-                  "column": 6
-                },
-                "end": {
-                  "line": 15,
-                  "column": 1
-                }
-              },
-              "id": {
-                "type": "Identifier",
-                "start": 292,
-                "end": 309,
-                "loc": {
-                  "start": {
-                    "line": 11,
-                    "column": 6
-                  },
-                  "end": {
-                    "line": 11,
-                    "column": 23
-                  },
-                  "identifierName": "isStandardZipCode"
-                },
-                "name": "isStandardZipCode",
-                "leadingComments": null
-              },
-              "init": {
-                "type": "ArrowFunctionExpression",
-                "start": 312,
-                "end": 416,
-                "loc": {
-                  "start": {
-                    "line": 11,
-                    "column": 26
-                  },
-                  "end": {
-                    "line": 15,
-                    "column": 1
-                  }
-                },
-                "id": {
-                  "type": "Identifier",
-                  "start": 292,
-                  "end": 309,
-                  "loc": {
-                    "start": {
-                      "line": 11,
-                      "column": 6
-                    },
-                    "end": {
-                      "line": 11,
-                      "column": 23
-                    },
-                    "identifierName": "isStandardZipCode"
-                  },
-                  "name": "isStandardZipCode",
-                  "leadingComments": null
-                },
-                "generator": false,
-                "expression": true,
-                "async": false,
-                "params": [
-                  {
-                    "type": "Identifier",
-                    "start": 312,
-                    "end": 319,
-                    "loc": {
-                      "start": {
-                        "line": 11,
-                        "column": 26
-                      },
-                      "end": {
-                        "line": 11,
-                        "column": 33
-                      },
-                      "identifierName": "zipCode"
-                    },
-                    "name": "zipCode"
-                  }
-                ],
-                "body": {
-                  "type": "LogicalExpression",
-                  "start": 327,
-                  "end": 414,
+                  "start": 337,
+                  "end": 403,
                   "loc": {
                     "start": {
                       "line": 12,
@@ -700,13 +339,13 @@
                     },
                     "end": {
                       "line": 14,
-                      "column": 40
+                      "column": 19
                     }
                   },
                   "left": {
                     "type": "LogicalExpression",
-                    "start": 327,
-                    "end": 370,
+                    "start": 337,
+                    "end": 380,
                     "loc": {
                       "start": {
                         "line": 12,
@@ -719,8 +358,8 @@
                     },
                     "left": {
                       "type": "UnaryExpression",
-                      "start": 327,
-                      "end": 348,
+                      "start": 337,
+                      "end": 358,
                       "loc": {
                         "start": {
                           "line": 12,
@@ -735,8 +374,8 @@
                       "prefix": true,
                       "argument": {
                         "type": "CallExpression",
-                        "start": 328,
-                        "end": 348,
+                        "start": 338,
+                        "end": 358,
                         "loc": {
                           "start": {
                             "line": 12,
@@ -749,8 +388,8 @@
                         },
                         "callee": {
                           "type": "Identifier",
-                          "start": 328,
-                          "end": 339,
+                          "start": 338,
+                          "end": 349,
                           "loc": {
                             "start": {
                               "line": 12,
@@ -767,8 +406,8 @@
                         "arguments": [
                           {
                             "type": "Identifier",
-                            "start": 340,
-                            "end": 347,
+                            "start": 350,
+                            "end": 357,
                             "loc": {
                               "start": {
                                 "line": 12,
@@ -791,8 +430,8 @@
                     "operator": "&&",
                     "right": {
                       "type": "UnaryExpression",
-                      "start": 354,
-                      "end": 370,
+                      "start": 364,
+                      "end": 380,
                       "loc": {
                         "start": {
                           "line": 13,
@@ -807,8 +446,8 @@
                       "prefix": true,
                       "argument": {
                         "type": "CallExpression",
-                        "start": 355,
-                        "end": 370,
+                        "start": 365,
+                        "end": 380,
                         "loc": {
                           "start": {
                             "line": 13,
@@ -821,8 +460,8 @@
                         },
                         "callee": {
                           "type": "Identifier",
-                          "start": 355,
-                          "end": 361,
+                          "start": 365,
+                          "end": 371,
                           "loc": {
                             "start": {
                               "line": 13,
@@ -839,8 +478,8 @@
                         "arguments": [
                           {
                             "type": "Identifier",
-                            "start": 362,
-                            "end": 369,
+                            "start": 372,
+                            "end": 379,
                             "loc": {
                               "start": {
                                 "line": 13,
@@ -864,8 +503,8 @@
                   "operator": "&&",
                   "right": {
                     "type": "CallExpression",
-                    "start": 376,
-                    "end": 414,
+                    "start": 386,
+                    "end": 403,
                     "loc": {
                       "start": {
                         "line": 14,
@@ -873,13 +512,13 @@
                       },
                       "end": {
                         "line": 14,
-                        "column": 40
+                        "column": 19
                       }
                     },
                     "callee": {
-                      "type": "MemberExpression",
-                      "start": 376,
-                      "end": 405,
+                      "type": "Identifier",
+                      "start": 386,
+                      "end": 394,
                       "loc": {
                         "start": {
                           "line": 14,
@@ -887,13 +526,490 @@
                         },
                         "end": {
                           "line": 14,
-                          "column": 31
+                          "column": 10
+                        },
+                        "identifierName": "isString"
+                      },
+                      "name": "isString"
+                    },
+                    "arguments": [
+                      {
+                        "type": "Identifier",
+                        "start": 395,
+                        "end": 402,
+                        "loc": {
+                          "start": {
+                            "line": 14,
+                            "column": 11
+                          },
+                          "end": {
+                            "line": 14,
+                            "column": 18
+                          },
+                          "identifierName": "zipCode"
+                        },
+                        "name": "zipCode"
+                      }
+                    ]
+                  }
+                },
+                "operator": "&&",
+                "right": {
+                  "type": "CallExpression",
+                  "start": 409,
+                  "end": 447,
+                  "loc": {
+                    "start": {
+                      "line": 15,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 15,
+                      "column": 40
+                    }
+                  },
+                  "callee": {
+                    "type": "MemberExpression",
+                    "start": 409,
+                    "end": 438,
+                    "loc": {
+                      "start": {
+                        "line": 15,
+                        "column": 2
+                      },
+                      "end": {
+                        "line": 15,
+                        "column": 31
+                      }
+                    },
+                    "object": {
+                      "type": "RegExpLiteral",
+                      "start": 409,
+                      "end": 433,
+                      "loc": {
+                        "start": {
+                          "line": 15,
+                          "column": 2
+                        },
+                        "end": {
+                          "line": 15,
+                          "column": 26
                         }
                       },
-                      "object": {
-                        "type": "RegExpLiteral",
-                        "start": 376,
-                        "end": 400,
+                      "extra": {
+                        "raw": "/^[0-9]{5}(-[0-9]{4})?$/"
+                      },
+                      "pattern": "^[0-9]{5}(-[0-9]{4})?$",
+                      "flags": ""
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "start": 434,
+                      "end": 438,
+                      "loc": {
+                        "start": {
+                          "line": 15,
+                          "column": 27
+                        },
+                        "end": {
+                          "line": 15,
+                          "column": 31
+                        },
+                        "identifierName": "test"
+                      },
+                      "name": "test"
+                    },
+                    "computed": false
+                  },
+                  "arguments": [
+                    {
+                      "type": "Identifier",
+                      "start": 439,
+                      "end": 446,
+                      "loc": {
+                        "start": {
+                          "line": 15,
+                          "column": 32
+                        },
+                        "end": {
+                          "line": 15,
+                          "column": 39
+                        },
+                        "identifierName": "zipCode"
+                      },
+                      "name": "zipCode"
+                    }
+                  ]
+                },
+                "extra": {
+                  "parenthesized": true,
+                  "parenStart": 333
+                }
+              }
+            },
+            "leadingComments": null
+          }
+        ],
+        "kind": "const",
+        "leadingComments": [],
+        "name": "_",
+        "trailingComments": []
+      },
+      {
+        "type": "Identifier",
+        "start": 452,
+        "end": 485,
+        "loc": {
+          "start": {
+            "line": 18,
+            "column": 0
+          },
+          "end": {
+            "line": 18,
+            "column": 33
+          }
+        },
+        "declaration": {
+          "type": "Identifier",
+          "start": 467,
+          "end": 484,
+          "loc": {
+            "start": {
+              "line": 18,
+              "column": 15
+            },
+            "end": {
+              "line": 18,
+              "column": 32
+            },
+            "identifierName": "isStandardZipCode"
+          },
+          "name": "isStandardZipCode"
+        },
+        "name": "_",
+        "leadingComments": [],
+        "trailingComments": []
+      },
+      {
+        "type": "ExportDefaultDeclaration",
+        "start": 452,
+        "end": 485,
+        "loc": {
+          "start": {
+            "line": 18,
+            "column": 0
+          },
+          "end": {
+            "line": 18,
+            "column": 33
+          }
+        },
+        "declaration": {
+          "type": "VariableDeclaration",
+          "start": 296,
+          "end": 450,
+          "loc": {
+            "start": {
+              "line": 11,
+              "column": 0
+            },
+            "end": {
+              "line": 16,
+              "column": 2
+            }
+          },
+          "declarations": [
+            {
+              "type": "VariableDeclarator",
+              "start": 302,
+              "end": 449,
+              "loc": {
+                "start": {
+                  "line": 11,
+                  "column": 6
+                },
+                "end": {
+                  "line": 16,
+                  "column": 1
+                }
+              },
+              "id": {
+                "type": "Identifier",
+                "start": 302,
+                "end": 319,
+                "loc": {
+                  "start": {
+                    "line": 11,
+                    "column": 6
+                  },
+                  "end": {
+                    "line": 11,
+                    "column": 23
+                  },
+                  "identifierName": "isStandardZipCode"
+                },
+                "name": "isStandardZipCode",
+                "leadingComments": null
+              },
+              "init": {
+                "type": "ArrowFunctionExpression",
+                "start": 322,
+                "end": 449,
+                "loc": {
+                  "start": {
+                    "line": 11,
+                    "column": 26
+                  },
+                  "end": {
+                    "line": 16,
+                    "column": 1
+                  }
+                },
+                "id": {
+                  "type": "Identifier",
+                  "start": 302,
+                  "end": 319,
+                  "loc": {
+                    "start": {
+                      "line": 11,
+                      "column": 6
+                    },
+                    "end": {
+                      "line": 11,
+                      "column": 23
+                    },
+                    "identifierName": "isStandardZipCode"
+                  },
+                  "name": "isStandardZipCode",
+                  "leadingComments": null
+                },
+                "generator": false,
+                "expression": true,
+                "async": false,
+                "params": [
+                  {
+                    "type": "Identifier",
+                    "start": 322,
+                    "end": 329,
+                    "loc": {
+                      "start": {
+                        "line": 11,
+                        "column": 26
+                      },
+                      "end": {
+                        "line": 11,
+                        "column": 33
+                      },
+                      "identifierName": "zipCode"
+                    },
+                    "name": "zipCode"
+                  }
+                ],
+                "body": {
+                  "type": "LogicalExpression",
+                  "start": 337,
+                  "end": 447,
+                  "loc": {
+                    "start": {
+                      "line": 12,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 15,
+                      "column": 40
+                    }
+                  },
+                  "left": {
+                    "type": "LogicalExpression",
+                    "start": 337,
+                    "end": 403,
+                    "loc": {
+                      "start": {
+                        "line": 12,
+                        "column": 2
+                      },
+                      "end": {
+                        "line": 14,
+                        "column": 19
+                      }
+                    },
+                    "left": {
+                      "type": "LogicalExpression",
+                      "start": 337,
+                      "end": 380,
+                      "loc": {
+                        "start": {
+                          "line": 12,
+                          "column": 2
+                        },
+                        "end": {
+                          "line": 13,
+                          "column": 18
+                        }
+                      },
+                      "left": {
+                        "type": "UnaryExpression",
+                        "start": 337,
+                        "end": 358,
+                        "loc": {
+                          "start": {
+                            "line": 12,
+                            "column": 2
+                          },
+                          "end": {
+                            "line": 12,
+                            "column": 23
+                          }
+                        },
+                        "operator": "!",
+                        "prefix": true,
+                        "argument": {
+                          "type": "CallExpression",
+                          "start": 338,
+                          "end": 358,
+                          "loc": {
+                            "start": {
+                              "line": 12,
+                              "column": 3
+                            },
+                            "end": {
+                              "line": 12,
+                              "column": 23
+                            }
+                          },
+                          "callee": {
+                            "type": "Identifier",
+                            "start": 338,
+                            "end": 349,
+                            "loc": {
+                              "start": {
+                                "line": 12,
+                                "column": 3
+                              },
+                              "end": {
+                                "line": 12,
+                                "column": 14
+                              },
+                              "identifierName": "isUndefined"
+                            },
+                            "name": "isUndefined"
+                          },
+                          "arguments": [
+                            {
+                              "type": "Identifier",
+                              "start": 350,
+                              "end": 357,
+                              "loc": {
+                                "start": {
+                                  "line": 12,
+                                  "column": 15
+                                },
+                                "end": {
+                                  "line": 12,
+                                  "column": 22
+                                },
+                                "identifierName": "zipCode"
+                              },
+                              "name": "zipCode"
+                            }
+                          ]
+                        },
+                        "extra": {
+                          "parenthesizedArgument": false
+                        }
+                      },
+                      "operator": "&&",
+                      "right": {
+                        "type": "UnaryExpression",
+                        "start": 364,
+                        "end": 380,
+                        "loc": {
+                          "start": {
+                            "line": 13,
+                            "column": 2
+                          },
+                          "end": {
+                            "line": 13,
+                            "column": 18
+                          }
+                        },
+                        "operator": "!",
+                        "prefix": true,
+                        "argument": {
+                          "type": "CallExpression",
+                          "start": 365,
+                          "end": 380,
+                          "loc": {
+                            "start": {
+                              "line": 13,
+                              "column": 3
+                            },
+                            "end": {
+                              "line": 13,
+                              "column": 18
+                            }
+                          },
+                          "callee": {
+                            "type": "Identifier",
+                            "start": 365,
+                            "end": 371,
+                            "loc": {
+                              "start": {
+                                "line": 13,
+                                "column": 3
+                              },
+                              "end": {
+                                "line": 13,
+                                "column": 9
+                              },
+                              "identifierName": "isNull"
+                            },
+                            "name": "isNull"
+                          },
+                          "arguments": [
+                            {
+                              "type": "Identifier",
+                              "start": 372,
+                              "end": 379,
+                              "loc": {
+                                "start": {
+                                  "line": 13,
+                                  "column": 10
+                                },
+                                "end": {
+                                  "line": 13,
+                                  "column": 17
+                                },
+                                "identifierName": "zipCode"
+                              },
+                              "name": "zipCode"
+                            }
+                          ]
+                        },
+                        "extra": {
+                          "parenthesizedArgument": false
+                        }
+                      }
+                    },
+                    "operator": "&&",
+                    "right": {
+                      "type": "CallExpression",
+                      "start": 386,
+                      "end": 403,
+                      "loc": {
+                        "start": {
+                          "line": 14,
+                          "column": 2
+                        },
+                        "end": {
+                          "line": 14,
+                          "column": 19
+                        }
+                      },
+                      "callee": {
+                        "type": "Identifier",
+                        "start": 386,
+                        "end": 394,
                         "loc": {
                           "start": {
                             "line": 14,
@@ -901,6 +1017,73 @@
                           },
                           "end": {
                             "line": 14,
+                            "column": 10
+                          },
+                          "identifierName": "isString"
+                        },
+                        "name": "isString"
+                      },
+                      "arguments": [
+                        {
+                          "type": "Identifier",
+                          "start": 395,
+                          "end": 402,
+                          "loc": {
+                            "start": {
+                              "line": 14,
+                              "column": 11
+                            },
+                            "end": {
+                              "line": 14,
+                              "column": 18
+                            },
+                            "identifierName": "zipCode"
+                          },
+                          "name": "zipCode"
+                        }
+                      ]
+                    }
+                  },
+                  "operator": "&&",
+                  "right": {
+                    "type": "CallExpression",
+                    "start": 409,
+                    "end": 447,
+                    "loc": {
+                      "start": {
+                        "line": 15,
+                        "column": 2
+                      },
+                      "end": {
+                        "line": 15,
+                        "column": 40
+                      }
+                    },
+                    "callee": {
+                      "type": "MemberExpression",
+                      "start": 409,
+                      "end": 438,
+                      "loc": {
+                        "start": {
+                          "line": 15,
+                          "column": 2
+                        },
+                        "end": {
+                          "line": 15,
+                          "column": 31
+                        }
+                      },
+                      "object": {
+                        "type": "RegExpLiteral",
+                        "start": 409,
+                        "end": 433,
+                        "loc": {
+                          "start": {
+                            "line": 15,
+                            "column": 2
+                          },
+                          "end": {
+                            "line": 15,
                             "column": 26
                           }
                         },
@@ -912,15 +1095,15 @@
                       },
                       "property": {
                         "type": "Identifier",
-                        "start": 401,
-                        "end": 405,
+                        "start": 434,
+                        "end": 438,
                         "loc": {
                           "start": {
-                            "line": 14,
+                            "line": 15,
                             "column": 27
                           },
                           "end": {
-                            "line": 14,
+                            "line": 15,
                             "column": 31
                           },
                           "identifierName": "test"
@@ -932,15 +1115,15 @@
                     "arguments": [
                       {
                         "type": "Identifier",
-                        "start": 406,
-                        "end": 413,
+                        "start": 439,
+                        "end": 446,
                         "loc": {
                           "start": {
-                            "line": 14,
+                            "line": 15,
                             "column": 32
                           },
                           "end": {
-                            "line": 14,
+                            "line": 15,
                             "column": 39
                           },
                           "identifierName": "zipCode"
@@ -951,7 +1134,7 @@
                   },
                   "extra": {
                     "parenthesized": true,
-                    "parenStart": 323
+                    "parenStart": 333
                   }
                 }
               },
@@ -963,8 +1146,8 @@
             {
               "type": "CommentBlock",
               "value": "*\n * @desc Returns true if zipCode is a valid zip code, otherwise returns false\n * @param {string} zipCode - a zip code\n * @return {boolean} - true or false \n *\n * @example\n * allows following formats => '02166', '12045-6089'\n ",
-              "start": 54,
-              "end": 285,
+              "start": 64,
+              "end": 295,
               "loc": {
                 "start": {
                   "line": 3,
@@ -987,8 +1170,8 @@
     {
       "type": "CommentBlock",
       "value": "*\n * @desc Returns true if zipCode is a valid zip code, otherwise returns false\n * @param {string} zipCode - a zip code\n * @return {boolean} - true or false \n *\n * @example\n * allows following formats => '02166', '12045-6089'\n ",
-      "start": 54,
-      "end": 285,
+      "start": 64,
+      "end": 295,
       "loc": {
         "start": {
           "line": 3,
@@ -1135,6 +1318,58 @@
     },
     {
       "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 28,
+      "end": 29,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 28
+        },
+        "end": {
+          "line": 1,
+          "column": 29
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "isString",
+      "start": 30,
+      "end": 38,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 30
+        },
+        "end": {
+          "line": 1,
+          "column": 38
+        }
+      }
+    },
+    {
+      "type": {
         "label": "}",
         "beforeExpr": false,
         "startsExpr": false,
@@ -1145,16 +1380,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 29,
-      "end": 30,
+      "start": 39,
+      "end": 40,
       "loc": {
         "start": {
           "line": 1,
-          "column": 29
+          "column": 39
         },
         "end": {
           "line": 1,
-          "column": 30
+          "column": 40
         }
       }
     },
@@ -1171,16 +1406,16 @@
         "binop": null
       },
       "value": "from",
-      "start": 31,
-      "end": 35,
+      "start": 41,
+      "end": 45,
       "loc": {
         "start": {
           "line": 1,
-          "column": 31
+          "column": 41
         },
         "end": {
           "line": 1,
-          "column": 35
+          "column": 45
         }
       }
     },
@@ -1198,16 +1433,16 @@
         "updateContext": null
       },
       "value": "./../../utils",
-      "start": 36,
-      "end": 51,
+      "start": 46,
+      "end": 61,
       "loc": {
         "start": {
           "line": 1,
-          "column": 36
+          "column": 46
         },
         "end": {
           "line": 1,
-          "column": 51
+          "column": 61
         }
       }
     },
@@ -1224,24 +1459,24 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 51,
-      "end": 52,
+      "start": 61,
+      "end": 62,
       "loc": {
         "start": {
           "line": 1,
-          "column": 51
+          "column": 61
         },
         "end": {
           "line": 1,
-          "column": 52
+          "column": 62
         }
       }
     },
     {
       "type": "CommentBlock",
       "value": "*\n * @desc Returns true if zipCode is a valid zip code, otherwise returns false\n * @param {string} zipCode - a zip code\n * @return {boolean} - true or false \n *\n * @example\n * allows following formats => '02166', '12045-6089'\n ",
-      "start": 54,
-      "end": 285,
+      "start": 64,
+      "end": 295,
       "loc": {
         "start": {
           "line": 3,
@@ -1268,8 +1503,8 @@
         "updateContext": null
       },
       "value": "const",
-      "start": 286,
-      "end": 291,
+      "start": 296,
+      "end": 301,
       "loc": {
         "start": {
           "line": 11,
@@ -1294,8 +1529,8 @@
         "binop": null
       },
       "value": "isStandardZipCode",
-      "start": 292,
-      "end": 309,
+      "start": 302,
+      "end": 319,
       "loc": {
         "start": {
           "line": 11,
@@ -1321,8 +1556,8 @@
         "updateContext": null
       },
       "value": "=",
-      "start": 310,
-      "end": 311,
+      "start": 320,
+      "end": 321,
       "loc": {
         "start": {
           "line": 11,
@@ -1347,8 +1582,8 @@
         "binop": null
       },
       "value": "zipCode",
-      "start": 312,
-      "end": 319,
+      "start": 322,
+      "end": 329,
       "loc": {
         "start": {
           "line": 11,
@@ -1373,8 +1608,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 320,
-      "end": 322,
+      "start": 330,
+      "end": 332,
       "loc": {
         "start": {
           "line": 11,
@@ -1398,8 +1633,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 323,
-      "end": 324,
+      "start": 333,
+      "end": 334,
       "loc": {
         "start": {
           "line": 11,
@@ -1425,8 +1660,8 @@
         "updateContext": null
       },
       "value": "!",
-      "start": 327,
-      "end": 328,
+      "start": 337,
+      "end": 338,
       "loc": {
         "start": {
           "line": 12,
@@ -1451,8 +1686,8 @@
         "binop": null
       },
       "value": "isUndefined",
-      "start": 328,
-      "end": 339,
+      "start": 338,
+      "end": 349,
       "loc": {
         "start": {
           "line": 12,
@@ -1476,8 +1711,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 339,
-      "end": 340,
+      "start": 349,
+      "end": 350,
       "loc": {
         "start": {
           "line": 12,
@@ -1502,8 +1737,8 @@
         "binop": null
       },
       "value": "zipCode",
-      "start": 340,
-      "end": 347,
+      "start": 350,
+      "end": 357,
       "loc": {
         "start": {
           "line": 12,
@@ -1527,8 +1762,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 347,
-      "end": 348,
+      "start": 357,
+      "end": 358,
       "loc": {
         "start": {
           "line": 12,
@@ -1554,8 +1789,8 @@
         "updateContext": null
       },
       "value": "&&",
-      "start": 349,
-      "end": 351,
+      "start": 359,
+      "end": 361,
       "loc": {
         "start": {
           "line": 12,
@@ -1581,8 +1816,8 @@
         "updateContext": null
       },
       "value": "!",
-      "start": 354,
-      "end": 355,
+      "start": 364,
+      "end": 365,
       "loc": {
         "start": {
           "line": 13,
@@ -1607,8 +1842,8 @@
         "binop": null
       },
       "value": "isNull",
-      "start": 355,
-      "end": 361,
+      "start": 365,
+      "end": 371,
       "loc": {
         "start": {
           "line": 13,
@@ -1632,8 +1867,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 361,
-      "end": 362,
+      "start": 371,
+      "end": 372,
       "loc": {
         "start": {
           "line": 13,
@@ -1658,8 +1893,8 @@
         "binop": null
       },
       "value": "zipCode",
-      "start": 362,
-      "end": 369,
+      "start": 372,
+      "end": 379,
       "loc": {
         "start": {
           "line": 13,
@@ -1683,8 +1918,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 369,
-      "end": 370,
+      "start": 379,
+      "end": 380,
       "loc": {
         "start": {
           "line": 13,
@@ -1710,8 +1945,8 @@
         "updateContext": null
       },
       "value": "&&",
-      "start": 371,
-      "end": 373,
+      "start": 381,
+      "end": 383,
       "loc": {
         "start": {
           "line": 13,
@@ -1720,6 +1955,135 @@
         "end": {
           "line": 13,
           "column": 21
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "isString",
+      "start": 386,
+      "end": 394,
+      "loc": {
+        "start": {
+          "line": 14,
+          "column": 2
+        },
+        "end": {
+          "line": 14,
+          "column": 10
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 394,
+      "end": 395,
+      "loc": {
+        "start": {
+          "line": 14,
+          "column": 10
+        },
+        "end": {
+          "line": 14,
+          "column": 11
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "zipCode",
+      "start": 395,
+      "end": 402,
+      "loc": {
+        "start": {
+          "line": 14,
+          "column": 11
+        },
+        "end": {
+          "line": 14,
+          "column": 18
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 402,
+      "end": 403,
+      "loc": {
+        "start": {
+          "line": 14,
+          "column": 18
+        },
+        "end": {
+          "line": 14,
+          "column": 19
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "&&",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": 2,
+        "updateContext": null
+      },
+      "value": "&&",
+      "start": 404,
+      "end": 406,
+      "loc": {
+        "start": {
+          "line": 14,
+          "column": 20
+        },
+        "end": {
+          "line": 14,
+          "column": 22
         }
       }
     },
@@ -1740,15 +2104,15 @@
         "pattern": "^[0-9]{5}(-[0-9]{4})?$",
         "flags": ""
       },
-      "start": 376,
-      "end": 400,
+      "start": 409,
+      "end": 433,
       "loc": {
         "start": {
-          "line": 14,
+          "line": 15,
           "column": 2
         },
         "end": {
-          "line": 14,
+          "line": 15,
           "column": 26
         }
       }
@@ -1766,15 +2130,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 400,
-      "end": 401,
+      "start": 433,
+      "end": 434,
       "loc": {
         "start": {
-          "line": 14,
+          "line": 15,
           "column": 26
         },
         "end": {
-          "line": 14,
+          "line": 15,
           "column": 27
         }
       }
@@ -1792,15 +2156,15 @@
         "binop": null
       },
       "value": "test",
-      "start": 401,
-      "end": 405,
+      "start": 434,
+      "end": 438,
       "loc": {
         "start": {
-          "line": 14,
+          "line": 15,
           "column": 27
         },
         "end": {
-          "line": 14,
+          "line": 15,
           "column": 31
         }
       }
@@ -1817,15 +2181,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 405,
-      "end": 406,
+      "start": 438,
+      "end": 439,
       "loc": {
         "start": {
-          "line": 14,
+          "line": 15,
           "column": 31
         },
         "end": {
-          "line": 14,
+          "line": 15,
           "column": 32
         }
       }
@@ -1843,15 +2207,15 @@
         "binop": null
       },
       "value": "zipCode",
-      "start": 406,
-      "end": 413,
+      "start": 439,
+      "end": 446,
       "loc": {
         "start": {
-          "line": 14,
+          "line": 15,
           "column": 32
         },
         "end": {
-          "line": 14,
+          "line": 15,
           "column": 39
         }
       }
@@ -1868,15 +2232,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 413,
-      "end": 414,
+      "start": 446,
+      "end": 447,
       "loc": {
         "start": {
-          "line": 14,
+          "line": 15,
           "column": 39
         },
         "end": {
-          "line": 14,
+          "line": 15,
           "column": 40
         }
       }
@@ -1893,15 +2257,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 415,
-      "end": 416,
+      "start": 448,
+      "end": 449,
       "loc": {
         "start": {
-          "line": 15,
+          "line": 16,
           "column": 0
         },
         "end": {
-          "line": 15,
+          "line": 16,
           "column": 1
         }
       }
@@ -1919,15 +2283,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 416,
-      "end": 417,
+      "start": 449,
+      "end": 450,
       "loc": {
         "start": {
-          "line": 15,
+          "line": 16,
           "column": 1
         },
         "end": {
-          "line": 15,
+          "line": 16,
           "column": 2
         }
       }
@@ -1947,15 +2311,15 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 419,
-      "end": 425,
+      "start": 452,
+      "end": 458,
       "loc": {
         "start": {
-          "line": 17,
+          "line": 18,
           "column": 0
         },
         "end": {
-          "line": 17,
+          "line": 18,
           "column": 6
         }
       }
@@ -1975,15 +2339,15 @@
         "updateContext": null
       },
       "value": "default",
-      "start": 426,
-      "end": 433,
+      "start": 459,
+      "end": 466,
       "loc": {
         "start": {
-          "line": 17,
+          "line": 18,
           "column": 7
         },
         "end": {
-          "line": 17,
+          "line": 18,
           "column": 14
         }
       }
@@ -2001,15 +2365,15 @@
         "binop": null
       },
       "value": "isStandardZipCode",
-      "start": 434,
-      "end": 451,
+      "start": 467,
+      "end": 484,
       "loc": {
         "start": {
-          "line": 17,
+          "line": 18,
           "column": 15
         },
         "end": {
-          "line": 17,
+          "line": 18,
           "column": 32
         }
       }
@@ -2027,15 +2391,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 451,
-      "end": 452,
+      "start": 484,
+      "end": 485,
       "loc": {
         "start": {
-          "line": 17,
+          "line": 18,
           "column": 32
         },
         "end": {
-          "line": 17,
+          "line": 18,
           "column": 33
         }
       }
@@ -2053,15 +2417,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 453,
-      "end": 453,
+      "start": 486,
+      "end": 486,
       "loc": {
         "start": {
-          "line": 18,
+          "line": 19,
           "column": 0
         },
         "end": {
-          "line": 18,
+          "line": 19,
           "column": 0
         }
       }

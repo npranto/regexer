@@ -95,7 +95,7 @@
   <br>
   <a href="https://github.com/npranto/regexer"><img src="./src/assets/images/R-logo.png" width="300"></a>
   <br>
-  <strong>Regexer</strong>
+    Regexer
   <br>
 </h1>
 
@@ -173,7 +173,7 @@ import { isVowel, isNegativeNumber } from &apos;nsp-regexer&apos;;
 console.log( isVowel(&apos;b&apos;) )  // false
 console.log( isNegativeNumber(-50.67) )  // true</code>
 </code></pre>
-<h2 id="api">API</h2><h3 id="-code--iscreditcard-data-string-number----code-"><code>.isCreditCard(data[string|number])</code></h3><p>Returns <code>true</code> if data is a valid credit card number, otherwise returns <code>false</code></p>
+<h2 id="api">API</h2><h3 id="-code--iscreditcard-creditcardnumber-number-string----code-"><code>.isCreditCard(creditCardNumber[number|string])</code></h3><p>Returns <code>true</code> if creditCardNumber is a valid credit card number, otherwise returns <code>false</code></p>
 <pre><code class="lang-js"><code class="source-code prettyprint">import { isCreditCard } from &apos;nsp-regexer&apos;;
 
 isCreditCard(&apos;345768475867474&apos;)  
@@ -185,7 +185,7 @@ isCreditCard(5465838563658274)
 isCreditCard(&apos;?&apos;)  
 // false</code>
 </code></pre>
-<h3 id="-code--isdayofmonth-data-string-number----code-"><code>.isDayOfMonth(data[string|number])</code></h3><p>Returns <code>true</code> if it is a day of the month (1-31), otherwise returns <code>false</code></p>
+<h3 id="-code--isdayofmonth-day-number-string----code-"><code>.isDayOfMonth(day[number|string])</code></h3><p>Returns <code>true</code> if day is a day of the month (1-31), otherwise returns <code>false</code></p>
 <pre><code class="lang-js"><code class="source-code prettyprint">import { isDayOfMonth } from &apos;nsp-regexer&apos;;
 
 isDayOfMonth(&apos;28&apos;)  
@@ -197,7 +197,337 @@ isDayOfMonth(12)
 isDayOfMonth(55)  
 // false</code>
 </code></pre>
-<p><em>Obviously, more to come soon...</em></p>
+<h3 id="-code--isdayofweekstring-day-number-string----code-"><code>.isDayOfWeekString(day[number|string])</code></h3><p>Returns <code>true</code> if day is name of a week day, otherwise returns <code>false</code></p>
+<pre><code class="lang-js"><code class="source-code prettyprint">import { isDayOfWeekString } from &apos;nsp-regexer&apos;;
+
+isDayOfWeekString(&apos;monday&apos;)  
+// true
+
+isDayOfWeekString(&apos;Tuesday&apos;)  
+// true
+
+isDayOfWeekString(&apos;thURSdAy&apos;)  
+// true
+
+isDayOfWeekString(&apos;FRIDAY&apos;)  
+// true
+
+isDayOfWeekString(&apos;doomsday&apos;)  
+// false</code>
+</code></pre>
+<h3 id="-code--isdecimal-number-number-string----code-"><code>.isDecimal(number[number|string])</code></h3><p>Returns <code>true</code> if number is a decimal number, otherwise returns <code>false</code></p>
+<pre><code class="lang-js"><code class="source-code prettyprint">import { isDecimal } from &apos;nsp-regexer&apos;;
+
+isDecimal(&apos;55.55&apos;)  
+// true
+
+isDecimal(-0.999)  
+// true
+
+isDecimal(50)  
+// false</code>
+</code></pre>
+<h3 id="-code--isemail-email-string----code-"><code>.isEmail(email[string])</code></h3><p>Returns <code>true</code> if email is a valid email address, otherwise returns <code>false</code></p>
+<pre><code class="lang-js"><code class="source-code prettyprint">import { isEmail } from &apos;nsp-regexer&apos;;
+
+isEmail(&apos;jsmith@gmail.com&apos;)  
+// true
+
+isEmail(&apos;sdfsdfsdfsd.com&apos;)  
+// false</code>
+</code></pre>
+<h3 id="-code--ishexvalue-hexvalue-string----code-"><code>.isHexValue(hexValue[string])</code></h3><p>Returns <code>true</code> if hexValue is a valid hex value, otherwise returns <code>false</code></p>
+<pre><code class="lang-js"><code class="source-code prettyprint">import { isHexValue } from &apos;nsp-regexer&apos;;
+
+isHexValue(&apos;#FBB&apos;)  
+// true
+
+isHexValue(&apos;#SHFF56&apos;)  
+// true
+
+isHexValue(&apos;#FF56&apos;)  
+// true
+
+isHexValue(&apos;sbfj&amp;&amp;#&apos;)  
+// false</code>
+</code></pre>
+<h3 id="-code--ishtmltag-htmltag-string----code-"><code>.isHTMLTag(htmlTag[string])</code></h3><p>Returns <code>true</code> if htmlTag is an HTML tag, otherwise returns <code>false</code></p>
+<pre><code class="lang-js"><code class="source-code prettyprint">import { isHTMLTag } from &apos;nsp-regexer&apos;;
+
+isHTMLTag(&apos;&lt;img src=&quot;./img/cat.png&quot; /&gt;&apos;)  
+// true
+
+isHTMLTag(&apos;#SHFF56&apos;)  
+// true
+
+isHTMLTag(&apos;&lt;h1 class=&quot;center&quot;&gt; Hello World! &lt;/h1&gt;&apos;)  
+// true
+
+isHTMLTag(&apos;&lt;body&gt;&apos;)  
+// false</code>
+</code></pre>
+<h3 id="-code--isinteger-integer-number-string----code-"><code>.isInteger(integer[number|string])</code></h3><p>Returns <code>true</code> if integer is an integer, otherwise returns <code>false</code></p>
+<pre><code class="lang-js"><code class="source-code prettyprint">import { isInteger } from &apos;nsp-regexer&apos;;
+
+isInteger(&apos;455&apos;)  
+// true
+
+isInteger(-44)  
+// true
+
+isInteger(&apos;-34.66&apos;)  
+// false</code>
+</code></pre>
+<h3 id="-code--isipaddressv4-ipaddress-string----code-"><code>.isIPAddressV4(ipAddress[string])</code></h3><p>Returns <code>true</code> if ipAddress a valid IP address, otherwise returns <code>false</code></p>
+<pre><code class="lang-js"><code class="source-code prettyprint">import { isIPAddressV4 } from &apos;nsp-regexer&apos;;
+
+isIPAddressV4(&apos;172.16.254.1&apos;)  
+// true
+
+isIPAddressV4(&apos;0.1.0.1&apos;)  
+// true
+
+isIPAddressV4(&apos;54.45.222.345&apos;)  
+// false</code>
+</code></pre>
+<h3 id="-code--isletter-char-string----code-"><code>.isLetter(char[string])</code></h3><p>Returns <code>true</code> if char an alphabetic letter, otherwise returns <code>false</code></p>
+<pre><code class="lang-js"><code class="source-code prettyprint">import { isLetter } from &apos;nsp-regexer&apos;;
+
+isLetter(&apos;v&apos;)  
+// true
+
+isLetter(&apos;P&apos;)  
+// true
+
+isLetter(&apos;?&apos;)  
+// false</code>
+</code></pre>
+<h3 id="-code--islowercase-str-string----code-"><code>.isLowerCase(str[string])</code></h3><p>Returns <code>true</code> if str contains all lower case letters, otherwise returns <code>false</code></p>
+<pre><code class="lang-js"><code class="source-code prettyprint">import { isLowerCase } from &apos;nsp-regexer&apos;;
+
+isLowerCase(&apos;coffee&apos;)  
+// true
+
+isLowerCase(&apos;life is awesome!&apos;)  
+// true
+
+isLowerCase(&apos;I love the new Avengers!&apos;)  
+// false</code>
+</code></pre>
+<h3 id="-code--ismonthofyear-number-number-string----code-"><code>.isMonthOfYear(number[number|string])</code></h3><p>Returns <code>true</code> if number is a month of year (1-12), otherwise returns <code>false</code></p>
+<pre><code class="lang-js"><code class="source-code prettyprint">import { isMonthOfYear } from &apos;nsp-regexer&apos;;
+
+isMonthOfYear(&apos;4&apos;)  
+// true
+
+isMonthOfYear(12)  
+// true
+
+isMonthOfYear(30)  
+// false</code>
+</code></pre>
+<h3 id="-code--ismonthofyearstring-month-string----code-"><code>.isMonthOfYearString(month[string])</code></h3><p>Returns <code>true</code> if month is a name of a month of year, otherwise returns <code>false</code></p>
+<pre><code class="lang-js"><code class="source-code prettyprint">import { isMonthOfYearString } from &apos;nsp-regexer&apos;;
+
+isMonthOfYearString(&apos;march&apos;)  
+// true
+
+isMonthOfYearString(&apos;April&apos;)  
+// true
+
+isMonthOfYearString(&apos;augusta&apos;)  
+// false</code>
+</code></pre>
+<h3 id="-code--isnegativeinteger-integer-number-string----code-"><code>.isNegativeInteger(integer[number|string])</code></h3><p>Returns <code>true</code> if integer is a negative integer, otherwise returns <code>false</code></p>
+<pre><code class="lang-js"><code class="source-code prettyprint">import { isNegativeInteger } from &apos;nsp-regexer&apos;;
+
+isNegativeInteger(&apos;-55&apos;)  
+// true
+
+isNegativeInteger(-6456)  
+// true
+
+isNegativeInteger(&apos;0.33&apos;)  
+// false</code>
+</code></pre>
+<h3 id="-code--isnegativenumber-number-number-string----code-"><code>.isNegativeNumber(number[number|string])</code></h3><p>Returns <code>true</code> if number is a negative number, otherwise returns <code>false</code></p>
+<pre><code class="lang-js"><code class="source-code prettyprint">import { isNegativeNumber } from &apos;nsp-regexer&apos;;
+
+isNegativeNumber(&apos;-0.44&apos;)  
+// true
+
+isNegativeNumber(-55)  
+// true
+
+isNegativeNumber(&apos;-1434.44&apos;)  
+// true
+
+isNegativeNumber(10)  
+// false</code>
+</code></pre>
+<h3 id="-code--isnumber-number-number-string----code-"><code>.isNumber(number[number|string])</code></h3><p>Returns <code>true</code> if number is a number, otherwise returns <code>false</code></p>
+<pre><code class="lang-js"><code class="source-code prettyprint">import { isNumber } from &apos;nsp-regexer&apos;;
+
+isNumber(&apos;-0.44&apos;)  
+// true
+
+isNumber(&apos;-4.6&apos;)  
+// true
+
+isNumber(45)  
+// true
+
+isNumber(&apos;a coffee&apos;)  
+// false</code>
+</code></pre>
+<h3 id="-code--ispassword-password-string----code-"><code>.isPassword(password[string])</code></h3><p>Returns <code>true</code> if password meets simple ruleset of a password (contains letters, numbers, hyphens, and underscores; length is between 6 to 18 characters), otherwise returns <code>false</code></p>
+<pre><code class="lang-js"><code class="source-code prettyprint">import { isPassword } from &apos;nsp-regexer&apos;;
+
+isPassword(&apos;&apos;)  
+// true
+
+isPassword(&apos;i-love-cats_haha&apos;)  
+// true
+
+isPassword(&apos;02140coffee&apos;)  
+// false</code>
+</code></pre>
+<h3 id="-code--ispositiveinteger-integer-number-string----code-"><code>.isPositiveInteger(integer[number|string])</code></h3><p>Returns <code>true</code> if integer is a positive integer, otherwise returns <code>false</code></p>
+<pre><code class="lang-js"><code class="source-code prettyprint">import { isPositiveInteger } from &apos;nsp-regexer&apos;;
+
+isPositiveInteger(&apos;55&apos;)  
+// true
+
+isPositiveInteger(-140)  
+// false</code>
+</code></pre>
+<h3 id="-code--ispositivenumber-number-number-string----code-"><code>.isPositiveNumber(number[number|string])</code></h3><p>Returns <code>true</code> if number is a positive number, otherwise returns <code>false</code></p>
+<pre><code class="lang-js"><code class="source-code prettyprint">import { isPositiveNumber } from &apos;nsp-regexer&apos;;
+
+isPositiveNumber(&apos;4&apos;)  
+// true
+
+isPositiveNumber(&apos;0.5&apos;)  
+// true
+
+isPositiveNumber(74.23)  
+// true
+
+isPositiveNumber(-6)  
+// false</code>
+</code></pre>
+<h3 id="-code--isssn-number-string----code-"><code>.isSSN(number[string])</code></h3><p>Returns <code>true</code> if number is a valid social security number, otherwise returns <code>false</code></p>
+<pre><code class="lang-js"><code class="source-code prettyprint">import { isSSN } from &apos;nsp-regexer&apos;;
+
+isSSN(&apos;031767927&apos;)  
+// true
+
+isSSN(&apos;031-76-7927&apos;)  
+// true
+
+isSSN(&apos;031 76 7927&apos;)  
+// true
+
+isSSN(&apos;545-454-4555&apos;)  
+// false</code>
+</code></pre>
+<h3 id="-code--isstandardzipcode-zipcode-string----code-"><code>.isStandardZipCode(zipCode[string])</code></h3><p>Returns <code>true</code> if zipCode is a valid zip code, otherwise returns <code>false</code></p>
+<pre><code class="lang-js"><code class="source-code prettyprint">import { isStandardZipCode } from &apos;nsp-regexer&apos;;
+
+isStandardZipCode(&apos;02166&apos;)  
+// true
+
+isStandardZipCode(&apos;12045-6089&apos;)  
+// true
+
+isStandardZipCode(&apos;545-454-4555&apos;)  
+// false</code>
+</code></pre>
+<h3 id="-code--isstandardzipcode-str-string----code-"><code>.isStandardZipCode(str[string])</code></h3><p>Returns <code>true</code> if str contains all upper case letters, otherwise returns <code>false</code></p>
+<pre><code class="lang-js"><code class="source-code prettyprint">import { isUpperCase } from &apos;nsp-regexer&apos;;
+
+isUpperCase(&apos;G&apos;)  
+// true
+
+isUpperCase(&apos;OH WOW!&apos;)  
+// true
+
+isUpperCase(&apos;tea is always BETTER!&apos;)  
+// false</code>
+</code></pre>
+<h3 id="-code--isurl-url-string----code-"><code>.isUrl(url[string])</code></h3><p>Returns true if url a valid URL address, otherwise returns <code>false</code></p>
+<pre><code class="lang-js"><code class="source-code prettyprint">import { isUrl } from &apos;nsp-regexer&apos;;
+
+isUrl(&apos;http://3iem.museum:1337/&apos;)  
+// true
+
+isUrl(&apos;plik.co.uk&apos;)  
+// true
+
+isUrl(&apos;tea@g!.org&apos;)  
+// false</code>
+</code></pre>
+<h3 id="-code--isusername-username-string----code-"><code>.isUsername(username[string])</code></h3><p>Returns <code>true</code> if username meets the basic requirement of an username (contains letters, numbers, hyphens, and underscores; length is between 3 to 16 characters), otherwise returns <code>false</code></p>
+<pre><code class="lang-js"><code class="source-code prettyprint">import { isUsername } from &apos;nsp-regexer&apos;;
+
+isUsername(&apos;jSmith455&apos;)  
+// true
+
+isUsername(&apos;james-bond007&apos;)  
+// true
+
+isUsername(&apos;0coffeeEnergy&apos;)  
+// false</code>
+</code></pre>
+<h3 id="-code--isusphonenumber-phonenumber-string----code-"><code>.isUSPhoneNumber(phoneNumber[string])</code></h3><p>Returns <code>true</code> if phoneNumber a valid US phone number, otherwise returns <code>false</code></p>
+<pre><code class="lang-js"><code class="source-code prettyprint">import { isUSPhoneNumber } from &apos;nsp-regexer&apos;;
+
+isUSPhoneNumber(&apos;6174330080&apos;)  
+// true
+
+isUSPhoneNumber(&apos;(617) 433-0080&apos;)  
+// true
+
+isUSPhoneNumber(&apos;454-454-4544-45&apos;)  
+// false</code>
+</code></pre>
+<h3 id="-code--isusstate-state-string----code-"><code>.isUSState(state[string])</code></h3><p>Returns <code>true</code> if state a name of one of US state, otherwise returns <code>false</code></p>
+<pre><code class="lang-js"><code class="source-code prettyprint">import { isUSState } from &apos;nsp-regexer&apos;;
+
+isUSState(&apos;arizona&apos;)  
+// true
+
+isUSState(&apos;Rhode Island&apos;)  
+// true
+
+isUSState(&apos;Boston&apos;)  
+// false</code>
+</code></pre>
+<h3 id="-code--isvowel-char-string----code-"><code>.isVowel(char[string])</code></h3><p>Returns <code>true</code> if char a vowel letter, otherwise returns <code>false</code></p>
+<pre><code class="lang-js"><code class="source-code prettyprint">import { isVowel } from &apos;nsp-regexer&apos;;
+
+isVowel(&apos;a&apos;)  
+// true
+
+isVowel(&apos;U&apos;)  
+// true
+
+isVowel(&apos;v&apos;)  
+// false</code>
+</code></pre>
+<h3 id="-code--isyear-number-number-string----code-"><code>.isYear(number[number|string])</code></h3><p>Returns <code>true</code> if number a year, otherwise returns <code>false</code></p>
+<pre><code class="lang-js"><code class="source-code prettyprint">import { isYear } from &apos;nsp-regexer&apos;;
+
+isYear(&apos;1985&apos;)  
+// true
+
+isYear(&apos;2019&apos;)  
+// true
+
+isYear(&apos;0344&apos;)  
+// false</code>
+</code></pre>
+<p><em>Obviously, more to come soon...!</em></p>
 <h2 id="credits">Credits</h2><p>Source code makes use of several open source packages, a few keys ones include...</p>
 <ul>
 <li><a href="https://babeljs.io/">Babel</a> - To transpile ES6+ syntax to ES5, to run source code in Node and browser</li>

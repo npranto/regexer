@@ -92,7 +92,7 @@
 </nav>
 
 <div class="content" data-ice="content"><h1 data-ice="title">src/common/isStandardZipCode/isStandardZipCode.js</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { isUndefined, isNull } from &apos;./../../utils&apos;;
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { isUndefined, isNull, isString } from &apos;./../../utils&apos;;
 
 /**
  * @desc Returns true if zipCode is a valid zip code, otherwise returns false
@@ -105,6 +105,7 @@
 const isStandardZipCode = zipCode =&gt; (
   !isUndefined(zipCode) &amp;&amp;
   !isNull(zipCode) &amp;&amp;
+  isString(zipCode) &amp;&amp;
   /^[0-9]{5}(-[0-9]{4})?$/.test(zipCode)
 );
 
