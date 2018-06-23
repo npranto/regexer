@@ -2,7 +2,7 @@
   <br>
   <a href="https://github.com/npranto/regexer"><img src="./src/assets/images/R-logo.png" alt="Regexer" width="300"></a>
   <br>
-  **Regexer**
+    Regexer
   <br>
 </h1>
 
