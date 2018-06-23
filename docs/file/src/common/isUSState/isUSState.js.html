@@ -92,7 +92,7 @@
 </nav>
 
 <div class="content" data-ice="content"><h1 data-ice="title">src/common/isUSState/isUSState.js</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { isUndefined, isNull } from &apos;./../../utils&apos;;
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { isUndefined, isNull, isString } from &apos;./../../utils&apos;;
 
 /**
  * @desc Returns true if state a name of one of US state, otherwise returns false
@@ -105,6 +105,7 @@
 const isUSState = state =&gt; (
     !isUndefined(state) &amp;&amp;
     !isNull(state) &amp;&amp;
+    isString(state) &amp;&amp;
     /^(Alabama)|(Alaska)|(Arizona)|(Arkansas)|(California)|(Colorado)|(Connecticut)|(Delaware)|(Florida)|(Georgia)|(Hawaii)|(Idaho)|(Illinois)|(Indiana)|(Iowa)|(Kansas)|(Kentucky)|(Louisiana)|(Maine)|(Maryland)|(Massachusetts)|(Michigan)|(Minnesota)|(Mississippi)|(Missouri)|(Montana)|(Nebraska)|(Nevada)|(New Hampshire)|(New Jersey)|(New Mexico)|(New York)|(North Carolina)|(North Dakota)|(Ohio)|(Oklahoma)|(Oregon)|(Pennsylvania)|(Rhode Island)|(South Carolina)|(South Dakota)|(Tennessee)|(Texas)|(Utah)|(Vermont)|(Virginia)|(Washington)|(West Virginia)|(Wisconsin)|(Wyoming)$/i.test(state)
 );
 

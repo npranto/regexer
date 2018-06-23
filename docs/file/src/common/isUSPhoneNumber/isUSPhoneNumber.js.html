@@ -92,19 +92,20 @@
 </nav>
 
 <div class="content" data-ice="content"><h1 data-ice="title">src/common/isUSPhoneNumber/isUSPhoneNumber.js</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { isUndefined, isNull } from &apos;./../../utils&apos;;
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { isUndefined, isNull, isString } from &apos;./../../utils&apos;;
 
 /**
  * @desc Returns true if phoneNumber a valid US phone number, otherwise returns false
- * @param {number|string} phoneNumber - a phone number
+ * @param {string} phoneNumber - a phone number
  * @return {boolean} - true or false 
  *
  * @example
- * allows following formats =&gt; 6174330080, &apos;(617) 433-0080&apos;, &apos;(617)433-0080&apos;, &apos;617.433.0080&apos;, &apos;617-433-0080&apos;, &apos;617 433 0080&apos;, 
+ * allows following formats =&gt; &apos;6174330080&apos;, &apos;(617) 433-0080&apos;, &apos;(617)433-0080&apos;, &apos;617.433.0080&apos;, &apos;617-433-0080&apos;, &apos;617 433 0080&apos;
  */
 const isUSPhoneNumber = phoneNumber =&gt; (
   !isUndefined(phoneNumber) &amp;&amp;
   !isNull(phoneNumber) &amp;&amp;
+  isString(phoneNumber) &amp;&amp;
   /^(\()?(\d{3})(\))?[\s.-]?(\d{3})[\s.-]?(\d{4})$/.test(phoneNumber)
 );
 

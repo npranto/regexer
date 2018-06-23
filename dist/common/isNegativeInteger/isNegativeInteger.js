@@ -12,7 +12,7 @@ var _utils = require('./../../utils');
  * @return {boolean} - true or false 
  *
  * @example
- * '-55', 6456, 0.33
+ * '-55', -6456
  */
 var isNegativeInteger = function isNegativeInteger(integer) {
   return !(0, _utils.isUndefined)(integer) && !(0, _utils.isNull)(integer) && /^(-\d+)|0$/.test(integer);

@@ -95,19 +95,19 @@
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { isNull, isUndefined, isString } from &apos;./../../utils&apos;;
 
 /**
- * @desc Returns true if str an alphabetic letter, otherwise returns false
- * @param {string} str - a letter
+ * @desc Returns true if char an alphabetic letter, otherwise returns false
+ * @param {string} char - an alphabetic character
  * @return {boolean} - true or false 
  *
  * @example
  * &apos;a&apos;, &apos;V&apos;
  */
-const isLetter = str =&gt; (
-  !isUndefined(str) &amp;&amp;
-  !isNull(str) &amp;&amp;
-  isString(str) &amp;&amp;
-  (str.length === 1) &amp;&amp;
-  /^[A-Za-z]$/.test(str)
+const isLetter = char =&gt; (
+  !isUndefined(char) &amp;&amp;
+  !isNull(char) &amp;&amp;
+  isString(char) &amp;&amp;
+  (char.length === 1) &amp;&amp;
+  /^[A-Za-z]$/.test(char)
 );
 
 export default isLetter;

@@ -96,17 +96,17 @@
 
 /**
  * @desc Returns true if username meets the basic requirement of an username (contains letters, numbers, hyphens, and underscores; length is between 3 to 16 characters), otherwise returns false
- * @param {number|string} username - an username
+ * @param {string} username - an username
  * @return {boolean} - true or false 
  *
  * @example
- * jSmith455, kevin_bacon89, kevin, james-bond007 
+ * &apos;jSmith455&apos;, &apos;kevin_bacon89&apos;, &apos;kevin&apos;, &apos;james-bond007&apos;
  */
 const isUsername = username =&gt; (
   !isUndefined(username) &amp;&amp;
   !isNull(username) &amp;&amp;
   isString(username) &amp;&amp;
-  /^[\w-0]{3,16}$/.test(username)
+  /^[\w-]{3,16}$/.test(username)
 );
 
 export default isUsername;

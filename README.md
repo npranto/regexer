@@ -94,9 +94,9 @@ console.log( isNegativeNumber(-50.67) )  // true
 
 ## API
 
-### `.isCreditCard(data[string|number])`
+### `.isCreditCard(creditCardNumber[number|string])`
 
-Returns `true` if data is a valid credit card number, otherwise returns `false`
+Returns `true` if creditCardNumber is a valid credit card number, otherwise returns `false`
 
 ```js
 import { isCreditCard } from 'nsp-regexer';
@@ -111,9 +111,9 @@ isCreditCard('?')
 // false
 ```
 
-### `.isDayOfMonth(data[string|number])`
+### `.isDayOfMonth(day[number|string])`
 
-Returns `true` if it is a day of the month (1-31), otherwise returns `false`
+Returns `true` if day is a day of the month (1-31), otherwise returns `false`
 
 ```js
 import { isDayOfMonth } from 'nsp-regexer';
@@ -128,7 +128,467 @@ isDayOfMonth(55)
 // false
 ```
 
-*Obviously, more to come soon...*
+### `.isDayOfWeekString(day[number|string])`
+
+Returns `true` if day is name of a week day, otherwise returns `false`
+
+```js
+import { isDayOfWeekString } from 'nsp-regexer';
+
+isDayOfWeekString('monday')  
+// true
+
+isDayOfWeekString('Tuesday')  
+// true
+
+isDayOfWeekString('thURSdAy')  
+// true
+
+isDayOfWeekString('FRIDAY')  
+// true
+
+isDayOfWeekString('doomsday')  
+// false
+```
+
+### `.isDecimal(number[number|string])`
+
+Returns `true` if number is a decimal number, otherwise returns `false`
+
+```js
+import { isDecimal } from 'nsp-regexer';
+
+isDecimal('55.55')  
+// true
+
+isDecimal(-0.999)  
+// true
+
+isDecimal(50)  
+// false
+```
+
+### `.isEmail(email[string])`
+
+Returns `true` if email is a valid email address, otherwise returns `false`
+
+```js
+import { isEmail } from 'nsp-regexer';
+
+isEmail('jsmith@gmail.com')  
+// true
+
+isEmail('sdfsdfsdfsd.com')  
+// false
+```
+
+### `.isHexValue(hexValue[string])`
+
+Returns `true` if hexValue is a valid hex value, otherwise returns `false`
+
+```js
+import { isHexValue } from 'nsp-regexer';
+
+isHexValue('#FBB')  
+// true
+
+isHexValue('#SHFF56')  
+// true
+
+isHexValue('#FF56')  
+// true
+
+isHexValue('sbfj&&#')  
+// false
+```
+
+### `.isHTMLTag(htmlTag[string])`
+
+Returns `true` if htmlTag is an HTML tag, otherwise returns `false`
+
+```js
+import { isHTMLTag } from 'nsp-regexer';
+
+isHTMLTag('<img src="./img/cat.png" />')  
+// true
+
+isHTMLTag('#SHFF56')  
+// true
+
+isHTMLTag('<h1 class="center"> Hello World! </h1>')  
+// true
+
+isHTMLTag('<body>')  
+// false
+```
+
+### `.isInteger(integer[number|string])`
+
+Returns `true` if integer is an integer, otherwise returns `false`
+
+```js
+import { isInteger } from 'nsp-regexer';
+
+isInteger('455')  
+// true
+
+isInteger(-44)  
+// true
+
+isInteger('-34.66')  
+// false
+```
+
+### `.isIPAddressV4(ipAddress[string])`
+
+Returns `true` if ipAddress a valid IP address, otherwise returns `false`
+
+```js
+import { isIPAddressV4 } from 'nsp-regexer';
+
+isIPAddressV4('172.16.254.1')  
+// true
+
+isIPAddressV4('0.1.0.1')  
+// true
+
+isIPAddressV4('54.45.222.345')  
+// false
+```
+
+### `.isLetter(char[string])`
+
+Returns `true` if char an alphabetic letter, otherwise returns `false`
+
+```js
+import { isLetter } from 'nsp-regexer';
+
+isLetter('v')  
+// true
+
+isLetter('P')  
+// true
+
+isLetter('?')  
+// false
+```
+
+### `.isLowerCase(str[string])`
+
+Returns `true` if str contains all lower case letters, otherwise returns `false`
+
+```js
+import { isLowerCase } from 'nsp-regexer';
+
+isLowerCase('coffee')  
+// true
+
+isLowerCase('life is awesome!')  
+// true
+
+isLowerCase('I love the new Avengers!')  
+// false
+```
+
+### `.isMonthOfYear(number[number|string])`
+
+Returns `true` if number is a month of year (1-12), otherwise returns `false`
+
+```js
+import { isMonthOfYear } from 'nsp-regexer';
+
+isMonthOfYear('4')  
+// true
+
+isMonthOfYear(12)  
+// true
+
+isMonthOfYear(30)  
+// false
+```
+
+### `.isMonthOfYearString(month[string])`
+
+Returns `true` if month is a name of a month of year, otherwise returns `false`
+
+```js
+import { isMonthOfYearString } from 'nsp-regexer';
+
+isMonthOfYearString('march')  
+// true
+
+isMonthOfYearString('April')  
+// true
+
+isMonthOfYearString('augusta')  
+// false
+```
+
+### `.isNegativeInteger(integer[number|string])`
+
+Returns `true` if integer is a negative integer, otherwise returns `false`
+
+```js
+import { isNegativeInteger } from 'nsp-regexer';
+
+isNegativeInteger('-55')  
+// true
+
+isNegativeInteger(-6456)  
+// true
+
+isNegativeInteger('0.33')  
+// false
+```
+
+### `.isNegativeNumber(number[number|string])`
+
+Returns `true` if number is a negative number, otherwise returns `false`
+
+```js
+import { isNegativeNumber } from 'nsp-regexer';
+
+isNegativeNumber('-0.44')  
+// true
+
+isNegativeNumber(-55)  
+// true
+
+isNegativeNumber('-1434.44')  
+// true
+
+isNegativeNumber(10)  
+// false
+```
+
+### `.isNumber(number[number|string])`
+
+Returns `true` if number is a number, otherwise returns `false`
+
+```js
+import { isNumber } from 'nsp-regexer';
+
+isNumber('-0.44')  
+// true
+
+isNumber('-4.6')  
+// true
+
+isNumber(45)  
+// true
+
+isNumber('a coffee')  
+// false
+```
+
+### `.isPassword(password[string])`
+
+Returns `true` if password meets simple ruleset of a password (contains letters, numbers, hyphens, and underscores; length is between 6 to 18 characters), otherwise returns `false`
+
+```js
+import { isPassword } from 'nsp-regexer';
+
+isPassword('')  
+// true
+
+isPassword('i-love-cats_haha')  
+// true
+
+isPassword('02140coffee')  
+// false
+```
+
+### `.isPositiveInteger(integer[number|string])`
+
+Returns `true` if integer is a positive integer, otherwise returns `false`
+
+```js
+import { isPositiveInteger } from 'nsp-regexer';
+
+isPositiveInteger('55')  
+// true
+
+isPositiveInteger(-140)  
+// false
+```
+
+### `.isPositiveNumber(number[number|string])`
+
+Returns `true` if number is a positive number, otherwise returns `false`
+
+```js
+import { isPositiveNumber } from 'nsp-regexer';
+
+isPositiveNumber('4')  
+// true
+
+isPositiveNumber('0.5')  
+// true
+
+isPositiveNumber(74.23)  
+// true
+
+isPositiveNumber(-6)  
+// false
+```
+
+### `.isSSN(number[string])`
+
+Returns `true` if number is a valid social security number, otherwise returns `false`
+
+```js
+import { isSSN } from 'nsp-regexer';
+
+isSSN('031767927')  
+// true
+
+isSSN('031-76-7927')  
+// true
+
+isSSN('031 76 7927')  
+// true
+
+isSSN('545-454-4555')  
+// false
+```
+
+### `.isStandardZipCode(zipCode[string])`
+
+Returns `true` if zipCode is a valid zip code, otherwise returns `false`
+
+```js
+import { isStandardZipCode } from 'nsp-regexer';
+
+isStandardZipCode('02166')  
+// true
+
+isStandardZipCode('12045-6089')  
+// true
+
+isStandardZipCode('545-454-4555')  
+// false
+```
+
+### `.isStandardZipCode(str[string])`
+
+Returns `true` if str contains all upper case letters, otherwise returns `false`
+
+```js
+import { isUpperCase } from 'nsp-regexer';
+
+isUpperCase('G')  
+// true
+
+isUpperCase('OH WOW!')  
+// true
+
+isUpperCase('tea is always BETTER!')  
+// false
+```
+
+### `.isUrl(url[string])`
+
+Returns true if url a valid URL address, otherwise returns `false`
+
+```js
+import { isUrl } from 'nsp-regexer';
+
+isUrl('http://3iem.museum:1337/')  
+// true
+
+isUrl('plik.co.uk')  
+// true
+
+isUrl('tea@g!.org')  
+// false
+```
+
+### `.isUsername(username[string])`
+
+Returns `true` if username meets the basic requirement of an username (contains letters, numbers, hyphens, and underscores; length is between 3 to 16 characters), otherwise returns `false`
+
+```js
+import { isUsername } from 'nsp-regexer';
+
+isUsername('jSmith455')  
+// true
+
+isUsername('james-bond007')  
+// true
+
+isUsername('0coffeeEnergy')  
+// false
+```
+
+### `.isUSPhoneNumber(phoneNumber[string])`
+
+Returns `true` if phoneNumber a valid US phone number, otherwise returns `false`
+
+```js
+import { isUSPhoneNumber } from 'nsp-regexer';
+
+isUSPhoneNumber('6174330080')  
+// true
+
+isUSPhoneNumber('(617) 433-0080')  
+// true
+
+isUSPhoneNumber('454-454-4544-45')  
+// false
+```
+
+### `.isUSState(state[string])`
+
+Returns `true` if state a name of one of US state, otherwise returns `false`
+
+```js
+import { isUSState } from 'nsp-regexer';
+
+isUSState('arizona')  
+// true
+
+isUSState('Rhode Island')  
+// true
+
+isUSState('Boston')  
+// false
+```
+
+### `.isVowel(char[string])`
+
+Returns `true` if char a vowel letter, otherwise returns `false`
+
+```js
+import { isVowel } from 'nsp-regexer';
+
+isVowel('a')  
+// true
+
+isVowel('U')  
+// true
+
+isVowel('v')  
+// false
+```
+
+### `.isYear(number[number|string])`
+
+Returns `true` if number a year, otherwise returns `false`
+
+```js
+import { isYear } from 'nsp-regexer';
+
+isYear('1985')  
+// true
+
+isYear('2019')  
+// true
+
+isYear('0344')  
+// false
+```
+
+*Obviously, more to come soon...!*
 
 ## Credits
 

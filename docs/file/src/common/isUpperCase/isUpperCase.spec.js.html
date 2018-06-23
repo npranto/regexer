@@ -112,6 +112,9 @@ describe(&apos;Regexer&apos;, () =&gt; {
     it(&apos;should return true when passed \&apos;k\&apos;&apos;, () =&gt; {
       assert.equal(isUpperCase(&apos;k&apos;), false);
     });
+    it(&apos;should return true when passed \&apos;OH WOW!\&apos;&apos;, () =&gt; {
+      assert.equal(isUpperCase(&apos;OH WOW!&apos;), true);
+    });
     it(&apos;should return true when passed \&apos;A\&apos;&apos;, () =&gt; {
       assert.equal(isUpperCase(&apos;A&apos;), true);
     });

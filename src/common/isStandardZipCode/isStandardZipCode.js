@@ -1,4 +1,4 @@
-import { isUndefined, isNull } from './../../utils';
+import { isUndefined, isNull, isString } from './../../utils';
 
 /**
  * @desc Returns true if zipCode is a valid zip code, otherwise returns false
@@ -11,6 +11,7 @@ import { isUndefined, isNull } from './../../utils';
 const isStandardZipCode = zipCode => (
   !isUndefined(zipCode) &&
   !isNull(zipCode) &&
+  isString(zipCode) &&
   /^[0-9]{5}(-[0-9]{4})?$/.test(zipCode)
 );
 

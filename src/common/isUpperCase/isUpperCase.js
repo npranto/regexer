@@ -6,7 +6,7 @@ import { isNull, isUndefined, isString } from './../../utils';
  * @return {boolean} - true or false 
  *
  * @example
- * 'A', 'B', 'Y'
+ * 'A', 'B', 'OH WOW!'
  */
 const isUpperCase = str => (
   !isUndefined(str) &&

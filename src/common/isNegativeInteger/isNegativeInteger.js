@@ -6,7 +6,7 @@ import { isNull, isUndefined } from './../../utils';
  * @return {boolean} - true or false 
  *
  * @example
- * '-55', 6456, 0.33
+ * '-55', -6456
  */
 const isNegativeInteger = integer => (
   !isUndefined(integer) &&

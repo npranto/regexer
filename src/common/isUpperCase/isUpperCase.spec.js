@@ -18,6 +18,9 @@ describe('Regexer', () => {
     it('should return true when passed \'k\'', () => {
       assert.equal(isUpperCase('k'), false);
     });
+    it('should return true when passed \'OH WOW!\'', () => {
+      assert.equal(isUpperCase('OH WOW!'), true);
+    });
     it('should return true when passed \'A\'', () => {
       assert.equal(isUpperCase('A'), true);
     });

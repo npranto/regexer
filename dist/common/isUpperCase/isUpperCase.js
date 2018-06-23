@@ -12,7 +12,7 @@ var _utils = require('./../../utils');
  * @return {boolean} - true or false 
  *
  * @example
- * 'A', 'B', 'Y'
+ * 'A', 'B', 'OH WOW!'
  */
 var isUpperCase = function isUpperCase(str) {
   return !(0, _utils.isUndefined)(str) && !(0, _utils.isNull)(str) && (0, _utils.isString)(str) && /^[^a-z]+$/.test(str);
