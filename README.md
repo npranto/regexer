@@ -50,7 +50,8 @@ A simple and convenient library of functions that leverage regular expressions w
     * [`.isUrl()`](#isurlurlstring)
     * [`.isUsername()`](#isusernameusernamestring)
     * [`.isUSPhoneNumber()`](#isusphonenumberphonenumberstring)
-    * [`.isUSState()`](#isusstatestatestring)    
+    * [`.isUSState()`](#isusstatestatestring)   
+		* [`.isUSStateAbbr()`](#isusstateabbrstateabbrstring)    
     * [`.isVowel()`](#isvowelcharstring)
 		* [`.isWhiteSpace()`](#iswhitespacecharstring)
     * [`.isYear()`](#isyearnumbernumberstring)
@@ -552,6 +553,22 @@ isUSState('Rhode Island')
 // true
 
 isUSState('Boston')  
+// false
+```
+### `.isUSStateAbbr(stateAbbr[string])`
+
+Returns true if stateAbbr an abbreviation of a name of one of US state, otherwise returns false
+
+```js
+import { isUSStateAbbr } from 'nsp-regexer';
+
+isUSStateAbbr('MA')  
+// true
+
+isUSStateAbbr('ca')  
+// true
+
+isUSStateAbbr('bos')  
 // false
 ```
 

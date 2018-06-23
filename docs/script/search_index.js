@@ -276,6 +276,12 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "nsp-regexer/src/common/isusstateabbr/isusstateabbr.js~isusstateabbr",
+    "function/index.html#static-function-isUSStateAbbr",
+    "<span>isUSStateAbbr</span> <span class=\"search-result-import-path\">nsp-regexer/src/common/isUSStateAbbr/isUSStateAbbr.js</span>",
+    "function"
+  ],
+  [
     "nsp-regexer/src/utils/index.js~isundefined",
     "variable/index.html#static-variable-isUndefined",
     "<span>isUndefined</span> <span class=\"search-result-import-path\">nsp-regexer/src/utils/index.js</span>",
@@ -909,6 +915,18 @@ window.esdocSearchIndex = [
     "src/common/isusstate/isusstate.spec.js",
     "file/src/common/isUSState/isUSState.spec.js.html",
     "src/common/isUSState/isUSState.spec.js",
+    "file"
+  ],
+  [
+    "src/common/isusstateabbr/isusstateabbr.js",
+    "file/src/common/isUSStateAbbr/isUSStateAbbr.js.html",
+    "src/common/isUSStateAbbr/isUSStateAbbr.js",
+    "file"
+  ],
+  [
+    "src/common/isusstateabbr/isusstateabbr.spec.js",
+    "file/src/common/isUSStateAbbr/isUSStateAbbr.spec.js.html",
+    "src/common/isUSStateAbbr/isUSStateAbbr.spec.js",
     "file"
   ],
   [
