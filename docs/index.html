@@ -77,6 +77,7 @@
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#common-isusphonenumber">common/isUSPhoneNumber</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isUSPhoneNumber">isUSPhoneNumber</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#common-isusstate">common/isUSState</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isUSState">isUSState</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#common-isusstateabbr">common/isUSStateAbbr</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isUSStateAbbr">isUSStateAbbr</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#common-isuuid">common/isUUID</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isUUID">isUUID</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#common-isuppercase">common/isUpperCase</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isUpperCase">isUpperCase</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#common-isurl">common/isUrl</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isUrl">isUrl</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#common-isusername">common/isUsername</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isUsername">isUsername</a></span></span></li>
@@ -145,14 +146,10 @@ A simple and convenient library of functions that leverage regular expressions w
 <li><a href="#isurlurlstring"><code>.isUrl()</code></a></li>
 <li><a href="#isusernameusernamestring"><code>.isUsername()</code></a></li>
 <li><a href="#isusphonenumberphonenumberstring"><code>.isUSPhoneNumber()</code></a></li>
-<li><a href="#isusstatestatestring"><code>.isUSState()</code></a>   <ul>
+<li><a href="#isusstatestatestring"><code>.isUSState()</code></a>   </li>
 <li><a href="#isusstateabbrstateabbrstring"><code>.isUSStateAbbr()</code></a>    </li>
-</ul>
-</li>
-<li><a href="#isvowelcharstring"><code>.isVowel()</code></a><ul>
+<li><a href="#isvowelcharstring"><code>.isVowel()</code></a></li>
 <li><a href="#iswhitespacecharstring"><code>.isWhiteSpace()</code></a></li>
-</ul>
-</li>
 <li><a href="#isyearnumbernumberstring"><code>.isYear()</code></a></li>
 </ul>
 </li>
@@ -521,6 +518,18 @@ isUSStateAbbr(&apos;ca&apos;)
 // true
 
 isUSStateAbbr(&apos;bos&apos;)  
+// false</code>
+</code></pre>
+<h3 id="-code--isuuid-uuid-string----code-"><code>.isUUID(uuid[string])</code></h3><p>Returns true if uuid is a valid universally unique identifier (UUID) v1 or v4, otherwise returns false</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">import { isUUID } from &apos;nsp-regexer&apos;;
+
+isUUID(&apos;aafac29e-5816-4904-87ef-3eb5151e0c9a&apos;)  
+// true
+
+isUUID(&apos;66b9bb40-78d1-11e8-adc0-fa7ae01bbebc&apos;)  
+// true
+
+isUUID(&apos;sbfj&amp;&amp;#&apos;)  
 // false</code>
 </code></pre>
 <h3 id="-code--isvowel-char-string----code-"><code>.isVowel(char[string])</code></h3><p>Returns <code>true</code> if char a vowel letter, otherwise returns <code>false</code></p>

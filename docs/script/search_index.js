@@ -282,6 +282,12 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "nsp-regexer/src/common/isuuid/isuuid.js~isuuid",
+    "function/index.html#static-function-isUUID",
+    "<span>isUUID</span> <span class=\"search-result-import-path\">nsp-regexer/src/common/isUUID/isUUID.js</span>",
+    "function"
+  ],
+  [
     "nsp-regexer/src/utils/index.js~isundefined",
     "variable/index.html#static-variable-isUndefined",
     "<span>isUndefined</span> <span class=\"search-result-import-path\">nsp-regexer/src/utils/index.js</span>",
@@ -927,6 +933,18 @@ window.esdocSearchIndex = [
     "src/common/isusstateabbr/isusstateabbr.spec.js",
     "file/src/common/isUSStateAbbr/isUSStateAbbr.spec.js.html",
     "src/common/isUSStateAbbr/isUSStateAbbr.spec.js",
+    "file"
+  ],
+  [
+    "src/common/isuuid/isuuid.js",
+    "file/src/common/isUUID/isUUID.js.html",
+    "src/common/isUUID/isUUID.js",
+    "file"
+  ],
+  [
+    "src/common/isuuid/isuuid.spec.js",
+    "file/src/common/isUUID/isUUID.spec.js.html",
+    "src/common/isUUID/isUUID.spec.js",
     "file"
   ],
   [
