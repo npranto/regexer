@@ -1,7 +1,7 @@
 {
-  "coverage": "55%",
-  "expectCount": 60,
-  "actualCount": 33,
+  "coverage": "55.73%",
+  "expectCount": 61,
+  "actualCount": 34,
   "files": {
     "src/common/isCreditCard/isCreditCardNumber.js": {
       "expectCount": 1,
@@ -119,6 +119,11 @@
       "undocumentLines": []
     },
     "src/common/isUSStateAbbr/isUSStateAbbr.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/common/isUUID/isUUID.js": {
       "expectCount": 1,
       "actualCount": 1,
       "undocumentLines": []

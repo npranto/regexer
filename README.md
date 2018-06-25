@@ -572,6 +572,23 @@ isUSStateAbbr('bos')
 // false
 ```
 
+### `.isUUID(uuid[string])`
+
+Returns true if uuid is a valid universally unique identifier (UUID) v1 or v4, otherwise returns false
+
+```js
+import { isUUID } from 'nsp-regexer';
+
+isUUID('aafac29e-5816-4904-87ef-3eb5151e0c9a')  
+// true
+
+isUUID('66b9bb40-78d1-11e8-adc0-fa7ae01bbebc')  
+// true
+
+isUUID('sbfj&&#')  
+// false
+```
+
 ### `.isVowel(char[string])`
 
 Returns `true` if char a vowel letter, otherwise returns `false`
