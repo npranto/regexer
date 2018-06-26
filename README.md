@@ -25,6 +25,7 @@ A simple and convenient library of functions that leverage regular expressions w
 * [Installation](#installation)
 * [Usage](#usage)
 * [API](#api)
+    * [`.is12HourTime()`](#is12hourtimestring)
     * [`.isCreditCard()`](#iscreditcardcreditcardnumbernumberstring)
     * [`.isDayOfMonth()`](#isdayofmonthdaynumberstring)
     * [`.isDayOfWeekString()`](#isdayofweekstringdaynumberstring)
@@ -51,7 +52,8 @@ A simple and convenient library of functions that leverage regular expressions w
     * [`.isUsername()`](#isusernameusernamestring)
     * [`.isUSPhoneNumber()`](#isusphonenumberphonenumberstring)
     * [`.isUSState()`](#isusstatestatestring)   
-    * [`.isUSStateAbbr()`](#isusstateabbrstateabbrstring)    
+    * [`.isUSStateAbbr()`](#isusstateabbrstateabbrstring)   
+    * [`.isUUID()`](#isuuidstring)     
     * [`.isVowel()`](#isvowelcharstring)
     * [`.isWhiteSpace()`](#iswhitespacecharstring)
     * [`.isYear()`](#isyearnumbernumberstring)
@@ -95,6 +97,23 @@ console.log( isNegativeNumber(-50.67) )  // true
 ```
 
 ## API
+
+### `.is12HourTime(time[string])`
+
+Returns true if time is in a valid 12-hour format (09:59), otherwise returns false
+
+```js
+import { is12HourTime } from 'nsp-regexer';
+
+is12HourTime('1:00')  
+// true
+
+is12HourTime(09:07')  
+// true
+
+is12HourTime('15:40')  
+// false
+```
 
 ### `.isCreditCard(creditCardNumber[number|string])`
 

@@ -1,5 +1,11 @@
 window.esdocSearchIndex = [
   [
+    "nsp-regexer/src/common/is12hourtime/is12hourtime.js~is12hourtime",
+    "function/index.html#static-function-is12HourTime",
+    "<span>is12HourTime</span> <span class=\"search-result-import-path\">nsp-regexer/src/common/is12HourTime/is12HourTime.js</span>",
+    "function"
+  ],
+  [
     "nsp-regexer/src/common/iscreditcard/iscreditcardnumber.js~iscreditcardnumber",
     "function/index.html#static-function-isCreditCardNumber",
     "<span>isCreditCardNumber</span> <span class=\"search-result-import-path\">nsp-regexer/src/common/isCreditCard/isCreditCardNumber.js</span>",
@@ -646,6 +652,18 @@ window.esdocSearchIndex = [
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
     "src/.external-ecmascript.js~undefined",
     "external"
+  ],
+  [
+    "src/common/is12hourtime/is12hourtime.js",
+    "file/src/common/is12HourTime/is12HourTime.js.html",
+    "src/common/is12HourTime/is12HourTime.js",
+    "file"
+  ],
+  [
+    "src/common/is12hourtime/is12hourtime.spec.js",
+    "file/src/common/is12HourTime/is12HourTime.spec.js.html",
+    "src/common/is12HourTime/is12HourTime.spec.js",
+    "file"
   ],
   [
     "src/common/iscreditcard/iscreditcardnumber.js",
