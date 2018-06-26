@@ -1,8 +1,13 @@
 {
-  "coverage": "55.73%",
-  "expectCount": 61,
-  "actualCount": 34,
+  "coverage": "56.45%",
+  "expectCount": 62,
+  "actualCount": 35,
   "files": {
+    "src/common/is12HourTime/is12HourTime.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
     "src/common/isCreditCard/isCreditCardNumber.js": {
       "expectCount": 1,
       "actualCount": 1,
