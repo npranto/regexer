@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <base data-ice="baseUrl" href="../../../../">
-  <title data-ice="title">src/common/isMonthOfYear/isMonthOfYear.js | nsp-regexer</title>
+  <title data-ice="title">src/common/is24HourTime/is24HourTime.js | nsp-regexer</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -96,24 +96,25 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><h1 data-ice="title">src/common/isMonthOfYear/isMonthOfYear.js</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { isUndefined, isNull } from &apos;./../../utils&apos;;
+<div class="content" data-ice="content"><h1 data-ice="title">src/common/is24HourTime/is24HourTime.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { isUndefined, isNull, isString } from &apos;./../../utils&apos;;
 
 /**
- * @desc Returns true if number is a month of year (1-12), otherwise returns false
- * @param {number} number - a month 
- * @return {boolean} - true or false 
+ * @desc Returns true if time is in a valid 24-hour format (17:45), otherwise returns false
+ * @param {string} time - a time 
+ * @return {boolean} - true or false
  *
  * @example
- * &apos;4&apos;, 12
+ * allows following formats =&gt; &apos;1:11&apos;, &apos;02:00&apos;, &apos;13:56&apos;, &apos;23:07&apos;
  */
-const isMonthOfYear = number =&gt; (
-  !isUndefined(number) &amp;&amp;
-  !isNull(number) &amp;&amp;
-  /^((1[0-2])|(0?[1-9]{1}))$/.test(number)
+const is24HourTime = time =&gt; (
+  !isUndefined(time) &amp;&amp;
+  !isNull(time) &amp;&amp;
+  isString(time) &amp;&amp;
+  /^(([1-9]{1})|(1\d)|(2[0-3])|(0[1-9]{1})):[0-5]{1}\d{1}$/.test(time)
 );
 
-export default isMonthOfYear;
+export default is24HourTime;
 </code></pre>
 
 </div>

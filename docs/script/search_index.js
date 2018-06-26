@@ -6,6 +6,12 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "nsp-regexer/src/common/is24hourtime/is24hourtime.js~is24hourtime",
+    "function/index.html#static-function-is24HourTime",
+    "<span>is24HourTime</span> <span class=\"search-result-import-path\">nsp-regexer/src/common/is24HourTime/is24HourTime.js</span>",
+    "function"
+  ],
+  [
     "nsp-regexer/src/common/iscreditcard/iscreditcardnumber.js~iscreditcardnumber",
     "function/index.html#static-function-isCreditCardNumber",
     "<span>isCreditCardNumber</span> <span class=\"search-result-import-path\">nsp-regexer/src/common/isCreditCard/isCreditCardNumber.js</span>",
@@ -663,6 +669,18 @@ window.esdocSearchIndex = [
     "src/common/is12hourtime/is12hourtime.spec.js",
     "file/src/common/is12HourTime/is12HourTime.spec.js.html",
     "src/common/is12HourTime/is12HourTime.spec.js",
+    "file"
+  ],
+  [
+    "src/common/is24hourtime/is24hourtime.js",
+    "file/src/common/is24HourTime/is24HourTime.js.html",
+    "src/common/is24HourTime/is24HourTime.js",
+    "file"
+  ],
+  [
+    "src/common/is24hourtime/is24hourtime.spec.js",
+    "file/src/common/is24HourTime/is24HourTime.spec.js.html",
+    "src/common/is24HourTime/is24HourTime.spec.js",
     "file"
   ],
   [
