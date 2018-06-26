@@ -54,6 +54,7 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-isVowel">isVowel</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-isYear">isYear</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#common-is12hourtime">common/is12HourTime</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-is12HourTime">is12HourTime</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#common-is24hourtime">common/is24HourTime</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-is24HourTime">is24HourTime</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#common-iscreditcard">common/isCreditCard</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isCreditCardNumber">isCreditCardNumber</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#common-isdayofmonth">common/isDayOfMonth</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isDayOfMonth">isDayOfMonth</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#common-isdayofweekstring">common/isDayOfWeekString</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isDayOfWeekString">isDayOfWeekString</a></span></span></li>
@@ -123,6 +124,7 @@ A simple and convenient library of functions that leverage regular expressions w
 <li><p><a href="#api">API</a></p>
 <ul>
 <li><a href="#is12hourtimestring"><code>.is12HourTime()</code></a></li>
+<li><a href="#is24hourtimestring"><code>.is24HourTime()</code></a></li>
 <li><a href="#iscreditcardcreditcardnumbernumberstring"><code>.isCreditCard()</code></a></li>
 <li><a href="#isdayofmonthdaynumberstring"><code>.isDayOfMonth()</code></a></li>
 <li><a href="#isdayofweekstringdaynumberstring"><code>.isDayOfWeekString()</code></a></li>
@@ -191,6 +193,18 @@ is12HourTime(09:07&apos;)
 // true
 
 is12HourTime(&apos;15:40&apos;)  
+// false</code>
+</code></pre>
+<h3 id="-code--is24hourtime-time-string----code-"><code>.is24HourTime(time[string])</code></h3><p>Returns true if time is in a valid 24-hour format (17:45), otherwise returns false</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">import { is24HourTime } from &apos;nsp-regexer&apos;;
+
+is24HourTime(&apos;3:55&apos;)  
+// true
+
+is24HourTime(22:33&apos;)  
+// true
+
+is24HourTime(&apos;40:40&apos;)  
 // false</code>
 </code></pre>
 <h3 id="-code--iscreditcard-creditcardnumber-number-string----code-"><code>.isCreditCard(creditCardNumber[number|string])</code></h3><p>Returns <code>true</code> if creditCardNumber is a valid credit card number, otherwise returns <code>false</code></p>

@@ -1,9 +1,14 @@
 {
-  "coverage": "56.45%",
-  "expectCount": 62,
-  "actualCount": 35,
+  "coverage": "57.14%",
+  "expectCount": 63,
+  "actualCount": 36,
   "files": {
     "src/common/is12HourTime/is12HourTime.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/common/is24HourTime/is24HourTime.js": {
       "expectCount": 1,
       "actualCount": 1,
       "undocumentLines": []

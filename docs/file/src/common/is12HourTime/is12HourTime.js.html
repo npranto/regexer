@@ -54,6 +54,7 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-isVowel">isVowel</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-isYear">isYear</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#common-is12hourtime">common/is12HourTime</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-is12HourTime">is12HourTime</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#common-is24hourtime">common/is24HourTime</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-is24HourTime">is24HourTime</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#common-iscreditcard">common/isCreditCard</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isCreditCardNumber">isCreditCardNumber</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#common-isdayofmonth">common/isDayOfMonth</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isDayOfMonth">isDayOfMonth</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#common-isdayofweekstring">common/isDayOfWeekString</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isDayOfWeekString">isDayOfWeekString</a></span></span></li>
@@ -100,7 +101,7 @@
 
 /**
  * @desc Returns true if time is in a valid 12-hour format (09:59), otherwise returns false
- * @param {string} uuid - a UUID 
+ * @param {string} time - a time 
  * @return {boolean} - true or false
  *
  * @example
@@ -110,7 +111,7 @@ const is12HourTime = time =&gt; (
   !isUndefined(time) &amp;&amp;
   !isNull(time) &amp;&amp;
   isString(time) &amp;&amp;
-  /^(([1-9]{1})|(10)|(11)|(12)|(0[1-9]{1})):[0-5]{1}\d{1}$/.test(time)
+  /^(([1-9]{1})|(1[0-2])|(0[1-9]{1})):[0-5]{1}\d{1}$/.test(time)
 );
 
 export default is12HourTime;

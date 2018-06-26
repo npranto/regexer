@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <base data-ice="baseUrl" href="../../../../">
-  <title data-ice="title">src/common/isMonthOfYear/isMonthOfYear.js | nsp-regexer</title>
+  <title data-ice="title">src/common/is24HourTime/is24HourTime.spec.js | nsp-regexer</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -96,24 +96,86 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><h1 data-ice="title">src/common/isMonthOfYear/isMonthOfYear.js</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { isUndefined, isNull } from &apos;./../../utils&apos;;
+<div class="content" data-ice="content"><h1 data-ice="title">src/common/is24HourTime/is24HourTime.spec.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { assert } from &apos;chai&apos;;
+import is24HourTime from &apos;./is24HourTime&apos;;
 
-/**
- * @desc Returns true if number is a month of year (1-12), otherwise returns false
- * @param {number} number - a month 
- * @return {boolean} - true or false 
- *
- * @example
- * &apos;4&apos;, 12
- */
-const isMonthOfYear = number =&gt; (
-  !isUndefined(number) &amp;&amp;
-  !isNull(number) &amp;&amp;
-  /^((1[0-2])|(0?[1-9]{1}))$/.test(number)
-);
+describe(&apos;Regexer&apos;, () =&gt; {
+  describe(&apos;is24HourTime()&apos;, () =&gt; {
+    it(&apos;should return true when passed \&apos;1:00\&apos;&apos;, () =&gt; {
+      assert.equal(is24HourTime(&apos;1:00&apos;), true);
+    });
+    it(&apos;should return true when passed \&apos;03:56\&apos;&apos;, () =&gt; {
+      assert.equal(is24HourTime(&apos;03:56&apos;), true);
+    });
+    it(&apos;should return true when passed \&apos;12:07\&apos;&apos;, () =&gt; {
+      assert.equal(is24HourTime(&apos;12:07&apos;), true);
+    });
+    it(&apos;should return true when passed \&apos;02:20\&apos;&apos;, () =&gt; {
+      assert.equal(is24HourTime(&apos;02:20&apos;), true);
+    });
+    it(&apos;should return true when passed \&apos;2:40\&apos;&apos;, () =&gt; {
+      assert.equal(is24HourTime(&apos;2:40&apos;), true);
+    });
+    it(&apos;should return true when passed \&apos;8:09\&apos;&apos;, () =&gt; {
+      assert.equal(is24HourTime(&apos;8:09&apos;), true);
+    });
+    it(&apos;should return true when passed \&apos;2:09\&apos;&apos;, () =&gt; {
+      assert.equal(is24HourTime(&apos;2:09&apos;), true);
+    });
+    it(&apos;should return true when passed \&apos;10:37\&apos;&apos;, () =&gt; {
+      assert.equal(is24HourTime(&apos;10:37&apos;), true);
+    });
+    it(&apos;should return true when passed \&apos;11:20\&apos;&apos;, () =&gt; {
+      assert.equal(is24HourTime(&apos;11:20&apos;), true);
+    });
+    it(&apos;should return true when passed \&apos;13:22\&apos;&apos;, () =&gt; {
+      assert.equal(is24HourTime(&apos;13:22&apos;), true);
+    });
+    it(&apos;should return true when passed \&apos;15:00\&apos;&apos;, () =&gt; {
+      assert.equal(is24HourTime(&apos;15:00&apos;), true);
+    });
+    it(&apos;should return true when passed \&apos;17:50\&apos;&apos;, () =&gt; {
+      assert.equal(is24HourTime(&apos;17:50&apos;), true);
+    });
+    it(&apos;should return false when passed \&apos;-01:22\&apos;&apos;, () =&gt; {
+      assert.equal(is24HourTime(&apos;-01:22&apos;), false);
+    });
+    it(&apos;should return true when passed \&apos;21:44\&apos;&apos;, () =&gt; {
+      assert.equal(is24HourTime(&apos;21:44&apos;), true);
+    });
+    it(&apos;should return false when passed \&apos;30:33\&apos;&apos;, () =&gt; {
+      assert.equal(is24HourTime(&apos;30:33&apos;), false);
+    });
+    it(&apos;should return false when passed \&apos;24:10\&apos;&apos;, () =&gt; {
+      assert.equal(is24HourTime(&apos;24:10&apos;), false);
+    });
+    it(&apos;should return false when passed \&apos;7:60\&apos;&apos;, () =&gt; {
+      assert.equal(is24HourTime(&apos;7:60&apos;), false);
+    });
+    it(&apos;should return false when passed \&apos;00:01\&apos;&apos;, () =&gt; {
+      assert.equal(is24HourTime(&apos;00:01&apos;), false);
+    });
+    it(&apos;should return false when passed \&apos;sbfj&amp;&amp;#\&apos;&apos;, () =&gt; {
+      assert.equal(is24HourTime(&apos;sbfj&amp;&amp;#&apos;), false);
+    });
+    it(&apos;should return false when passed \&apos;\&apos;&apos;, () =&gt; {
+      assert.equal(is24HourTime(&apos;&apos;), false);
+    });
+    it(&apos;should return false when passed \&apos;NS-pranto_236\&apos;&apos;, () =&gt; {
+      assert.equal(is24HourTime(&apos;NS-pranto_236&apos;), false);
+    });
+    it(&apos;should return false when passed null&apos;, () =&gt; {
+      assert.equal(is24HourTime(null), false);
+    });
+    it(&apos;should return false when passed nothing&apos;, () =&gt; {
+      assert.equal(is24HourTime(), false);
+    });
+  });
+});
 
-export default isMonthOfYear;
+
+
 </code></pre>
 
 </div>

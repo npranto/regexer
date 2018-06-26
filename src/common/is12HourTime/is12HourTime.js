@@ -2,7 +2,7 @@ import { isUndefined, isNull, isString } from './../../utils';
 
 /**
  * @desc Returns true if time is in a valid 12-hour format (09:59), otherwise returns false
- * @param {string} uuid - a UUID 
+ * @param {string} time - a time 
  * @return {boolean} - true or false
  *
  * @example
@@ -12,7 +12,7 @@ const is12HourTime = time => (
   !isUndefined(time) &&
   !isNull(time) &&
   isString(time) &&
-  /^(([1-9]{1})|(10)|(11)|(12)|(0[1-9]{1})):[0-5]{1}\d{1}$/.test(time)
+  /^(([1-9]{1})|(1[0-2])|(0[1-9]{1})):[0-5]{1}\d{1}$/.test(time)
 );
 
 export default is12HourTime;

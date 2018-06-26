@@ -26,6 +26,7 @@ A simple and convenient library of functions that leverage regular expressions w
 * [Usage](#usage)
 * [API](#api)
     * [`.is12HourTime()`](#is12hourtimestring)
+    * [`.is24HourTime()`](#is24hourtimestring)
     * [`.isCreditCard()`](#iscreditcardcreditcardnumbernumberstring)
     * [`.isDayOfMonth()`](#isdayofmonthdaynumberstring)
     * [`.isDayOfWeekString()`](#isdayofweekstringdaynumberstring)
@@ -112,6 +113,23 @@ is12HourTime(09:07')
 // true
 
 is12HourTime('15:40')  
+// false
+```
+
+### `.is24HourTime(time[string])`
+
+Returns true if time is in a valid 24-hour format (17:45), otherwise returns false
+
+```js
+import { is24HourTime } from 'nsp-regexer';
+
+is24HourTime('3:55')  
+// true
+
+is24HourTime(22:33')  
+// true
+
+is24HourTime('40:40')  
 // false
 ```
 
