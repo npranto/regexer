@@ -1,7 +1,7 @@
 {
-  "coverage": "57.14%",
-  "expectCount": 63,
-  "actualCount": 36,
+  "coverage": "57.81%",
+  "expectCount": 64,
+  "actualCount": 37,
   "files": {
     "src/common/is12HourTime/is12HourTime.js": {
       "expectCount": 1,
@@ -114,6 +114,11 @@
       "undocumentLines": []
     },
     "src/common/isStandardZipCode/isStandardZipCode.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/common/isStrongPassword/isStrongPassword.js": {
       "expectCount": 1,
       "actualCount": 1,
       "undocumentLines": []
