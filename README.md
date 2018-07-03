@@ -48,7 +48,7 @@ A simple and convenient library of functions that leverage regular expressions w
     * [`.isPositiveNumber()`](#ispositivenumbernumbernumberstring)
     * [`.isSSN()`](#isssnnumberstring)
     * [`.isStandardZipCode()`](#isstandardzipcodezipcodestring)
-		* [`.isStrongPassword()`](#isstrongpasswordpasswordstring)
+    * [`.isStrongPassword()`](#isstrongpasswordpasswordstring)
     * [`.isUpperCase()`](#isuppercasestrstring)
     * [`.isUrl()`](#isurlurlstring)
     * [`.isUsername()`](#isusernameusernamestring)
