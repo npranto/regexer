@@ -76,6 +76,7 @@
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#common-ispositivenumber">common/isPositiveNumber</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isPositiveNumber">isPositiveNumber</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#common-isssn">common/isSSN</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isSSN">isSSN</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#common-isstandardzipcode">common/isStandardZipCode</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isStandardZipCode">isStandardZipCode</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#common-isstrongpassword">common/isStrongPassword</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isStrongPassword">isStrongPassword</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#common-isusphonenumber">common/isUSPhoneNumber</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isUSPhoneNumber">isUSPhoneNumber</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#common-isusstate">common/isUSState</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isUSState">isUSState</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#common-isusstateabbr">common/isUSStateAbbr</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isUSStateAbbr">isUSStateAbbr</a></span></span></li>
@@ -145,7 +146,10 @@ A simple and convenient library of functions that leverage regular expressions w
 <li><a href="#ispositiveintegerintegernumberstring"><code>.isPositiveInteger()</code></a></li>
 <li><a href="#ispositivenumbernumbernumberstring"><code>.isPositiveNumber()</code></a></li>
 <li><a href="#isssnnumberstring"><code>.isSSN()</code></a></li>
-<li><a href="#isstandardzipcodezipcodestring"><code>.isStandardZipCode()</code></a></li>
+<li><a href="#isstandardzipcodezipcodestring"><code>.isStandardZipCode()</code></a><ul>
+<li><a href="#isstrongpasswordpasswordstring"><code>.isStrongPassword()</code></a></li>
+</ul>
+</li>
 <li><a href="#isuppercasestrstring"><code>.isUpperCase()</code></a></li>
 <li><a href="#isurlurlstring"><code>.isUrl()</code></a></li>
 <li><a href="#isusernameusernamestring"><code>.isUsername()</code></a></li>
@@ -476,6 +480,18 @@ isStandardZipCode(&apos;12045-6089&apos;)
 
 isStandardZipCode(&apos;545-454-4555&apos;)  
 // false</code>
+</code></pre>
+<h3 id="-code--isstrongpassword-password-string----code-"><code>.isStrongPassword(password[string])</code></h3><p>Returns true if password is what generally considered as a strong password (must contain at least 1 lowercase alphabetical character, 1 uppercase alphabetical character, 1 numeric character, one special character [!, @, #, $, %, ^. &amp;, or *], and at least eight characters long), otherwise returns false</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">import { isStrongPassword } from &apos;nsp-regexer&apos;;
+
+isStrongPassword(&apos;Ajohnson184&amp;&apos;)  
+// true
+
+isStrongPassword(&apos;kevinWilliamsBaller23^&apos;)  
+// true
+
+isStrongPassword(&apos;kevinIsAwesome7&apos;)  
+// false - missing a special character</code>
 </code></pre>
 <h3 id="-code--isuppercase-str-string----code-"><code>.isUpperCase(str[string])</code></h3><p>Returns <code>true</code> if str contains all upper case letters, otherwise returns <code>false</code></p>
 <pre><code class="lang-js"><code class="source-code prettyprint">import { isUpperCase } from &apos;nsp-regexer&apos;;

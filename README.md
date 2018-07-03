@@ -48,6 +48,7 @@ A simple and convenient library of functions that leverage regular expressions w
     * [`.isPositiveNumber()`](#ispositivenumbernumbernumberstring)
     * [`.isSSN()`](#isssnnumberstring)
     * [`.isStandardZipCode()`](#isstandardzipcodezipcodestring)
+		* [`.isStrongPassword()`](#isstrongpasswordpasswordstring)
     * [`.isUpperCase()`](#isuppercasestrstring)
     * [`.isUrl()`](#isurlurlstring)
     * [`.isUsername()`](#isusernameusernamestring)
@@ -506,6 +507,23 @@ isStandardZipCode('12045-6089')
 
 isStandardZipCode('545-454-4555')  
 // false
+```
+
+### `.isStrongPassword(password[string])`
+
+Returns true if password is what generally considered as a strong password (must contain at least 1 lowercase alphabetical character, 1 uppercase alphabetical character, 1 numeric character, one special character [!, @, #, $, %, ^. &, or *], and at least eight characters long), otherwise returns false
+
+```js
+import { isStrongPassword } from 'nsp-regexer';
+
+isStrongPassword('Ajohnson184&')  
+// true
+
+isStrongPassword('kevinWilliamsBaller23^')  
+// true
+
+isStrongPassword('kevinIsAwesome7')  
+// false - missing a special character
 ```
 
 ### `.isUpperCase(str[string])`

@@ -270,6 +270,12 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "nsp-regexer/src/common/isstrongpassword/isstrongpassword.js~isstrongpassword",
+    "function/index.html#static-function-isStrongPassword",
+    "<span>isStrongPassword</span> <span class=\"search-result-import-path\">nsp-regexer/src/common/isStrongPassword/isStrongPassword.js</span>",
+    "function"
+  ],
+  [
     "nsp-regexer/src/common/isusphonenumber/isusphonenumber.js~isusphonenumber",
     "function/index.html#static-function-isUSPhoneNumber",
     "<span>isUSPhoneNumber</span> <span class=\"search-result-import-path\">nsp-regexer/src/common/isUSPhoneNumber/isUSPhoneNumber.js</span>",
@@ -933,6 +939,18 @@ window.esdocSearchIndex = [
     "src/common/isstandardzipcode/isstandardzipcode.spec.js",
     "file/src/common/isStandardZipCode/isStandardZipCode.spec.js.html",
     "src/common/isStandardZipCode/isStandardZipCode.spec.js",
+    "file"
+  ],
+  [
+    "src/common/isstrongpassword/isstrongpassword.js",
+    "file/src/common/isStrongPassword/isStrongPassword.js.html",
+    "src/common/isStrongPassword/isStrongPassword.js",
+    "file"
+  ],
+  [
+    "src/common/isstrongpassword/isstrongpassword.spec.js",
+    "file/src/common/isStrongPassword/isStrongPassword.spec.js.html",
+    "src/common/isStrongPassword/isStrongPassword.spec.js",
     "file"
   ],
   [
