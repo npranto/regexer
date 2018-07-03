@@ -48,6 +48,12 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "nsp-regexer/src/common/isdomainname/isdomainname.js~isdomainname",
+    "function/index.html#static-function-isDomainName",
+    "<span>isDomainName</span> <span class=\"search-result-import-path\">nsp-regexer/src/common/isDomainName/isDomainName.js</span>",
+    "function"
+  ],
+  [
     "nsp-regexer/src/common/isemail/isemail.js~isemail",
     "function/index.html#static-function-isEmail",
     "<span>isEmail</span> <span class=\"search-result-import-path\">nsp-regexer/src/common/isEmail/isEmail.js</span>",
@@ -735,6 +741,18 @@ window.esdocSearchIndex = [
     "src/common/isdecimal/isdecimal.spec.js",
     "file/src/common/isDecimal/isDecimal.spec.js.html",
     "src/common/isDecimal/isDecimal.spec.js",
+    "file"
+  ],
+  [
+    "src/common/isdomainname/isdomainname.js",
+    "file/src/common/isDomainName/isDomainName.js.html",
+    "src/common/isDomainName/isDomainName.js",
+    "file"
+  ],
+  [
+    "src/common/isdomainname/isdomainname.spec.js",
+    "file/src/common/isDomainName/isDomainName.spec.js.html",
+    "src/common/isDomainName/isDomainName.spec.js",
     "file"
   ],
   [

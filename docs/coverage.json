@@ -1,7 +1,7 @@
 {
-  "coverage": "57.81%",
-  "expectCount": 64,
-  "actualCount": 37,
+  "coverage": "58.46%",
+  "expectCount": 65,
+  "actualCount": 38,
   "files": {
     "src/common/is12HourTime/is12HourTime.js": {
       "expectCount": 1,
@@ -29,6 +29,11 @@
       "undocumentLines": []
     },
     "src/common/isDecimal/isDecimal.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/common/isDomainName/isDomainName.js": {
       "expectCount": 1,
       "actualCount": 1,
       "undocumentLines": []

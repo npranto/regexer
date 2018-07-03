@@ -936,6 +936,67 @@
   {
     "__docId__": 66,
     "kind": "file",
+    "name": "src/common/isDomainName/isDomainName.js",
+    "content": "import { isUndefined, isNull, isString } from './../../utils';\n\n/**\n * @desc Returns true if domainName is a valid domain name, otherwise returns false\n * @param {string} domainName - a domain name\n * @return {boolean} - true or false\n *\n * @example\n * 'www.google.com', 'coffee.io'\n */\nconst isDomainName = domainName => (\n  !isUndefined(domainName) &&\n  !isNull(domainName) &&\n  /^([a-zA-Z0-9]+(-[a-zA-Z0-9]+)*\\.)+[a-z]{2,}$/.test(domainName)\n);\n\nexport default isDomainName;\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isDomainName/isDomainName.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 67,
+    "kind": "function",
+    "name": "isDomainName",
+    "memberof": "src/common/isDomainName/isDomainName.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/common/isDomainName/isDomainName.js~isDomainName",
+    "access": "public",
+    "export": true,
+    "importPath": "nsp-regexer/src/common/isDomainName/isDomainName.js",
+    "importStyle": "isDomainName",
+    "description": "Returns true if domainName is a valid domain name, otherwise returns false",
+    "examples": [
+      "'www.google.com', 'coffee.io'"
+    ],
+    "lineNumber": 11,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "domainName",
+        "description": "a domain name"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "boolean"
+      ],
+      "spread": false,
+      "description": "true or false"
+    }
+  },
+  {
+    "__docId__": 68,
+    "kind": "file",
+    "name": "src/common/isDomainName/isDomainName.spec.js",
+    "content": "import { assert } from 'chai';\nimport isDomainName from './isDomainName';\n\ndescribe('Regexer', () => {\n  describe('isDomainName()', () => {\n    it('should return true when passes \\'google.com\\'', () => {\n      assert.equal(isDomainName('google.com'), true);\n    });\n    it('should return true when passes \\'www.yahoo.org\\'', () => {\n      assert.equal(isDomainName('www.yahoo.org'), true);\n    });\n    it('should return true when passes \\'www.domain-name.org\\'', () => {\n      assert.equal(isDomainName('www.domain-name.org'), true);\n    });\n    it('should return true when passes \\'www.MyDomainName.io\\'', () => {\n      assert.equal(isDomainName('www.MyDomainName.io'), true);\n    });\n    it('should return false when passes \\'www.hello-world.COM\\'', () => {\n      assert.equal(isDomainName('www.hello-world.COM'), false);\n    });\n    it('should return false when passes \\'www.whyME?.com\\'', () => {\n      assert.equal(isDomainName('www.whyME?.com'), false);\n    });\n    it('should return false when passes \\'?\\'', () => {\n      assert.equal(isDomainName('?'), false);\n    });\n    it('should return false when passes null', () => {\n      assert.equal(isDomainName(null), false);\n    });\n  });\n});\n\n",
+    "static": true,
+    "longname": "/Users/Focus/regexer/src/common/isDomainName/isDomainName.spec.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 69,
+    "kind": "file",
     "name": "src/common/isEmail/isEmail.js",
     "content": "import { isUndefined, isNull, isString } from './../../utils';\n\n/**\n * @desc Returns true if email is a valid email address, otherwise returns false\n * @param {string} email - an email address\n * @return {boolean} - true or false\n *\n * @example\n * 'jsmith@gmail.com', 'npraxx@123gmail.co'\n */\nconst isEmail = email => (\n  !isUndefined(email) &&\n  !isNull(email) &&\n  isString(email) &&\n  /^(([^<>()\\[\\]\\\\.,;:\\s@\"]+(\\.[^<>()\\[\\]\\\\.,;:\\s@\"]+)*)|(\".+\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$/.test(email.toLowerCase())\n);\n\nexport default isEmail;\n",
     "static": true,
@@ -945,7 +1006,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 67,
+    "__docId__": 70,
     "kind": "function",
     "name": "isEmail",
     "memberof": "src/common/isEmail/isEmail.js",
@@ -984,7 +1045,7 @@
     }
   },
   {
-    "__docId__": 68,
+    "__docId__": 71,
     "kind": "file",
     "name": "src/common/isEmail/isEmail.spec.js",
     "content": "import { assert } from 'chai';\nimport isEmail from './isEmail';\n\ndescribe('Regexer', () => {\n  describe('isEmail()', () => {\n    it('should return true when passed \\'nfgdfgg@gmail.com\\'', () => {\n      assert.equal(isEmail('nfgdfgg@gmail.com'), true);\n    });\n    it('should return false when passed \\'dfgdfg@gmail\\'', () => {\n      assert.equal(isEmail('dfgdfg@gmail'), false);\n    });\n    it('should return false when passed \\'sdfsdfsdfsd.com\\'', () => {\n      assert.equal(isEmail('sdfsdfsdfsd.com'), false);\n    });\n    it('should return true when passed \\'npraxx@123gmail.co\\'', () => {\n      assert.equal(isEmail('npraxx@123gmail.co'), true);\n    });\n    it('should return false when passed null', () => {\n      assert.equal(isEmail(null), false);\n    });\n  });\n});\n",
@@ -995,7 +1056,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 69,
+    "__docId__": 72,
     "kind": "file",
     "name": "src/common/isHTMLTag/isHTMLTag.js",
     "content": "import { isUndefined, isNull, isString } from './../../utils';\n\n/**\n * @desc Returns true if htmlTag is an HTML tag, otherwise returns false\n * @param {string} htmlTag - a HTML tag\n * @return {boolean} - true or false\n *\n * @example\n * '<h1 class=\"center\"> Hello World </h1>\n */\nconst isHTMLTag = htmlTag => (\n  !isUndefined(htmlTag) &&\n  !isNull(htmlTag) &&\n  isString(htmlTag) &&\n  /^<([a-z0-9]+)([^<]+)*(?:>(.*)<\\/\\1>|\\s+\\/>)$/.test(htmlTag)\n);\n\nexport default isHTMLTag;\n",
@@ -1006,7 +1067,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 70,
+    "__docId__": 73,
     "kind": "function",
     "name": "isHTMLTag",
     "memberof": "src/common/isHTMLTag/isHTMLTag.js",
@@ -1045,7 +1106,7 @@
     }
   },
   {
-    "__docId__": 71,
+    "__docId__": 74,
     "kind": "file",
     "name": "src/common/isHTMLTag/isHTMLTag.spec.js",
     "content": "import { assert } from 'chai';\nimport isHTMLTag from './isHTMLTag';\n\ndescribe('Regexer', () => {\n  describe('isHTMLTag()', () => {\n    it('should return true when passed \\'<img src=\"./img/cat.png\" />\\'', () => {\n      assert.equal(isHTMLTag('<img src=\"./img/cat.png\" />'), true);\n    });\n    it('should return true when passed \\'<body>\\'', () => {\n      assert.equal(isHTMLTag('<body>'), false);\n    });\n    it('should return false when passed \\'<h1> Hello World <h1>\\'', () => {\n      assert.equal(isHTMLTag('<h1> Hello World <h1>'), false);\n    });\n    it('should return false when passed \\'\\'', () => {\n      assert.equal(isHTMLTag(''), false);\n    });\n    it('should return true when passed \\'<h1 class=\"center\"> Hello World! </h1>\\'', () => {\n      assert.equal(isHTMLTag('<h1 class=\"center\"> Hello World! </h1>'), true);\n    });\n    it('should return false when passed null', () => {\n      assert.equal(isHTMLTag(null), false);\n    });\n  });\n});\n",
@@ -1056,7 +1117,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 72,
+    "__docId__": 75,
     "kind": "file",
     "name": "src/common/isHexValue/isHexValue.js",
     "content": "import { isNull, isUndefined, isString } from './../../utils';\n\n/**\n * @desc Returns true if hexValue is a valid hex value, otherwise returns false\n * @param {string} hexValue - a hex value\n * @return {boolean} - true or false\n *\n * @example\n * '#FBB', '#SHFF56', '#FF56'\n */\nconst isHexValue = hexValue => (\n  !isUndefined(hexValue) &&\n  !isNull(hexValue) &&\n  isString(hexValue) &&\n  /^#?([A-Za-z0-9]{3}|[A-Za-z0-9]{4}|[A-Za-z0-9]{6})$/.test(hexValue)\n);\n\nexport default isHexValue;\n",
@@ -1067,7 +1128,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 73,
+    "__docId__": 76,
     "kind": "function",
     "name": "isHexValue",
     "memberof": "src/common/isHexValue/isHexValue.js",
@@ -1106,7 +1167,7 @@
     }
   },
   {
-    "__docId__": 74,
+    "__docId__": 77,
     "kind": "file",
     "name": "src/common/isHexValue/isHexValue.spec.js",
     "content": "import { assert } from 'chai';\nimport isHexValue from './isHexValue';\n\ndescribe('Regexer', () => {\n  describe('isHexValue()', () => {\n    it('should return true when passed \\'#FBB\\'', () => {\n      assert.equal(isHexValue('#FBB'), true);\n    });\n    it('should return false when passed \\'#Fka7-t\\'', () => {\n      assert.equal(isHexValue('sbfj&&#'), false);\n    });\n    it('should return false when passed \\'\\'', () => {\n      assert.equal(isHexValue(''), false);\n    });\n    it('should return true when passed \\'#SHFF56\\'', () => {\n      assert.equal(isHexValue('#SHFF56'), true);\n    });\n    it('should return true when passed \\'#FF56\\'', () => {\n      assert.equal(isHexValue('#FF56'), true);\n    });\n    it('should return true when passed \\'#FF563\\'', () => {\n      assert.equal(isHexValue('#FF563'), false);\n    });\n    it('should return true when passed \\'#FF563dsff\\'', () => {\n      assert.equal(isHexValue('#FF563dsff'), false);\n    });\n    it('should return false when passed null', () => {\n      assert.equal(isHexValue(null), false);\n    });\n  });\n});\n",
@@ -1117,7 +1178,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 75,
+    "__docId__": 78,
     "kind": "file",
     "name": "src/common/isIPAddressV4/isIPAddressV4.js",
     "content": "import { isUndefined, isNull, isString } from './../../utils';\n\n/**\n * @desc Returns true if ipAddress a valid IP address, otherwise returns false\n * @param {string} ipAddress - an IP address\n * @return {boolean} - true or false \n *\n * @example\n * '172.16.254.1', '0.1.0.1'\n */\nconst isIPAddressV4 = ipAddress => (\n  !isUndefined(ipAddress) &&\n  !isNull(ipAddress) &&\n  isString(ipAddress) &&\n  /^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/.test(ipAddress)\n);\n\nexport default isIPAddressV4;\n",
@@ -1128,7 +1189,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 76,
+    "__docId__": 79,
     "kind": "function",
     "name": "isIPAddressV4",
     "memberof": "src/common/isIPAddressV4/isIPAddressV4.js",
@@ -1167,7 +1228,7 @@
     }
   },
   {
-    "__docId__": 77,
+    "__docId__": 80,
     "kind": "file",
     "name": "src/common/isIPAddressV4/isIPAddressV4.spec.js",
     "content": "import { assert } from 'chai';\nimport isIPAddressV4 from './isIPAddressV4';\n\ndescribe('Regexer', () => {\n  describe('isIPAddressV4()', () => {\n    it('should return true when passed \\'172.16.254.1\\'', () => {\n      assert.equal(isIPAddressV4('172.16.254.1'), true);\n    });\n    it('should return true when passed \\'172.16.254.1\\'', () => {\n      assert.equal(isIPAddressV4('172.16.257.1'), false);\n    });\n    it('should return false when passed \\'sbfj&&#\\'', () => {\n      assert.equal(isIPAddressV4('54.45.222.345'), false);\n    });\n    it('should return false when passed \\'\\'', () => {\n      assert.equal(isIPAddressV4(''), false);\n    });\n    it('should return true when passed \\'0.1.0.1\\'', () => {\n      assert.equal(isIPAddressV4('0.1.0.1'), true);\n    });\n    it('should return false when passed null', () => {\n      assert.equal(isIPAddressV4(null), false);\n    });\n  });\n});\n",
@@ -1178,7 +1239,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 78,
+    "__docId__": 81,
     "kind": "file",
     "name": "src/common/isInteger/isInteger.js",
     "content": "import { isNull, isUndefined } from './../../utils';\n\n/**\n * @desc Returns true if integer is an integer, otherwise returns false\n * @param {number|string} integer - an integer\n * @return {boolean} - true or false\n *\n * @example\n * 455, '-44'\n */\nconst isInteger = integer => (\n  !isUndefined(integer) &&\n  !isNull(integer) &&\n  /^-?\\d+$/.test(integer)\n);\n\nexport default isInteger;\n",
@@ -1189,7 +1250,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 79,
+    "__docId__": 82,
     "kind": "function",
     "name": "isInteger",
     "memberof": "src/common/isInteger/isInteger.js",
@@ -1229,7 +1290,7 @@
     }
   },
   {
-    "__docId__": 80,
+    "__docId__": 83,
     "kind": "file",
     "name": "src/common/isInteger/isInteger.spec.js",
     "content": "import { assert } from 'chai';\nimport isInteger from './isInteger';\n\ndescribe('Regexer', () => {\n  describe('isInteger()', () => {\n    it('should return true when passed \\'5\\'', () => {\n      assert.equal(isInteger('5'), true);\n    });\n    it('should return true when passed \\'554\\'', () => {\n      assert.equal(isInteger('554'), true);\n    });\n    it('should return true when passed 8726', () => {\n      assert.equal(isInteger(8726), true);\n    });\n    it('should return true when passed \\'1027399\\'', () => {\n      assert.equal(isInteger('1027399'), true);\n    });\n    it('should return true when passed \\'0\\'', () => {\n      assert.equal(isInteger('0'), true);\n    });\n    it('should return true when passed 34', () => {\n      assert.equal(isInteger(-34), true);\n    });\n    it('should return false when passed 34.66', () => {\n      assert.equal(isInteger(-34.66), false);\n    });\n    it('should return false when passed \\'\\'', () => {\n      assert.equal(isInteger(''), false);\n    });\n    it('should return false when passed null', () => {\n      assert.equal(isInteger(null), false);\n    });\n  });\n});\n",
@@ -1240,7 +1301,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 81,
+    "__docId__": 84,
     "kind": "file",
     "name": "src/common/isLetter/isLetter.js",
     "content": "import { isNull, isUndefined, isString } from './../../utils';\n\n/**\n * @desc Returns true if char an alphabetic letter, otherwise returns false\n * @param {string} char - an alphabetic character\n * @return {boolean} - true or false \n *\n * @example\n * 'a', 'V'\n */\nconst isLetter = char => (\n  !isUndefined(char) &&\n  !isNull(char) &&\n  isString(char) &&\n  (char.length === 1) &&\n  /^[A-Za-z]$/.test(char)\n);\n\nexport default isLetter;\n",
@@ -1251,7 +1312,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 82,
+    "__docId__": 85,
     "kind": "function",
     "name": "isLetter",
     "memberof": "src/common/isLetter/isLetter.js",
@@ -1290,7 +1351,7 @@
     }
   },
   {
-    "__docId__": 83,
+    "__docId__": 86,
     "kind": "file",
     "name": "src/common/isLetter/isLetter.spec.js",
     "content": "import { assert } from 'chai';\nimport isLetter from './isLetter';\n\ndescribe('Regexer', () => {\n  describe('isLetter()', () => {\n    it('should return true when passed \\'a\\'', () => {\n      assert.equal(isLetter('a'), true);\n    });\n    it('should return true when passed \\'ACTIVITY\\'', () => {\n      assert.equal(isLetter('ACTIVITY'), false);\n    });\n    it('should return false when passed \\'72864783246\\'', () => {\n      assert.equal(isLetter('72864783246'), false);\n    });\n    it('should return false when passed \\'X\\'', () => {\n      assert.equal(isLetter('X'), true);\n    });\n    it('should return false when passed \\'A coffee shop is nearby\\'', () => {\n      assert.equal(isLetter('A coffee shop is nearby'), false);\n    });\n    it('should return false when passed \\'Is that any coffee shop nearby?\\'', () => {\n      assert.equal(isLetter('Is that any coffee shop nearby?'), false);\n    });\n    it('should return false when passed \\' \\'', () => {\n      assert.equal(isLetter(' '), false);\n    });\n    it('should return false when passed \\'\\'', () => {\n      assert.equal(isLetter(''), false);\n    });\n    it('should return false when passed null', () => {\n      assert.equal(isLetter(null), false);\n    });\n  });\n});\n",
@@ -1301,7 +1362,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 84,
+    "__docId__": 87,
     "kind": "file",
     "name": "src/common/isLowerCase/isLowerCase.js",
     "content": "import { isNull, isUndefined, isString } from './../../utils';\n\n/**\n * @desc Returns true if str contains all lower case letters, otherwise returns false\n * @param {string} str - a string \n * @return {boolean} - true or false \n *\n * @example\n * 'coffee', 'chai', 'cold', 'life is awesome'\n */\nconst isLowerCase = str => (\n  !isUndefined(str) &&\n  !isNull(str) &&\n  isString(str) &&\n  /^[^A-Z]+$/.test(str)\n);\n\nexport default isLowerCase;\n",
@@ -1312,7 +1373,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 85,
+    "__docId__": 88,
     "kind": "function",
     "name": "isLowerCase",
     "memberof": "src/common/isLowerCase/isLowerCase.js",
@@ -1351,7 +1412,7 @@
     }
   },
   {
-    "__docId__": 86,
+    "__docId__": 89,
     "kind": "file",
     "name": "src/common/isLowerCase/isLowerCase.spec.js",
     "content": "import { assert } from 'chai';\nimport isLowerCase from './isLowerCase';\n\ndescribe('Regexer', () => {\n  describe('isLowerCase()', () => {\n    it('should return true when passed \\'a\\'', () => {\n      assert.equal(isLowerCase('a'), true);\n    });\n    it('should return true when passed \\'dog\\'', () => {\n      assert.equal(isLowerCase('dog'), true);\n    });\n    it('should return true when passed \\'f\\'', () => {\n      assert.equal(isLowerCase('f'), true);\n    });\n    it('should return true when passed \\'life is great\\'', () => {\n      assert.equal(isLowerCase('life is great'), true);\n    });\n    it('should return true when passed \\'ian\\'', () => {\n      assert.equal(isLowerCase('ian'), true);\n    });\n    it('should return true when passed \\'k\\'', () => {\n      assert.equal(isLowerCase('k'), true);\n    });\n    it('should return true when passed \\'A\\'', () => {\n      assert.equal(isLowerCase('A'), false);\n    });\n    it('should return true when passed \\'false\\'', () => {\n      assert.equal(isLowerCase('false'), true);\n    });\n    it('should return true when passed \\'U\\'', () => {\n      assert.equal(isLowerCase('U'), false);\n    });\n    it('should return true when passed \\'aB\\'', () => {\n      assert.equal(isLowerCase('aB'), false);\n    });\n    it('should return true when passed \\'?\\'', () => {\n      assert.equal(isLowerCase('?'), true);\n    });\n    it('should return true when passed \\' \\'', () => {\n      assert.equal(isLowerCase(' '), true);\n    });\n    it('should return false when passed \\'\\'', () => {\n      assert.equal(isLowerCase(''), false);\n    });\n    it('should return false when passed null', () => {\n      assert.equal(isLowerCase(null), false);\n    });\n  });\n});\n",
@@ -1362,7 +1423,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 87,
+    "__docId__": 90,
     "kind": "file",
     "name": "src/common/isMonthOfYear/isMonthOfYear.js",
     "content": "import { isUndefined, isNull } from './../../utils';\n\n/**\n * @desc Returns true if number is a month of year (1-12), otherwise returns false\n * @param {number} number - a month \n * @return {boolean} - true or false \n *\n * @example\n * '4', 12\n */\nconst isMonthOfYear = number => (\n  !isUndefined(number) &&\n  !isNull(number) &&\n  /^((1[0-2])|(0?[1-9]{1}))$/.test(number)\n);\n\nexport default isMonthOfYear;\n",
@@ -1373,7 +1434,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 88,
+    "__docId__": 91,
     "kind": "function",
     "name": "isMonthOfYear",
     "memberof": "src/common/isMonthOfYear/isMonthOfYear.js",
@@ -1412,7 +1473,7 @@
     }
   },
   {
-    "__docId__": 89,
+    "__docId__": 92,
     "kind": "file",
     "name": "src/common/isMonthOfYear/isMonthOfYear.spec.js",
     "content": "import { assert } from 'chai';\nimport isMonthOfYear from './isMonthOfYear';\n\ndescribe('Regexer', () => {\n  describe('isMonthOfYear()', () => {\n    it('should return false when passes 0', () => {\n      assert.equal(isMonthOfYear(0), false);\n    });\n    it('should return true when passes 1', () => {\n      assert.equal(isMonthOfYear(1), true);\n    });\n    it('should return true when passes 3', () => {\n      assert.equal(isMonthOfYear(3), true);\n    });\n    it('should return true when passes 5', () => {\n      assert.equal(isMonthOfYear(5), true);\n    });\n    it('should return true when passes \\'07\\'', () => {\n      assert.equal(isMonthOfYear('07'), true);\n    });\n    it('should return true when passes 9', () => {\n      assert.equal(isMonthOfYear(9), true);\n    });\n    it('should return true when passes \\'10\\'', () => {\n      assert.equal(isMonthOfYear('10'), true);\n    });\n    it('should return true when passes 11', () => {\n      assert.equal(isMonthOfYear(11), true);\n    });\n    it('should return true when passes 12', () => {\n      assert.equal(isMonthOfYear(12), true);\n    });\n    it('should return false when passes 13', () => {\n      assert.equal(isMonthOfYear(13), false);\n    });\n    it('should return false when passes 20', () => {\n      assert.equal(isMonthOfYear(20), false);\n    });\n    it('should return false when passes \\'\\'', () => {\n      assert.equal(isMonthOfYear(''), false);\n    });\n    it('should return false when passes \\'?\\'', () => {\n      assert.equal(isMonthOfYear('?'), false);\n    });\n    it('should return false when passes null', () => {\n      assert.equal(isMonthOfYear(null), false);\n    });\n  });\n});\n",
@@ -1423,7 +1484,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 90,
+    "__docId__": 93,
     "kind": "file",
     "name": "src/common/isMonthOfYearString/isMonthOfYearString.js",
     "content": "import { isUndefined, isNull } from './../../utils';\n\n/**\n * @desc Returns true if month is a name of a month of year, otherwise returns false\n * @param {string} month - name of month \n * @return {boolean} - true or false\n *\n * @example\n * 'march', 'APRIL', 'mAy'\n */\nconst isMonthOfYearString = month => (\n  !isUndefined(month) &&\n  !isNull(month) &&\n  /^(january|february|march|april|may|june|july|august|september|october|november|december)$/i.test(month)\n);\n\nexport default isMonthOfYearString;\n",
@@ -1434,7 +1495,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 91,
+    "__docId__": 94,
     "kind": "function",
     "name": "isMonthOfYearString",
     "memberof": "src/common/isMonthOfYearString/isMonthOfYearString.js",
@@ -1473,7 +1534,7 @@
     }
   },
   {
-    "__docId__": 92,
+    "__docId__": 95,
     "kind": "file",
     "name": "src/common/isMonthOfYearString/isMonthOfYearString.spec.js",
     "content": "import { assert } from 'chai';\nimport isMonthOfYearString from './isMonthOfYearString';\n\ndescribe('Regexer', () => {\n  describe('isMonthOfYearString()', () => {\n    it('should return true when passes \\'january\\'', () => {\n      assert.equal(isMonthOfYearString('january'), true);\n    });\n    it('should return true when passes \\'February\\'', () => {\n      assert.equal(isMonthOfYearString('February'), true);\n    });\n    it('should return true when passes \\'March\\'', () => {\n      assert.equal(isMonthOfYearString('March'), true);\n    });\n    it('should return true when passes \\'APRIL\\'', () => {\n      assert.equal(isMonthOfYearString('APRIL'), true);\n    });\n    it('should return true when passes \\'may\\'', () => {\n      assert.equal(isMonthOfYearString('may'), true);\n    });\n    it('should return true when passes \\'jUNE\\'', () => {\n      assert.equal(isMonthOfYearString('jUNE'), true);\n    });\n    it('should return true when passes \\'july\\'', () => {\n      assert.equal(isMonthOfYearString('july'), true);\n    });\n    it('should return true when passes \\'august\\'', () => {\n      assert.equal(isMonthOfYearString('august'), true);\n    });\n    it('should return true when passes \\'september\\'', () => {\n      assert.equal(isMonthOfYearString('september'), true);\n    });\n    it('should return true when passes \\'OCTOBER\\'', () => {\n      assert.equal(isMonthOfYearString('OCTOBER'), true);\n    });\n    it('should return true when passes \\'NOvember\\'', () => {\n      assert.equal(isMonthOfYearString('NOvember'), true);\n    });\n    it('should return true when passes \\'decemBER\\'', () => {\n      assert.equal(isMonthOfYearString('decemBER'), true);\n    });\n    it('should return false when passes \\'jun\\'', () => {\n      assert.equal(isMonthOfYearString('jun'), false);\n    });\n    it('should return false when passes \\'DEC\\'', () => {\n      assert.equal(isMonthOfYearString('DEC'), false);\n    });\n    it('should return false when passes \\'\\'', () => {\n      assert.equal(isMonthOfYearString(''), false);\n    });\n    it('should return false when passes \\'?\\'', () => {\n      assert.equal(isMonthOfYearString('?'), false);\n    });\n    it('should return false when passes null', () => {\n      assert.equal(isMonthOfYearString(null), false);\n    });\n  });\n});\n",
@@ -1484,7 +1545,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 93,
+    "__docId__": 96,
     "kind": "file",
     "name": "src/common/isNegativeInteger/isNegativeInteger.js",
     "content": "import { isNull, isUndefined } from './../../utils';\n\n/**\n * @desc Returns true if integer is a negative integer, otherwise returns false\n * @param {number|string} integer - an integer\n * @return {boolean} - true or false \n *\n * @example\n * '-55', -6456\n */\nconst isNegativeInteger = integer => (\n  !isUndefined(integer) &&\n  !isNull(integer) &&\n  /^(-\\d+)|0$/.test(integer)\n);\n\nexport default isNegativeInteger;\n",
@@ -1495,7 +1556,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 94,
+    "__docId__": 97,
     "kind": "function",
     "name": "isNegativeInteger",
     "memberof": "src/common/isNegativeInteger/isNegativeInteger.js",
@@ -1535,7 +1596,7 @@
     }
   },
   {
-    "__docId__": 95,
+    "__docId__": 98,
     "kind": "file",
     "name": "src/common/isNegativeInteger/isNegativeInteger.spec.js",
     "content": "import { assert } from 'chai';\nimport isNegativeInteger from './isNegativeInteger';\n\ndescribe('Regexer', () => {\n  describe('isNegativeInteger()', () => {\n    it('should return false when passed \\'5\\'', () => {\n      assert.equal(isNegativeInteger('5'), false);\n    });\n    it('should return false when passed \\'554\\'', () => {\n      assert.equal(isNegativeInteger('554'), false);\n    });\n    it('should return true when passed -8726', () => {\n      assert.equal(isNegativeInteger(-8726), true);\n    });\n    it('should return false when passed 0.3443', () => {\n      assert.equal(isNegativeInteger(0.3443), false);\n    });\n    it('should return false when passed \\'1027399\\'', () => {\n      assert.equal(isNegativeInteger('1027399'), false);\n    });\n    it('should return true when passed \\'0\\'', () => {\n      assert.equal(isNegativeInteger('0'), true);\n    });\n    it('should return true when passed -34', () => {\n      assert.equal(isNegativeInteger(-34), true);\n    });\n    it('should return false when passed \\'\\'', () => {\n      assert.equal(isNegativeInteger(''), false);\n    });\n    it('should return false when passed null', () => {\n      assert.equal(isNegativeInteger(null), false);\n    });\n  });\n});\n",
@@ -1546,7 +1607,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 96,
+    "__docId__": 99,
     "kind": "file",
     "name": "src/common/isNegativeNumber/isNegativeNumber.js",
     "content": "import { isUndefined, isNull } from './../../utils';\n\n/**\n * @desc Returns true if number is a negative number, otherwise returns false\n * @param {number|string} number - a number\n * @return {boolean} - true or false \n *\n * @example\n * '-0.44', -55, -1434.44\n */\nconst isNegativeNumber = number => (\n  !isUndefined(number) &&\n  !isNull(number) &&\n  /^((-)(\\d+)(\\.)?(\\d+)?)|0$/.test(number)\n);\n\nexport default isNegativeNumber;\n",
@@ -1557,7 +1618,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 97,
+    "__docId__": 100,
     "kind": "function",
     "name": "isNegativeNumber",
     "memberof": "src/common/isNegativeNumber/isNegativeNumber.js",
@@ -1597,7 +1658,7 @@
     }
   },
   {
-    "__docId__": 98,
+    "__docId__": 101,
     "kind": "file",
     "name": "src/common/isNegativeNumber/isNegativeNumber.spec.js",
     "content": "import { assert } from 'chai';\nimport isNegativeNumber from './isNegativeNumber';\n\ndescribe('Regexer', () => {\n  describe('isNegativeNumber()', () => {\n    it('should return false when passes 43', () => {\n      assert.equal(isNegativeNumber(43), false);\n    });\n    it('should return true when passes -21', () => {\n      assert.equal(isNegativeNumber(-21), true);\n    });\n    it('should return true when passes 0', () => {\n      assert.equal(isNegativeNumber(0), true);\n    });\n    it('should return false when passes 98.2', () => {\n      assert.equal(isNegativeNumber(98.2), false);\n    });\n    it('should return true when passes -0.1', () => {\n      assert.equal(isNegativeNumber(-0.1), true);\n    });\n    it('should return false when passes 0.99', () => {\n      assert.equal(isNegativeNumber(0.99), false);\n    });\n    it('should return false when passes 7/2', () => {\n      assert.equal(isNegativeNumber((7 / 2)), false);\n    });\n    it('should return false when passes \\'321.123\\'', () => {\n      assert.equal(isNegativeNumber('321.123'), false);\n    });\n    it('should return true when passes \\'-321.\\'', () => {\n      assert.equal(isNegativeNumber('-321.'), true);\n    });\n    it('should return false when passes \\'\\'', () => {\n      assert.equal(isNegativeNumber(''), false);\n    });\n    it('should return false when passes \\'?\\'', () => {\n      assert.equal(isNegativeNumber('?'), false);\n    });\n    it('should return false when passes null', () => {\n      assert.equal(isNegativeNumber(null), false);\n    });\n  });\n});\n",
@@ -1608,7 +1669,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 99,
+    "__docId__": 102,
     "kind": "file",
     "name": "src/common/isNumber/isNumber.js",
     "content": "import { isUndefined, isNull } from './../../utils';\n\n/**\n * @desc Returns true if number is a number, otherwise returns false\n * @param {number|string} number - a number\n * @return {boolean} - true or false \n *\n * @example\n * '-4.6', 0.34, -0.22, 45, 9980328.44\n */\nconst isNumber = number => (\n  !isUndefined(number) &&\n  !isNull(number) &&\n  /^(-)?(\\d+)(\\.)?(\\d+)?$/.test(number)\n);\n\nexport default isNumber;\n",
@@ -1619,7 +1680,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 100,
+    "__docId__": 103,
     "kind": "function",
     "name": "isNumber",
     "memberof": "src/common/isNumber/isNumber.js",
@@ -1659,7 +1720,7 @@
     }
   },
   {
-    "__docId__": 101,
+    "__docId__": 104,
     "kind": "file",
     "name": "src/common/isNumber/isNumber.spec.js",
     "content": "import { assert } from 'chai';\nimport isNumber from './isNumber';\n\ndescribe('Regexer', () => {\n  describe('isNumber()', () => {\n    it('should return true when passes 43', () => {\n      assert.equal(isNumber(43), true);\n    });\n    it('should return true when passes -21', () => {\n      assert.equal(isNumber(-21), true);\n    });\n    it('should return true when passes 0', () => {\n      assert.equal(isNumber(0), true);\n    });\n    it('should return true when passes 98.2', () => {\n      assert.equal(isNumber(98.2), true);\n    });\n    it('should return true when passes 0.1', () => {\n      assert.equal(isNumber(0.1), true);\n    });\n    it('should return true when passes 0.99', () => {\n      assert.equal(isNumber(0.99), true);\n    });\n    it('should return true when passes 7/2', () => {\n      assert.equal(isNumber((7 / 2)), true);\n    });\n    it('should return true when passes \\'321.123\\'', () => {\n      assert.equal(isNumber('321.123'), true);\n    });\n    it('should return false when passes \\'\\'', () => {\n      assert.equal(isNumber(''), false);\n    });\n    it('should return false when passes \\'?\\'', () => {\n      assert.equal(isNumber('?'), false);\n    });\n    it('should return false when passes null', () => {\n      assert.equal(isNumber(null), false);\n    });\n  });\n});\n",
@@ -1670,7 +1731,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 102,
+    "__docId__": 105,
     "kind": "file",
     "name": "src/common/isPassword/isPassword.js",
     "content": "import { isUndefined, isNull, isString } from './../../utils';\n\n/**\n * @desc Returns true if password meets simple ruleset of a password (contains letters, numbers, hyphens, and underscores; length is between 6 to 18 characters), otherwise returns false\n * @param {string} password - a password\n * @return {boolean} - true or false\n *\n * @example\n * 'i-love-cats_haha'\n */\nconst isPassword = password => (\n  !isUndefined(password) &&\n  !isNull(password) &&\n  isString(password) &&\n  /^[\\w-]{6,18}$/.test(password)\n);\n\nexport default isPassword;\n",
@@ -1681,7 +1742,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 103,
+    "__docId__": 106,
     "kind": "function",
     "name": "isPassword",
     "memberof": "src/common/isPassword/isPassword.js",
@@ -1720,7 +1781,7 @@
     }
   },
   {
-    "__docId__": 104,
+    "__docId__": 107,
     "kind": "file",
     "name": "src/common/isPassword/isPassword.spec.js",
     "content": "import { assert } from 'chai';\nimport isPassword from './isPassword';\n\ndescribe('Regexer', () => {\n  describe('isPassword()', () => {\n    it('should return true when passed \\'npranto\\'', () => {\n      assert.equal(isPassword('npranto'), true);\n    });\n    it('should return false when passed \\'sbfj&&#\\'', () => {\n      assert.equal(isPassword('sbfj&&#'), false);\n    });\n    it('should return false when passed \\'\\'', () => {\n      assert.equal(isPassword(''), false);\n    });\n    it('should return true when passed \\'NS-pranto_236\\'', () => {\n      assert.equal(isPassword('NS-pranto_236'), true);\n    });\n    it('should return false when passed null', () => {\n      assert.equal(isPassword(null), false);\n    });\n    it('should return false when passed nothing', () => {\n      assert.equal(isPassword(), false);\n    });\n  });\n});\n",
@@ -1731,7 +1792,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 105,
+    "__docId__": 108,
     "kind": "file",
     "name": "src/common/isPositiveInteger/isPositiveInteger.js",
     "content": "import { isNull, isUndefined } from './../../utils';\n\n/**\n * @desc Returns true if integer is a positive integer, otherwise returns false\n * @param {number|string} integer - an integer\n * @return {boolean} - true or false\n *\n * @example\n * '55', 3, 4645645\n */\nconst isPositiveInteger = integer => (\n  !isUndefined(integer) &&\n  !isNull(integer) &&\n  /^\\d+$/.test(integer)\n);\n\nexport default isPositiveInteger;\n",
@@ -1742,7 +1803,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 106,
+    "__docId__": 109,
     "kind": "function",
     "name": "isPositiveInteger",
     "memberof": "src/common/isPositiveInteger/isPositiveInteger.js",
@@ -1782,7 +1843,7 @@
     }
   },
   {
-    "__docId__": 107,
+    "__docId__": 110,
     "kind": "file",
     "name": "src/common/isPositiveInteger/isPositiveInteger.spec.js",
     "content": "import { assert } from 'chai';\nimport isPositiveInteger from './isPositiveInteger';\n\ndescribe('Regexer', () => {\n  describe('isPositiveInteger()', () => {\n    it('should return true when passed \\'5\\'', () => {\n      assert.equal(isPositiveInteger('5'), true);\n    });\n    it('should return true when passed \\'554\\'', () => {\n      assert.equal(isPositiveInteger('554'), true);\n    });\n    it('should return false when passed -8726', () => {\n      assert.equal(isPositiveInteger(-8726), false);\n    });\n    it('should return false when passed 0.3443', () => {\n      assert.equal(isPositiveInteger(0.3443), false);\n    });\n    it('should return true when passed \\'1027399\\'', () => {\n      assert.equal(isPositiveInteger('1027399'), true);\n    });\n    it('should return true when passed \\'0\\'', () => {\n      assert.equal(isPositiveInteger('0'), true);\n    });\n    it('should return false when passed -34', () => {\n      assert.equal(isPositiveInteger(-34), false);\n    });\n    it('should return false when passed \\'\\'', () => {\n      assert.equal(isPositiveInteger(''), false);\n    });\n    it('should return false when passed null', () => {\n      assert.equal(isPositiveInteger(null), false);\n    });\n  });\n});\n",
@@ -1793,7 +1854,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 108,
+    "__docId__": 111,
     "kind": "file",
     "name": "src/common/isPositiveNumber/isPositiveNumber.js",
     "content": "import { isUndefined, isNull } from './../../utils';\n\n/**\n * @desc Returns true if number is a positive number, otherwise returns false\n * @param {number|string} number - a number\n * @return {boolean} - true or false \n *\n * @example\n * '4', '0.5', 74.23, \n */\nconst isPositiveNumber = number => (\n  !isUndefined(number) &&\n  !isNull(number) &&\n  /^(\\d+)(\\.)?(\\d+)?$/.test(number)\n);\n\nexport default isPositiveNumber;\n",
@@ -1804,7 +1865,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 109,
+    "__docId__": 112,
     "kind": "function",
     "name": "isPositiveNumber",
     "memberof": "src/common/isPositiveNumber/isPositiveNumber.js",
@@ -1844,7 +1905,7 @@
     }
   },
   {
-    "__docId__": 110,
+    "__docId__": 113,
     "kind": "file",
     "name": "src/common/isPositiveNumber/isPositiveNumber.spec.js",
     "content": "import { assert } from 'chai';\nimport isPositiveNumber from './isPositiveNumber';\n\ndescribe('Regexer', () => {\n  describe('isPositiveNumber()', () => {\n    it('should return true when passes 43', () => {\n      assert.equal(isPositiveNumber(43), true);\n    });\n    it('should return false when passes -21', () => {\n      assert.equal(isPositiveNumber(-21), false);\n    });\n    it('should return true when passes 0', () => {\n      assert.equal(isPositiveNumber(0), true);\n    });\n    it('should return true when passes 98.2', () => {\n      assert.equal(isPositiveNumber(98.2), true);\n    });\n    it('should return true when passes 0.1', () => {\n      assert.equal(isPositiveNumber(0.1), true);\n    });\n    it('should return false when passes -0.99', () => {\n      assert.equal(isPositiveNumber(-0.99), false);\n    });\n    it('should return true when passes 7/2', () => {\n      assert.equal(isPositiveNumber((7 / 2)), true);\n    });\n    it('should return true when passes \\'321.123\\'', () => {\n      assert.equal(isPositiveNumber('321.123'), true);\n    });\n    it('should return true when passes \\'321.\\'', () => {\n      assert.equal(isPositiveNumber('321.'), true);\n    });\n    it('should return false when passes \\'\\'', () => {\n      assert.equal(isPositiveNumber(''), false);\n    });\n    it('should return false when passes \\'?\\'', () => {\n      assert.equal(isPositiveNumber('?'), false);\n    });\n    it('should return false when passes null', () => {\n      assert.equal(isPositiveNumber(null), false);\n    });\n  });\n});\n",
@@ -1855,7 +1916,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 111,
+    "__docId__": 114,
     "kind": "file",
     "name": "src/common/isSSN/isSSN.js",
     "content": "import { isUndefined, isNull, isString } from './../../utils';\n\n/**\n * @desc Returns true if number is a valid social security number, otherwise returns false\n * @param {string} ssn - a social security number\n * @return {boolean} - true or false \n *\n * @example\n * allows following formats => '031767927', '031-76-7927', '031 76 7927'\n */\nconst isSSN = ssn => (\n  !isUndefined(ssn) &&\n  !isNull(ssn) &&\n  isString(ssn) &&\n  /^(\\d{3})(-|\\s)?(\\d{2})(-|\\s)?(\\d{4})$/.test(ssn)\n);\n\nexport default isSSN;\n",
@@ -1866,7 +1927,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 112,
+    "__docId__": 115,
     "kind": "function",
     "name": "isSSN",
     "memberof": "src/common/isSSN/isSSN.js",
@@ -1905,7 +1966,7 @@
     }
   },
   {
-    "__docId__": 113,
+    "__docId__": 116,
     "kind": "file",
     "name": "src/common/isSSN/isSSN.spec.js",
     "content": "import { assert } from 'chai';\nimport isSSN from './isSSN';\n\ndescribe('Regexer', () => {\n  describe('isSSN()', () => {\n    it('should return true when passes \\'123456789\\'', () => {\n      assert.equal(isSSN('123456789'), true);\n    });\n    it('should return true when passes \\'055-54-4545\\'', () => {\n      assert.equal(isSSN('055-54-4545'), true);\n    });\n    it('should return true when passes \\'055 65 4545\\'', () => {\n      assert.equal(isSSN('055 65 4545'), true);\n    });\n    it('should return false when passes \\'00-45-4545\\'', () => {\n      assert.equal(isSSN('00-45-4545'), false);\n    });\n    it('should return false when passes \\'fdg-gf-oiio\\'', () => {\n      assert.equal(isSSN('fdg-gf-oiio'), false);\n    });\n    it('should return false when passes \\'\\'', () => {\n      assert.equal(isSSN(''), false);\n    });\n    it('should return false when passes \\'?\\'', () => {\n      assert.equal(isSSN('?'), false);\n    });\n    it('should return false when passes null', () => {\n      assert.equal(isSSN(null), false);\n    });\n  });\n});\n",
@@ -1916,7 +1977,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 114,
+    "__docId__": 117,
     "kind": "file",
     "name": "src/common/isStandardZipCode/isStandardZipCode.js",
     "content": "import { isUndefined, isNull, isString } from './../../utils';\n\n/**\n * @desc Returns true if zipCode is a valid zip code, otherwise returns false\n * @param {string} zipCode - a zip code\n * @return {boolean} - true or false \n *\n * @example\n * allows following formats => '02166', '12045-6089'\n */\nconst isStandardZipCode = zipCode => (\n  !isUndefined(zipCode) &&\n  !isNull(zipCode) &&\n  isString(zipCode) &&\n  /^[0-9]{5}(-[0-9]{4})?$/.test(zipCode)\n);\n\nexport default isStandardZipCode;\n",
@@ -1927,7 +1988,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 115,
+    "__docId__": 118,
     "kind": "function",
     "name": "isStandardZipCode",
     "memberof": "src/common/isStandardZipCode/isStandardZipCode.js",
@@ -1966,7 +2027,7 @@
     }
   },
   {
-    "__docId__": 116,
+    "__docId__": 119,
     "kind": "file",
     "name": "src/common/isStandardZipCode/isStandardZipCode.spec.js",
     "content": "import { assert } from 'chai';\nimport isStandardZipCode from './isStandardZipCode';\n\ndescribe('Regexer', () => {\n  describe('isStandardZipCode()', () => {\n    it('should return true when passes \\'02140\\'', () => {\n      assert.equal(isStandardZipCode('02140'), true);\n    });\n    it('should return true when passes 45546', () => {\n      assert.equal(isStandardZipCode('45546'), true);\n    });\n    it('should return true when passes \\'12045-6089\\'', () => {\n      assert.equal(isStandardZipCode('12045-6089'), true);\n    });\n    it('should return false when passes \\'12345-678932\\'', () => {\n      assert.equal(isStandardZipCode('12345-678932'), false);\n    });\n    it('should return false when passes \\'12345 6789\\'', () => {\n      assert.equal(isStandardZipCode('12345 6789'), false);\n    });\n    it('should return false when passes \\'98121-\\'', () => {\n      assert.equal(isStandardZipCode('98121-'), false);\n    });\n    it('should return false when passes \\'\\'', () => {\n      assert.equal(isStandardZipCode(''), false);\n    });\n    it('should return false when passes \\'?\\'', () => {\n      assert.equal(isStandardZipCode('?'), false);\n    });\n    it('should return false when passes null', () => {\n      assert.equal(isStandardZipCode(null), false);\n    });\n  });\n});\n",
@@ -1977,7 +2038,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 117,
+    "__docId__": 120,
     "kind": "file",
     "name": "src/common/isStrongPassword/isStrongPassword.js",
     "content": "import { isUndefined, isNull, isString } from './../../utils';\n\n/**\n * @desc Returns true if password is what generally considered as a\n * strong password (must contain at least 1 lowercase alphabetical character,\n * 1 uppercase alphabetical character, 1 numeric character, one special \n * character [!, @, #, $, %, ^. &, or *], and at least eight characters long), \n * otherwise returns false\n * @param {string} password - a password\n * @return {boolean} - true or false\n *\n * @example\n * 'Ajohnson184&', 'kevinWilliamsBaller23^'\n */\nconst isStrongPassword = (password) => {\n  const strongPasswordRegex = new RegExp('^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\\$%\\^&\\*])(?=.{8,})');\n  return (\n    !isUndefined(password) &&\n    !isNull(password) &&\n    isString(password) &&\n    strongPasswordRegex.test(password)\n  );\n};\n\nexport default isStrongPassword;\n",
@@ -1988,7 +2049,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 118,
+    "__docId__": 121,
     "kind": "function",
     "name": "isStrongPassword",
     "memberof": "src/common/isStrongPassword/isStrongPassword.js",
@@ -2027,7 +2088,7 @@
     }
   },
   {
-    "__docId__": 119,
+    "__docId__": 122,
     "kind": "file",
     "name": "src/common/isStrongPassword/isStrongPassword.spec.js",
     "content": "import { assert } from 'chai';\nimport isStrongPassword from './isStrongPassword';\n\ndescribe('Regexer', () => {\n  describe('isStrongPassword()', () => {\n    it('should return true when passes \\'Ajohnson184&\\'', () => {\n      assert.equal(isStrongPassword('Ajohnson184&'), true);\n    });\n\t\tit('should return true when passes \\'kevinWilliamsBaller23^\\'', () => {\n      assert.equal(isStrongPassword('kevinWilliamsBaller23^'), true);\n\t\t});\n\t\tit('should return false when passes \\'ilovestarbucks\\'', () => {\n      assert.equal(isStrongPassword('ilovestarbucks^'), false);\n\t\t});\n\t\tit('should return false when passes \\'66lovePotato\\'', () => {\n      assert.equal(isStrongPassword('66lovePotato'), false);\n\t\t});\n\t\tit('should return false when passes \\'10000001\\'', () => {\n      assert.equal(isStrongPassword('10000001'), false);\n\t\t});\n\t\tit('should return false when passes \\'JackDanielIsNotSoGood()\\'', () => {\n      assert.equal(isStrongPassword('JackDanielIsNotSoGood()'), false);\n    });\n    it('should return false when passes \\'\\'', () => {\n      assert.equal(isStrongPassword(''), false);\n    });\n    it('should return false when passes \\'?\\'', () => {\n      assert.equal(isStrongPassword('?'), false);\n    });\n    it('should return false when passes null', () => {\n      assert.equal(isStrongPassword(null), false);\n    });\n  });\n});\n",
@@ -2038,7 +2099,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 120,
+    "__docId__": 123,
     "kind": "file",
     "name": "src/common/isUSPhoneNumber/isUSPhoneNumber.js",
     "content": "import { isUndefined, isNull, isString } from './../../utils';\n\n/**\n * @desc Returns true if phoneNumber a valid US phone number, otherwise returns false\n * @param {string} phoneNumber - a phone number\n * @return {boolean} - true or false \n *\n * @example\n * allows following formats => '6174330080', '(617) 433-0080', '(617)433-0080', '617.433.0080', '617-433-0080', '617 433 0080'\n */\nconst isUSPhoneNumber = phoneNumber => (\n  !isUndefined(phoneNumber) &&\n  !isNull(phoneNumber) &&\n  isString(phoneNumber) &&\n  /^(\\()?(\\d{3})(\\))?[\\s.-]?(\\d{3})[\\s.-]?(\\d{4})$/.test(phoneNumber)\n);\n\nexport default isUSPhoneNumber;\n",
@@ -2049,7 +2110,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 121,
+    "__docId__": 124,
     "kind": "function",
     "name": "isUSPhoneNumber",
     "memberof": "src/common/isUSPhoneNumber/isUSPhoneNumber.js",
@@ -2088,7 +2149,7 @@
     }
   },
   {
-    "__docId__": 122,
+    "__docId__": 125,
     "kind": "file",
     "name": "src/common/isUSPhoneNumber/isUSPhoneNumber.spec.js",
     "content": "import { assert } from 'chai';\nimport isUSPhoneNumber from './isUSPhoneNumber';\n\ndescribe('Regexer', () => {\n  describe('isUSPhoneNumber()', () => {\n    it('should return true when passes \\'6174330080\\'', () => {\n      assert.equal(isUSPhoneNumber('6174330080'), true);\n    });\n    it('should return true when passes \\'(617) 433-0080\\'', () => {\n      assert.equal(isUSPhoneNumber('(617) 433-0080'), true);\n    });\n    it('should return true when passes \\'(617)433-0080\\'', () => {\n      assert.equal(isUSPhoneNumber('(617)433-0080'), true);\n    });\n    it('should return true when passes \\'617.433.0080\\'', () => {\n      assert.equal(isUSPhoneNumber('617.433.0080'), true);\n    });\n    it('should return true when passes \\'617-433-0080\\'', () => {\n      assert.equal(isUSPhoneNumber('617-433-0080'), true);\n    });\n    it('should return true when passes \\'617 433 0080\\'', () => {\n      assert.equal(isUSPhoneNumber('617 433 0080'), true);\n    });\n    it('should return false when passes \\'16174330080\\'', () => {\n      assert.equal(isUSPhoneNumber('16174330080'), false);\n    });\n    it('should return false when passes \\'+16174330080\\'', () => {\n      assert.equal(isUSPhoneNumber('+16174330080'), false);\n    });\n    it('should return false when passes \\'61743300800\\'', () => {\n      assert.equal(isUSPhoneNumber('61743300800'), false);\n    });\n    it('should return false when passes \\'\\'', () => {\n      assert.equal(isUSPhoneNumber(''), false);\n    });\n    it('should return false when passes \\'?\\'', () => {\n      assert.equal(isUSPhoneNumber('?'), false);\n    });\n    it('should return false when passes null', () => {\n      assert.equal(isUSPhoneNumber(null), false);\n    });\n  });\n});",
@@ -2099,7 +2160,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 123,
+    "__docId__": 126,
     "kind": "file",
     "name": "src/common/isUSState/isUSState.js",
     "content": "import { isUndefined, isNull, isString } from './../../utils';\n\n/**\n * @desc Returns true if state a name of one of US state, otherwise returns false\n * @param {string} state - a state\n * @return {boolean} - true or false \n *\n * @example\n * 'arizona', 'Oklahoma', 'RhOdE islaNd'\n */\nconst isUSState = state => (\n    !isUndefined(state) &&\n    !isNull(state) &&\n    isString(state) &&\n    /^(Alabama)|(Alaska)|(Arizona)|(Arkansas)|(California)|(Colorado)|(Connecticut)|(Delaware)|(Florida)|(Georgia)|(Hawaii)|(Idaho)|(Illinois)|(Indiana)|(Iowa)|(Kansas)|(Kentucky)|(Louisiana)|(Maine)|(Maryland)|(Massachusetts)|(Michigan)|(Minnesota)|(Mississippi)|(Missouri)|(Montana)|(Nebraska)|(Nevada)|(New Hampshire)|(New Jersey)|(New Mexico)|(New York)|(North Carolina)|(North Dakota)|(Ohio)|(Oklahoma)|(Oregon)|(Pennsylvania)|(Rhode Island)|(South Carolina)|(South Dakota)|(Tennessee)|(Texas)|(Utah)|(Vermont)|(Virginia)|(Washington)|(West Virginia)|(Wisconsin)|(Wyoming)$/i.test(state)\n);\n\nexport default isUSState;",
@@ -2110,7 +2171,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 124,
+    "__docId__": 127,
     "kind": "function",
     "name": "isUSState",
     "memberof": "src/common/isUSState/isUSState.js",
@@ -2149,7 +2210,7 @@
     }
   },
   {
-    "__docId__": 125,
+    "__docId__": 128,
     "kind": "file",
     "name": "src/common/isUSState/isUSState.spec.js",
     "content": "import { assert } from 'chai';\nimport isUSState from './isUSState';\n\ndescribe('Regexer', () => {\n  describe('isUSState()', () => {\n    it('should return true when passed \\'Alabama\\'', () => {\n      assert.equal(isUSState('Alabama'), true);\n    });\n    it('should return true when passed \\'Alaska\\'', () => {\n      assert.equal(isUSState('Alaska'), true);\n    });\n    it('should return true when passed \\'Arizona\\'', () => {\n      assert.equal(isUSState('Arizona'), true);\n    });\n    it('should return true when passed \\'Arkansas\\'', () => {\n      assert.equal(isUSState('Arkansas'), true);\n    });\n    it('should return true when passed \\'California\\'', () => {\n      assert.equal(isUSState('California'), true);\n    });\n    it('should return true when passed \\'Colorado\\'', () => {\n      assert.equal(isUSState('Colorado'), true);\n    });\n    it('should return true when passed \\'Connecticut\\'', () => {\n      assert.equal(isUSState('Connecticut'), true);\n    });\n    it('should return true when passed \\'Delaware\\'', () => {\n      assert.equal(isUSState('Delaware'), true);\n    });\n    it('should return true when passed \\'Florida\\'', () => {\n      assert.equal(isUSState('Florida'), true);\n    });\n    it('should return true when passed \\'Georgia\\'', () => {\n      assert.equal(isUSState('Georgia'), true);\n    });\n    it('should return true when passed \\'Hawaii\\'', () => {\n      assert.equal(isUSState('Hawaii'), true);\n    });\n    it('should return true when passed \\'Idaho\\'', () => {\n      assert.equal(isUSState('Idaho'), true);\n    });\n    it('should return true when passed \\'Illinois\\'', () => {\n      assert.equal(isUSState('Illinois'), true);\n    });\n    it('should return true when passed \\'Indiana\\'', () => {\n      assert.equal(isUSState('Indiana'), true);\n    });\n    it('should return true when passed \\'Iowa\\'', () => {\n      assert.equal(isUSState('Iowa'), true);\n    });\n    it('should return true when passed \\'Kansas\\'', () => {\n      assert.equal(isUSState('Kansas'), true);\n    });\n    it('should return true when passed \\'Kentucky\\'', () => {\n      assert.equal(isUSState('Kentucky'), true);\n    });\n    it('should return true when passed \\'Louisiana\\'', () => {\n      assert.equal(isUSState('Louisiana'), true);\n    });\n    it('should return true when passed \\'Maine\\'', () => {\n      assert.equal(isUSState('Maine'), true);\n    });\n    it('should return true when passed \\'Maryland\\'', () => {\n      assert.equal(isUSState('Maryland'), true);\n    });\n    it('should return true when passed \\'Massachusetts\\'', () => {\n      assert.equal(isUSState('Massachusetts'), true);\n    });\n    it('should return true when passed \\'Michigan\\'', () => {\n      assert.equal(isUSState('Michigan'), true);\n    });\n    it('should return true when passed \\'Minnesota\\'', () => {\n      assert.equal(isUSState('Minnesota'), true);\n    });\n    it('should return true when passed \\'Mississippi\\'', () => {\n      assert.equal(isUSState('Mississippi'), true);\n    });\n    it('should return true when passed \\'Missouri\\'', () => {\n      assert.equal(isUSState('Missouri'), true);\n    });\n    it('should return true when passed \\'Montana\\'', () => {\n      assert.equal(isUSState('Montana'), true);\n    });\n    it('should return true when passed \\'Nebraska\\'', () => {\n      assert.equal(isUSState('Nebraska'), true);\n    });\n    it('should return true when passed \\'Nevada\\'', () => {\n      assert.equal(isUSState('Nevada'), true);\n    });\n    it('should return true when passed \\'New Hampshire\\'', () => {\n      assert.equal(isUSState('New Hampshire'), true);\n    });\n    it('should return true when passed \\'New Jersey\\'', () => {\n      assert.equal(isUSState('New Jersey'), true);\n    });\n    it('should return true when passed \\'New Mexico\\'', () => {\n      assert.equal(isUSState('New Mexico'), true);\n    });\n    it('should return true when passed \\'New York\\'', () => {\n      assert.equal(isUSState('New York'), true);\n    });\n    it('should return true when passed \\'North Carolina\\'', () => {\n      assert.equal(isUSState('North Carolina'), true);\n    });\n    it('should return true when passed \\'North Dakota\\'', () => {\n      assert.equal(isUSState('North Dakota'), true);\n    });\n    it('should return true when passed \\'Ohio\\'', () => {\n      assert.equal(isUSState('Ohio'), true);\n    });\n    it('should return true when passed \\'Oklahoma\\'', () => {\n      assert.equal(isUSState('Oklahoma'), true);\n    });\n    it('should return true when passed \\'Oregon\\'', () => {\n      assert.equal(isUSState('Oregon'), true);\n    });\n    it('should return true when passed \\'Pennsylvania\\'', () => {\n      assert.equal(isUSState('Pennsylvania'), true);\n    });\n    it('should return true when passed \\'Rhode Island\\'', () => {\n      assert.equal(isUSState('Rhode Island'), true);\n    });\n    it('should return true when passed \\'South Carolina\\'', () => {\n      assert.equal(isUSState('South Carolina'), true);\n    });\n    it('should return true when passed \\'South Dakota\\'', () => {\n      assert.equal(isUSState('South Dakota'), true);\n    });\n    it('should return true when passed \\'Tennessee\\'', () => {\n      assert.equal(isUSState('Tennessee'), true);\n    });\n    it('should return true when passed \\'Texas\\'', () => {\n      assert.equal(isUSState('Texas'), true);\n    });\n    it('should return true when passed \\'Utah\\'', () => {\n      assert.equal(isUSState('Utah'), true);\n    });\n    it('should return true when passed \\'Vermont\\'', () => {\n      assert.equal(isUSState('Vermont'), true);\n    });\n    it('should return true when passed \\'Virginia\\'', () => {\n      assert.equal(isUSState('Virginia'), true);\n    });\n    it('should return true when passed \\'Washington\\'', () => {\n      assert.equal(isUSState('Washington'), true);\n    });\n    it('should return true when passed \\'West Virginia\\'', () => {\n      assert.equal(isUSState('West Virginia'), true);\n    });\n    it('should return true when passed \\'Wisconsin\\'', () => {\n      assert.equal(isUSState('Wisconsin'), true);\n    });\n    it('should return true when passed \\'Wyoming\\'', () => {\n      assert.equal(isUSState('Wyoming'), true);\n    });\n    it('should return false when passed \\'Wyominga\\'', () => {\n      assert.equal(isUSState('Wyominga'), false);\n    });\n    it('should return false when passed \\'America\\'', () => {\n      assert.equal(isUSState('America'), false);\n    });\n    it('should return true when passed \\'new york\\'', () => {\n      assert.equal(isUSState('new york'), true);\n    });\n    it('should return false when passed \\'Paris\\'', () => {\n      assert.equal(isUSState('Paris'), false);\n    });\n    it('should return false when passed -34', () => {\n      assert.equal(isUSState(-34), false);\n    });\n    it('should return false when passed \\'\\'', () => {\n      assert.equal(isUSState(''), false);\n    });\n    it('should return false when passed null', () => {\n      assert.equal(isUSState(null), false);\n    });\n  });\n});\n",
@@ -2160,7 +2221,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 126,
+    "__docId__": 129,
     "kind": "file",
     "name": "src/common/isUSStateAbbr/isUSStateAbbr.js",
     "content": "import { isUndefined, isNull, isString } from './../../utils';\n\n/**\n * @desc Returns true if stateAbbr an abbreviation of a name of one of US state, otherwise returns false\n * @param {string} stateAbbr - a state abbr\n * @return {boolean} - true or false \n *\n * @example\n * 'MA', 'ny'\n */\nconst isUSStateAbbr = stateAbbr => (\n\t!isUndefined(stateAbbr) &&\n\t!isNull(stateAbbr) &&\n\tisString(stateAbbr) &&\n\t/^((AK)|(AL)|(AR)|(AZ)|(CA)|(CO)|(CT)|(DC)|(DE)|(FL)|(GA)|(HI)|(IA)|(ID)|(IL)|(IN)|(KS)|(KY)|(LA)|(MA)|(MD)|(ME)|(MI)|(MN)|(MO)|(MS)|(MT)|(NC)|(ND)|(NE)|(NH)|(NJ)|(NM)|(NV)|(NY)|(OH)|(OK)|(OR)|(PA)|(RI)|(SC)|(SD)|(TN)|(TX)|(UT)|(VA)|(VT)|(WA)|(WI)|(WV)|(WY))$/i.test(stateAbbr)\n);\n\nexport default isUSStateAbbr;\n",
@@ -2171,7 +2232,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 127,
+    "__docId__": 130,
     "kind": "function",
     "name": "isUSStateAbbr",
     "memberof": "src/common/isUSStateAbbr/isUSStateAbbr.js",
@@ -2210,7 +2271,7 @@
     }
   },
   {
-    "__docId__": 128,
+    "__docId__": 131,
     "kind": "file",
     "name": "src/common/isUSStateAbbr/isUSStateAbbr.spec.js",
     "content": "import { assert } from 'chai';\nimport isUSStateAbbr from './isUSStateAbbr';\n\ndescribe('Regexer', () => {\n  describe('isUSStateAbbr()', () => {\n    it('should return true when passed \\'AK\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('AK'), true);\n\t\t});\n\t\tit('should return true when passed \\'AL\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('AL'), true);\n\t\t});\n\t\tit('should return true when passed \\'AR\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('AR'), true);\n\t\t});\n\t\tit('should return true when passed \\'AZ\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('AZ'), true);\n\t\t});\n\t\tit('should return true when passed \\'CA\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('CA'), true);\n\t\t});\n\t\tit('should return true when passed \\'CO\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('CO'), true);\n\t\t});\n\t\tit('should return true when passed \\'CT\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('CT'), true);\n\t\t});\n\t\tit('should return true when passed \\'DC\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('DC'), true);\n\t\t});\n\t\tit('should return true when passed \\'DE\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('DE'), true);\n\t\t});\n\t\tit('should return true when passed \\'FL\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('FL'), true);\n\t\t});\n\t\tit('should return true when passed \\'GA\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('GA'), true);\n\t\t});\n\t\tit('should return true when passed \\'HI\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('HI'), true);\n\t\t});\n\t\tit('should return true when passed \\'IA\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('IA'), true);\n\t\t});\n\t\tit('should return true when passed \\'ID\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('ID'), true);\n\t\t});\n\t\tit('should return true when passed \\'IL\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('IL'), true);\n\t\t});\n\t\tit('should return true when passed \\'IN\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('IN'), true);\n\t\t});\n\t\tit('should return true when passed \\'KS\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('KS'), true);\n\t\t});\n\t\tit('should return true when passed \\'KY\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('KY'), true);\n\t\t});\n\t\tit('should return true when passed \\'LA\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('LA'), true);\n\t\t});\n\t\tit('should return true when passed \\'MA\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('MA'), true);\n\t\t});\n\t\tit('should return true when passed \\'MD\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('MD'), true);\n\t\t});\n\t\tit('should return true when passed \\'ME\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('ME'), true);\n\t\t});\n\t\tit('should return true when passed \\'MI\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('MI'), true);\n\t\t});\n\t\tit('should return true when passed \\'MN\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('MN'), true);\n\t\t});\n\t\tit('should return true when passed \\'MO\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('MO'), true);\n\t\t});\n\t\tit('should return true when passed \\'MS\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('MS'), true);\n\t\t});\n\t\tit('should return true when passed \\'MT\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('MT'), true);\n\t\t});\n\t\tit('should return true when passed \\'NC\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('NC'), true);\n\t\t});\n\t\tit('should return true when passed \\'ND\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('ND'), true);\n\t\t});\n\t\tit('should return true when passed \\'NE\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('NE'), true);\n\t\t});\n\t\tit('should return true when passed \\'NH\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('NH'), true);\n\t\t});\n\t\tit('should return true when passed \\'NJ\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('NJ'), true);\n\t\t});\n\t\tit('should return true when passed \\'NM\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('NM'), true);\n\t\t});\n\t\tit('should return true when passed \\'NV\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('NV'), true);\n\t\t});\n\t\tit('should return true when passed \\'NY\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('NY'), true);\n\t\t});\n\t\tit('should return true when passed \\'OH\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('OH'), true);\n\t\t});\n\t\tit('should return true when passed \\'OK\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('OK'), true);\n\t\t});\n\t\tit('should return true when passed \\'OR\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('OR'), true);\n\t\t});\n\t\tit('should return true when passed \\'PA\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('PA'), true);\n\t\t});\n\t\tit('should return true when passed \\'RI\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('RI'), true);\n\t\t});\n\t\tit('should return true when passed \\'SC\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('SC'), true);\n\t\t});\n\t\tit('should return true when passed \\'SD\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('SD'), true);\n\t\t});\n\t\tit('should return true when passed \\'TN\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('TN'), true);\n\t\t});\n\t\tit('should return true when passed \\'TX\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('TX'), true);\n\t\t});\n\t\tit('should return true when passed \\'UT\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('UT'), true);\n\t\t});\n\t\tit('should return true when passed \\'VA\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('VA'), true);\n\t\t});\n\t\tit('should return true when passed \\'VT\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('VT'), true);\n\t\t});\n\t\tit('should return true when passed \\'WA\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('WA'), true);\n\t\t});\n\t\tit('should return true when passed \\'WI\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('WI'), true);\n\t\t});\n\t\tit('should return true when passed \\'WV\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('WV'), true);\n\t\t});\n\t\tit('should return true when passed \\'WY\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('WY'), true);\n\t\t});\n\t\tit('should return false when passed \\'Wyominga\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('Wyominga'), false);\n\t\t});\n\t\tit('should return false when passed \\'America\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('America'), false);\n\t\t});\n\t\tit('should return false when passed \\'new york\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('new york'), false);\n\t\t});\n\t\tit('should return false when passed \\'Paris\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr('Paris'), false);\n\t\t});\n\t\tit('should return false when passed -34', () => {\n\t\t\tassert.equal(isUSStateAbbr(-34), false);\n\t\t});\n\t\tit('should return false when passed \\'\\'', () => {\n\t\t\tassert.equal(isUSStateAbbr(''), false);\n\t\t});\n\t\tit('should return false when passed null', () => {\n\t\t\tassert.equal(isUSStateAbbr(null), false);\n\t\t});\n  });\n});\n",
@@ -2221,7 +2282,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 129,
+    "__docId__": 132,
     "kind": "file",
     "name": "src/common/isUUID/isUUID.js",
     "content": "import { isUndefined, isNull, isString } from './../../utils';\n\n/**\n * @desc Returns true if uuid is a valid universally unique identifier (UUID) v1 or v4, otherwise returns false\n * @param {string} uuid - a UUID \n * @return {boolean} - true or false\n *\n * @example\n * 'aafac29e-5816-4904-87ef-3eb5151e0c9a', '66b9bb40-78d1-11e8-adc0-fa7ae01bbebc'\n */\nconst isUUID = uuid => (\n  !isUndefined(uuid) &&\n  !isNull(uuid) &&\n  isString(uuid) &&\n  /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/.test(uuid)\n);\n\nexport default isUUID;\n",
@@ -2232,7 +2293,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 130,
+    "__docId__": 133,
     "kind": "function",
     "name": "isUUID",
     "memberof": "src/common/isUUID/isUUID.js",
@@ -2271,7 +2332,7 @@
     }
   },
   {
-    "__docId__": 131,
+    "__docId__": 134,
     "kind": "file",
     "name": "src/common/isUUID/isUUID.spec.js",
     "content": "import { assert } from 'chai';\nimport isUUID from './isUUID';\n\ndescribe('Regexer', () => {\n  describe('isUUID()', () => {\n    it('should return true when passed \\'aafac29e-5816-4904-87ef-3eb5151e0c9a\\'', () => {\n      assert.equal(isUUID('aafac29e-5816-4904-87ef-3eb5151e0c9a'), true);\n    });\n    it('should return true when passed \\'3a89b2d2-7c39-44ca-8d3a-49d6238b80c4\\'', () => {\n      assert.equal(isUUID('3a89b2d2-7c39-44ca-8d3a-49d6238b80c4'), true);\n    });\n    it('should return true when passed \\'600801da-78d1-11e8-adc0-fa7ae01bbebc\\'', () => {\n      assert.equal(isUUID('600801da-78d1-11e8-adc0-fa7ae01bbebc'), true);\n    });\n    it('should return true when passed \\'66b9bb40-78d1-11e8-adc0-fa7ae01bbebc\\'', () => {\n      assert.equal(isUUID('66b9bb40-78d1-11e8-adc0-fa7ae01bbebc'), true);\n    });\n    it('should return true when passed \\'c84e74fb-13af-4e95-b84b-febba7100e5a\\'', () => {\n      assert.equal(isUUID('c84e74fb-13af-4e95-b84b-febba7100e5a'), true);\n    });\n    it('should return false when passed \\'sbfj&&#\\'', () => {\n      assert.equal(isUUID('sbfj&&#'), false);\n    });\n    it('should return false when passed \\'\\'', () => {\n      assert.equal(isUUID(''), false);\n    });\n    it('should return false when passed \\'NS-pranto_236\\'', () => {\n      assert.equal(isUUID('NS-pranto_236'), false);\n    });\n    it('should return false when passed null', () => {\n      assert.equal(isUUID(null), false);\n    });\n    it('should return false when passed nothing', () => {\n      assert.equal(isUUID(), false);\n    });\n  });\n});\n\n\n\n",
@@ -2282,7 +2343,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 132,
+    "__docId__": 135,
     "kind": "file",
     "name": "src/common/isUpperCase/isUpperCase.js",
     "content": "import { isNull, isUndefined, isString } from './../../utils';\n\n/**\n * @desc Returns true if str contains all upper case letters, otherwise returns false\n * @param {string} str - a string\n * @return {boolean} - true or false \n *\n * @example\n * 'A', 'B', 'OH WOW!'\n */\nconst isUpperCase = str => (\n  !isUndefined(str) &&\n  !isNull(str) &&\n  isString(str) &&\n  /^[^a-z]+$/.test(str)\n);\n\nexport default isUpperCase;\n",
@@ -2293,7 +2354,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 133,
+    "__docId__": 136,
     "kind": "function",
     "name": "isUpperCase",
     "memberof": "src/common/isUpperCase/isUpperCase.js",
@@ -2332,7 +2393,7 @@
     }
   },
   {
-    "__docId__": 134,
+    "__docId__": 137,
     "kind": "file",
     "name": "src/common/isUpperCase/isUpperCase.spec.js",
     "content": "import { assert } from 'chai';\nimport isUpperCase from './isUpperCase';\n\ndescribe('Regexer', () => {\n  describe('isUpperCase()', () => {\n    it('should return true when passed \\'a\\'', () => {\n      assert.equal(isUpperCase('a'), false);\n    });\n    it('should return true when passed \\'dog\\'', () => {\n      assert.equal(isUpperCase('dog'), false);\n    });\n    it('should return true when passed \\'f\\'', () => {\n      assert.equal(isUpperCase('f'), false);\n    });\n    it('should return true when passed \\'IAN\\'', () => {\n      assert.equal(isUpperCase('IAN'), true);\n    });\n    it('should return true when passed \\'k\\'', () => {\n      assert.equal(isUpperCase('k'), false);\n    });\n    it('should return true when passed \\'OH WOW!\\'', () => {\n      assert.equal(isUpperCase('OH WOW!'), true);\n    });\n    it('should return true when passed \\'A\\'', () => {\n      assert.equal(isUpperCase('A'), true);\n    });\n    it('should return true when passed \\'false\\'', () => {\n      assert.equal(isUpperCase('false'), false);\n    });\n    it('should return true when passed \\'U\\'', () => {\n      assert.equal(isUpperCase('U'), true);\n    });\n    it('should return true when passed \\'aB\\'', () => {\n      assert.equal(isUpperCase('aB'), false);\n    });\n    it('should return true when passed \\'?\\'', () => {\n      assert.equal(isUpperCase('?'), true);\n    });\n    it('should return true when passed \\' \\'', () => {\n      assert.equal(isUpperCase(' '), true);\n    });\n    it('should return false when passed \\'\\'', () => {\n      assert.equal(isUpperCase(''), false);\n    });\n    it('should return false when passed null', () => {\n      assert.equal(isUpperCase(null), false);\n    });\n  });\n});\n",
@@ -2343,7 +2404,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 135,
+    "__docId__": 138,
     "kind": "file",
     "name": "src/common/isUrl/isUrl.js",
     "content": "import { isUndefined, isNull, isString } from './../../utils';\n\n/**\n * @desc Returns true if url a valid URL address, otherwise returns false\n * @param {string} url - an URL address\n * @return {boolean} - true or false \n *\n * @example\n * 'http://3iem.museum:1337/', 'plik.co.uk'\n */\nconst isUrl = url => (\n  !isUndefined(url) &&\n  !isNull(url) &&\n  isString(url) &&\n  /^((((H|h)(T|t)|(F|f))(T|t)(P|p)((S|s)?))\\:\\/\\/)?(www.|[a-zA-Z0-9].)?[a-zA-Z0-9\\-\\.]+\\.[a-zA-Z]{2,6}(\\:[0-9]{1,5})*(\\/($|[a-zA-Z0-9\\.\\,\\;\\?\\'\\\\\\+&amp;%\\$#\\=~_\\-]+))*$/.test(url)\n);\n\nexport default isUrl;\n",
@@ -2354,7 +2415,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 136,
+    "__docId__": 139,
     "kind": "function",
     "name": "isUrl",
     "memberof": "src/common/isUrl/isUrl.js",
@@ -2393,7 +2454,7 @@
     }
   },
   {
-    "__docId__": 137,
+    "__docId__": 140,
     "kind": "file",
     "name": "src/common/isUrl/isUrl.spec.js",
     "content": "import { assert } from 'chai';\nimport isUrl from './isUrl';\n\ndescribe('Regexer', () => {\n  describe('isUrl()', () => {\n    it('should return true when passed \\'http://www.youtube.com/watch?v=-wtIMTCHWuI\\'', () => {\n      assert.equal(isUrl('http://www.youtube.com/watch?v=-wtIMTCHWuI'), true);\n    });\n    it('should return false when passed \\'http://google.com/some/file!.html\\'', () => {\n      assert.equal(isUrl('http://google.com/some/file!.html'), false);\n    });\n    it('should return false when passed \\'\\'', () => {\n      assert.equal(isUrl(''), false);\n    });\n    it('should return true when passed \\'http://youtu.be/-wtIMTCHWuI\\'', () => {\n      assert.equal(isUrl('http://youtu.be/-wtIMTCHWuI'), true);\n    });\n    it('should return true when passed \\'ttp://i2.ytimg.com/vi/-wtIMTCHWuI/hqdefault.jpg\\'', () => {\n      assert.equal(isUrl('http://i2.ytimg.com/vi/-wtIMTCHWuI/hqdefault.jpg'), true);\n    });\n    it('should return false when passed null', () => {\n      assert.equal(isUrl(null), false);\n    });\n  });\n});\n",
@@ -2404,7 +2465,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 138,
+    "__docId__": 141,
     "kind": "file",
     "name": "src/common/isUsername/isUsername.js",
     "content": "import { isNull, isUndefined, isString } from './../../utils';\n\n/**\n * @desc Returns true if username meets the basic requirement of an username (contains letters, numbers, hyphens, and underscores; length is between 3 to 16 characters), otherwise returns false\n * @param {string} username - an username\n * @return {boolean} - true or false \n *\n * @example\n * 'jSmith455', 'kevin_bacon89', 'kevin', 'james-bond007'\n */\nconst isUsername = username => (\n  !isUndefined(username) &&\n  !isNull(username) &&\n  isString(username) &&\n  /^[\\w-]{3,16}$/.test(username)\n);\n\nexport default isUsername;\n\n",
@@ -2415,7 +2476,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 139,
+    "__docId__": 142,
     "kind": "function",
     "name": "isUsername",
     "memberof": "src/common/isUsername/isUsername.js",
@@ -2454,7 +2515,7 @@
     }
   },
   {
-    "__docId__": 140,
+    "__docId__": 143,
     "kind": "file",
     "name": "src/common/isUsername/isUsername.spec.js",
     "content": "import { assert } from 'chai';\nimport isUsername from './isUsername';\n\ndescribe('Regexer', () => {\n  describe('isUsername()', () => {\n    it('should return true when passed \\'npranto\\'', () => {\n      assert.equal(isUsername('npranto'), true);\n    });\n    it('should return false when passed \\'sbfj&&#\\'', () => {\n      assert.equal(isUsername('sbfj&&#'), false);\n    });\n    it('should return false when passed \\'\\'', () => {\n      assert.equal(isUsername(''), false);\n    });\n    it('should return true when passed \\'NS-pranto_236\\'', () => {\n      assert.equal(isUsername('NS-pranto_236'), true);\n    });\n    it('should return true when passed \\'james-bond007\\'', () => {\n      assert.equal(isUsername('james-bond007'), true);\n    });\n    it('should return false when passed null', () => {\n      assert.equal(isUsername(null), false);\n    });\n  });\n});\n",
@@ -2465,7 +2526,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 141,
+    "__docId__": 144,
     "kind": "file",
     "name": "src/common/isVowel/isVowel.js",
     "content": "import { isNull, isUndefined, isString } from './../../utils';\n\n/**\n * @desc Returns true if char a vowel letter, otherwise returns false\n * @param {string} char - a vowel letter\n * @return {boolean} - true or false \n *\n * @example\n * 'a', 'E', 'i', 'O', 'u'\n */\nconst isVowel = char => (\n  !isUndefined(char) &&\n  !isNull(char) &&\n  isString(char) &&\n  (char.length === 1) &&\n  /^[a|e|i|o|u|A|E|I|O|U]$/.test(char)\n);\n\nexport default isVowel;\n",
@@ -2476,7 +2537,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 142,
+    "__docId__": 145,
     "kind": "function",
     "name": "isVowel",
     "memberof": "src/common/isVowel/isVowel.js",
@@ -2515,7 +2576,7 @@
     }
   },
   {
-    "__docId__": 143,
+    "__docId__": 146,
     "kind": "file",
     "name": "src/common/isVowel/isVowel.spec.js",
     "content": "import { assert } from 'chai';\nimport isVowel from './isVowel';\n\ndescribe('Regexer', () => {\n  describe('isVowel()', () => {\n    it('should return true when passed \\'a\\'', () => {\n      assert.equal(isVowel('a'), true);\n    });\n    it('should return true when passed \\'e\\'', () => {\n      assert.equal(isVowel('e'), true);\n    });\n    it('should return true when passed \\'i\\'', () => {\n      assert.equal(isVowel('i'), true);\n    });\n    it('should return true when passed \\'o\\'', () => {\n      assert.equal(isVowel('o'), true);\n    });\n    it('should return true when passed \\'u\\'', () => {\n      assert.equal(isVowel('u'), true);\n    });\n    it('should return true when passed \\'A\\'', () => {\n      assert.equal(isVowel('A'), true);\n    });\n    it('should return true when passed \\'E\\'', () => {\n      assert.equal(isVowel('E'), true);\n    });\n    it('should return true when passed \\'I\\'', () => {\n      assert.equal(isVowel('I'), true);\n    });\n    it('should return true when passed \\'O\\'', () => {\n      assert.equal(isVowel('O'), true);\n    });\n    it('should return true when passed \\'U\\'', () => {\n      assert.equal(isVowel('U'), true);\n    });\n    it('should return false when passed \\'B\\'', () => {\n      assert.equal(isVowel('B'), false);\n    });\n    it('should return false when passed \\'x\\'', () => {\n      assert.equal(isVowel('x'), false);\n    });\n    it('should return false when passed \\'?\\'', () => {\n      assert.equal(isVowel('?'), false);\n    });\n    it('should return false when passed \\' \\'', () => {\n      assert.equal(isVowel(' '), false);\n    });\n    it('should return false when passed \\'\\'', () => {\n      assert.equal(isVowel(''), false);\n    });\n    it('should return false when passed null', () => {\n      assert.equal(isVowel(null), false);\n    });\n  });\n});\n",
@@ -2526,7 +2587,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 144,
+    "__docId__": 147,
     "kind": "file",
     "name": "src/common/isWhiteSpace/isWhiteSpace.js",
     "content": "/**\n * @desc Returns true if char a white space, otherwise returns false\n * @param {string} char - a space\n * @return {boolean} - true or false\n *\n * @example\n * ' ' - just a single white space\n */\nconst isWhiteSpace = char => (\n  /^\\s$/.test(char)\n);\n\nexport default isWhiteSpace;\n",
@@ -2537,7 +2598,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 145,
+    "__docId__": 148,
     "kind": "function",
     "name": "isWhiteSpace",
     "memberof": "src/common/isWhiteSpace/isWhiteSpace.js",
@@ -2576,7 +2637,7 @@
     }
   },
   {
-    "__docId__": 146,
+    "__docId__": 149,
     "kind": "file",
     "name": "src/common/isWhiteSpace/isWhiteSpace.spec.js",
     "content": "import { assert } from 'chai';\nimport isWhiteSpace from './isWhiteSpace';\n\ndescribe('Regexer', () => {\n  describe('isWhiteSpace()', () => {\n    it('should return false when passed \\'about\\'', () => {\n      assert.equal(isWhiteSpace('about'), false);\n    });\n    it('should return true when passed \\' \\'', () => {\n      assert.equal(isWhiteSpace(' '), true);\n    });\n    it('should return false when passed \\'  \\'', () => {\n      assert.equal(isWhiteSpace('  '), false);\n    });\n    it('should return false when passed \\'\\'', () => {\n      assert.equal(isWhiteSpace(''), false);\n    });\n    it('should return false when passed null', () => {\n      assert.equal(isWhiteSpace(null), false);\n    });\n  });\n});\n",
@@ -2587,7 +2648,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 147,
+    "__docId__": 150,
     "kind": "file",
     "name": "src/common/isYear/isYear.js",
     "content": "import { isUndefined, isNull } from './../../utils';\n\n/**\n * @desc Returns true if number a year, otherwise returns false\n * @param {number|string} number - a year\n * @return {boolean} - true or false \n *\n * @example\n * 1345, 1784, 1934, 2012, 2018 \n */\n\nconst isYear = number => (\n  !isUndefined(number) &&\n  !isNull(number) &&\n  /^[1-9]\\d{3}$/.test(number)\n);\n\nexport default isYear;\n",
@@ -2598,7 +2659,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 148,
+    "__docId__": 151,
     "kind": "function",
     "name": "isYear",
     "memberof": "src/common/isYear/isYear.js",
@@ -2638,7 +2699,7 @@
     }
   },
   {
-    "__docId__": 149,
+    "__docId__": 152,
     "kind": "file",
     "name": "src/common/isYear/isYear.spec.js",
     "content": "import { assert } from 'chai';\nimport isYear from './isYear';\n\ndescribe('Regexer', () => {\n  describe('isYear()', () => {\n    it('should return true when passes 1945', () => {\n      assert.equal(isYear(1945), true);\n    });\n    it('should return true when passes \\'0000\\'', () => {\n      assert.equal(isYear('0000'), false);\n    });\n    it('should return false when passes \\'fggf\\'', () => {\n      assert.equal(isYear('fggf'), false);\n    });\n    it('should return true when passes 2010', () => {\n      assert.equal(isYear(2010), true);\n    });\n    it('should return true when passes 1545', () => {\n      assert.equal(isYear(1545), true);\n    });\n    it('should return false when passes \\'?\\'', () => {\n      assert.equal(isYear(')'), false);\n    });\n    it('should return false when passes \\'\\'', () => {\n      assert.equal(isYear(''), false);\n    });\n    it('should return false when passes null', () => {\n      assert.equal(isYear(null), false);\n    });\n  });\n});\n",
@@ -2649,7 +2710,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 150,
+    "__docId__": 153,
     "kind": "file",
     "name": "src/index.js",
     "content": "import _isDayOfMonth from './common/isDayOfMonth/isDayOfMonth';\nimport _isDayOfWeekString from './common/isDayOfWeekString/isDayOfWeekString';\nimport _isEmail from './common/isEmail/isEmail';\nimport _isHexValue from './common/isHexValue/isHexValue';\nimport _isHTMLTag from './common/isHTMLTag/isHTMLTag';\nimport _isInteger from './common/isInteger/isInteger';\nimport _isIPAddressV4 from './common/isIPAddressV4/isIPAddressV4';\nimport _isLetter from './common/isLetter/isLetter';\nimport _isLowerCase from './common/isLowerCase/isLowerCase';\nimport _isMonthOfYear from './common/isMonthOfYear/isMonthOfYear';\nimport _isMonthOfYearString from './common/isMonthOfYearString/isMonthOfYearString';\nimport _isNegativeInteger from './common/isNegativeInteger/isNegativeInteger';\nimport _isNegativeNumber from './common/isNegativeNumber/isNegativeNumber';\nimport _isNumber from './common/isNumber/isNumber';\nimport _isPassword from './common/isPassword/isPassword';\nimport _isPositiveInteger from './common/isPositiveInteger/isPositiveInteger';\nimport _isPositiveNumber from './common/isPositiveNumber/isPositiveNumber';\nimport _isSSN from './common/isSSN/isSSN';\nimport _isUpperCase from './common/isUpperCase/isUpperCase';\nimport _isUrl from './common/isUrl/isUrl';\nimport _isUsername from './common/isUsername/isUsername';\nimport _isUSPhoneNumber from './common/isUSPhoneNumber/isUSPhoneNumber';\nimport _isVowel from './common/isVowel/isVowel';\nimport _isYear from './common/isYear/isYear';\n\nexport const isDayOfMonth = _isDayOfMonth;\nexport const isDayOfWeekString = _isDayOfWeekString;\nexport const isEmail = _isEmail;\nexport const isHexValue = _isHexValue;\nexport const isHTMLTag = _isHTMLTag;\nexport const isInteger = _isInteger;\nexport const isIPAddressV4 = _isIPAddressV4;\nexport const isLetter = _isLetter;\nexport const isLowerCase = _isLowerCase;\nexport const isMonthOfYear = _isMonthOfYear;\nexport const isMonthOfYearString = _isMonthOfYearString;\nexport const isNegativeInteger = _isNegativeInteger;\nexport const isNegativeNumber = _isNegativeNumber;\nexport const isNumber = _isNumber;\nexport const isPassword = _isPassword;\nexport const isPositiveInteger = _isPositiveInteger;\nexport const isPositiveNumber = _isPositiveNumber;\nexport const isSSN = _isSSN;\nexport const isUpperCase = _isUpperCase;\nexport const isUrl = _isUrl;\nexport const isUsername = _isUsername;\nexport const isUSPhoneNumber = _isUSPhoneNumber;\nexport const isVowel = _isVowel;\nexport const isYear = _isYear;\n\n",
@@ -2660,7 +2721,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 151,
+    "__docId__": 154,
     "kind": "variable",
     "name": "isDayOfMonth",
     "memberof": "src/index.js",
@@ -2680,7 +2741,7 @@
     }
   },
   {
-    "__docId__": 152,
+    "__docId__": 155,
     "kind": "variable",
     "name": "isDayOfWeekString",
     "memberof": "src/index.js",
@@ -2700,7 +2761,7 @@
     }
   },
   {
-    "__docId__": 153,
+    "__docId__": 156,
     "kind": "variable",
     "name": "isEmail",
     "memberof": "src/index.js",
@@ -2720,7 +2781,7 @@
     }
   },
   {
-    "__docId__": 154,
+    "__docId__": 157,
     "kind": "variable",
     "name": "isHexValue",
     "memberof": "src/index.js",
@@ -2740,7 +2801,7 @@
     }
   },
   {
-    "__docId__": 155,
+    "__docId__": 158,
     "kind": "variable",
     "name": "isHTMLTag",
     "memberof": "src/index.js",
@@ -2760,7 +2821,7 @@
     }
   },
   {
-    "__docId__": 156,
+    "__docId__": 159,
     "kind": "variable",
     "name": "isInteger",
     "memberof": "src/index.js",
@@ -2780,7 +2841,7 @@
     }
   },
   {
-    "__docId__": 157,
+    "__docId__": 160,
     "kind": "variable",
     "name": "isIPAddressV4",
     "memberof": "src/index.js",
@@ -2800,7 +2861,7 @@
     }
   },
   {
-    "__docId__": 158,
+    "__docId__": 161,
     "kind": "variable",
     "name": "isLetter",
     "memberof": "src/index.js",
@@ -2820,7 +2881,7 @@
     }
   },
   {
-    "__docId__": 159,
+    "__docId__": 162,
     "kind": "variable",
     "name": "isLowerCase",
     "memberof": "src/index.js",
@@ -2840,7 +2901,7 @@
     }
   },
   {
-    "__docId__": 160,
+    "__docId__": 163,
     "kind": "variable",
     "name": "isMonthOfYear",
     "memberof": "src/index.js",
@@ -2860,7 +2921,7 @@
     }
   },
   {
-    "__docId__": 161,
+    "__docId__": 164,
     "kind": "variable",
     "name": "isMonthOfYearString",
     "memberof": "src/index.js",
@@ -2880,7 +2941,7 @@
     }
   },
   {
-    "__docId__": 162,
+    "__docId__": 165,
     "kind": "variable",
     "name": "isNegativeInteger",
     "memberof": "src/index.js",
@@ -2900,7 +2961,7 @@
     }
   },
   {
-    "__docId__": 163,
+    "__docId__": 166,
     "kind": "variable",
     "name": "isNegativeNumber",
     "memberof": "src/index.js",
@@ -2920,7 +2981,7 @@
     }
   },
   {
-    "__docId__": 164,
+    "__docId__": 167,
     "kind": "variable",
     "name": "isNumber",
     "memberof": "src/index.js",
@@ -2940,7 +3001,7 @@
     }
   },
   {
-    "__docId__": 165,
+    "__docId__": 168,
     "kind": "variable",
     "name": "isPassword",
     "memberof": "src/index.js",
@@ -2960,7 +3021,7 @@
     }
   },
   {
-    "__docId__": 166,
+    "__docId__": 169,
     "kind": "variable",
     "name": "isPositiveInteger",
     "memberof": "src/index.js",
@@ -2980,7 +3041,7 @@
     }
   },
   {
-    "__docId__": 167,
+    "__docId__": 170,
     "kind": "variable",
     "name": "isPositiveNumber",
     "memberof": "src/index.js",
@@ -3000,7 +3061,7 @@
     }
   },
   {
-    "__docId__": 168,
+    "__docId__": 171,
     "kind": "variable",
     "name": "isSSN",
     "memberof": "src/index.js",
@@ -3020,7 +3081,7 @@
     }
   },
   {
-    "__docId__": 169,
+    "__docId__": 172,
     "kind": "variable",
     "name": "isUpperCase",
     "memberof": "src/index.js",
@@ -3040,7 +3101,7 @@
     }
   },
   {
-    "__docId__": 170,
+    "__docId__": 173,
     "kind": "variable",
     "name": "isUrl",
     "memberof": "src/index.js",
@@ -3060,7 +3121,7 @@
     }
   },
   {
-    "__docId__": 171,
+    "__docId__": 174,
     "kind": "variable",
     "name": "isUsername",
     "memberof": "src/index.js",
@@ -3080,7 +3141,7 @@
     }
   },
   {
-    "__docId__": 172,
+    "__docId__": 175,
     "kind": "variable",
     "name": "isUSPhoneNumber",
     "memberof": "src/index.js",
@@ -3100,7 +3161,7 @@
     }
   },
   {
-    "__docId__": 173,
+    "__docId__": 176,
     "kind": "variable",
     "name": "isVowel",
     "memberof": "src/index.js",
@@ -3120,7 +3181,7 @@
     }
   },
   {
-    "__docId__": 174,
+    "__docId__": 177,
     "kind": "variable",
     "name": "isYear",
     "memberof": "src/index.js",
@@ -3140,7 +3201,7 @@
     }
   },
   {
-    "__docId__": 175,
+    "__docId__": 178,
     "kind": "file",
     "name": "src/utils/index.js",
     "content": "import _isNull from './isNull';\nimport _isUndefined from './isUndefined';\nimport _isString from './isString';\n\nexport const isNull = _isNull;\nexport const isUndefined = _isUndefined;\nexport const isString = _isString;\n",
@@ -3151,7 +3212,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 176,
+    "__docId__": 179,
     "kind": "variable",
     "name": "isNull",
     "memberof": "src/utils/index.js",
@@ -3171,7 +3232,7 @@
     }
   },
   {
-    "__docId__": 177,
+    "__docId__": 180,
     "kind": "variable",
     "name": "isUndefined",
     "memberof": "src/utils/index.js",
@@ -3191,7 +3252,7 @@
     }
   },
   {
-    "__docId__": 178,
+    "__docId__": 181,
     "kind": "variable",
     "name": "isString",
     "memberof": "src/utils/index.js",
@@ -3211,7 +3272,7 @@
     }
   },
   {
-    "__docId__": 179,
+    "__docId__": 182,
     "kind": "file",
     "name": "src/utils/isNull.js",
     "content": "import isUndefined from './isUndefined';\n\n/**\n * @desc returns true if value is null, otherwise returns false\n * @param {?null} value\n * @return {boolean} - true or false \n */\nconst isNull = value => (\n  !isUndefined(value) &&\n  (value === null)\n);\n\nexport default isNull;\n",
@@ -3222,7 +3283,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 180,
+    "__docId__": 183,
     "kind": "function",
     "name": "isNull",
     "memberof": "src/utils/isNull.js",
@@ -3258,7 +3319,7 @@
     }
   },
   {
-    "__docId__": 181,
+    "__docId__": 184,
     "kind": "file",
     "name": "src/utils/isString.js",
     "content": "/**\n * @desc returns true if value is a string, otherwise returns false\n * @param {?null} value - a string\n * @return {boolean} - true or false \n */\nconst isString = value => typeof value === 'string';\n\nexport default isString;\n",
@@ -3269,7 +3330,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 182,
+    "__docId__": 185,
     "kind": "function",
     "name": "isString",
     "memberof": "src/utils/isString.js",
@@ -3305,7 +3366,7 @@
     }
   },
   {
-    "__docId__": 183,
+    "__docId__": 186,
     "kind": "file",
     "name": "src/utils/isUndefined.js",
     "content": "/**\n * @desc returns true if value is undefined, otherwise returns false\n * @param {?null} value\n * @return {boolean} - true or false \n */\nconst isUndefined = value => typeof value === 'undefined';\n\nexport default isUndefined;\n",
@@ -3316,7 +3377,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 184,
+    "__docId__": 187,
     "kind": "function",
     "name": "isUndefined",
     "memberof": "src/utils/isUndefined.js",
@@ -3353,7 +3414,7 @@
   },
   {
     "kind": "index",
-    "content": "<h1 align=\"center\">\n  <br>\n  <a href=\"https://github.com/npranto/regexer\"><img src=\"./src/assets/images/R-logo.png\" alt=\"Regexer\" width=\"300\"></a>\n  <br>\n    Regexer\n  <br>\n</h1>\n\n[![NPM](https://nodei.co/npm/nsp-regexer.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/nsp-regexer/)\n\n[![CircleCI](https://img.shields.io/circleci/project/github/npranto/regexer.svg?style=for-the-badge)](https://circleci.com/gh/npranto/regexer)\n![npm](https://img.shields.io/npm/v/nsp-regexer.svg?style=for-the-badge)\n![npm](https://img.shields.io/npm/dt/nsp-regexer.svg?style=for-the-badge)\n[![GitHub issues](https://img.shields.io/github/issues/npranto/regexer.svg?style=for-the-badge)](https://github.com/npranto/regexer/issues)\n[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=for-the-badge)](http://commitizen.github.io/cz-cli/)\n[![GitHub license](https://img.shields.io/github/license/npranto/regexer.svg?style=for-the-badge)](https://github.com/npranto/regexer/blob/master/LICENSE)\n\n\n<h4 align=\"left\">\nA simple and convenient library of functions that leverage regular expressions while hiding its complexity of implementation\n</h4>\n\n## Table of Contents\n* [Why Regexer?](#why-regexer)\n* [Installation](#installation)\n* [Usage](#usage)\n* [API](#api)\n    * [`.is12HourTime()`](#is12hourtimestring)\n    * [`.is24HourTime()`](#is24hourtimestring)\n    * [`.isCreditCard()`](#iscreditcardcreditcardnumbernumberstring)\n    * [`.isDayOfMonth()`](#isdayofmonthdaynumberstring)\n    * [`.isDayOfWeekString()`](#isdayofweekstringdaynumberstring)\n    * [`.isDecimal()`](#isdecimalnumbernumberstring)\n    * [`.isEmail()`](#isemailemailstring)\n    * [`.isHexValue()`](#ishexvaluehexvaluestring)\n    * [`.isHTMLTag()`](#ishtmltaghtmltagstring)\n    * [`.isInteger()`](#isintegerintegernumberstring)\n    * [`.isIPAddressV4()`](#isipaddressv4ipaddressstring)\n    * [`.isLetter()`](#islettercharstring)\n    * [`.isLowerCase()`](#islowercasestrstring)\n    * [`.isMonthOfYear()`](#ismonthofyearnumbernumberstring)\n    * [`.isMonthOfYearString()`](#ismonthofyearstringmonthstring)\n    * [`.isNegativeInteger()`](#isnegativeintegerintegernumberstring)\n    * [`.isNegativeNumber()`](#isnegativenumbernumbernumberstring)\n    * [`.isNumber()`](#isnumbernumbernumberstring)\n    * [`.isPassword()`](#ispasswordpasswordstring)\n    * [`.isPositiveInteger()`](#ispositiveintegerintegernumberstring)\n    * [`.isPositiveNumber()`](#ispositivenumbernumbernumberstring)\n    * [`.isSSN()`](#isssnnumberstring)\n    * [`.isStandardZipCode()`](#isstandardzipcodezipcodestring)\n\t\t* [`.isStrongPassword()`](#isstrongpasswordpasswordstring)\n    * [`.isUpperCase()`](#isuppercasestrstring)\n    * [`.isUrl()`](#isurlurlstring)\n    * [`.isUsername()`](#isusernameusernamestring)\n    * [`.isUSPhoneNumber()`](#isusphonenumberphonenumberstring)\n    * [`.isUSState()`](#isusstatestatestring)   \n    * [`.isUSStateAbbr()`](#isusstateabbrstateabbrstring)   \n    * [`.isUUID()`](#isuuidstring)     \n    * [`.isVowel()`](#isvowelcharstring)\n    * [`.isWhiteSpace()`](#iswhitespacecharstring)\n    * [`.isYear()`](#isyearnumbernumberstring)\n\n* [Credits](#credits)\n* [Support](#support)\n* [You May Also Like](#you-may-also-like)\n* [License](#license)\n* [Authors](#authors)\n\n## Why Regexer?\n\nRegular expressions are awesome and absolutely super useful when it comes to looking for pattern matches in a string, but clearly it is not the easiest topic to get your head around. Don't believe me, [just take a look](https://www.quora.com/What-is-the-most-weird-regular-expression-line-you-have-ever-seen)!\n\nRegexer just attempts to make the process of using some of the most popular regular expressions easier for you. You no longer need to look all over the place for finding a regular expression for matching an email or a phone number, or a hex value or even a day of the week. Just install regexer and use the built in common functions to verify candidate values.\n\nStill confused...? Let's look at an **[example](#usage)**\n\n## Installation\nBefore we get going, make sure you have [Node.js](https://nodejs.org/en/) installed on your system, so we can use the NPM (Node Package Manager) to install regexer on your project.\n<br />\n```\n$ npm install --save nsp-regexer\n```\n\n## Usage\n\n```js\n// ES5\nconst regexer = require('nsp-regexer');\n\nconsole.log( regexer.isEmail('jsmith@gmail.com') )  // true\nconsole.log( regexer.isLowerCase('KEVIN') )     // false\n```\n```js\n// ES6+\nimport { isVowel, isNegativeNumber } from 'nsp-regexer';\n\nconsole.log( isVowel('b') )  // false\nconsole.log( isNegativeNumber(-50.67) )  // true\n```\n\n## API\n\n### `.is12HourTime(time[string])`\n\nReturns true if time is in a valid 12-hour format (09:59), otherwise returns false\n\n```js\nimport { is12HourTime } from 'nsp-regexer';\n\nis12HourTime('1:00')  \n// true\n\nis12HourTime(09:07')  \n// true\n\nis12HourTime('15:40')  \n// false\n```\n\n### `.is24HourTime(time[string])`\n\nReturns true if time is in a valid 24-hour format (17:45), otherwise returns false\n\n```js\nimport { is24HourTime } from 'nsp-regexer';\n\nis24HourTime('3:55')  \n// true\n\nis24HourTime(22:33')  \n// true\n\nis24HourTime('40:40')  \n// false\n```\n\n### `.isCreditCard(creditCardNumber[number|string])`\n\nReturns `true` if creditCardNumber is a valid credit card number, otherwise returns `false`\n\n```js\nimport { isCreditCard } from 'nsp-regexer';\n\nisCreditCard('345768475867474')  \n// true\n\nisCreditCard(5465838563658274)  \n// true\n\nisCreditCard('?')  \n// false\n```\n\n### `.isDayOfMonth(day[number|string])`\n\nReturns `true` if day is a day of the month (1-31), otherwise returns `false`\n\n```js\nimport { isDayOfMonth } from 'nsp-regexer';\n\nisDayOfMonth('28')  \n// true\n\nisDayOfMonth(12)  \n// true\n\nisDayOfMonth(55)  \n// false\n```\n\n### `.isDayOfWeekString(day[number|string])`\n\nReturns `true` if day is name of a week day, otherwise returns `false`\n\n```js\nimport { isDayOfWeekString } from 'nsp-regexer';\n\nisDayOfWeekString('monday')  \n// true\n\nisDayOfWeekString('Tuesday')  \n// true\n\nisDayOfWeekString('thURSdAy')  \n// true\n\nisDayOfWeekString('FRIDAY')  \n// true\n\nisDayOfWeekString('doomsday')  \n// false\n```\n\n### `.isDecimal(number[number|string])`\n\nReturns `true` if number is a decimal number, otherwise returns `false`\n\n```js\nimport { isDecimal } from 'nsp-regexer';\n\nisDecimal('55.55')  \n// true\n\nisDecimal(-0.999)  \n// true\n\nisDecimal(50)  \n// false\n```\n\n### `.isEmail(email[string])`\n\nReturns `true` if email is a valid email address, otherwise returns `false`\n\n```js\nimport { isEmail } from 'nsp-regexer';\n\nisEmail('jsmith@gmail.com')  \n// true\n\nisEmail('sdfsdfsdfsd.com')  \n// false\n```\n\n### `.isHexValue(hexValue[string])`\n\nReturns `true` if hexValue is a valid hex value, otherwise returns `false`\n\n```js\nimport { isHexValue } from 'nsp-regexer';\n\nisHexValue('#FBB')  \n// true\n\nisHexValue('#SHFF56')  \n// true\n\nisHexValue('#FF56')  \n// true\n\nisHexValue('sbfj&&#')  \n// false\n```\n\n### `.isHTMLTag(htmlTag[string])`\n\nReturns `true` if htmlTag is an HTML tag, otherwise returns `false`\n\n```js\nimport { isHTMLTag } from 'nsp-regexer';\n\nisHTMLTag('<img src=\"./img/cat.png\" />')  \n// true\n\nisHTMLTag('#SHFF56')  \n// true\n\nisHTMLTag('<h1 class=\"center\"> Hello World! </h1>')  \n// true\n\nisHTMLTag('<body>')  \n// false\n```\n\n### `.isInteger(integer[number|string])`\n\nReturns `true` if integer is an integer, otherwise returns `false`\n\n```js\nimport { isInteger } from 'nsp-regexer';\n\nisInteger('455')  \n// true\n\nisInteger(-44)  \n// true\n\nisInteger('-34.66')  \n// false\n```\n\n### `.isIPAddressV4(ipAddress[string])`\n\nReturns `true` if ipAddress a valid IP address, otherwise returns `false`\n\n```js\nimport { isIPAddressV4 } from 'nsp-regexer';\n\nisIPAddressV4('172.16.254.1')  \n// true\n\nisIPAddressV4('0.1.0.1')  \n// true\n\nisIPAddressV4('54.45.222.345')  \n// false\n```\n\n### `.isLetter(char[string])`\n\nReturns `true` if char an alphabetic letter, otherwise returns `false`\n\n```js\nimport { isLetter } from 'nsp-regexer';\n\nisLetter('v')  \n// true\n\nisLetter('P')  \n// true\n\nisLetter('?')  \n// false\n```\n\n### `.isLowerCase(str[string])`\n\nReturns `true` if str contains all lower case letters, otherwise returns `false`\n\n```js\nimport { isLowerCase } from 'nsp-regexer';\n\nisLowerCase('coffee')  \n// true\n\nisLowerCase('life is awesome!')  \n// true\n\nisLowerCase('I love the new Avengers!')  \n// false\n```\n\n### `.isMonthOfYear(number[number|string])`\n\nReturns `true` if number is a month of year (1-12), otherwise returns `false`\n\n```js\nimport { isMonthOfYear } from 'nsp-regexer';\n\nisMonthOfYear('4')  \n// true\n\nisMonthOfYear(12)  \n// true\n\nisMonthOfYear(30)  \n// false\n```\n\n### `.isMonthOfYearString(month[string])`\n\nReturns `true` if month is a name of a month of year, otherwise returns `false`\n\n```js\nimport { isMonthOfYearString } from 'nsp-regexer';\n\nisMonthOfYearString('march')  \n// true\n\nisMonthOfYearString('April')  \n// true\n\nisMonthOfYearString('augusta')  \n// false\n```\n\n### `.isNegativeInteger(integer[number|string])`\n\nReturns `true` if integer is a negative integer, otherwise returns `false`\n\n```js\nimport { isNegativeInteger } from 'nsp-regexer';\n\nisNegativeInteger('-55')  \n// true\n\nisNegativeInteger(-6456)  \n// true\n\nisNegativeInteger('0.33')  \n// false\n```\n\n### `.isNegativeNumber(number[number|string])`\n\nReturns `true` if number is a negative number, otherwise returns `false`\n\n```js\nimport { isNegativeNumber } from 'nsp-regexer';\n\nisNegativeNumber('-0.44')  \n// true\n\nisNegativeNumber(-55)  \n// true\n\nisNegativeNumber('-1434.44')  \n// true\n\nisNegativeNumber(10)  \n// false\n```\n\n### `.isNumber(number[number|string])`\n\nReturns `true` if number is a number, otherwise returns `false`\n\n```js\nimport { isNumber } from 'nsp-regexer';\n\nisNumber('-0.44')  \n// true\n\nisNumber('-4.6')  \n// true\n\nisNumber(45)  \n// true\n\nisNumber('a coffee')  \n// false\n```\n\n### `.isPassword(password[string])`\n\nReturns `true` if password meets simple ruleset of a password (contains letters, numbers, hyphens, and underscores; length is between 6 to 18 characters), otherwise returns `false`\n\n```js\nimport { isPassword } from 'nsp-regexer';\n\nisPassword('')  \n// true\n\nisPassword('i-love-cats_haha')  \n// true\n\nisPassword('02140coffee')  \n// false\n```\n\n### `.isPositiveInteger(integer[number|string])`\n\nReturns `true` if integer is a positive integer, otherwise returns `false`\n\n```js\nimport { isPositiveInteger } from 'nsp-regexer';\n\nisPositiveInteger('55')  \n// true\n\nisPositiveInteger(-140)  \n// false\n```\n\n### `.isPositiveNumber(number[number|string])`\n\nReturns `true` if number is a positive number, otherwise returns `false`\n\n```js\nimport { isPositiveNumber } from 'nsp-regexer';\n\nisPositiveNumber('4')  \n// true\n\nisPositiveNumber('0.5')  \n// true\n\nisPositiveNumber(74.23)  \n// true\n\nisPositiveNumber(-6)  \n// false\n```\n\n### `.isSSN(number[string])`\n\nReturns `true` if number is a valid social security number, otherwise returns `false`\n\n```js\nimport { isSSN } from 'nsp-regexer';\n\nisSSN('031767927')  \n// true\n\nisSSN('031-76-7927')  \n// true\n\nisSSN('031 76 7927')  \n// true\n\nisSSN('545-454-4555')  \n// false\n```\n\n### `.isStandardZipCode(zipCode[string])`\n\nReturns `true` if zipCode is a valid zip code, otherwise returns `false`\n\n```js\nimport { isStandardZipCode } from 'nsp-regexer';\n\nisStandardZipCode('02166')  \n// true\n\nisStandardZipCode('12045-6089')  \n// true\n\nisStandardZipCode('545-454-4555')  \n// false\n```\n\n### `.isStrongPassword(password[string])`\n\nReturns true if password is what generally considered as a strong password (must contain at least 1 lowercase alphabetical character, 1 uppercase alphabetical character, 1 numeric character, one special character [!, @, #, $, %, ^. &, or *], and at least eight characters long), otherwise returns false\n\n```js\nimport { isStrongPassword } from 'nsp-regexer';\n\nisStrongPassword('Ajohnson184&')  \n// true\n\nisStrongPassword('kevinWilliamsBaller23^')  \n// true\n\nisStrongPassword('kevinIsAwesome7')  \n// false - missing a special character\n```\n\n### `.isUpperCase(str[string])`\n\nReturns `true` if str contains all upper case letters, otherwise returns `false`\n\n```js\nimport { isUpperCase } from 'nsp-regexer';\n\nisUpperCase('G')  \n// true\n\nisUpperCase('OH WOW!')  \n// true\n\nisUpperCase('tea is always BETTER!')  \n// false\n```\n\n### `.isUrl(url[string])`\n\nReturns true if url a valid URL address, otherwise returns `false`\n\n```js\nimport { isUrl } from 'nsp-regexer';\n\nisUrl('http://3iem.museum:1337/')  \n// true\n\nisUrl('plik.co.uk')  \n// true\n\nisUrl('tea@g!.org')  \n// false\n```\n\n### `.isUsername(username[string])`\n\nReturns `true` if username meets the basic requirement of an username (contains letters, numbers, hyphens, and underscores; length is between 3 to 16 characters), otherwise returns `false`\n\n```js\nimport { isUsername } from 'nsp-regexer';\n\nisUsername('jSmith455')  \n// true\n\nisUsername('james-bond007')  \n// true\n\nisUsername('0coffeeEnergy')  \n// false\n```\n\n### `.isUSPhoneNumber(phoneNumber[string])`\n\nReturns `true` if phoneNumber a valid US phone number, otherwise returns `false`\n\n```js\nimport { isUSPhoneNumber } from 'nsp-regexer';\n\nisUSPhoneNumber('6174330080')  \n// true\n\nisUSPhoneNumber('(617) 433-0080')  \n// true\n\nisUSPhoneNumber('454-454-4544-45')  \n// false\n```\n\n### `.isUSState(state[string])`\n\nReturns `true` if state a name of one of US state, otherwise returns `false`\n\n```js\nimport { isUSState } from 'nsp-regexer';\n\nisUSState('arizona')  \n// true\n\nisUSState('Rhode Island')  \n// true\n\nisUSState('Boston')  \n// false\n```\n### `.isUSStateAbbr(stateAbbr[string])`\n\nReturns true if stateAbbr an abbreviation of a name of one of US state, otherwise returns false\n\n```js\nimport { isUSStateAbbr } from 'nsp-regexer';\n\nisUSStateAbbr('MA')  \n// true\n\nisUSStateAbbr('ca')  \n// true\n\nisUSStateAbbr('bos')  \n// false\n```\n\n### `.isUUID(uuid[string])`\n\nReturns true if uuid is a valid universally unique identifier (UUID) v1 or v4, otherwise returns false\n\n```js\nimport { isUUID } from 'nsp-regexer';\n\nisUUID('aafac29e-5816-4904-87ef-3eb5151e0c9a')  \n// true\n\nisUUID('66b9bb40-78d1-11e8-adc0-fa7ae01bbebc')  \n// true\n\nisUUID('sbfj&&#')  \n// false\n```\n\n### `.isVowel(char[string])`\n\nReturns `true` if char a vowel letter, otherwise returns `false`\n\n```js\nimport { isVowel } from 'nsp-regexer';\n\nisVowel('a')  \n// true\n\nisVowel('U')  \n// true\n\nisVowel('v')  \n// false\n```\n\n### `.isWhiteSpace(char[string])`\n\nReturns true if char a white space, otherwise returns false\n\n```js\nimport { isWhiteSpace } from 'nsp-regexer';\n\nisWhiteSpace(' ')  \n// true\n\nisWhiteSpace('  ')  \n// false\n\nisWhiteSpace('hello')  \n// false\n```\n\n### `.isYear(number[number|string])`\n\nReturns `true` if number a year, otherwise returns `false`\n\n```js\nimport { isYear } from 'nsp-regexer';\n\nisYear('1985')  \n// true\n\nisYear('2019')  \n// true\n\nisYear('0344')  \n// false\n```\n\n*Obviously, more to come soon...!*\n\n## Credits\n\nSource code makes use of several open source packages, a few keys ones include...\n\n- [Babel](https://babeljs.io/) - To transpile ES6+ syntax to ES5, to run source code in Node and browser\n- [Webpack](https://webpack.js.org/) - For module bundling and generating distributing assets\n- [ESLint](https://eslint.org/) - To lint source code for better readability, syntax consistency and proper formatting\n- [CircleCI](https://circleci.com/) - Continuous integration middleware to verify incremental builds are always passing\n\n## Support\n\n<a href=\"https://www.buymeacoffee.com/nsplovescoffee\" target=\"_blank\">\n  <img src=\"https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png\" alt=\"Buy Me A Coffee\" style=\"height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;\" >\n</a>\n\n## You May Also Like...\n\n- [focus](https://github.com/npranto/focus) - A simple, elegant task manager application to help students and computer savvy workers get their work done efficiently and on time\n- [lists](https://github.com/npranto/lists) - Quickly draught down your todos, groceries, chores or any other lists of items quickly #powerOfLists\n\n## License\n\n[MIT](https://tldrlegal.com/license/mit-license)\n\n## Contributors\n\n<div>\n  <a href=\"https://github.com/npranto\">\n    <img src=\"https://avatars2.githubusercontent.com/u/13524077?v=4\" alt=\"Nazmuz Shakib pranto\" width=\"50\" />\n  </a>\n</div>\n",
+    "content": "<h1 align=\"center\">\n  <br>\n  <a href=\"https://github.com/npranto/regexer\"><img src=\"./src/assets/images/R-logo.png\" alt=\"Regexer\" width=\"300\"></a>\n  <br>\n    Regexer\n  <br>\n</h1>\n\n[![NPM](https://nodei.co/npm/nsp-regexer.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/nsp-regexer/)\n\n[![CircleCI](https://img.shields.io/circleci/project/github/npranto/regexer.svg?style=for-the-badge)](https://circleci.com/gh/npranto/regexer)\n![npm](https://img.shields.io/npm/v/nsp-regexer.svg?style=for-the-badge)\n![npm](https://img.shields.io/npm/dt/nsp-regexer.svg?style=for-the-badge)\n[![GitHub issues](https://img.shields.io/github/issues/npranto/regexer.svg?style=for-the-badge)](https://github.com/npranto/regexer/issues)\n[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=for-the-badge)](http://commitizen.github.io/cz-cli/)\n[![GitHub license](https://img.shields.io/github/license/npranto/regexer.svg?style=for-the-badge)](https://github.com/npranto/regexer/blob/master/LICENSE)\n\n\n<h4 align=\"left\">\nA simple and convenient library of functions that leverage regular expressions while hiding its complexity of implementation\n</h4>\n\n## Table of Contents\n* [Why Regexer?](#why-regexer)\n* [Installation](#installation)\n* [Usage](#usage)\n* [API](#api)\n    * [`.is12HourTime()`](#is12hourtimestring)\n    * [`.is24HourTime()`](#is24hourtimestring)\n    * [`.isCreditCard()`](#iscreditcardcreditcardnumbernumberstring)\n    * [`.isDayOfMonth()`](#isdayofmonthdaynumberstring)\n    * [`.isDayOfWeekString()`](#isdayofweekstringdaynumberstring)\n    * [`.isDecimal()`](#isdecimalnumbernumberstring)\n\t\t* [`.isDomainName()`](#isdomainnamedomainnamestring)\n    * [`.isEmail()`](#isemailemailstring)\n    * [`.isHexValue()`](#ishexvaluehexvaluestring)\n    * [`.isHTMLTag()`](#ishtmltaghtmltagstring)\n    * [`.isInteger()`](#isintegerintegernumberstring)\n    * [`.isIPAddressV4()`](#isipaddressv4ipaddressstring)\n    * [`.isLetter()`](#islettercharstring)\n    * [`.isLowerCase()`](#islowercasestrstring)\n    * [`.isMonthOfYear()`](#ismonthofyearnumbernumberstring)\n    * [`.isMonthOfYearString()`](#ismonthofyearstringmonthstring)\n    * [`.isNegativeInteger()`](#isnegativeintegerintegernumberstring)\n    * [`.isNegativeNumber()`](#isnegativenumbernumbernumberstring)\n    * [`.isNumber()`](#isnumbernumbernumberstring)\n    * [`.isPassword()`](#ispasswordpasswordstring)\n    * [`.isPositiveInteger()`](#ispositiveintegerintegernumberstring)\n    * [`.isPositiveNumber()`](#ispositivenumbernumbernumberstring)\n    * [`.isSSN()`](#isssnnumberstring)\n    * [`.isStandardZipCode()`](#isstandardzipcodezipcodestring)\n    * [`.isStrongPassword()`](#isstrongpasswordpasswordstring)\n    * [`.isUpperCase()`](#isuppercasestrstring)\n    * [`.isUrl()`](#isurlurlstring)\n    * [`.isUsername()`](#isusernameusernamestring)\n    * [`.isUSPhoneNumber()`](#isusphonenumberphonenumberstring)\n    * [`.isUSState()`](#isusstatestatestring)   \n    * [`.isUSStateAbbr()`](#isusstateabbrstateabbrstring)   \n    * [`.isUUID()`](#isuuidstring)     \n    * [`.isVowel()`](#isvowelcharstring)\n    * [`.isWhiteSpace()`](#iswhitespacecharstring)\n    * [`.isYear()`](#isyearnumbernumberstring)\n\n* [Credits](#credits)\n* [Support](#support)\n* [You May Also Like](#you-may-also-like)\n* [License](#license)\n* [Authors](#authors)\n\n## Why Regexer?\n\nRegular expressions are awesome and absolutely super useful when it comes to looking for pattern matches in a string, but clearly it is not the easiest topic to get your head around. Don't believe me, [just take a look](https://www.quora.com/What-is-the-most-weird-regular-expression-line-you-have-ever-seen)!\n\nRegexer just attempts to make the process of using some of the most popular regular expressions easier for you. You no longer need to look all over the place for finding a regular expression for matching an email or a phone number, or a hex value or even a day of the week. Just install regexer and use the built in common functions to verify candidate values.\n\nStill confused...? Let's look at an **[example](#usage)**\n\n## Installation\nBefore we get going, make sure you have [Node.js](https://nodejs.org/en/) installed on your system, so we can use the NPM (Node Package Manager) to install regexer on your project.\n<br />\n```\n$ npm install --save nsp-regexer\n```\n\n## Usage\n\n```js\n// ES5\nconst regexer = require('nsp-regexer');\n\nconsole.log( regexer.isEmail('jsmith@gmail.com') )  // true\nconsole.log( regexer.isLowerCase('KEVIN') )     // false\n```\n```js\n// ES6+\nimport { isVowel, isNegativeNumber } from 'nsp-regexer';\n\nconsole.log( isVowel('b') )  // false\nconsole.log( isNegativeNumber(-50.67) )  // true\n```\n\n## API\n\n### `.is12HourTime(time[string])`\n\nReturns true if time is in a valid 12-hour format (09:59), otherwise returns false\n\n```js\nimport { is12HourTime } from 'nsp-regexer';\n\nis12HourTime('1:00')  \n// true\n\nis12HourTime(09:07')  \n// true\n\nis12HourTime('15:40')  \n// false\n```\n\n### `.is24HourTime(time[string])`\n\nReturns true if time is in a valid 24-hour format (17:45), otherwise returns false\n\n```js\nimport { is24HourTime } from 'nsp-regexer';\n\nis24HourTime('3:55')  \n// true\n\nis24HourTime(22:33')  \n// true\n\nis24HourTime('40:40')  \n// false\n```\n\n### `.isCreditCard(creditCardNumber[number|string])`\n\nReturns `true` if creditCardNumber is a valid credit card number, otherwise returns `false`\n\n```js\nimport { isCreditCard } from 'nsp-regexer';\n\nisCreditCard('345768475867474')  \n// true\n\nisCreditCard(5465838563658274)  \n// true\n\nisCreditCard('?')  \n// false\n```\n\n### `.isDayOfMonth(day[number|string])`\n\nReturns `true` if day is a day of the month (1-31), otherwise returns `false`\n\n```js\nimport { isDayOfMonth } from 'nsp-regexer';\n\nisDayOfMonth('28')  \n// true\n\nisDayOfMonth(12)  \n// true\n\nisDayOfMonth(55)  \n// false\n```\n\n### `.isDayOfWeekString(day[number|string])`\n\nReturns `true` if day is name of a week day, otherwise returns `false`\n\n```js\nimport { isDayOfWeekString } from 'nsp-regexer';\n\nisDayOfWeekString('monday')  \n// true\n\nisDayOfWeekString('Tuesday')  \n// true\n\nisDayOfWeekString('thURSdAy')  \n// true\n\nisDayOfWeekString('FRIDAY')  \n// true\n\nisDayOfWeekString('doomsday')  \n// false\n```\n\n### `.isDecimal(number[number|string])`\n\nReturns `true` if number is a decimal number, otherwise returns `false`\n\n```js\nimport { isDecimal } from 'nsp-regexer';\n\nisDecimal('55.55')  \n// true\n\nisDecimal(-0.999)  \n// true\n\nisDecimal(50)  \n// false\n```\n\n### `.isDomainName(domainName[string])`\n\nReturns `true` if domainName is a valid domain name, otherwise returns `false`\n\n```js\nimport { isDomainName } from 'nsp-regexer';\n\nisDomainName('www.pen.io')  \n// true\n\nisDomainName('jack.com')  \n// true\n\nisDomainName('www.google?money.com')  \n// false\n```\n\n### `.isEmail(email[string])`\n\nReturns `true` if email is a valid email address, otherwise returns `false`\n\n```js\nimport { isEmail } from 'nsp-regexer';\n\nisEmail('jsmith@gmail.com')  \n// true\n\nisEmail('sdfsdfsdfsd.com')  \n// false\n```\n\n### `.isHexValue(hexValue[string])`\n\nReturns `true` if hexValue is a valid hex value, otherwise returns `false`\n\n```js\nimport { isHexValue } from 'nsp-regexer';\n\nisHexValue('#FBB')  \n// true\n\nisHexValue('#SHFF56')  \n// true\n\nisHexValue('#FF56')  \n// true\n\nisHexValue('sbfj&&#')  \n// false\n```\n\n### `.isHTMLTag(htmlTag[string])`\n\nReturns `true` if htmlTag is an HTML tag, otherwise returns `false`\n\n```js\nimport { isHTMLTag } from 'nsp-regexer';\n\nisHTMLTag('<img src=\"./img/cat.png\" />')  \n// true\n\nisHTMLTag('#SHFF56')  \n// true\n\nisHTMLTag('<h1 class=\"center\"> Hello World! </h1>')  \n// true\n\nisHTMLTag('<body>')  \n// false\n```\n\n### `.isInteger(integer[number|string])`\n\nReturns `true` if integer is an integer, otherwise returns `false`\n\n```js\nimport { isInteger } from 'nsp-regexer';\n\nisInteger('455')  \n// true\n\nisInteger(-44)  \n// true\n\nisInteger('-34.66')  \n// false\n```\n\n### `.isIPAddressV4(ipAddress[string])`\n\nReturns `true` if ipAddress a valid IP address, otherwise returns `false`\n\n```js\nimport { isIPAddressV4 } from 'nsp-regexer';\n\nisIPAddressV4('172.16.254.1')  \n// true\n\nisIPAddressV4('0.1.0.1')  \n// true\n\nisIPAddressV4('54.45.222.345')  \n// false\n```\n\n### `.isLetter(char[string])`\n\nReturns `true` if char an alphabetic letter, otherwise returns `false`\n\n```js\nimport { isLetter } from 'nsp-regexer';\n\nisLetter('v')  \n// true\n\nisLetter('P')  \n// true\n\nisLetter('?')  \n// false\n```\n\n### `.isLowerCase(str[string])`\n\nReturns `true` if str contains all lower case letters, otherwise returns `false`\n\n```js\nimport { isLowerCase } from 'nsp-regexer';\n\nisLowerCase('coffee')  \n// true\n\nisLowerCase('life is awesome!')  \n// true\n\nisLowerCase('I love the new Avengers!')  \n// false\n```\n\n### `.isMonthOfYear(number[number|string])`\n\nReturns `true` if number is a month of year (1-12), otherwise returns `false`\n\n```js\nimport { isMonthOfYear } from 'nsp-regexer';\n\nisMonthOfYear('4')  \n// true\n\nisMonthOfYear(12)  \n// true\n\nisMonthOfYear(30)  \n// false\n```\n\n### `.isMonthOfYearString(month[string])`\n\nReturns `true` if month is a name of a month of year, otherwise returns `false`\n\n```js\nimport { isMonthOfYearString } from 'nsp-regexer';\n\nisMonthOfYearString('march')  \n// true\n\nisMonthOfYearString('April')  \n// true\n\nisMonthOfYearString('augusta')  \n// false\n```\n\n### `.isNegativeInteger(integer[number|string])`\n\nReturns `true` if integer is a negative integer, otherwise returns `false`\n\n```js\nimport { isNegativeInteger } from 'nsp-regexer';\n\nisNegativeInteger('-55')  \n// true\n\nisNegativeInteger(-6456)  \n// true\n\nisNegativeInteger('0.33')  \n// false\n```\n\n### `.isNegativeNumber(number[number|string])`\n\nReturns `true` if number is a negative number, otherwise returns `false`\n\n```js\nimport { isNegativeNumber } from 'nsp-regexer';\n\nisNegativeNumber('-0.44')  \n// true\n\nisNegativeNumber(-55)  \n// true\n\nisNegativeNumber('-1434.44')  \n// true\n\nisNegativeNumber(10)  \n// false\n```\n\n### `.isNumber(number[number|string])`\n\nReturns `true` if number is a number, otherwise returns `false`\n\n```js\nimport { isNumber } from 'nsp-regexer';\n\nisNumber('-0.44')  \n// true\n\nisNumber('-4.6')  \n// true\n\nisNumber(45)  \n// true\n\nisNumber('a coffee')  \n// false\n```\n\n### `.isPassword(password[string])`\n\nReturns `true` if password meets simple ruleset of a password (contains letters, numbers, hyphens, and underscores; length is between 6 to 18 characters), otherwise returns `false`\n\n```js\nimport { isPassword } from 'nsp-regexer';\n\nisPassword('')  \n// true\n\nisPassword('i-love-cats_haha')  \n// true\n\nisPassword('02140coffee')  \n// false\n```\n\n### `.isPositiveInteger(integer[number|string])`\n\nReturns `true` if integer is a positive integer, otherwise returns `false`\n\n```js\nimport { isPositiveInteger } from 'nsp-regexer';\n\nisPositiveInteger('55')  \n// true\n\nisPositiveInteger(-140)  \n// false\n```\n\n### `.isPositiveNumber(number[number|string])`\n\nReturns `true` if number is a positive number, otherwise returns `false`\n\n```js\nimport { isPositiveNumber } from 'nsp-regexer';\n\nisPositiveNumber('4')  \n// true\n\nisPositiveNumber('0.5')  \n// true\n\nisPositiveNumber(74.23)  \n// true\n\nisPositiveNumber(-6)  \n// false\n```\n\n### `.isSSN(number[string])`\n\nReturns `true` if number is a valid social security number, otherwise returns `false`\n\n```js\nimport { isSSN } from 'nsp-regexer';\n\nisSSN('031767927')  \n// true\n\nisSSN('031-76-7927')  \n// true\n\nisSSN('031 76 7927')  \n// true\n\nisSSN('545-454-4555')  \n// false\n```\n\n### `.isStandardZipCode(zipCode[string])`\n\nReturns `true` if zipCode is a valid zip code, otherwise returns `false`\n\n```js\nimport { isStandardZipCode } from 'nsp-regexer';\n\nisStandardZipCode('02166')  \n// true\n\nisStandardZipCode('12045-6089')  \n// true\n\nisStandardZipCode('545-454-4555')  \n// false\n```\n\n### `.isStrongPassword(password[string])`\n\nReturns `true` if password is what generally considered as a strong password (must contain at least 1 lowercase alphabetical character, 1 uppercase alphabetical character, 1 numeric character, one special character [!, @, #, $, %, ^. &, or *], and at least eight characters long), otherwise returns `false`\n\n```js\nimport { isStrongPassword } from 'nsp-regexer';\n\nisStrongPassword('Ajohnson184&')  \n// true\n\nisStrongPassword('kevinWilliamsBaller23^')  \n// true\n\nisStrongPassword('kevinIsAwesome7')  \n// false - missing a special character\n```\n\n### `.isUpperCase(str[string])`\n\nReturns `true` if str contains all upper case letters, otherwise returns `false`\n\n```js\nimport { isUpperCase } from 'nsp-regexer';\n\nisUpperCase('G')  \n// true\n\nisUpperCase('OH WOW!')  \n// true\n\nisUpperCase('tea is always BETTER!')  \n// false\n```\n\n### `.isUrl(url[string])`\n\nReturns true if url a valid URL address, otherwise returns `false`\n\n```js\nimport { isUrl } from 'nsp-regexer';\n\nisUrl('http://3iem.museum:1337/')  \n// true\n\nisUrl('plik.co.uk')  \n// true\n\nisUrl('tea@g!.org')  \n// false\n```\n\n### `.isUsername(username[string])`\n\nReturns `true` if username meets the basic requirement of an username (contains letters, numbers, hyphens, and underscores; length is between 3 to 16 characters), otherwise returns `false`\n\n```js\nimport { isUsername } from 'nsp-regexer';\n\nisUsername('jSmith455')  \n// true\n\nisUsername('james-bond007')  \n// true\n\nisUsername('0coffeeEnergy')  \n// false\n```\n\n### `.isUSPhoneNumber(phoneNumber[string])`\n\nReturns `true` if phoneNumber a valid US phone number, otherwise returns `false`\n\n```js\nimport { isUSPhoneNumber } from 'nsp-regexer';\n\nisUSPhoneNumber('6174330080')  \n// true\n\nisUSPhoneNumber('(617) 433-0080')  \n// true\n\nisUSPhoneNumber('454-454-4544-45')  \n// false\n```\n\n### `.isUSState(state[string])`\n\nReturns `true` if state a name of one of US state, otherwise returns `false`\n\n```js\nimport { isUSState } from 'nsp-regexer';\n\nisUSState('arizona')  \n// true\n\nisUSState('Rhode Island')  \n// true\n\nisUSState('Boston')  \n// false\n```\n### `.isUSStateAbbr(stateAbbr[string])`\n\nReturns true if stateAbbr an abbreviation of a name of one of US state, otherwise returns false\n\n```js\nimport { isUSStateAbbr } from 'nsp-regexer';\n\nisUSStateAbbr('MA')  \n// true\n\nisUSStateAbbr('ca')  \n// true\n\nisUSStateAbbr('bos')  \n// false\n```\n\n### `.isUUID(uuid[string])`\n\nReturns true if uuid is a valid universally unique identifier (UUID) v1 or v4, otherwise returns false\n\n```js\nimport { isUUID } from 'nsp-regexer';\n\nisUUID('aafac29e-5816-4904-87ef-3eb5151e0c9a')  \n// true\n\nisUUID('66b9bb40-78d1-11e8-adc0-fa7ae01bbebc')  \n// true\n\nisUUID('sbfj&&#')  \n// false\n```\n\n### `.isVowel(char[string])`\n\nReturns `true` if char a vowel letter, otherwise returns `false`\n\n```js\nimport { isVowel } from 'nsp-regexer';\n\nisVowel('a')  \n// true\n\nisVowel('U')  \n// true\n\nisVowel('v')  \n// false\n```\n\n### `.isWhiteSpace(char[string])`\n\nReturns true if char a white space, otherwise returns false\n\n```js\nimport { isWhiteSpace } from 'nsp-regexer';\n\nisWhiteSpace(' ')  \n// true\n\nisWhiteSpace('  ')  \n// false\n\nisWhiteSpace('hello')  \n// false\n```\n\n### `.isYear(number[number|string])`\n\nReturns `true` if number a year, otherwise returns `false`\n\n```js\nimport { isYear } from 'nsp-regexer';\n\nisYear('1985')  \n// true\n\nisYear('2019')  \n// true\n\nisYear('0344')  \n// false\n```\n\n*Obviously, more to come soon...!*\n\n## Credits\n\nSource code makes use of several open source packages, a few keys ones include...\n\n- [Babel](https://babeljs.io/) - To transpile ES6+ syntax to ES5, to run source code in Node and browser\n- [Webpack](https://webpack.js.org/) - For module bundling and generating distributing assets\n- [ESLint](https://eslint.org/) - To lint source code for better readability, syntax consistency and proper formatting\n- [CircleCI](https://circleci.com/) - Continuous integration middleware to verify incremental builds are always passing\n\n## Support\n\n<a href=\"https://www.buymeacoffee.com/nsplovescoffee\" target=\"_blank\">\n  <img src=\"https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png\" alt=\"Buy Me A Coffee\" style=\"height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;\" >\n</a>\n\n## You May Also Like...\n\n- [focus](https://github.com/npranto/focus) - A simple, elegant task manager application to help students and computer savvy workers get their work done efficiently and on time\n- [lists](https://github.com/npranto/lists) - Quickly draught down your todos, groceries, chores or any other lists of items quickly #powerOfLists\n\n## License\n\n[MIT](https://tldrlegal.com/license/mit-license)\n\n## Contributors\n\n<div>\n  <a href=\"https://github.com/npranto\">\n    <img src=\"https://avatars2.githubusercontent.com/u/13524077?v=4\" alt=\"Nazmuz Shakib pranto\" width=\"50\" />\n  </a>\n</div>\n",
     "longname": "/Users/Focus/regexer/README.md",
     "name": "./README.md",
     "static": true,

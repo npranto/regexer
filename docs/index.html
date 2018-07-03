@@ -59,6 +59,7 @@
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#common-isdayofmonth">common/isDayOfMonth</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isDayOfMonth">isDayOfMonth</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#common-isdayofweekstring">common/isDayOfWeekString</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isDayOfWeekString">isDayOfWeekString</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#common-isdecimal">common/isDecimal</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isDecimal">isDecimal</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#common-isdomainname">common/isDomainName</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isDomainName">isDomainName</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#common-isemail">common/isEmail</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isEmail">isEmail</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#common-ishtmltag">common/isHTMLTag</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isHTMLTag">isHTMLTag</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#common-ishexvalue">common/isHexValue</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isHexValue">isHexValue</a></span></span></li>
@@ -129,7 +130,10 @@ A simple and convenient library of functions that leverage regular expressions w
 <li><a href="#iscreditcardcreditcardnumbernumberstring"><code>.isCreditCard()</code></a></li>
 <li><a href="#isdayofmonthdaynumberstring"><code>.isDayOfMonth()</code></a></li>
 <li><a href="#isdayofweekstringdaynumberstring"><code>.isDayOfWeekString()</code></a></li>
-<li><a href="#isdecimalnumbernumberstring"><code>.isDecimal()</code></a></li>
+<li><a href="#isdecimalnumbernumberstring"><code>.isDecimal()</code></a><ul>
+<li><a href="#isdomainnamedomainnamestring"><code>.isDomainName()</code></a></li>
+</ul>
+</li>
 <li><a href="#isemailemailstring"><code>.isEmail()</code></a></li>
 <li><a href="#ishexvaluehexvaluestring"><code>.isHexValue()</code></a></li>
 <li><a href="#ishtmltaghtmltagstring"><code>.isHTMLTag()</code></a></li>
@@ -146,10 +150,8 @@ A simple and convenient library of functions that leverage regular expressions w
 <li><a href="#ispositiveintegerintegernumberstring"><code>.isPositiveInteger()</code></a></li>
 <li><a href="#ispositivenumbernumbernumberstring"><code>.isPositiveNumber()</code></a></li>
 <li><a href="#isssnnumberstring"><code>.isSSN()</code></a></li>
-<li><a href="#isstandardzipcodezipcodestring"><code>.isStandardZipCode()</code></a><ul>
+<li><a href="#isstandardzipcodezipcodestring"><code>.isStandardZipCode()</code></a></li>
 <li><a href="#isstrongpasswordpasswordstring"><code>.isStrongPassword()</code></a></li>
-</ul>
-</li>
 <li><a href="#isuppercasestrstring"><code>.isUpperCase()</code></a></li>
 <li><a href="#isurlurlstring"><code>.isUrl()</code></a></li>
 <li><a href="#isusernameusernamestring"><code>.isUsername()</code></a></li>
@@ -263,6 +265,18 @@ isDecimal(-0.999)
 // true
 
 isDecimal(50)  
+// false</code>
+</code></pre>
+<h3 id="-code--isdomainname-domainname-string----code-"><code>.isDomainName(domainName[string])</code></h3><p>Returns <code>true</code> if domainName is a valid domain name, otherwise returns <code>false</code></p>
+<pre><code class="lang-js"><code class="source-code prettyprint">import { isDomainName } from &apos;nsp-regexer&apos;;
+
+isDomainName(&apos;www.pen.io&apos;)  
+// true
+
+isDomainName(&apos;jack.com&apos;)  
+// true
+
+isDomainName(&apos;www.google?money.com&apos;)  
 // false</code>
 </code></pre>
 <h3 id="-code--isemail-email-string----code-"><code>.isEmail(email[string])</code></h3><p>Returns <code>true</code> if email is a valid email address, otherwise returns <code>false</code></p>
@@ -481,7 +495,7 @@ isStandardZipCode(&apos;12045-6089&apos;)
 isStandardZipCode(&apos;545-454-4555&apos;)  
 // false</code>
 </code></pre>
-<h3 id="-code--isstrongpassword-password-string----code-"><code>.isStrongPassword(password[string])</code></h3><p>Returns true if password is what generally considered as a strong password (must contain at least 1 lowercase alphabetical character, 1 uppercase alphabetical character, 1 numeric character, one special character [!, @, #, $, %, ^. &amp;, or *], and at least eight characters long), otherwise returns false</p>
+<h3 id="-code--isstrongpassword-password-string----code-"><code>.isStrongPassword(password[string])</code></h3><p>Returns <code>true</code> if password is what generally considered as a strong password (must contain at least 1 lowercase alphabetical character, 1 uppercase alphabetical character, 1 numeric character, one special character [!, @, #, $, %, ^. &amp;, or *], and at least eight characters long), otherwise returns <code>false</code></p>
 <pre><code class="lang-js"><code class="source-code prettyprint">import { isStrongPassword } from &apos;nsp-regexer&apos;;
 
 isStrongPassword(&apos;Ajohnson184&amp;&apos;)  

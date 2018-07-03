@@ -31,6 +31,7 @@ A simple and convenient library of functions that leverage regular expressions w
     * [`.isDayOfMonth()`](#isdayofmonthdaynumberstring)
     * [`.isDayOfWeekString()`](#isdayofweekstringdaynumberstring)
     * [`.isDecimal()`](#isdecimalnumbernumberstring)
+		* [`.isDomainName()`](#isdomainnamedomainnamestring)
     * [`.isEmail()`](#isemailemailstring)
     * [`.isHexValue()`](#ishexvaluehexvaluestring)
     * [`.isHTMLTag()`](#ishtmltaghtmltagstring)
@@ -205,6 +206,23 @@ isDecimal(-0.999)
 // true
 
 isDecimal(50)  
+// false
+```
+
+### `.isDomainName(domainName[string])`
+
+Returns `true` if domainName is a valid domain name, otherwise returns `false`
+
+```js
+import { isDomainName } from 'nsp-regexer';
+
+isDomainName('www.pen.io')  
+// true
+
+isDomainName('jack.com')  
+// true
+
+isDomainName('www.google?money.com')  
 // false
 ```
 
@@ -511,7 +529,7 @@ isStandardZipCode('545-454-4555')
 
 ### `.isStrongPassword(password[string])`
 
-Returns true if password is what generally considered as a strong password (must contain at least 1 lowercase alphabetical character, 1 uppercase alphabetical character, 1 numeric character, one special character [!, @, #, $, %, ^. &, or *], and at least eight characters long), otherwise returns false
+Returns `true` if password is what generally considered as a strong password (must contain at least 1 lowercase alphabetical character, 1 uppercase alphabetical character, 1 numeric character, one special character [!, @, #, $, %, ^. &, or *], and at least eight characters long), otherwise returns `false`
 
 ```js
 import { isStrongPassword } from 'nsp-regexer';
