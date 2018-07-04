@@ -31,7 +31,7 @@ A simple and convenient library of functions that leverage regular expressions w
     * [`.isDayOfMonth()`](#isdayofmonthdaynumberstring)
     * [`.isDayOfWeekString()`](#isdayofweekstringdaynumberstring)
     * [`.isDecimal()`](#isdecimalnumbernumberstring)
-		* [`.isDomainName()`](#isdomainnamedomainnamestring)
+    * [`.isDomainName()`](#isdomainnamedomainnamestring)
     * [`.isEmail()`](#isemailemailstring)
     * [`.isHexValue()`](#ishexvaluehexvaluestring)
     * [`.isHTMLTag()`](#ishtmltaghtmltagstring)
@@ -531,6 +531,7 @@ isStandardZipCode('545-454-4555')
 
 Returns `true` if password is what generally considered as a strong password (must contain at least 1 lowercase alphabetical character, 1 uppercase alphabetical character, 1 numeric character, one special character [!, @, #, $, %, ^. &, or *], and at least eight characters long), otherwise returns `false`
 
+
 ```js
 import { isStrongPassword } from 'nsp-regexer';
 
@@ -723,6 +724,14 @@ Source code makes use of several open source packages, a few keys ones include..
 - [Webpack](https://webpack.js.org/) - For module bundling and generating distributing assets
 - [ESLint](https://eslint.org/) - To lint source code for better readability, syntax consistency and proper formatting
 - [CircleCI](https://circleci.com/) - Continuous integration middleware to verify incremental builds are always passing
+
+## Sources
+
+Lot of different resources came in super handy and useful in turning Regexer into reality. Here are just a few highlights:
+
+- [Regular Expression Library](http://www.regexlib.com/) - the Internet's first Regular Expression Library
+- [8 Regular Expressions You Should Know](https://code.tutsplus.com/tutorials/8-regular-expressions-you-should-know--net-6149) - an article, a tutorial of common regular expressions
+- Regular Expressions Cookbook, 2nd Edition by Jan Goyvaerts and Steven Levithan
 
 ## Support
 
